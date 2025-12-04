@@ -15,7 +15,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h6>Location</h6>
-                                <p>123 Growth Street, San Francisco</p>
+                                <p>307/1737 Anzac Avenue, Mango Hill, 4509</p>
                             </div>
                         </li>
                         <li class="d-flex">
@@ -24,8 +24,8 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h6>Email</h6>
-                                <a href="javascript:void(0)"><span class="__cf_email__"
-                                        data-cfemail="6c0409001c2c030008091e03420f0301">[email&#160;protected]</span></a>
+                                <a href="javascript:void(0)"><span 
+                                        >inspire@continuitycare.com.au</span></a>
                             </div>
                         </li>
                         <li class="d-flex">
@@ -34,7 +34,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h6>Phone</h6>
-                                <a href="tel:+1(444)5078494">+1 (444) 507 8494</a>
+                                <a href="tel: +61-1800-012-273"> +61-1800-012-273</a>
                             </div>
                         </li>
                     </ul>

@@ -2,7 +2,7 @@
 <div class="copy-right-area">
     <div class="container mw-1685">
         <div class="d-flex flex-wrap gap-10 justify-content-center justify-content-lg-between align-items-center">
-            <p class="mb-0">© <span>Continuity Care.</span> Developed by <a href="javascript:void(0)"
+            <p class="mb-0">© <?php echo date("Y")?> <span>Continuity Care</span> | Developed by <a href="javascript:void(0)"
                     target="_blank">Vibrantick Infotech Solution</a></p>
             <ul class="p-0 m-0 list-unstyled d-flex align-items-center social-link">
                 <li>

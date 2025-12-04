@@ -7,7 +7,7 @@
                     class="d-flex flex-wrap justify-content-center justify-content-lg-start flex-md-nowrap align-items-center p-0 m-0 list-unstyled header-info">
                     <li class="d-flex align-items-center gap-10">
                         <i class="ti ti-map-pin"></i>
-                        <span>Location: 1901 Thorndike Cir. Shiloh, Hawaii 81063</span>
+                        <span>Location: 307/1737 Anzac Avenue, Mango Hill, 4509</span>
                     </li>
                     <li class="d-flex align-items-center gap-10">
                         <i class="ti ti-clock-hour-4"></i>
