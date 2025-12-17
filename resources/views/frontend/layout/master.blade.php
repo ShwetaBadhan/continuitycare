@@ -29,7 +29,7 @@
     {{-- back to top button --}}
     @include("frontend.components.back-to-top")
     {{-- dark switch --}}
-    @include("frontend.components.switch-area")
+    {{-- @include("frontend.components.switch-area") --}}
     {{-- Keep offcanvas here, globally loaded --}}
  @include("frontend.components.sidebar")
 

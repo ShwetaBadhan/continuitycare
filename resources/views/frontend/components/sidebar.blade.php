@@ -12,86 +12,72 @@
                 <img src="assets/images/logo/hozlogo.webp" class="white-logo" alt="white-logo">
             </a>
 
-            <p>Old care also known as aged care is a vital service that focuses on supporting the physical emotional and
-                social well being of elderly individuals</p>
+            {{-- <p>Old care also known as aged care is a vital service that focuses on supporting the physical emotional and
+                social well being of elderly individuals</p> --}}
         </div>
 
-        <div class="sidebar-single-item">
-            <ul class="p-0 m-0 list-unstyled footer-info">
-                <li>
-                    <div class="d-flex gap-13">
-                        <div class="flex-shrink-0 lh-1">
-                            <img src="assets/images/icon-location.svg" alt="icon-location">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h4>Location:</h4>
-                            <span>307/1737 Anzac Avenue, Mango Hill, 4509</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-flex gap-13">
-                        <div class="flex-shrink-0 lh-1">
-                            <img src="assets/images/icon-email.svg" alt="icon-email">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h4>Email:</h4>
-                            <a
-                                href=""><span
-                                    class="__cf_email__"
-                                    data-cfemail="98f0fdf4f4f7d8f7f4fcfdeaf7b6fbf7f5">inspire@continuitycare.com.au</span></a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-flex gap-13">
-                        <div class="flex-shrink-0 lh-1">
-                            <img src="assets/images/icon-call.svg" alt="icon-call">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h4>Phone:</h4>
-                            <a href="tel:+61-1800-012-273">+61-1800-012-273</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-            <ul class="p-0 mb-0 list-unstyled d-flex align-items-center social-link">
-                <li>
-                    <span>Follow Us:</span>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <i class="ti ti-brand-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/" target="_blank">
-                        <i class="ti ti-brand-x"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <i class="ti ti-brand-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                        <i class="ti ti-brand-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="newsletter-form">
-                <h3>Subscribe to our newsletter</h3>
-
-                <form class="position-relative z-1">
-                    <input type="email" class="form-control" placeholder="Enter Your Email">
-                    <button type="submit" class="submit-btn position-absolute top-50 end-0 translate-middle-y">
-                        <img src="assets/images/icon-send.svg" alt="icon-send">
-                    </button>
-                </form>
+     <div class="sidebar-single-item">
+    <h3 class="sidebar-title mb-4">Quick Links & Resources</h3>
+    
+    <div class="resource-tiles-grid">
+        <!-- NDIS -->
+        <a href="https://www.ndis.gov.au/" target="_blank" class="resource-tile">
+            <div class="tile-logo">
+                <img src="https://www.arthritiswa.org.au/wp-content/uploads/2023/05/NDIS-logo.png" alt="NDIS Logo">
             </div>
-        </div>
+            <div class="tile-name">NDIS</div>
+        </a>
+
+        <!-- NDIS Quality and Safeguards -->
+        <a href="https://www.ndiscommission.gov.au/" target="_blank" class="resource-tile">
+            <div class="tile-logo">
+                <img src="{{asset('assets/images/logo/ndis-safe.svg')}}" alt="NDIS Quality and Safeguards Logo">
+            </div>
+            <div class="tile-name">NDIS Quality & Safeguards</div>
+        </a>
+
+        <!-- My Aged Care -->
+        <a href="https://www.myagedcare.gov.au/" target="_blank" class="resource-tile">
+            <div class="tile-logo">
+                <img src="{{asset('assets/images/logo/myagedcare-logo.svg')}}" alt="My Aged Care Logo">
+            </div>
+            <div class="tile-name">My Aged Care</div>
+        </a>
+
+        <!-- ACCPA -->
+        <a href="https://www.accpa.asn.au/" target="_blank" class="resource-tile">
+            <div class="tile-logo">
+                <img src="{{asset('assets/images/logo/accpa-logo.svg')}}" alt="ACCPA Logo">
+            </div>
+            <div class="tile-name">ACCPA</div>
+        </a>
+
+        <!-- COTA -->
+        <a href="https://www.cota.org.au/" target="_blank" class="resource-tile">
+            <div class="tile-logo">
+                <img src="{{asset('assets/images/logo/logo-cota-aus.svg')}}" alt="COTA Logo">
+            </div>
+            <div class="tile-name">COTA</div>
+        </a>
+
+        <!-- Feedback and Complaint Form -->
+        <a href="" class="resource-tile">
+            <div class="tile-logo">
+                <img src="assets/images/logos/feedback-logo.svg" alt="Feedback Logo">
+            </div>
+            <div class="tile-name">Feedback & Complaint</div>
+        </a>
+
+        <!-- Continuity Connect -->
+        <a href="https://continuityconnect.com.au/" target="_blank" class="resource-tile">
+            <div class="tile-logo">
+                <img src="assets/images/logos/continuity-connect-logo.svg" alt="Continuity Connect Logo">
+            </div>
+            <div class="tile-name">Continuity Connect</div>
+        </a>
+    </div>
+
+   
+</div>
     </div>
 </div>

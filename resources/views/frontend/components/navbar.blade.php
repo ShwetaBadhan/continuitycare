@@ -1,5 +1,5 @@
 <!-- Start Header Area -->
-<div class="header-area bg-eef2da">
+{{-- <div class="header-area bg-eef2da">
     <div class="container mw-1685">
         <div class="row align-items-center gy-2">
             <div class="col-lg-8 d-none d-sm-inline-block">
@@ -36,7 +36,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- End Header Area -->
 <!-- Start Navbar Area -->
 <nav class="navbar navbar-expand-lg position-sticky top-0" id="navbar">
@@ -72,7 +72,42 @@
                         </li>
                         <li>
                             <a class="dropdown-item" href="">
-                                Care Model
+                                Leadership
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Who We Serve
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="{{ route("about-us") }}">
+                                NDIS
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="">
+                                My Aged Care
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="">
+                                NIISQ
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="">
+                                DVA
                             </a>
                         </li>
 
@@ -87,72 +122,72 @@
                     <ul class="dropdown-menu">
                         <li>
                             <a class="dropdown-item" href="{{ route("our-services") }}">
-                                Accommodation (SIL/SDA)
+                               In Home Care
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="{{ route("our-services") }}">
-                                In Home Care (Attendance care/ HCP)
+                                Care Coordination/Navigation
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="{{ route("our-services") }}">
-                                Support Coordination
+                                Supported Independent Living
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="{{ route("our-services") }}">
-                                Care Coordination(Case Management)
+                                Community Nursing
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="{{ route("our-services") }}">
-                                Plan Management
+                                Community Transport
                             </a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a class="dropdown-item" href="{{ route("our-services") }}">
                                 Social and Community Participation
                             </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="{{route("directory-listing")}}">
-                        Directory Listing
-                    </a>
-
-                </li>
+               
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        More
+                        Resources
                     </a>
 
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="{{route("careers")}}">
-                                Career
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="javascript:void(0)">
-                                Referral
-                            </a>
-                        </li>
-                        <li>
                             <a class="dropdown-item" href="{{ route("our-blogs") }}">
-                                Blogs & News
+                                News and Blogs
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="javascript:void(0)">
-                                Resource Center
+                                CCC Clinical Guidelines
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="faqs">
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                Client Resource
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                Staff Resource
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
                                 FAQs
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ route("careers") }}">
+                                Careers
                             </a>
                         </li>
 
@@ -162,30 +197,72 @@
                     </ul>
                 </li>
 
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link" href="{{route("contact-us")}}">
                         Contact us
                     </a>
-                </li>
+                </li> --}}
             </ul>
         </div>
 
         <div class="others-options d-flex align-items-center">
-            <div class="gap-40 d-flex">
-                <button class="bg-transparent border-0 p-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            <!-- Blade Template Code -->
+<div class="gap-3 d-flex align-items-center accessibility-controls">
+ <button class="bg-transparent border-0 p-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight">
                     <img src="assets/images/icon-grid.svg" alt="icon-grid">
                 </button>
-                <button class="bg-transparent border-0 p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    {{-- <img src="assets/images/icon-search2.svg" alt="icon-search2"> --}}
-                </button>
-            </div>
-            <a href="{{ route("book-appointment") }}" class="default-btn active">
-                <div class="d-flex align-items-center gap-10">
-                    <span class="d-none d-sm-inline-block">Book appointment</span>
-                    <img src="assets/images/right.svg" alt="right-white">
-                </div>
-            </a>
+    <!-- Language Translator -->
+    <div class="dropdown">
+       <button class="accessibility-btn" 
+                type="button" 
+                id="languageDropdown" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false"
+                title="Change Language">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span class="btn-label" id="currentLangLabel">English</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="languageDropdown">
+            <li class="dropdown-header">Select Language</li>
+            <li><a class="dropdown-item" href="#" data-lang="en" data-label="English">🇬🇧 English</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="es" data-label="Español">🇪🇸 Español</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="fr" data-label="Français">🇫🇷 Français</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="de" data-label="Deutsch">🇩🇪 Deutsch</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="hi" data-label="हिंदी">🇮🇳 हिंदी</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="zh" data-label="中文">🇨🇳 中文</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="ar" data-label="العربية">🇸🇦 العربية</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="pt" data-label="Português">🇵🇹 Português</a></li>
+        </ul>
+    </div>
+<!-- Add this hidden div to include Google Translate -->
+<div id="google_translate_element" style="display:none;"></div>
+ <!-- Font Size Adjuster -->
+     <!-- Font Size Adjuster -->
+    <div class="font-size-controller">
+        <span class="font-size-label">Adjust font size</span>
+        <button class="font-size-btn" id="decreaseFont" title="Decrease font size">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+        </button>
+        <button class="font-size-btn font-reset-btn" id="resetFont" title="Reset to default size">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                <path d="M21 3v5h-5"/>
+            </svg>
+        </button>
+        <button class="font-size-btn" id="increaseFont" title="Increase font size">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+        </button>
+    </div>
+</div>
             <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
                 aria-controls="offcanvasExample">
                 <span class="burger-menu">

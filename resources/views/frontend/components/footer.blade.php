@@ -105,7 +105,7 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                         <label class="form-check-label" for="checkDefault">
-                            I understand and agree to the <a href="terms-conditions.html">Terms & Conditions</a>
+                            I understand and agree to the <a href="{{ route("terms-conditions") }}">Terms & Conditions</a>
                         </label>
                     </div>
                 </div>

@@ -5,7 +5,7 @@
         <div class="page-banner-area bg-img ptb-120 position-relative" style="background-image: url(assets/images/page-bg13.jpg);">
             <div class="container mw-1685">
                 <div class="page-banner-content text-center">
-                    <h2 class="main-title mx-auto text-white">Careers</h2>
+                    <h2 class="mx-auto text-white">Careers</h2>
                     <ul class="p-0 m-0 list-unstyled d-flex align-items-center justify-content-center">
                         <li>
                             <a href="{{ route("home") }}" class="text-decoration-none">

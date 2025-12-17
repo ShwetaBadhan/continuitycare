@@ -61,7 +61,7 @@
 			});
 		}
 	});
-	
+
 	// Services BG Hover Animation JS
 	const cards = document.querySelectorAll('.services-single-item');
 	let activeCard = null;
@@ -371,7 +371,7 @@
 			}
 		});
 	}
-	
+
 })();
 
 // For Mobile Navbar JS
@@ -394,3 +394,273 @@ function accordion(e) {
 for (i = 0; i < list.length; i++) {
 	list[i].addEventListener('click', accordion);
 }
+
+
+// Google Translate Integration
+window.googleTranslateElementInit = function () {
+	new google.translate.TranslateElement({
+		pageLanguage: 'en',
+		includedLanguages: 'en,es,fr,de,hi,zh-CN,ar,pt',
+		autoDisplay: false
+	}, 'google_translate_element');
+
+};
+
+
+// Load Google Translate Script
+(function () {
+	const script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+	document.getElementsByTagName('head')[0].appendChild(script);
+})();
+
+document.addEventListener('DOMContentLoaded', function () {
+	// Language Switcher with Google Translate
+	const languageItems = document.querySelectorAll('[data-lang]');
+	const currentLangLabel = document.getElementById('currentLangLabel');
+
+	// Language code mapping for Google Translate
+	const langMapping = {
+		'en': 'en',
+		'es': 'es',
+		'fr': 'fr',
+		'de': 'de',
+		'hi': 'hi',
+		'zh': 'zh-CN',
+		'ar': 'ar',
+		'pt': 'pt'
+	};
+
+	languageItems.forEach(item => {
+		item.addEventListener('click', function (e) {
+			e.preventDefault();
+			const lang = this.getAttribute('data-lang');
+			const label = this.getAttribute('data-label');
+
+			// Remove active class from all items
+			languageItems.forEach(i => i.classList.remove('active'));
+			// Add active class to selected item
+			this.classList.add('active');
+
+			// Update button label
+			currentLangLabel.textContent = label;
+
+			// Store language preference
+			localStorage.setItem('language', lang);
+			localStorage.setItem('languageLabel', label);
+
+			// Trigger Google Translate
+			changeLanguage(langMapping[lang]);
+
+			// Show confirmation
+			showNotification(`Language changed to ${label}`);
+		});
+	});
+
+	function changeLanguage(langCode) {
+		let attempts = 0;
+
+		const interval = setInterval(() => {
+			const select = document.querySelector('.goog-te-combo');
+
+			if (select) {
+				select.value = langCode;
+				select.dispatchEvent(new Event('change'));
+				clearInterval(interval);
+			}
+
+			if (++attempts > 50) clearInterval(interval); // 5 seconds max
+		}, 100);
+	}
+
+
+	// Load saved language preference
+	const savedLang = localStorage.getItem('language') || 'en';
+	const savedLabel = localStorage.getItem('languageLabel') || 'English';
+
+	if (savedLang !== 'en') {
+		currentLangLabel.textContent = savedLabel;
+		document.querySelector(`[data-lang="${savedLang}"]`)?.classList.add('active');
+
+		// Apply saved language after Google Translate loads
+		setTimeout(() => {
+			changeLanguage(langMapping[savedLang]);
+		}, 1500);
+	} else {
+		document.querySelector(`[data-lang="en"]`)?.classList.add('active');
+	}
+
+	// Font Size Controller
+	const DEFAULT_FONT_SIZE = null;
+	let currentFontSize = localStorage.getItem('fontSizeLevel') ? parseInt(localStorage.getItem('fontSizeLevel')) : DEFAULT_FONT_SIZE;
+
+	const decreaseBtn = document.getElementById('decreaseFont');
+	const increaseBtn = document.getElementById('increaseFont');
+	const resetBtn = document.getElementById('resetFont');
+
+	// Only apply saved font size if user has previously adjusted it
+	if (currentFontSize !== null) {
+		applyFontSize(currentFontSize);
+	}
+
+	// Decrease font size
+	decreaseBtn.addEventListener('click', function () {
+		if (currentFontSize === null) {
+			currentFontSize = parseInt(window.getComputedStyle(document.body).fontSize);
+		}
+		currentFontSize = Math.max(8, currentFontSize - 2);
+		applyFontSize(currentFontSize);
+		showNotification(`Font size: ${currentFontSize}px`);
+	});
+
+	// Increase font size
+	increaseBtn.addEventListener('click', function () {
+		if (currentFontSize === null) {
+			currentFontSize = parseInt(window.getComputedStyle(document.body).fontSize);
+		}
+		currentFontSize = Math.min(40, currentFontSize + 2);
+		applyFontSize(currentFontSize);
+		showNotification(`Font size: ${currentFontSize}px`);
+	});
+
+	// Reset font size
+	resetBtn.addEventListener('click', function () {
+		currentFontSize = null;
+
+		document.body.style.fontSize = '';
+		document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(el => {
+			el.style.fontSize = '';
+		});
+
+		localStorage.removeItem('fontSizeLevel');
+		showNotification('Font size reset to default');
+	});
+
+	function applyFontSize(size) {
+		if (size === null) return;
+
+		document.body.style.fontSize = size + 'px';
+
+		const h1Size = size * 2.5;
+		const h2Size = size * 2;
+		const h3Size = size * 1.75;
+		const h4Size = size * 1.5;
+		const h5Size = size * 1.25;
+		const h6Size = size * 1.1;
+
+		document.querySelectorAll('h1').forEach(el => el.style.fontSize = h1Size + 'px');
+		document.querySelectorAll('h2').forEach(el => el.style.fontSize = h2Size + 'px');
+		document.querySelectorAll('h3').forEach(el => el.style.fontSize = h3Size + 'px');
+		document.querySelectorAll('h4').forEach(el => el.style.fontSize = h4Size + 'px');
+		document.querySelectorAll('h5').forEach(el => el.style.fontSize = h5Size + 'px');
+		document.querySelectorAll('h6').forEach(el => el.style.fontSize = h6Size + 'px');
+
+		if (size <= 8) {
+			decreaseBtn.style.opacity = '0.5';
+		} else {
+			decreaseBtn.style.opacity = '1';
+		}
+
+		if (size >= 40) {
+			increaseBtn.style.opacity = '0.5';
+		} else {
+			increaseBtn.style.opacity = '1';
+		}
+
+		localStorage.setItem('fontSizeLevel', size);
+	}
+});
+// Show notification function
+function showNotification(message) {
+	// Remove existing notification if any
+	const existing = document.querySelector('.accessibility-notification');
+	if (existing) existing.remove();
+
+	const notification = document.createElement('div');
+	notification.className = 'accessibility-notification';
+	notification.textContent = message;
+	notification.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: linear-gradient(40deg, #0c874c , #025670 );
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        z-index: 9999;
+        animation: slideIn 0.3s ease;
+        font-size: 14px;
+        font-weight: 500;
+    `;
+
+	document.body.appendChild(notification);
+
+	setTimeout(() => {
+		notification.style.animation = 'slideOut 0.3s ease';
+		setTimeout(() => notification.remove(), 300);
+	}, 2000);
+}
+
+(function removeGoogleTranslateBar() {
+	const killBar = () => {
+		// Remove iframe
+		document.querySelectorAll('iframe.goog-te-banner-frame').forEach(el => {
+			el.remove();
+		});
+
+		// Reset body position
+		document.body.style.top = '0px';
+		document.documentElement.style.top = '0px';
+
+		// Kill new injected div
+		document.querySelectorAll('.VIpgJd-ZVi9od-ORHb-KE6vqe').forEach(el => {
+			el.remove();
+		});
+	};
+
+	// Run repeatedly (Google reinjects it)
+	setInterval(killBar, 300);
+})();
+
+
+let contactModal;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+        });
+
+        function performSearch() {
+            const careType = document.getElementById('careType').value;
+            const location = document.getElementById('location').value;
+            
+            document.getElementById('resultsTitle').textContent = careType + ' in ' + location;
+            document.getElementById('resultsContainer').classList.add('show');
+            
+            // Smooth scroll to results
+            setTimeout(() => {
+                document.getElementById('resultsContainer').scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 100);
+        }
+
+        function openContactModal(facilityName) {
+            document.getElementById('facilityName').textContent = 'Enquiring about: ' + facilityName;
+            contactModal.show();
+        }
+
+        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your request has been submitted successfully.');
+            this.reset();
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! The facility will contact you shortly.');
+            contactModal.hide();
+            this.reset();
+        });
