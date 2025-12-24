@@ -71,12 +71,12 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="">
+                            <a class="dropdown-item" href="{{ route("our-team") }}">
                                 Leadership
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="">
+                            <a class="dropdown-item" href="{{ route("contact-us") }}">
                                 Contact Us
                             </a>
                         </li>
@@ -91,22 +91,22 @@
 
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="{{ route("about-us") }}">
+                            <a class="dropdown-item" href="{{ route("ndis") }}">
                                 NDIS
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="">
+                            <a class="dropdown-item" href="{{ route(name: "my-aged-care") }}">
                                 My Aged Care
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="">
+                            <a class="dropdown-item" href="{{ route(name: "niisq") }}">
                                 NIISQ
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="">
+                            <a class="dropdown-item" href="{{ route(name: "department-of-veterans-affairs") }}">
                                 DVA
                             </a>
                         </li>
@@ -166,22 +166,22 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="javascript:void(0)">
+                            <a class="dropdown-item" href="{{ route("clinical-guidelines") }}">
                                 CCC Clinical Guidelines
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="javascript:void(0)">
+                            <a class="dropdown-item" href="{{ route("client-resources") }}">
                                 Client Resource
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="javascript:void(0)">
+                            <a class="dropdown-item" href="{{ route("staff-resources") }}">
                                 Staff Resource
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="javascript:void(0)">
+                            <a class="dropdown-item" href="{{ route("faqs") }}">
                                 FAQs
                             </a>
                         </li>

@@ -2,7 +2,7 @@
 @section("title","Our Team")
 @section("content")
 <!-- Start Page Banner Area -->
-        <div class="page-banner-area bg-img ptb-120 position-relative" style="background-image: url(assets/images/page-bg9.jpg);">
+        {{-- <div class="page-banner-area bg-img ptb-120 position-relative" style="background-image: url(assets/images/page-bg9.jpg);">
             <div class="container mw-1685">
                 <div class="page-banner-content text-center">
                     <h2 class="mx-auto text-white">Our Team</h2>
@@ -18,7 +18,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- End Page Banner Area -->
 
         <!-- Start Team Area -->

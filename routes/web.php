@@ -86,4 +86,43 @@ Route::get('/faqs', function () {
 })->name('faqs');
 
 
+Route::get('/ndis', function () {
+    return view('frontend.pages.ndis');
+})->name('ndis');
+
+Route::get('/my-aged-care', function () {
+    return view('frontend.pages.my-aged-care');
+})->name('my-aged-care');
+
+Route::get('/niisq', function () {
+    return view('frontend.pages.niisq');
+})->name('niisq');
+
+Route::get('/department-of-veterans-affairs', function () {
+    return view('frontend.pages.department-of-veterans-affairs');
+})->name('department-of-veterans-affairs');
+
+Route::get('/clinical-guidelines', function () {
+    return view('frontend.pages.clinical-guidelines');
+})->name('clinical-guidelines');
+
+Route::get('/client-resources', function () {
+    return view('frontend.pages.client-resources');
+})->name('client-resources');
+
+Route::get('/staff-resources', function () {
+    return view('frontend.pages.staff-resources');
+})->name('staff-resources');
+
+
+
+
+// admin panel
+
+Route::prefix('admin')->group(function () {
+    Route::view('/', 'admin/auth/welcome');          // ← This serves welcome page at /admin
+    Route::view('/dashboard', 'admin.pages.dashboard');
+});
+
+
 

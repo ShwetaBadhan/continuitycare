@@ -2,7 +2,7 @@
 @section("title", " Our Services | Continuity Care")
 @section("content")
    <!-- Start Page Banner Area -->
-        <div class="page-banner-area bg-img ptb-120 position-relative" style="background-image: url(assets/images/page-bg2.jpg);">
+        {{-- <div class="page-banner-area bg-img ptb-120 position-relative" style="background-image: url(assets/images/page-bg2.jpg);">
             <div class="container mw-1685">
                 <div class="page-banner-content text-center">
                     <h2 class="mx-auto text-white">Our Services</h2>
@@ -18,7 +18,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- End Page Banner Area -->
 
         <!-- Start Services Area -->
