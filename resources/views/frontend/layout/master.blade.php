@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/tabler-icons.min.css') }}">
 
-    <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/logo/cfavicon.png') }}">
     <title>@yield('title')</title>
 </head>
 

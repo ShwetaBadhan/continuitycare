@@ -26,11 +26,11 @@
             <div class="container mw-1685">
                 <div class="row gy-2" data-cues="slideInUp" data-duration="900">
                     <div class="col-lg-4">
-                        <span class="top-title">ABOUT OLDERO</span>
+                        <span class="top-title">ABOUT US</span>
                     </div>
                     <div class="col-lg-8">
                         <div class="mb-60">
-                            <h2 class="main-title ms-auto mw-975">Compassionate Home Care Services for Everyday <span class="word-mark">healthy</span> Living</h2>
+                            <h2 class="main-title ms-auto mw-975">Empowering Independence Through Compassionate Care and Seamless Navigation</h2>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
 
                     <div class="col-xl-8">
                         <div class="about-content" data-cues="slideInUp" data-duration="900">
-                            <p>Elderly Home and Senior Care services are dedicated to providing a nurturing secure and supportive environment for older adults who may require assistance with daily activities medical needs or simply companionship</p>
+                            <p>Continuity Care is a dedicated provider of disability and independent living services, specializing in comprehensive care coordination and navigation. We are committed to bridging the gap between clinical requirements and daily life, ensuring people with disabilities can live with dignity and independence in the home they love.</p>
 
                             <div class="row g-4 align-items-end">
                                 <div class="col-lg-8">
@@ -55,8 +55,8 @@
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3>Maintaining Independence</h3>
-                                            <p>With trained caregivers healthcare professionals and a range and recreational programs elderly homes aim</p>
+                                            <h3>Integrated Support</h3>
+                                            <p>We provide expert guidance through a blend of clinical oversight and practical daily assistance.</p>
                                         </div>
                                     </div>
 
@@ -187,7 +187,7 @@
                                     <h3>Our Mission</h3>
                                 </div>
                             </div>
-                            <p>Our mission is to create meaningful impact delivering innovative reliable and sustainable solutions empower individuals and communities we are committed</p>
+                            <p>Our mission is to create a meaningful impact by bridging the gap between clinical requirements and daily life. We are dedicated to providing a seamless care experience that empowers individuals with disabilities to live with dignity, ensuring they have the expert coordination and navigation needed to thrive in the home they love.</p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
@@ -204,7 +204,7 @@
                                     <h3>Our Vision</h3>
                                 </div>
                             </div>
-                            <p>Our vision is to be a leading force for positive change shaping a future where innovation and drive progress for all we aspire to build a world where</p>
+                            <p>Our vision is to be a leading force for positive change in the disability and independent living sector. We strive to redefine support by putting choice and control back into the hands of the individual, fostering a future where every person has the autonomy to manage their care journey on their own terms.</p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
@@ -221,7 +221,7 @@
                                     <h3>Our Success</h3>
                                 </div>
                             </div>
-                            <p>Our success is defined by the positive outcomes create  the trust we build and the value deliver to those serve it reflected in the strong relationships</p>
+                            <p>Our success is defined by the positive outcomes and enhanced quality of life achieved by our community. We measure our impact through the independence of our clients, the transparency of our partnerships, and our ability to help individuals maximize their support hours and wellbeing through expert care navigation.</p>
                         </div>
                     </div>
                 </div>
@@ -297,110 +297,13 @@
         </div>
         <!-- End Why Choose Us Area -->
 
-        <!-- Start Testimonial Area -->
-        <div class="testimonial-area bg-img ptb-120" style="background-image: url(assets/images/testimonial-bg.png);">
-            <div class="container mw-1685">
-                <div class="row g-4">
-                    <div class="col-xl-4">
-                        <div class="testimonial-content" data-cues="slideInUp" data-duration="900">
-                            <span class="top-title mb-3">TESTIMONIAL</span>
-                            <h2 class="main-title mb-3">What Our Customers Say About <span class="word-mark">Oldero</span></h2>
-
-                            <p>Our Elderly Home & Senior Care facility is dedicated to providing safe nurturing and respectful environments where seniors can high of life we offer personalized care tailored to individual</p>
-
-                            <a href="testimonials.html" class="default-btn mt-4 mt-xl-5">
-                                <div class="d-flex align-items-center gap-10">
-                                    <span>View All Testimonial</span>
-                                    <img src="assets/images/right-white.svg" alt="right-white">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <div class="testimonial-item-wrap position-relative" data-cues="slideInUp" data-duration="900">
-                            <div class="swiper testimonial-slide">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-100">
-                                        <div class="d-lg-flex align-items-center testimonial-single-item">
-                                            <div class="flex-grow-1 mb-4 mb-lg-0">
-                                                <div class="d-flex flex-wrap align-items-center star-title">
-                                                    <div class="d-flex gap-6">
-                                                        <i class="ti ti-star-filled"></i>
-                                                        <i class="ti ti-star-filled"></i>
-                                                        <i class="ti ti-star-filled"></i>
-                                                        <i class="ti ti-star-filled"></i>
-                                                        <i class="ti ti-star-filled"></i>
-                                                    </div>
-                                                    <h3 class="mb-0">Caring is the essence of life</h3>
-                                                </div>
-                                                <p>"Moving my grandmother here was the best choice we could have made. The staff is kind patient and goes extra mile to make her feel at home and truly thriving in such caring environment could not be more thankful."</p>
-
-                                                <div class="d-flex align-items-center info">
-                                                    <div class="flex-shrink-0">
-                                                        <img src="assets/images/user4.jpg" class="rounded-circle" alt="user">
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <h4>Melinda Fallout</h4>
-                                                        <span>Happy Clients</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="flex-shrink-0 position-relative">
-                                                <img src="assets/images/testimonial1.jpg" alt="testimonial">
-                                                <img src="assets/images/quote.png" class="rounded-0 position-absolute end-0 bottom-0 p-4" alt="quote">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide w-100">
-                                        <div class="d-lg-flex align-items-center testimonial-single-item">
-                                            <div class="flex-grow-1 mb-4 mb-lg-0">
-                                                <div class="d-flex flex-wrap align-items-center star-title">
-                                                    <div class="d-flex gap-6">
-                                                        <i class="ti ti-star-filled"></i>
-                                                        <i class="ti ti-star-filled"></i>
-                                                        <i class="ti ti-star-filled"></i>
-                                                        <i class="ti ti-star-filled"></i>
-                                                        <i class="ti ti-star-filled"></i>
-                                                    </div>
-                                                    <h3 class="mb-0">Best Services</h3>
-                                                </div>
-                                                <p>"Goes extra mile Moving my grandmother here was the best choice we could have made. The staff is kind patient and goes extra mile to make her feel at home and truly thriving in such caring environment could not be more thankful Could not."</p>
-
-                                                <div class="d-flex align-items-center info">
-                                                    <div class="flex-shrink-0">
-                                                        <img src="assets/images/user3.jpg" class="rounded-circle" alt="user">
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <h4>Alen Dew</h4>
-                                                        <span>Happy Clients</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="flex-shrink-0 position-relative">
-                                                <img src="assets/images/testimonial2.jpg" alt="testimonial">
-                                                <img src="assets/images/quote.png" class="rounded-0 position-absolute end-0 bottom-0 p-4" alt="quote">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="testimonial-pagination">
-                                <div class="swiper-pagination-testimonial justify-content-center d-flex"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Testimonial Area -->
-
+      
         <!-- Start Team Area -->
         <div class="team-area pt-120">
             <div class="container mw-1685">
                 <div class="mb-60 text-center" data-cues="slideInUp" data-duration="900">
                     <span class="top-title mb-3">MEDICAL SPECIALIST</span>
-                    <h2 class="main-title mx-auto">Our Friendly Team Of <span class="word-mark two">Senior Care</span> Specialist And Advisors</h2>
+                    <h2 class="main-title mx-auto">Access to Industry Experts Dedicated to Your Wellbeing.</h2>
                 </div>
                 
                 <div class="row g-4" data-cues="slideInUp" data-duration="900">

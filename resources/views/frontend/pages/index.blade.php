@@ -1,127 +1,144 @@
 @extends("frontend.layout.master")
 @section("title", "Welcome to Continuity Care")
 @section("content")
-<div class="swiper banner-slide">
+ <!-- Start Banner Area -->
+        <div class="swiper banner-slide">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                <div class="banner-area bg-img" style="background-image: url('{{ asset('assets/images/banner-bg.png') }}');">
-        <div class="container mw-1685">
-            <div class="row align-items-end">
-                <div class="col-xl-6">
-                    <div class="banner-content" data-group="images" data-cues="slideInUp" data-duration="900">
-                        <span class="top-title">WELCOME TO CONTINUITY CARE</span>
-                        <h1>We Provide Quality Home Care For <span class="word-mark">Your</span> Loved Ones</h1>
-                        <p>Elderly Home and Senior Care services provide a safe, comfortable, and compassionate environment
-                            for seniors who need assistance with daily living care</p>
+                    <div class="banner-area-three bg-img bg1" style="background-image: url(assets/images/banner-bg3.jpg);">
+                        <div class="container mw-1685">
+                            <div class="banner-content style-three py-0" data-group="images" data-cues="slideInUp" data-duration="900">
+                                <span class="top-title style-two text-white">AGED CARE</span>
+                                <h1 class="text-white  mb-3">Your Life, Your Home, <br> Your Terms.</h1>
+                                <p class="text-white">We help you navigate the new Support at Home system to ensure you <br> receive the clinical care and domestic help you need to stay in <br> the home you love. From managing your budget to providing a helping  <br>hand with daily tasks, we make aging at home simple and stress-free.</p>
 
-                        <div class="d-flex align-items-center flex-wrap banner-btn">
-                            <a href="" class="default-btn">
-                                <div class="d-flex gap-10 align-content-center">
-                                    <span>Get In Touch</span>
-                                    <img src="assets/images/right-white.svg" alt="right-white">
+                                <div class="d-flex align-items-center flex-wrap banner-btn">
+                                    <a href="contact-us.html" class="default-btn active">
+                                        <div class="d-flex gap-10 align-content-center">
+                                            <span>Get In Touch</span>
+                                            <img src="assets/images/right.svg" alt="right-white">
+                                        </div>
+                                    </a>
+                                    <div class="trusted">
+                                        <div class="d-flex align-items-center gap-27">
+                                            <div class="flex-shrink-0">
+                                                <div class="d-flex">
+                                                    <img src="assets/images/user1.jpg" class="rounded-circle" alt="user">
+                                                    <img src="assets/images/user2.jpg" class="rounded-circle" alt="user">
+                                                    <img src="assets/images/user3.jpg" class="rounded-circle" alt="user">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="text-white"><span class="text-warning">18000+</span> satisfied customers Worldwide</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
-                            <a href="tel:+1(444)5078494" class="d-flex align-items-center gap-20 call-us">
-                                <i class="ti ti-phone-call"></i>
-                                <div>
-                                    <span class="d-block">Need Help</span>
-                                    <span class="d-block number">+1 (444) 507 8494</span>
-                                </div>
-                            </a>
+                            </div>
+                        </div>
+
+                        <div class="team-member text-center">
+                            <div class="d-flex justify-content-center align-items-center gap-30 mw-230 mb-3">
+                                <h2 class="mb-0 text-white lh-1"><span class="counter">40</span>+</h2>
+                                <span class="text-white content">Expert Team Member</span>
+                            </div>
+                            <img src="assets/images/about7.jpg" alt="about">
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="banner-img" data-group="images" data-cues="slideInUp" data-duration="900">
-                        {{-- <span class="border-text">senior care</span> --}}
-                        <img src="assets/images/banner-img.png" alt="banner-img">
-
-                        <div class="trusted">
-                            <div class="d-flex">
-                                <img src="assets/images/user1.jpg" class="rounded-circle" alt="user">
-                                <img src="assets/images/user2.jpg" class="rounded-circle" alt="user">
-                                <img src="assets/images/user3.jpg" class="rounded-circle" alt="user">
-                            </div>
-                            <h4>300K+ People</h4>
-                            <p>Individuals who have trusted CONTINUITY CARE services</p>
-                        </div>
-
-                        <div class="d-flex align-items-center info">
-                            <div class="flex-shrink-0">
-                                <img src="assets/images/banner-img2.jpg" alt="banner-img">
-                            </div>
-                            <div class="flex-grow-1">
-                                <p>“We are committed to delivering high-quality services.”</p>
-                                <span>Travis Morrison <span>- Founder</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
                 </div>
                 <div class="swiper-slide">
-                <div class="banner-area bg-img" style="background-image: url('{{ asset('assets/images/banner-bg.png') }}');">
-        <div class="container mw-1685">
-            <div class="row align-items-end">
-                <div class="col-xl-6">
-                    <div class="banner-content" data-group="images" data-cues="slideInUp" data-duration="900">
-                        <span class="top-title">WELCOME TO CONTINUITY CARE</span>
-                        <h1>We Provide Quality Home Care For <span class="word-mark">Your</span> Loved Ones</h1>
-                        <p>Elderly Home and Senior Care services provide a safe, comfortable, and compassionate environment
-                            for seniors who need assistance with daily living care</p>
+                    <div class="banner-area-three bg-img" style="background-image: url(assets/images/banner-bg4.jpg);">
+                        <div class="container mw-1685">
+                            <div class="banner-content style-three py-0" data-group="images" data-cues="slideInUp" data-duration="900">
+                                <span class="top-title style-two text-white">DISABILITY</span>
+                                <h1 class="text-white mb-3">Building a Life Without <br> Barriers.</h1>
+                                <p class="text-white">Through expert coordination and personalized in-home care, we help you break down <br> barriers  to achieve your personal goals. Whether it’s developing new skills, accessing the <br> community, or  managing daily life, we empower you to take full choice and control over your journey.</p>
 
-                        <div class="d-flex align-items-center flex-wrap banner-btn">
-                            <a href="" class="default-btn">
-                                <div class="d-flex gap-10 align-content-center">
-                                    <span>Get In Touch</span>
-                                    <img src="assets/images/right-white.svg" alt="right-white">
+                                <div class="d-flex align-items-center flex-wrap banner-btn">
+                                    <a href="contact-us.html" class="default-btn active">
+                                        <div class="d-flex gap-10 align-content-center">
+                                            <span>Get In Touch</span>
+                                            <img src="assets/images/right.svg" alt="right-white">
+                                        </div>
+                                    </a>
+                                    <div class="trusted">
+                                        <div class="d-flex align-items-center gap-27">
+                                            <div class="flex-shrink-0">
+                                                <div class="d-flex">
+                                                    <img src="assets/images/user1.jpg" class="rounded-circle" alt="user">
+                                                    <img src="assets/images/user2.jpg" class="rounded-circle" alt="user">
+                                                    <img src="assets/images/user3.jpg" class="rounded-circle" alt="user">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="text-white"><span class="text-warning">20000+</span> satisfied customers Worldwide</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
-                            <a href="tel:+1(444)5078494" class="d-flex align-items-center gap-20 call-us">
-                                <i class="ti ti-phone-call"></i>
-                                <div>
-                                    <span class="d-block">Need Help</span>
-                                    <span class="d-block number">+1 (444) 507 8494</span>
-                                </div>
-                            </a>
+                            </div>
+                        </div>
+
+                        <div class="team-member text-center">
+                            <div class="d-flex justify-content-center align-items-center gap-30 mw-230 mb-3">
+                                <h2 class="mb-0 text-white lh-1"><span class="counter">40</span>+</h2>
+                                <span class="text-white content">Expert Team Member</span>
+                            </div>
+                            <img src="assets/images/about7.jpg" alt="about">
                         </div>
                     </div>
+                    <!-- End Banner Area -->
                 </div>
-                <div class="col-xl-6">
-                    <div class="banner-img" data-group="images" data-cues="slideInUp" data-duration="900">
-                        {{-- <span class="border-text">senior care</span> --}}
-                        <img src="assets/images/expert1.png" alt="banner-img">
+                <div class="swiper-slide">
+                    <div class="banner-area-three bg-img" style="background-image: url(assets/images/banner-bg5.jpg);">
+                        <div class="container mw-1685">
+                            <div class="banner-content style-three py-0" data-group="images" data-cues="slideInUp" data-duration="900">
+                                <span class="top-title style-two text-white">EMPOWERING CARE AT HOME</span>
+                                <h1 class="text-white mb-3">The Best Place to Recover is <br> Right Here</h1>
+                                <p class="text-white">Our Hospital to Home program bridges that gap by providing <br> immediate clinical oversight and restorative support the moment you arrive home.<br> We handle the medical logistics and personal care so you can focus entirely on your<br> recovery in a comfortable, familiar environment.</p>
 
-                        <div class="trusted">
-                            <div class="d-flex">
-                                <img src="assets/images/user1.jpg" class="rounded-circle" alt="user">
-                                <img src="assets/images/user2.jpg" class="rounded-circle" alt="user">
-                                <img src="assets/images/user3.jpg" class="rounded-circle" alt="user">
+                                <div class="d-flex align-items-center flex-wrap banner-btn">
+                                    <a href="contact-us.html" class="default-btn active">
+                                        <div class="d-flex gap-10 align-content-center">
+                                            <span>Get In Touch</span>
+                                            <img src="assets/images/right.svg" alt="right-white">
+                                        </div>
+                                    </a>
+                                    <div class="trusted">
+                                        <div class="d-flex align-items-center gap-27">
+                                            <div class="flex-shrink-0">
+                                                <div class="d-flex">
+                                                    <img src="assets/images/user1.jpg" class="rounded-circle" alt="user">
+                                                    <img src="assets/images/user2.jpg" class="rounded-circle" alt="user">
+                                                    <img src="assets/images/user3.jpg" class="rounded-circle" alt="user">
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="text-white"><span class="text-warning">19000+</span> satisfied customers Worldwide</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h4>300K+ People</h4>
-                            <p>Individuals who have trusted CONTINUITY CARE services</p>
                         </div>
 
-                        <div class="d-flex align-items-center info">
-                            <div class="flex-shrink-0">
-                                <img src="assets/images/banner-img2.jpg" alt="banner-img">
+                        <div class="team-member text-center">
+                            <div class="d-flex justify-content-center align-items-center gap-30 mw-230 mb-3">
+                                <h2 class="mb-0 text-white lh-1"><span class="counter">40</span>+</h2>
+                                <span class="text-white content">Expert Team Member</span>
                             </div>
-                            <div class="flex-grow-1">
-                                <p>“We are committed to delivering high-quality services.”</p>
-                                <span>Travis Morrison <span>- Founder</span></span>
-                            </div>
+                            <img src="assets/images/about7.jpg" alt="about">
                         </div>
                     </div>
+                    <!-- End Banner Area -->
                 </div>
+            </div>
+
+            <div class="banner-pagination">
+                <div class="swiper-pagination-banner"></div>
             </div>
         </div>
-    </div>
-                </div>
-            </div>
-</div>
-  
+        <!-- End Banner Area -->
 
     <!-- Start Work Area -->
     <div class="work-area pt-120">
@@ -131,8 +148,8 @@
                     <span class="top-title">HOW WE WORK</span>
                 </div>
                 <div class="col-lg-8">
-                    <h2 class="main-title mb-70 ms-auto mw-975">Delivering Holistic Senior Care That Honors Each
-                        Individual's <span class="word-mark">Lifestyle</span></h2>
+                    <h2 class="main-title mb-70 ms-auto mw-975">Seamless Care, Step-by-Step.
+                        </h2>
                     <div class=""></div>
                 </div>
             </div>
@@ -158,11 +175,10 @@
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3>Home Care</h3>
+                                            <h3>Discovery</h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit">Our Home Care services are designed to bring comfort, support, and
-                                        peace of mind right to your doorstep</p>
+                                    <p class="text_limit">We assess your clinical needs and personal goals to build a custom care roadmap.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -174,11 +190,10 @@
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3>Personalized Care</h3>
+                                            <h3>Navigation</h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit">We believe that every individual is unique care should be too our
-                                        personalized care approach centered</p>
+                                    <p class="text_limit">Our experts guide you through the system, securing the right medical and community referrals.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -190,11 +205,10 @@
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3>Low-Cost Services</h3>
+                                            <h3>Coordination</h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit">Quality care shouldn’t come at a high cost; services are designed
-                                        to provide reliable, compassionate</p>
+                                    <p class="text_limit">We align clinical and non-clinical support to ensure all your services work together.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -206,11 +220,10 @@
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3>Medical Support</h3>
+                                            <h3>Empowerment</h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit">Our Medical Support services are designed to ensure that you or
-                                        your loved ones receive expert care</p>
+                                    <p class="text_limit">Through ongoing advocacy, we provide the tools you need to live confidently and independently.</p>
                                 </div>
                             </div>
                         </div>
@@ -451,8 +464,8 @@
                     <span class="top-title">OUR SERVICES</span>
                 </div>
                 <div class="col-lg-8">
-                    <h2 class="main-title mb-70 ms-auto mw-975">Dedicated To Quality Elderly Care With Compassion And <span
-                            class="word-mark">Respect</span> Always</h2>
+                    <h2 class="main-title mb-70 ms-auto mw-975">Navigating Your Health, Supporting Your Home.
+</h2>
                 </div>
             </div>
 
@@ -502,22 +515,29 @@
                         </div>
                         <div class="col-lg-5">
                             <div class="services-content">
-                                <h3>Our personalized approach ensures that seniors receive the care</h3>
-                                <p>These facilities are designed to support the social well-being of older adults through
-                                    personalized care plans, professional medical support engaging</p>
+                                <p align="justify">Continuity Care bridges the gap between clinical needs and daily living. We streamline your journey through expert navigation and referrals, providing the integrated support you need to thrive independently at home.
+</p>
 
                                 <ul class="p-0 list-unstyled services-list">
                                     <li class="d-flex gap-12 align-items-center">
                                         <img src="assets/images/check.png" alt="check">
-                                        <span class="text-secondary">Nutritious meal planning</span>
+                                        <span class="text-secondary">Expert Navigation</span>
                                     </li>
                                     <li class="d-flex gap-12 align-items-center">
                                         <img src="assets/images/check.png" alt="check">
-                                        <span class="text-secondary">Companionship and social activities</span>
+                                        <span class="text-secondary">Medical Coordination</span>
                                     </li>
                                     <li class="d-flex gap-12 align-items-center">
                                         <img src="assets/images/check.png" alt="check">
-                                        <span class="text-secondary">Transportation assistance</span>
+                                        <span class="text-secondary">Trusted Referrals</span>
+                                    </li>
+                                    <li class="d-flex gap-12 align-items-center">
+                                        <img src="assets/images/check.png" alt="check">
+                                        <span class="text-secondary">Home-Based Support</span>
+                                    </li>
+                                    <li class="d-flex gap-12 align-items-center">
+                                        <img src="assets/images/check.png" alt="check">
+                                        <span class="text-secondary">Client Advocacy</span>
                                     </li>
                                 </ul>
 
@@ -590,8 +610,8 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="mb-60">
-                        <h2 class="main-title ms-auto mw-975">Compassionate Home Care Services for Everyday <span
-                                class="word-mark">Healthy</span> Living</h2>
+                        <h2 class="main-title ms-auto mw-975">Empowering Independence Through Compassionate Care and Seamless Navigation
+</h2>
                     </div>
                 </div>
             </div>
@@ -605,9 +625,8 @@
 
                 <div class="col-xl-8">
                     <div class="about-content" data-cues="slideInUp" data-duration="900">
-                        <p>Elderly Home and Senior Care services are dedicated to providing a nurturing, secure, and
-                            supportive environment for older adults who may require assistance with daily activities,
-                            medical needs, or simply companionship</p>
+                        <p align="justify">Continuity Care is a dedicated provider of disability and independent living services, offering comprehensive care coordination and navigation. Everything we do is focused on bridging the gap between clinical requirements and daily life, ensuring people with disabilities can live with dignity and independence.</p>
+                        <p align="justify">With a deep commitment to integrated support at our core, Continuity Care is dedicated to empowering individuals through expert guidance. We believe everyone deserves a seamless care experience that celebrates their choices and supports their long-term goals.</p>
 
                         <div class="row g-4 align-items-end">
                             <div class="col-lg-8">
@@ -646,7 +665,7 @@
                                             <img src="assets/images/right-white.svg" alt="right-white">
                                         </div>
                                     </a>
-                                    <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#68000d041807040c0d1a07280f05090104460b0705"
+                                    <a href=""
                                         class="d-flex align-items-center mail-us text-decoration-none">
                                         <div class="flex-shrink-0">
                                             <i class="ti ti-mail-opened"></i>
@@ -654,7 +673,7 @@
                                         <div class="flex-grow-1">
                                             <span class="d-block">Mail Us</span>
                                             <span class="mail"><span class="__cf_email__"
-                                                    data-cfemail="8fe7eae3ffe0e3ebeafde0cfe8e2eee6e3a1ece0e2">[email&#160;protected]</span></span>
+                                                    >inspire@continuitycare.com.au</span></span>
                                         </div>
                                     </a>
                                 </div>
@@ -729,12 +748,11 @@
                             <span class="count">01</span>
                         </div>
                         <div class="flex-grow-1">
-                            <h3>Empowering Lives Compassionate</h3>
+                            <h3>Empowering Independence</h3>
                         </div>
                     </div>
-                    <p>These homes are designed to promote independence, offering personalized care tailored to each
-                        resident's needs. Trained staff are available around the clock to ensure health and emotional
-                        support</p>
+                    <p align="justify">A client struggling to balance complex clinical appointments with daily household tasks found a solution through Continuity Care. We streamlined their journey by providing expert care navigation and medical coordination, handling the technical logistics on their behalf. This integrated support allowed the client to live safely and confidently at home, enjoying life on their own terms.
+</p>
                     <div class="case-study-img">
                         <img src="assets/images/case-study1.jpg" class="img" alt="case-study">
                         <span class="read">
@@ -749,7 +767,7 @@
                             <span class="count">02</span>
                         </div>
                         <div class="flex-grow-1">
-                            <h3>Interactive Brain Games</h3>
+                            <h3>Bridging the Care Gap</h3>
                         </div>
                     </div>
                     <div class="case-study-img">
@@ -758,9 +776,8 @@
                             <img src="assets/images/right-white.svg" alt="right-white">
                         </span>
                     </div>
-                    <p>These homes are designed to promote independence, offering personalized care tailored to each
-                        resident's needs. Trained staff are available around the clock to ensure health and emotional
-                        support</p>
+                    <p align="justify">When an individual required a seamless blend of medical oversight and mental stimulation, we stepped in to bridge the gap. By integrating clinical requirements with non-clinical support—including interactive brain games—we created a holistic care plan. The result was a stress-free environment where both health and emotional needs were met with professional compassion.
+</p>
                 </a>
                 <a href="javascript:void(0)"
                     class="case-study-single-item d-flex flex-wrap gap-20 justify-content-between align-items-center text-decoration-none">
@@ -769,11 +786,11 @@
                             <span class="count">03</span>
                         </div>
                         <div class="flex-grow-1">
-                            <h3>Daily Nature Walks That Refresh</h3>
+                            <h3>Navigating Daily Success</h3>
                         </div>
                     </div>
-                    <p>Elderly Home and Senior Care services are designed to provide older adults with a safe, comfortable,
-                        and supportive living environment where their individual needs are met with compassion and respect
+                    <p align="justify">A family overwhelmed by the complexity of securing reliable, long-term support for a loved one turned to our team for guidance. We provided a personalized roadmap that combined secure home care with life-enriching activities like daily nature walks. Today, the client thrives in a supportive environment that celebrates their independence while ensuring all clinical needs are met.
+
                     </p>
                     <div class="case-study-img">
                         <img src="assets/images/case-study3.jpg" class="img" alt="case-study">
@@ -846,8 +863,7 @@
                     <span class="top-title">WHY CHOOSE US</span>
                 </div>
                 <div class="col-lg-8">
-                    <h2 class="main-title ms-auto mw-975">Welcome to Senior Care. Our goal is to make your life <span
-                            class="word-mark">better</span></h2>
+                    <h2 class="main-title ms-auto mw-975">Enjoy more value, choice, and freedom to live life on your terms.</h2>
                 </div>
             </div>
 
@@ -860,9 +876,8 @@
 
                 <div class="col-lg-8">
                     <div class="why-choose-us-content" data-cues="slideInUp" data-duration="900">
-                        <p class="dec">We are dedicated to providing a safe, comfortable, and compassionate environment
-                            where seniors can spend their golden years with dignity and peace of mind. our experienced
-                            caregivers</p>
+                        <p class="dec">At Continuity Care, you stay in control—choosing the services and providers that fit your lifestyle without restrictive agreements. Our team ensures a stress-free experience with fast approvals, easy onboarding, and dedicated support. We simplify complex logistics so you can focus on thriving at home.
+</p>
 
                         <div class="row g-4">
                             <div class="col-md-6">
@@ -870,9 +885,9 @@
                                     <div class="icon d-flex justify-content-center align-items-center">
                                         <img src="assets/images/icon/why-choose1.png" alt="why-choose">
                                     </div>
-                                    <h3>Free Medical CheckUp</h3>
-                                    <p>With a team of trained and compassionate people, we focus on promoting independence
-                                        and comfort</p>
+                                    <h3>Complete Autonomy</h3>
+                                    <p>Choosing the services and providers that fit your lifestyle without restrictive agreements.
+</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -880,9 +895,9 @@
                                     <div class="icon d-flex justify-content-center align-items-center">
                                         <img src="assets/images/icon/why-choose2.png" alt="why-choose">
                                     </div>
-                                    <h3>Low-Cost Services</h3>
-                                    <p>Our team of compassionate caregivers is committed to delivering personalized care,
-                                        including</p>
+                                    <h3>Transparent Pricing</h3>
+                                    <p>Enjoy peace of mind with a clear fee structure and no hidden costs or surprises.
+</p>
                                 </div>
                             </div>
                         </div>
@@ -918,11 +933,11 @@
                 <div class="col-xl-4">
                     <div class="testimonial-content" data-cues="slideInUp" data-duration="900">
                         <span class="top-title mb-3">TESTIMONIAL</span>
-                        <h2 class="main-title mb-3">What Our Customers Say About <span class="word-mark">CONTINUITY CARE</span></h2>
+                        <h2 class="main-title mb-3">Real Stories of Independence and Empowered Living
+</h2>
 
-                        <p>Our Elderly Home & Senior Care facility is dedicated to providing safe, nurturing, and respectful
-                            environments where seniors can have a high quality of life. We offer personalized care tailored
-                            to the individual</p>
+                        <p>These stories highlight the real-world impact of personalized care navigation and the freedom of living life on your own terms.
+</p>
 
                         <a href="javascript:void(0)" class="default-btn mt-4 mt-xl-5">
                             <div class="d-flex align-items-center gap-10">
@@ -949,10 +964,8 @@
                                                 </div>
                                                 <h3 class="mb-0">Caring is the essence of life</h3>
                                             </div>
-                                            <p>"Moving my grandmother here was the best choice we could have made. The staff
-                                                is kind and patient and goes the extra mile to make her feel at home, and
-                                                truly thriving in such a caring environment, she could not be more
-                                                thankful."</p>
+                                            <p>"Continuity Care took the stress out of my daily routine. Their care navigation is seamless, allowing me to focus on my health while they handle the complex logistics. I finally feel back in control of my life.
+"</p>
 
                                             <div class="d-flex align-items-center info">
                                                 <div class="flex-shrink-0">
@@ -984,10 +997,7 @@
                                                 </div>
                                                 <h3 class="mb-0">Best Services</h3>
                                             </div>
-                                            <p>"Goes the extra mile. Moving my grandmother here was the best choice we could
-                                                have made. The staff is kind and patient and goes the extra mile to make her
-                                                feel at home, and truly thriving in such a caring environment, could not be
-                                                more thankful Could not."</p>
+                                            <p>"The team helped me find the perfect support workers who actually match my lifestyle. I love that there are no restrictive agreements—just personalized care that respects my choices and my home."</p>
 
                                             <div class="d-flex align-items-center info">
                                                 <div class="flex-shrink-0">
@@ -1132,9 +1142,9 @@
                     <div class="col-lg-6">
                         <div class="mb-70 mt-0 position-relative faq-content-wrap" data-cues="slideInUp" data-duration="900">
                             <span class="top-title mb-3 style-two">FREQUENTLY ASKED QUESTIONS</span>
-                            <h2 class="main-title mw-975 mx-auto">Help Center Got A Question? Get Your Answer</h2>
-                            <p>The goal of senior care is to help elderly individuals maintain their dignity and independence while ensuring they receive the attention and respect they deserve. Whether provided at home or in a care effective senior care is built on patience and a deep understanding</p>
-                            <a href="faqs.html" class="default-btn mt-4 mt-lg-5">
+                            <h2 class="main-title mw-975 mx-auto">Get the Facts. Stay in Control.</h2>
+                            <p>Get the facts on how Continuity Care ensures total autonomy. From budget management to selecting your own support workers, we provide the transparency you deserve.</p>
+                            <a href="{{ route("faqs") }}" class="default-btn mt-4 mt-lg-5">
                                 <div class="d-flex gap-10">
                                     <span>Find More Question</span>
                                     <img src="assets/images/right-white.svg" alt="right">
@@ -1148,60 +1158,60 @@
                             <div class="accordion-item border-primary">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        What services do you offer at your elderly home?
+                                        How do I get started with Continuity Care?
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Our goal is to create a safe comfortable and welcoming environment where seniors can enjoy their days with dignity purpose and a strong sense of experienced caregivers tailored support plans and engaging daily activities</p>
+                                        <p>Our onboarding process is designed to be rapid and stress-free, offering fast approvals to get your support started with minimal hassle.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item border-primary">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Is medical care available on-site?
+                                        What are the key benefits of choosing Continuity Care?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Building Permit: Required for new construction, additions, renovations, or major structural changes. Zoning Approval: Ensures your project complies with local land-use regulations (e.g., residential, commercial, industrial). Some projects require both.</p>
+                                        <p>You receive more value through transparent pricing, total autonomy over your choice of caregivers, and rapid onboarding with dedicated support at every step.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item border-primary">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        How do I know if it’s the right time for senior care?
+                                        Can I choose my own support workers?
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Registering to vote or updating your voter information is the official process that ensures you are eligible to participate in elections and that your personal details are accurate in the voter rolls. This process typically requires providing proof of identity, residency, and age. It can be done online, in person, or by mail, depending on your local election authority. Updating your information is important if you move, change your name, or need to modify party affiliation, as it ensures you receive the correct ballot and can vote without issues. Always verify your registration status after submission to confirm your eligibility.</p>
+                                        <p>Yes. We believe in "your support, your way," giving you the freedom to select providers and support workers that best match your personal preferences and lifestyle.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item border-primary">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
-                                        Can residents personalize their rooms?
+                                        What services are included in my plan?
                                     </button>
                                 </h2>
                                 <div id="collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Municipal and city government services are public services provided by local government authorities to meet the needs of residents and maintain community well-being. These services vary by city but generally include essential, regulatory, and recreational functions.</p>
+                                        <p>Your plan is bespoke and professionally tailored to your individual needs, covering everything from clinical oversight to daily lifestyle support.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item border-primary">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour5" aria-expanded="true" aria-controls="collapseFour5">
-                                        What types of activities are available for residents?
+                                        Can I manage my care online?
                                     </button>
                                 </h2>
                                 <div id="collapseFour5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>We repair a wide range of appliances including refrigerators washing machines dryers dishwashers ovens microwaves air conditioners and more. If you are unsure whether we service your specific appliance feel free to contact</p>
+                                        <p>Yes. You can manage your care anytime and anywhere through our dedicated portal, ensuring you remain in total control of your services.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1250,8 +1260,9 @@
                     <div class="col-lg-6">
                         <div class="contact-us-content position-relative">
                             <span class="top-title mb-2">CONTACT US</span>
-                            <h2 class="main-title">Please Don't Hesitate To <span class="word-mark two">Contact Us</span> for your healthy life</h2>
-                            <p>Whether provided at home in assisted living facilities or nursing homes senior care aims to promote independence while offering safety and comfort. Compassionate and personalized care helps seniors maintain their physical health mental well being and social connections</p>
+                            <h2 class="main-title">Let’s Start Your Journey to Independent Living.</h2>
+                            <p>Reach out today to see how our stress-free process and transparent pricing can get your care started quickly and without the hassle.
+</p>
 
                             <h3>Opening Hours</h3>
 

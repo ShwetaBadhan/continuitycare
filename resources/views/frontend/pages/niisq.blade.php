@@ -36,47 +36,44 @@
                                 </div>
                             </div>
 
-                            <h3>Who We Serve</h3>
-                            <p>Whether participating in a hobby, enjoying time with others, or simply relaxing in a cheerful environment, our recreational areas help promote emotional well-being and a strong sense of community. They are more than just spaces they are places where memories</p>
+                          
+                            <p>The National Injury Insurance Scheme Queensland (NIISQ) is a no-fault scheme designed to provide lifetime treatment, care, and support for individuals who have sustained serious personal injuries in a motor vehicle accident. At Continuity Care, we understand that a catastrophic injury changes everything—not just for the individual, but for their entire family. We act as your expert partner to navigate this complex scheme, bridging the gap between clinical rehabilitation and returning to a meaningful life. </p>
 
-                            <p>Our healthcare services are built on a foundation of professionalism, compassion, and personalized care. We provide a wide range of medical support tailored to meet individual needs, including routine health monitoring, chronic condition management, rehabilitation, and preventive care. Delivered by skilled healthcare professionals, our services prioritize safety, comfort, and dignity at every stage.</p>
-
-                            <h3>Care Services</h3>
-                            <p>Our recreational areas are thoughtfully designed to inspire joy, engagement, and connection among residents. These welcoming spaces offer opportunities for fun, creativity, and social interaction through a variety of activities from games and arts to music</p>
-
+                            
+                            <h3>Our Specialist NIISQ Services</h3>
+                           
                             <ul class="p-0 my-4 list-unstyled">
-                                <li class="d-flex align-items-center gap-10">
+                                <li class="d-flex align-items-start gap-10">
                                     <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>Technology solutions such as remote health monitoring and communication tools</span>
+                                    <span><strong>Attendant Care & Daily Support:</strong>Respectful, consistent assistance with personal care, domestic tasks, and community access tailored to your specific injury and goals.</span>
                                 </li>
-                                <li class="d-flex align-items-center gap-10">
+                                <li class="d-flex align-items-start gap-10">
                                     <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>A nutritionist designed a balanced meal plan to address</span>
+                                    <span><strong>Rehabilitation Coordination:</strong>We work alongside your NIISQ Support Planner to connect you with expert Physiotherapy, Occupational Therapy, and Psychology services to aid your physical and emotional recovery.</span>
                                 </li>
-                                <li class="d-flex align-items-center gap-10">
+                                <li class="d-flex align-items-start gap-10">
                                     <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>The home environment was optimized for safety and comfort, with modifications to support</span>
+                                    <span><strong>Home & Vehicle Modifications:</strong>Guidance on accessing funding for essential changes to your living environment or transport to ensure you can move safely and independently.</span>
                                 </li>
-                                <li class="d-flex align-items-center gap-10">
+                                <li class="d-flex align-items-start gap-10">
                                     <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>Health conditions were effectively managed, leading to a noticeable improvement</span>
+                                    <span><strong>Clinical Oversight:</strong>Professional management of complex health needs, including nursing care, medication, and specialized medical equipment or prostheses.</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-10">
+                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                    <span><strong>Community & Vocational Re-entry:</strong>Support to help you return to work, education, or social activities, ensuring your injury does not define your future potential.</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-10">
+                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                    <span><strong>Expert Advocacy:</strong>We help you understand your rights within the scheme, ensuring all your "necessary and reasonable" needs are documented and met during your periodic reviews.</span>
                                 </li>
                             </ul>
 
-                            <p>Equipped with modern amenities and guided by experienced professionals, these spaces support physical fitness, mental well-being, and emotional balance. From exercise rooms and therapy areas to relaxation zones and wellness programs, we offer a holistic approach to care that nurtures both body and mind. By encouraging active lifestyles and personal growth</p>
-
-                            <h3>Individual Care Plans</h3>
-                            <p>Whether relaxing, socializing, or enjoying quiet time, individuals can move around with ease and independence. Spacious living not only enhances physical comfort but also contributes to emotional well-being promoting a lifestyle of dignity, peace, and connection.</p>
-
+                           
                             <div class="my-4 position-relative">
-                                <img src="assets/images/case-study20.jpg" class="rounded-4" alt="case-study2">
-
+                              
                                 <div class="position-absolute top-50 start-50 translate-middle">
-                                <div class="bg-color">
-                                    <a href="https://youtu.be/78GehqOuq-A?si=WSjyu8eJ-TPiQ5QP" data-fslightbox="1" class="video-btn">
-                                        <i class="ti ti-player-play-filled"></i>
-                                    </a>
-                                </div>
+                                
                             </div>
                             </div>
 

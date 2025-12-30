@@ -36,39 +36,59 @@
                                 </div>
                             </div>
 
-                            <h3>Who Is Eligible</h3>
-                            <p>Whether participating in a hobby, enjoying time with others, or simply relaxing in a cheerful environment, our recreational areas help promote emotional well-being and a strong sense of community. They are more than just spaces they are places where memories</p>
+                            <h3>Empowering Your NDIS Journey</h3>
+                            <p>At Continuity Care, we understand that the NDIS is more than just a funding model—it is a gateway to your independence. We specialize in helping you translate your NDIS plan into a lifestyle that reflects your choices, your goals, and your dignity.</p>
 
-                            <p>Our healthcare services are built on a foundation of professionalism, compassion, and personalized care. We provide a wide range of medical support tailored to meet individual needs, including routine health monitoring, chronic condition management, rehabilitation, and preventive care. Delivered by skilled healthcare professionals, our services prioritize safety, comfort, and dignity at every stage.</p>
-
-                            <h3>Our NDIS Services</h3>
-                            <p>Our recreational areas are thoughtfully designed to inspire joy, engagement, and connection among residents. These welcoming spaces offer opportunities for fun, creativity, and social interaction through a variety of activities from games and arts to music</p>
+                           
+                            <h3>How We Support NDIS Participants</h3>
+                            <p>We provide a comprehensive range of services designed to simplify the complexity of the scheme while maximizing the value of your funding.</p>
 
                             <ul class="p-0 my-4 list-unstyled">
-                                <li class="d-flex align-items-center gap-10">
+                                <li class="d-flex align-items-start gap-10">
                                     <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>Technology solutions such as remote health monitoring and communication tools</span>
+                                    <span><strong>Support Coordination:</strong>Our expert coordinators act as your partner, helping you understand your plan, connect with the right providers, and build the skills to manage your supports independently over time.</span>
                                 </li>
-                                <li class="d-flex align-items-center gap-10">
+                                <li class="d-flex align-items-start gap-10">
                                     <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>A nutritionist designed a balanced meal plan to address</span>
+                                    <span><strong>Assistance with Daily Life:</strong>We bridge the gap in your daily routine by providing compassionate support for personal tasks, meal preparation, and household management, ensuring you live safely and comfortably in your own home.</span>
                                 </li>
-                                <li class="d-flex align-items-center gap-10">
+                                <li class="d-flex align-items-start gap-10">
                                     <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>The home environment was optimized for safety and comfort, with modifications to support</span>
+                                    <span><strong>Capacity Building & Skill Development:</strong>We focus on your long-term growth by connecting you with therapies and training that improve your mobility, communication, and life skills.</span>
                                 </li>
-                                <li class="d-flex align-items-center gap-10">
+                                <li class="d-flex align-items-start gap-10">
                                     <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>Health conditions were effectively managed, leading to a noticeable improvement</span>
+                                    <span><strong>Social & Community Participation:</strong>Your goals often live outside your front door. We provide the support needed to engage in social groups, recreational activities, and community events that matter to you.</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-10">
+                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                    <span><strong>Home & Living Navigation:</strong>Whether it’s exploring Individualised Living Options (ILO) or navigating Specialist Disability Accommodation (SDA), we help you find and maintain the right home environment for your needs.</span>
                                 </li>
                             </ul>
 
-                            <p>Equipped with modern amenities and guided by experienced professionals, these spaces support physical fitness, mental well-being, and emotional balance. From exercise rooms and therapy areas to relaxation zones and wellness programs, we offer a holistic approach to care that nurtures both body and mind. By encouraging active lifestyles and personal growth</p>
-
-                            <h3>How We Help with NDIS Plans</h3>
-                            <p>Whether relaxing, socializing, or enjoying quiet time, individuals can move around with ease and independence. Spacious living not only enhances physical comfort but also contributes to emotional well-being promoting a lifestyle of dignity, peace, and connection.</p>
-
-                            <div class="my-4 position-relative">
+                           
+                            <h3>Why Choose Continuity Care?</h3>
+                           
+                           <ul class="p-0 my-4 list-unstyled">
+                                <li class="d-flex align-items-start gap-10">
+                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                    <span><strong>Choice and Control:</strong>You are always the decision-maker. We provide expert advice, but you choose the "who, when, and how" of your care.</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-10">
+                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                    <span><strong>Rapid Onboarding: </strong>We eliminate administrative delays so you can start accessing your supports as quickly as possible.</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-10">
+                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                    <span><strong>Transparent Budget Management:</strong>No hidden fees. We provide clear oversight of your NDIS budget to ensure every dollar is working toward your goals.</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-10">
+                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                    <span><strong>Bridging Clinical & Daily Care:</strong>Our unique approach ensures that your clinical requirements are met without compromising your daily freedom and lifestyle.</span>
+                                </li>
+                               
+                            </ul>
+                            {{-- <div class="my-4 position-relative">
                                 <img src="assets/images/case-study20.jpg" class="rounded-4" alt="case-study2">
 
                                 <div class="position-absolute top-50 start-50 translate-middle">
@@ -78,9 +98,8 @@
                                     </a>
                                 </div>
                             </div>
-                            </div>
+                            </div> --}}
 
-                            <p>Our outdoor spaces are designed to offer a peaceful, refreshing environment where individuals can relax, connect with nature, and enjoy fresh air daily. Whether it's a quiet garden, a shaded patio, or a walking path surrounded by greenery, these areas provide a safe and accessible retreat that supports physical activity and emotional well-being</p>
                         </div>
                     </div>
                     <div class="col-xl-4">
