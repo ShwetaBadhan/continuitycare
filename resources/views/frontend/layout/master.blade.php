@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/tabler-icons.min.css') }}">
 
     <link rel="icon" type="image/png" href="{{ asset('assets/images/logo/cfavicon.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>@yield('title')</title>
 </head>
 
@@ -27,7 +29,7 @@
     @include("frontend.components.footer")
     @include("frontend.components.copyright")
     {{-- back to top button --}}
-    @include("frontend.components.back-to-top")
+    {{-- @include("frontend.components.back-to-top") --}}
     {{-- dark switch --}}
     {{-- @include("frontend.components.switch-area") --}}
     {{-- Keep offcanvas here, globally loaded --}}
@@ -41,5 +43,7 @@
     <script src="{{ asset('assets/js/ukiyo.min.js') }}"></script>
     <script src="{{ asset('assets/js/lenis.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script src="https://app.embed.im/accessibility.js" defer></script>
+    
 </body>
 </html>

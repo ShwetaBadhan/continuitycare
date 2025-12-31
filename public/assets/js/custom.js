@@ -623,44 +623,40 @@ function showNotification(message) {
 	// Run repeatedly (Google reinjects it)
 	setInterval(killBar, 300);
 })();
-
-
-let contactModal;
-
-        document.addEventListener('DOMContentLoaded', function() {
-            contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
-        });
-
-        function performSearch() {
-            const careType = document.getElementById('careType').value;
-            const location = document.getElementById('location').value;
-            
-            document.getElementById('resultsTitle').textContent = careType + ' in ' + location;
-            document.getElementById('resultsContainer').classList.add('show');
-            
-            // Smooth scroll to results
-            setTimeout(() => {
-                document.getElementById('resultsContainer').scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }, 100);
+ function showResults() {
+            document.getElementById('searchPage').style.display = 'none';
+            document.getElementById('resultsPage').classList.add('show');
         }
 
-        function openContactModal(facilityName) {
-            document.getElementById('facilityName').textContent = 'Enquiring about: ' + facilityName;
-            contactModal.show();
+function openContactModal(facilityName) {
+            document.getElementById('facilityName').textContent = facilityName;
+            const modal = new bootstrap.Modal(document.getElementById('contactModal'));
+            modal.show();
         }
 
-        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you! Your request has been submitted successfully.');
-            this.reset();
-        });
+        function submitForm(event) {
+            event.preventDefault();
+            alert('Thank you! Your inquiry has been submitted successfully. We will contact you soon.');
+            const modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+            modal.hide();
+            event.target.reset();
+        }
 
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you! The facility will contact you shortly.');
-            contactModal.hide();
-            this.reset();
-        });
+		var thumbSwiper = new Swiper(".product-thumb-swiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  watchSlidesProgress: true,
+  loop: true
+});
+
+var mainSwiper = new Swiper(".product-swiper", {
+  spaceBetween: 10,
+  loop: true,
+  navigation: {
+    nextEl: ".product-next",
+    prevEl: ".product-prev",
+  },
+  thumbs: {
+    swiper: thumbSwiper,
+  },
+});

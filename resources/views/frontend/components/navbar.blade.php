@@ -121,35 +121,35 @@
 
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="{{ route("our-services") }}">
+                            <a class="dropdown-item" href="{{ route("service-details") }}">
                                In Home Care
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ route("our-services") }}">
+                            <a class="dropdown-item" href="{{ route("service-details") }}">
                                 Care Coordination/Navigation
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ route("our-services") }}">
+                            <a class="dropdown-item" href="{{ route("service-details") }}">
                                 Supported Independent Living
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ route("our-services") }}">
+                            <a class="dropdown-item" href="{{ route("service-details") }}">
                                 Community Nursing
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ route("our-services") }}">
+                            <a class="dropdown-item" href="{{ route("service-details") }}">
                                 Community Transport
                             </a>
                         </li>
-                        {{-- <li>
-                            <a class="dropdown-item" href="{{ route("our-services") }}">
-                                Social and Community Participation
+                        <li>
+                            <a class="dropdown-item" href="{{ route("supported-independent-living") }}">
+                                Accommodation (SIL/SDA)
                             </a>
-                        </li> --}}
+                        </li>
                     </ul>
                 </li>
                

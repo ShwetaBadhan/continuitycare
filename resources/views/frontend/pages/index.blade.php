@@ -233,177 +233,41 @@
         </div>
     </div>
     <!-- End Work Area -->
-    <!-- Search Header -->
-    <div class="search-header">
-        <div class="container">
-            <div class="search-box">
-                <div class="row align-items-end">
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label>I'm looking for</label>
-                        <select class="form-select" id="careType">
-                            <option selected>Aged Care Home</option>
-                            <option>Residential Aged Care</option>
-                            <option>Dementia Care</option>
-                            <option>Respite Care</option>
-                        </select>
-                    </div>
-                    <div class="col-md-5 mb-3 mb-md-0">
-                        <label>in</label>
-                        <input type="text" class="form-control" id="location" placeholder="Suburb, region or postcode" value="Sydney, NSW">
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-search w-100" onclick="performSearch()">
-                            <i class="fas fa-search"></i> SEARCH
-                        </button>
-                    </div>
+  
+    <!-- Search Page -->
+    <div class="search-page">
+        <div class="search-hero">
+            <h1>Find a location 
+                <br><p>Easily locate our services by searching  <br>for  your nearest facility.</p>
+            </h1>
+            
+            
+            <div class="search-form-container">
+                <div class="form-group-custom">
+                    <label>I'm looking for</label>
+                    <select id="serviceType">
+                        <option>Select service</option>
+                        <option>Aged Care Home</option>
+                        <option>Residential Aged Care</option>
+                        <option>Dementia Care</option>
+                        <option>Respite Care</option>
+                        <option>Home Care Services</option>
+                    </select>
                 </div>
+                
+                <div class="form-group-custom">
+                    <label>in this location</label>
+                    <input type="text" id="locationInput" placeholder="Western Australia, Australia" value="Western Australia, Australia">
+                </div>
+                
+                <a href="{{ route("locations") }}" class="btn-search-main">
+                    Search
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- Results -->
-    <div class="results-container" id="resultsContainer">
-        <div class="container">
-            <div class="row">
-                <!-- Care Home Cards -->
-                <div class="col-lg-12">
-                    <div class="results-header">
-                        <h2 id="resultsTitle">Aged Care Homes in Sydney</h2>
-                        <p class="results-count" id="resultsCount">18 facilities found</p>
-                    </div>
-
-                    <div id="cardsContainer">
-                        <!-- Card 1 -->
-                        <div class="care-card">
-                            <div class="row g-0">
-                                <div class="col-md-5">
-                                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500" alt="Care Home" class="care-card-img">
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="care-card-body">
-                                        <div class="d-flex justify-content-between align-items-start mb-2">
-                                            <h5 class="care-card-title">Harmony Aged Care</h5>
-                                            <span class="badge-accredited"><i class="fas fa-check"></i> Accredited</span>
-                                        </div>
-                                        <div class="rating-stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-alt"></i>
-                                            <span class="text-muted">4.5 (89 reviews)</span>
-                                        </div>
-                                        <p class="location-tag">
-                                            <i class="fas fa-map-marker-alt"></i> Chatswood, Sydney • 3.2 km away
-                                        </p>
-                                        <p class="care-description">
-                                            Beautiful facility with 24/7 nursing care, specialized dementia care, and modern amenities.
-                                        </p>
-                                        <div class="card-footer-actions">
-                                            <button class="btn btn-contact" onclick="openContactModal('Harmony Aged Care')">
-                                                <i class="fas fa-phone"></i> Contact
-                                            </button>
-                                            <button class="btn btn-details">
-                                                View Details
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 2 -->
-                        <div class="care-card">
-                            <div class="row g-0">
-                                <div class="col-md-5">
-                                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=500" alt="Care Home" class="care-card-img">
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="care-card-body">
-                                        <div class="d-flex justify-content-between align-items-start mb-2">
-                                            <h5 class="care-card-title">Serenity Gardens</h5>
-                                            <span class="badge-accredited"><i class="fas fa-check"></i> Accredited</span>
-                                        </div>
-                                        <div class="rating-stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <span class="text-muted">4.8 (142 reviews)</span>
-                                        </div>
-                                        <p class="location-tag">
-                                            <i class="fas fa-map-marker-alt"></i> North Sydney, NSW • 5.1 km away
-                                        </p>
-                                        <p class="care-description">
-                                            Award-winning facility with harbour views, hydrotherapy pool, and pet-friendly environment.
-                                        </p>
-                                        <div class="card-footer-actions">
-                                            <button class="btn btn-contact" onclick="openContactModal('Serenity Gardens')">
-                                                <i class="fas fa-phone"></i> Contact
-                                            </button>
-                                            <button class="btn btn-details">
-                                                View Details
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                      
-                    </div>
-                </div>
-
-             
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-white">Contact Facility</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="facility-name" id="facilityName"></p>
-                    <form id="contactForm">
-                         <div class="contact-us-form">
-                            
-
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control" placeholder="Full Name">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="number" class="form-control" placeholder="Phone">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control" placeholder="Subject">
-                                </div>
-                                
-                                <div class="col-lg-12">
-                                    <button type="submit" class="default-btn active">
-                                        <span class="d-flex gap-10 align-items-center justify-content-center">
-                                            <span>send message</span>
-                                            <img src="assets/images/right.svg" alt="right-white">
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                       
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- Start Marquee Area -->
     <div class="marquee-wrapper monogram-wrap ptb-120">
         <div class="marquee speed-300">

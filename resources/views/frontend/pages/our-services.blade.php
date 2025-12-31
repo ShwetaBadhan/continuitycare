@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h3>Transportation Assistance</h3>
+                                <h3>In Home Care</h3>
                                 <p>For residents in need of hospice or palliative care we provide sensitive and supportive services that prioritize comfort and emotional</p>
                                 <span class="read-more d-flex align-items-center">
                                     Read More
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h3>Rehabilitation Services</h3>
+                                <h3>Care Coordination/Navigation</h3>
                                 <p>We coordinate with doctors specialists and therapists provide medical care regular health checks medication management health support</p>
                                 <span class="read-more d-flex align-items-center">
                                     Read More
@@ -67,7 +67,7 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h3>Home safety Assessments</h3>
+                                <h3>Supported Independent Living</h3>
                                 <p>Our in house culinary team prepares fresh balanced meals tailored to meet the nutritional needs and preferences of seniors</p>
                                 <span class="read-more d-flex align-items-center">
                                     Read More
@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h3>Personalized Care Plans</h3>
+                                <h3>Community Nursing</h3>
                                 <p>By offering personalized care promoting independence and fostering meaningful connections we ensure that every individual</p>
                                 <span class="read-more d-flex align-items-center">
                                     Read More
@@ -101,7 +101,7 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h3>Palliative and hospice care</h3>
+                                <h3>Community Nursing</h3>
                                 <p>Old care is a vital part of building a compassionate and respectful society involves more than just meeting physical needs about providing</p>
                                 <span class="read-more d-flex align-items-center">
                                     Read More
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h3>Respite care</h3>
+                                <h3>Accommodation (SIL/SDA)</h3>
                                 <p>We believe that every elder deserves to feel safe valued and cared for and we are committed to creating an environment are treated</p>
                                 <span class="read-more d-flex align-items-center">
                                     Read More
@@ -127,40 +127,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-6">
-                        <a href="{{route("service-details")}}" class="d-sm-flex d-block services-single-item text-decoration-none style-two border">
-                            <div class="flex-shrink-0 mb-3 mb-sm-0">
-                                <div class="icon rounded-circle d-flex justify-content-center align-items-center">
-                                    <img src="assets/images/icon/service7.png" alt="service">
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h3>Nutrition and Dietary</h3>
-                                <p>Through compassionate caregiving personalized attention and a deep commitment to their well being we strive to enhance</p>
-                                <span class="read-more d-flex align-items-center">
-                                    Read More
-                                    <img src="assets/images/right.svg" alt="right">
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-6">
-                        <a href="{{route("service-details")}}" class="d-sm-flex d-block services-single-item text-decoration-none style-two border">
-                            <div class="flex-shrink-0 mb-3 mb-sm-0">
-                                <div class="icon rounded-circle d-flex justify-content-center align-items-center">
-                                    <img src="assets/images/icon/service8.png" alt="service">
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h3>Psychological Support</h3>
-                                <p>Through personalized care emotional support and meaningful interaction we aim to enhance their quality of life and promote independence</p>
-                                <span class="read-more d-flex align-items-center">
-                                    Read More
-                                    <img src="assets/images/right.svg" alt="right">
-                                </span>
-                            </div>
-                        </a>
-                    </div>
+                    
 
                     <div class="col-lg-12">
                         <div class="pagination-area mt-md-3 mt-lg-4 pt-lg-3 d-flex align-items-center justify-content-center">

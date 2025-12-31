@@ -114,6 +114,16 @@ Route::get('/staff-resources', function () {
     return view('frontend.pages.staff-resources');
 })->name('staff-resources');
 
+Route::get('/locations', function () {
+    return view('frontend.pages.locations');
+})->name('locations');
+Route::get('/supported-independent-living', function () {
+    return view('frontend.pages.supported-independent-living');
+})->name('supported-independent-living');
+Route::get('/accommodation-details', function () {
+    return view('frontend.pages.accommodation-details');
+})->name('accommodation-details');
+
 
 
 
