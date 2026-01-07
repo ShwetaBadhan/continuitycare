@@ -5,7 +5,8 @@
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+
 
 	<!-- Apple Touch Icon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -42,8 +43,13 @@
 	<!-- Summernote CSS -->
 	<link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-lite.min.css')}}">
 
+	<!-- Datatable CSS -->
+	<link rel="stylesheet" href="/css/dataTables.bootstrap5.min.css">
+
 	<!-- Daterangepikcer CSS -->
 	<link rel="stylesheet" href="{{ asset('plugins/daterangepicker/daterangepicker.css')}}">
+<!-- Toatr CSS -->
+	<link rel="stylesheet" href="{{ asset('plugins/toastr/toatr.css')}}">
 
 	<!-- Color Picker Css -->
 	<link rel="stylesheet" href="{{ asset('plugins/flatpickr/flatpickr.min.css')}}">
@@ -92,11 +98,25 @@
 	<!-- Daterangepikcer JS -->
 	<script src="{{ asset('plugins/daterangepicker/daterangepicker.js')}}"></script>
 
+	<!-- Datatable JS -->
+	<script src="{{ asset('js/jquery.dataTables.min.js')}}" ></script>
+	<script src="{{ asset('js/dataTables.bootstrap5.min.js')}}" ></script>	
+
+
 	<!-- Summernote JS -->
 	<script src="{{ asset('plugins/summernote/summernote-lite.min.js')}}"></script>
 
 	<!-- Bootstrap Tagsinput JS -->
 	<script src="{{ asset('plugins/bootstrap-tagsinput/bootstrap-tagsinput.js')}}"></script>
+
+	<!-- Chart JS -->
+	<script src="{{ asset('plugins/toastr/toastr.min.js')}}"></script>
+	<script src="{{ asset('plugins/toastr/toastr.js')}}" ></script>
+
+<!-- Sweetalert 2 -->
+	<script src="{{ asset('plugins/sweetalert/sweetalert2.all.min.js')}}"></script>
+	<script src="{{ asset('plugins/sweetalert/sweetalerts.min.js')}}"></script>
+
 
 	<!-- Select2 JS -->
 	<script src="{{ asset('plugins/select2/js/select2.min.js')}}"></script>
@@ -110,6 +130,7 @@
 	<script src="{{ asset('js/script.js')}}"></script>
 
 <script src="{{ asset('scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js')}}" data-cf-settings="3531cf6022d405b4c7b78fc6-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"3ca157e612a14eccbb30cf6db6691c29","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+@stack('scripts')
 
 </body>
 </html>

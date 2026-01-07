@@ -12,27 +12,19 @@
                                 <h1 class="text-white  mb-3">Your Life, Your Home, <br> Your Terms.</h1>
                                 <p class="text-white">We help you navigate the new Support at Home system to ensure you <br> receive the clinical care and domestic help you need to stay in <br> the home you love. From managing your budget to providing a helping  <br>hand with daily tasks, we make aging at home simple and stress-free.</p>
 
-                                <div class="d-flex align-items-center flex-wrap banner-btn">
-                                    <a href="contact-us.html" class="default-btn active">
+                                <div class="banner-btn">
+                                    <a href="tel:1800 012 273" class="default-btn active">
                                         <div class="d-flex gap-10 align-content-center">
-                                            <span>Get In Touch</span>
+                                            <span>Book a Free Consultation</span>
                                             <img src="assets/images/right.svg" alt="right-white">
                                         </div>
                                     </a>
-                                    <div class="trusted">
-                                        <div class="d-flex align-items-center gap-27">
-                                            <div class="flex-shrink-0">
-                                                <div class="d-flex">
-                                                    <img src="assets/images/user1.jpg" class="rounded-circle" alt="user">
-                                                    <img src="assets/images/user2.jpg" class="rounded-circle" alt="user">
-                                                    <img src="assets/images/user3.jpg" class="rounded-circle" alt="user">
-                                                </div>
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <p class="text-white"><span class="text-warning">18000+</span> satisfied customers Worldwide</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
+                                        <br>
+                                                <a href="https://www.myagedcare.gov.au/find-a-provider/search/rbr5vh48q-continuity-care-australia-pty-ltd/support-at-home/continuity-care-0nyhg3wr5q" target="_blank" class="text-white">Listed as a<span class="text-warning"> Support at Home provider</span>  on My Aged Care</a>
+                                         <br>
+                                         <a href="https://www.myagedcare.gov.au/find-a-provider/search/rbr5vh48q-continuity-care-australia-pty-ltd/support-at-home/continuity-care-0nyhg3wr5q" target="_blank" class="text-white">Based in <span class="text-warning">Mango Hill (Moreton Bay / Brisbane North)</span></a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -55,7 +47,7 @@
                                 <p class="text-white">Through expert coordination and personalized in-home care, we help you break down <br> barriers  to achieve your personal goals. Whether it’s developing new skills, accessing the <br> community, or  managing daily life, we empower you to take full choice and control over your journey.</p>
 
                                 <div class="d-flex align-items-center flex-wrap banner-btn">
-                                    <a href="contact-us.html" class="default-btn active">
+                                    <a href="" class="default-btn active">
                                         <div class="d-flex gap-10 align-content-center">
                                             <span>Get In Touch</span>
                                             <img src="assets/images/right.svg" alt="right-white">
@@ -98,7 +90,7 @@
                                 <p class="text-white">Our Hospital to Home program bridges that gap by providing <br> immediate clinical oversight and restorative support the moment you arrive home.<br> We handle the medical logistics and personal care so you can focus entirely on your<br> recovery in a comfortable, familiar environment.</p>
 
                                 <div class="d-flex align-items-center flex-wrap banner-btn">
-                                    <a href="contact-us.html" class="default-btn active">
+                                    <a href="" class="default-btn active">
                                         <div class="d-flex gap-10 align-content-center">
                                             <span>Get In Touch</span>
                                             <img src="assets/images/right.svg" alt="right-white">
@@ -267,9 +259,38 @@
         </div>
     </div>
 
-   
+    <!-- Start About Us Area -->
+    <div class="about-us-area pb-120">
+        <div class="container mw-1685">
+            
+
+            <div class="row g-4 d-flex align-items-center">
+                <div class="col-xl-6" data-cues="slideInUp" data-duration="900">
+                    <div class="">
+                        <img src="{{asset ('assets/images/about/aged-care.jfif')}}" alt="about">
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="about-content" data-cues="slideInUp" data-duration="900">
+                    <h2 class="main-title mb-20 ms-auto mw-975">The New Aged Care Act is here</h2>
+                        <p align="justify">Big changes have come to aged care, with the new Aged Care Act that is effective from 1 November. This important reform places the rights, dignity, and choices of older people at the heart of care. Alongside the Act, the new Support at Home program will transform the way services are delivered, making it easier for people to access the care they need to live well at home.</p>
+                        <p align="justify">Click below to learn what these changes mean for you, your family, and our community.</p>
+                                <a href="{{route("new-aged-care-act")}}" class="default-btn">
+                                    <div class="d-flex align-items-center gap-10">
+                                        <span>Learn More</span>
+                                        <img src="assets/images/right-white.svg" alt="right-white">
+                                    </div>
+                                </a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About Us Area -->
     <!-- Start Marquee Area -->
-    <div class="marquee-wrapper monogram-wrap ptb-120">
+    {{-- <div class="marquee-wrapper monogram-wrap ptb-120">
         <div class="marquee speed-300">
             <span class="monogram">Flexible scheduling</span>
             <span class="monogram">
@@ -317,7 +338,7 @@
             </span>
             <span class="monogram">Comfort and familiarity</span>
         </div>
-    </div>
+    </div> --}}
     <!-- End Marquee Area -->
 
     <!-- Start Services Area -->
@@ -720,76 +741,375 @@
     <!-- End Partner Area -->
 
     <!-- Start Why Choose Us Area -->
-    <div class="why-choose-us-area pb-120">
-        <div class="container mw-1685">
-            <div class="row gy-2 mb-70" data-cues="slideInUp" data-duration="900">
-                <div class="col-lg-4">
-                    <span class="top-title">WHY CHOOSE US</span>
-                </div>
-                <div class="col-lg-8">
-                    <h2 class="main-title ms-auto mw-975">Enjoy more value, choice, and freedom to live life on your terms.</h2>
+      <section class="why-choose-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto text-center section-header">
+                    <h2 class="main-title">Why choose Continuity Care?</h2>
+                    <p>Enjoy more value, choice and freedom to live life on your terms. With some of the lowest fees in the industry, more of your funding goes directly to the care and support you need. There are no hidden costs and no surprises. You receive transparent pricing and personalised service tailored to you.</p>
                 </div>
             </div>
 
-            <div class="row g-4">
-                <div class="col-lg-4" data-cues="slideInUp" data-duration="900">
-                    <div class="why-choose-us-img">
-                        <img src="assets/images/why-choose-us-img.jpg" class="ukiyo" alt="why-choose-us-img">
+            <!-- Features Grid -->
+            <div class="row g-4 mt-5">
+                <!-- Feature 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card card-red">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                            </svg>
+                        </div>
+                        <h3>More value</h3>
+                        <p>Low fees mean more care hours for you. We ensure maximum value from your funding, putting your care first.</p>
                     </div>
                 </div>
 
-                <div class="col-lg-8">
-                    <div class="why-choose-us-content" data-cues="slideInUp" data-duration="900">
-                        <p class="dec">At Continuity Care, you stay in control—choosing the services and providers that fit your lifestyle without restrictive agreements. Our team ensures a stress-free experience with fast approvals, easy onboarding, and dedicated support. We simplify complex logistics so you can focus on thriving at home.
-</p>
-
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="why-choose-us-single-item">
-                                    <div class="icon d-flex justify-content-center align-items-center">
-                                        <img src="assets/images/icon/why-choose1.png" alt="why-choose">
-                                    </div>
-                                    <h3>Complete Autonomy</h3>
-                                    <p>Choosing the services and providers that fit your lifestyle without restrictive agreements.
-</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="why-choose-us-single-item ms-md-auto left-border">
-                                    <div class="icon d-flex justify-content-center align-items-center">
-                                        <img src="assets/images/icon/why-choose2.png" alt="why-choose">
-                                    </div>
-                                    <h3>Transparent Pricing</h3>
-                                    <p>Enjoy peace of mind with a clear fee structure and no hidden costs or surprises.
-</p>
-                                </div>
-                            </div>
+                <!-- Feature 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card card-blue">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M9 11l3 3L22 4"/>
+                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+                            </svg>
                         </div>
+                        <h3>Total choice</h3>
+                        <p>Select the services and carers that work for you without being locked into restrictive agreements.</p>
+                    </div>
+                </div>
 
-                        <div class="d-flex align-items-center flex-wrap why-choose-us-btn">
-                            <a href="{{ route("contact-us") }}" class="default-btn active">
-                                <div class="d-flex align-items-center gap-10">
-                                    <span>Get in touch</span>
-                                    <img src="assets/images/right.svg" alt="right">
-                                </div>
-                            </a>
-                            <div class="d-flex align-items-center text-decoration-none ratings">
-                                <div class="icon d-flex justify-content-center align-items-center">
-                                    <img src="assets/images/icon/google.png" alt="google">
-                                </div>
-                                <div>
-                                    <p class="mb-0">4.8/5.0</p>
-                                    <span>Google Ratings</span>
-                                </div>
-                            </div>
+                <!-- Feature 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card card-purple">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                            </svg>
                         </div>
+                        <h3>No hidden costs</h3>
+                        <p>Transparent pricing with no surprises. You'll always know exactly what you're paying for.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card card-teal">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3>Fast approvals</h3>
+                        <p>Get started quickly with less hassle. Our streamlined process means you receive support when you need it.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card card-orange">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h3>Personalised support</h3>
+                        <p>Care that's tailored to your needs. We ensure a simple and stress-free experience at every step.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card card-pink">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Your support, your way</h3>
+                        <p>Choose support workers that match your needs. You remain in control of your care journey.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 7 -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="feature-card card-dark">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="9" y1="3" x2="9" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3>Continuity Connect Portal</h3>
+                        <p>Manage your care anytime, anywhere online. Dedicated support and easy access to everything you need.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- End Why Choose Us Area -->
+<section class="how-it-works-section">
+        <div class="container-fluid">
+            <!-- Section Header -->
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="main-titles">How Continuity Care works</h2>
+                    <p class="section-description mx-auto">
+                        My Aged Care can be a difficult process to navigate on your own. At Continuity Care, we help guide you through each step of the journey. Follow the steps below to start self-managing your Support at Home funding as soon as possible.
+                    </p>
+                </div>
+            </div>
 
+            <!-- Steps -->
+            <div class="row g-4 mb-5 mt-5">
+                <!-- Step 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                                <line x1="12" y1="18" x2="12.01" y2="18"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Contact Continuity Care</h3>
+                        <p class="step-description">
+                            Our team will help you understand how you can confidently self-manage your Support at Home funding.
+                        </p>
+                        <div class="arrow-icon d-none d-lg-block">
+                            <svg viewBox="0 0 24 24">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Care planning</h3>
+                        <p class="step-description">
+                            We will listen to your care and lifestyle needs to design a care plan and budget that suits your individual needs.
+                        </p>
+                        <div class="arrow-icon d-none d-lg-block">
+                            <svg viewBox="0 0 24 24">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Find care workers</h3>
+                        <p class="step-description">
+                            Organise your care workers and support services inline with your care plan and start scheduling your care services.
+                        </p>
+                        <div class="arrow-icon d-none d-lg-block">
+                            <svg viewBox="0 0 24 24">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Get started</h3>
+                        <p class="step-description">
+                            Start receiving services! We work alongside you to manage your funding administration and budget.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="cta-button">
+                        Ready to get started?
+                        <svg viewBox="0 0 24 24">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-8">
+                    <h2 class="main-title">
+                        Empowering communities with quality home care support
+                    </h2>
+                    
+                    <p class="hero-text">
+                        Continuity Care has proudly provided Support at Home services to communities since 2020. Our care coordinators ensure easy access to high-quality home care support.
+                    </p>
+                    
+                    <p class="hero-text">
+                        Whether you need support at home, in the community, or assistance with daily living, our dedicated team delivers care where it suits you best.
+                    </p>
+                    
+                    <p class="hero-text">
+                        With services across multiple regions, we're ready to help you achieve your goals and improve your quality of life.
+                    </p>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon-wrappers">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <a href="mailto:info@continuitycare.com.au">info@continuitycare.com.au</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-wrappers">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
+                            <a href="tel:1300555666">1300 555 666</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-wrappers">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <span>Brisbane QLD, Australia</span>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-wrappers">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <span>8:30 AM TO 5:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-lg-4">
+                    <div class="hero-image-container">
+                        <!-- Plus Pattern - Cyan -->
+                        <div class="plus-pattern plus-cyan">
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                        </div>
+
+                        <!-- Plus Pattern - Yellow -->
+                        <div class="plus-pattern plus-yellow">
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                        </div>
+
+                        <!-- Decorative Circle -->
+                        <div class="decorative-circle"></div>
+
+                        <!-- Hero Image - Replace with your actual image -->
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800" 
+                             alt="Care workers at Continuity Care" 
+                             class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="survey-trigger" onclick="openSurvey()">
+    Feedback
+</div>
+<!-- OVERLAY + MODAL -->
+<div class="survey-overlay" id="surveyOverlay">
+    <div class="survey-modal" id="surveyModal">
+        <div class="modal-header-custom">
+            <button class="close-btn" onclick="closeSurvey()">✕ Close</button>
+            <h3 class="main-title">Help us improve</h3>
+        </div>
+
+        <div class="modal-body-custom">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
+                 class="survey-image" alt="Survey">
+
+            <p class="survey-text">
+                Have you got a few minutes to complete a survey? We would love to hear
+                about your experience using Continuity Care services.
+            </p>
+
+            <button class="survey-btn" onclick="takeSurvey()">
+                Take me to the survey
+            </button>
+        </div>
+    </div>
+</div>
     <!-- Start Testimonial Area -->
     <div class="testimonial-area bg-img ptb-120" style="background-image: url(assets/images/testimonial-bg.png);">
         <div class="container mw-1685">

@@ -52,7 +52,7 @@
                             <a href="javascript:void(0)">Pricing Plans</a>
                         </li>
                         <li>
-                            <a href="{{ route("our-team") }}">Team Member</a>
+                            <a href="{{ route("our-leadership") }}">Our Leadership</a>
                         </li>
                         <li>
                             <a href="{{route("our-services")}}"> Our Services</a>

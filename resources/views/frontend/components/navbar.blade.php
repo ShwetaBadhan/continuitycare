@@ -71,8 +71,14 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ route("our-team") }}">
-                                Leadership
+                            <a class="dropdown-item" href="{{ route("our-commitment") }}">
+                               Our Commitment
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="{{ route("our-leadership") }}">
+                                Our Leadership
                             </a>
                         </li>
                         <li>
@@ -121,8 +127,18 @@
 
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="{{ route("service-details") }}">
+                            <a class="dropdown-item" href="{{ route("in-home-care") }}">
                                In Home Care
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ route("community-participation") }}">
+                                Community Participation
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ route("supported-independent-living") }}">
+                                Supported Independent Living (SIL)
                             </a>
                         </li>
                         <li>
@@ -131,23 +147,23 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ route("service-details") }}">
-                                Supported Independent Living
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ route("service-details") }}">
+                            <a class="dropdown-item" href="{{ route("community-nursing") }}">
                                 Community Nursing
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="{{ route("service-details") }}">
-                                Community Transport
+                                Allied Health
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ route("supported-independent-living") }}">
-                                Accommodation (SIL/SDA)
+                            <a class="dropdown-item" href="{{ route("service-details") }}">
+                                Plan Management
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ route("service-details") }}">
+                                Support Coordination
                             </a>
                         </li>
                     </ul>
@@ -165,11 +181,7 @@
                                 News and Blogs
                             </a>
                         </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ route("clinical-guidelines") }}">
-                                CCC Clinical Guidelines
-                            </a>
-                        </li>
+                       
                         <li>
                             <a class="dropdown-item" href="{{ route("client-resources") }}">
                                 Client Resource

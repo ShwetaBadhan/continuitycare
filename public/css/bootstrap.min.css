@@ -4580,7 +4580,7 @@ fieldset:disabled .btn {
     color: var(--bs-breadcrumb-divider-color);
     content: var(
         --bs-breadcrumb-divider,
-        "https://smarthr.dreamstechnologies.com/"
+        "/"
     );
 }
 .breadcrumb-item.active {

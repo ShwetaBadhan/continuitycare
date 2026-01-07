@@ -660,3 +660,48 @@ var mainSwiper = new Swiper(".product-swiper", {
     swiper: thumbSwiper,
   },
 });
+ function openSurvey() {
+        document.getElementById('surveyOverlay').style.display = 'flex';
+    }
+
+    function closeSurvey() {
+        const modal = document.getElementById('surveyModal');
+        modal.style.animation = 'slideDown 0.3s ease-out';
+
+        setTimeout(() => {
+            document.getElementById('surveyOverlay').style.display = 'none';
+            modal.style.animation = 'slideUp 0.4s ease-out';
+        }, 300);
+    }
+
+  
+
+    // Close on overlay click
+    document.getElementById('surveyOverlay').addEventListener('click', function(e) {
+        if (e.target === this) closeSurvey();
+    });
+  function showTab(tabName) {
+            // Hide all content
+            const contents = document.querySelectorAll('.activity-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Show selected content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.closest('.tab-btn').classList.add('active');
+        }
+
+
+		document.querySelectorAll('.case-left').forEach(item=>{
+    item.addEventListener('click',()=>{
+        document.querySelectorAll('.case-item')
+        .forEach(i=>i.classList.remove('active'));
+
+        item.parentElement.classList.add('active');
+    });
+});

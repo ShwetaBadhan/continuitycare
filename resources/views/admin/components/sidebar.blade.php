@@ -2,13 +2,13 @@
 <div class="sidebar" id="sidebar">
 	<!-- Logo -->
 	<div class="sidebar-logo">
-		<a href="index.html" class="logo logo-normal">
+		<a href="" class="logo logo-normal">
 			<img src="{{ asset("assets/images/logo/hozlogo.webp") }}" alt="Logo">
 		</a>
-		<a href="index.html" class="logo-small">
+		<a href="" class="logo-small">
 			<img src="{{ asset("img/logo-small.svg") }}" alt="Logo">
 		</a>
-		<a href="index.html" class="dark-logo">
+		<a href="" class="dark-logo">
 			<img src="{{ asset("img/logo-white.svg") }}" alt="Logo">
 		</a>
 	</div>
@@ -95,7 +95,7 @@
 				<li>
 					<ul>
 						<li>
-							<a href="contacts-grid.html">
+							<a href="{{ route("contact-leads") }}">
 								<i class="ti ti-user-shield"></i><span>Contacts</span>
 							</a>
 						</li>
@@ -124,7 +124,98 @@
 						</li>
 					</ul>
 				</li>
-			
+			<li class="menu-title"><span>ADMINISTRATION</span></li>
+						<li>
+							<ul>
+								
+								
+								<li class="submenu">
+									<a href="javascript:void(0);">
+										<i class="ti ti-user-star"></i><span>User Management</span>
+										<span class="menu-arrow"></span>
+									</a>
+									<ul>
+										<li><a href="{{ route("admin-users") }}">Admin Users</a></li>
+										<li><a href="{{ route("admin-roles") }}"> Roles</a></li>
+										<li><a href="{{ route("admin-permissions") }}"> Permissions</a></li>
+									</ul>
+								</li>
+								
+								<li class="submenu">
+									<a href="javascript:void(0);">
+										<i class="ti ti-settings"></i><span>Settings</span>
+										<span class="menu-arrow"></span>
+									</a>
+									<ul>
+										<li class="submenu submenu-two">
+											<a href="javascript:void(0);">General Settings<span class="menu-arrow inside-submenu"></span></a>
+											<ul>
+												<li><a href="profile-settings.html">Profile</a></li>
+												<li><a href="security-settings.html">Security</a></li>
+												<li><a href="notification-settings.html">Notifications</a></li>
+												<li><a href="connected-apps.html">Connected Apps</a></li>
+											</ul>
+										</li>
+										<li class="submenu submenu-two">
+											<a href="javascript:void(0);">Website Settings<span class="menu-arrow inside-submenu"></span></a>
+											<ul>
+												<li><a href="bussiness-settings.html">Business Settings</a></li>
+												<li><a href="seo-settings.html">SEO Settings</a></li>
+												<li><a href="localization-settings.html">Localization</a></li>
+												<li><a href="prefixes.html">Prefixes</a></li>
+												<li><a href="preferences.html">Preferences</a></li>
+												<li><a href="performance-appraisal.html">Appearance</a></li>
+												<li><a href="language.html">Language</a></li>
+												<li><a href="authentication-settings.html">Authentication</a></li>
+												<li><a href="ai-settings.html">AI Settings</a></li>
+											</ul>
+										</li>
+										<li class="submenu submenu-two">
+											<a href="javascript:void(0);">App Settings<span class="menu-arrow inside-submenu"></span></a>
+											<ul>
+												<li><a href="salary-settings.html">Salary Settings</a></li>
+												<li><a href="approval-settings.html">Approval Settings</a></li>
+												<li><a href="invoice-settings.html">Invoice Settings</a></li>
+												<li><a href="leave-type.html">Leave Type</a></li>
+												<li><a href="custom-fields.html">Custom Fields</a></li>
+											</ul>
+										</li>
+										<li class="submenu submenu-two">
+											<a href="javascript:void(0);">System Settings<span class="menu-arrow inside-submenu"></span></a>
+											<ul>
+												<li><a href="email-settings.html">Email Settings</a></li>
+												<li><a href="email-template.html">Email Templates</a></li>
+												<li><a href="sms-settings.html">SMS Settings</a></li>
+												<li><a href="sms-template.html">SMS Templates</a></li>
+												<li><a href="otp-settings.html">OTP</a></li>
+												<li><a href="gdpr.html">GDPR Cookies</a></li>
+												<li><a href="maintenance-mode.html">Maintenance Mode</a></li>
+											</ul>
+										</li>
+										<li class="submenu submenu-two">
+											<a href="javascript:void(0);">Financial Settings<span class="menu-arrow inside-submenu"></span></a>
+											<ul>
+												<li><a href="payment-gateways.html">Payment Gateways</a></li>
+												<li><a href="tax-rates.html">Tax Rate</a></li>
+												<li><a href="currencies.html">Currencies</a></li>
+											</ul>
+										</li>
+										<li class="submenu submenu-two">
+											<a href="javascript:void(0);">Other Settings<span class="menu-arrow inside-submenu"></span></a>
+											<ul>
+												<li><a href="custom-css.html">Custom CSS</a></li>
+												<li><a href="custom-js.html">Custom JS</a></li>
+												<li><a href="cronjob.html">Cronjob</a></li>
+												<li><a href="storage-settings.html">Storage</a></li>
+												<li><a href="ban-ip-address.html">Ban IP Address</a></li>
+												<li><a href="backup.html">Backup</a></li>
+												<li><a href="clear-cache.html">Clear Cache</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
 				
 				<li class="menu-title"><span>CONTENT</span></li>
 				<li>
