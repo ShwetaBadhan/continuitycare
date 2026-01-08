@@ -96,6 +96,21 @@ Route::get('/community-nursing', function () {
 })->name('community-nursing');
 
 
+Route::get('/allied-health', function () {
+    return view('frontend.pages.allied-health');
+})->name('allied-health');
+
+
+Route::get('/plan-management', function () {
+    return view('frontend.pages.plan-management');
+})->name('plan-management');
+
+
+Route::get('/support-coordination', function () {
+    return view('frontend.pages.support-coordination');
+})->name('support-coordination');
+
+
 Route::get('/terms-conditions', function () {
     return view('frontend.pages.terms-conditions');
 })->name('terms-conditions');

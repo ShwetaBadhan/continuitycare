@@ -20746,7 +20746,7 @@ html, body {
         .step-number {
             width: 65px;
             height: 65px;
-            background: linear-gradient(135deg, var(--bs-green-blue), --bs-green);
+            background: linear-gradient(135deg, var(--bs-green-blue),var( --bs-green));
             color: white;
             border-radius: 50%;
             display: flex;

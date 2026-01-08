@@ -152,17 +152,17 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ route("service-details") }}">
+                            <a class="dropdown-item" href="{{ route("allied-health") }}">
                                 Allied Health
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ route("service-details") }}">
+                            <a class="dropdown-item" href="{{ route("plan-management") }}">
                                 Plan Management
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ route("service-details") }}">
+                            <a class="dropdown-item" href="{{ route("support-coordination") }}">
                                 Support Coordination
                             </a>
                         </li>

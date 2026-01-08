@@ -1,7 +1,8 @@
 @extends("frontend.layout.master")
-@section("title", "Supported Independent Living")
+@section("title", "Allied Health")
 @section("content")
-  <div class="services-area mt-5">
+
+ <div class="services-area mt-5">
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-md-6">
@@ -11,9 +12,10 @@
         </div>
         <div class="col-md-6">
           <div class="details-content">
-            <h3 class="main-titles">Enabling the Transformation of Community Nursing</h3>
-            <p>Continuity Connect supports the delivery of high-quality care within the comfort of home, connecting
-              caregivers, patients, and families for better health outcomes.</p>
+            <h3 class="main-titles">Our mission is to improve the quality of life of our participants</h3>
+            <p>Continuity Care was born in 2017 from the idea of creating an environment where people living with a disability or health condition, and the clinicians that support them, were put first.</p>
+            <p>Our 5 values are our blueprint and are the guiding star for our direction and decision making. They have made Better Rehab what it is today, and where it will be in the future.</p>
+            <p>Through in-home, in-clinic and telehealth services, our passionate clinicians across Australia help people living with a disability, health condition, or medical condition.</p>
           </div>
           <a href="tel:1800 012 273" class="default-btn active mt-5">
             <div class="d-flex gap-10 align-content-center">
@@ -26,10 +28,126 @@
     </div>
   </div>
 
-  <div class="nursing-care-section">
-    <h2 class="main-titles">Comprehensive Care at Home</h2>
+
+
+  <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-8">
+                    <h2 class="main-title">
+                        Empowering communities with quality home care support
+                    </h2>
+                    
+                    <p class="hero-text">
+                        Continuity Care has proudly provided Support at Home services to communities since 2020. Our care coordinators ensure easy access to high-quality home care support.
+                    </p>
+                    
+                    <p class="hero-text">
+                        Whether you need support at home, in the community, or assistance with daily living, our dedicated team delivers care where it suits you best.
+                    </p>
+                    
+                    <p class="hero-text">
+                        With services across multiple regions, we're ready to help you achieve your goals and improve your quality of life.
+                    </p>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon-wrappers">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <a href="mailto:info@continuitycare.com.au">info@continuitycare.com.au</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-wrappers">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
+                            <a href="tel:1300555666">1300 555 666</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-wrappers">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <span>Brisbane QLD, Australia</span>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-wrappers">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <span>8:30 AM TO 5:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-lg-4">
+                    <div class="hero-image-container">
+                        <!-- Plus Pattern - Cyan -->
+                        <div class="plus-pattern plus-cyan">
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                            <div class="plus-icon cyan-plus"></div>
+                        </div>
+
+                        <!-- Plus Pattern - Yellow -->
+                        <div class="plus-pattern plus-yellow">
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                            <div class="plus-icon yellow-plus"></div>
+                        </div>
+
+                        <!-- Decorative Circle -->
+                        <div class="decorative-circle"></div>
+
+                        <!-- Hero Image - Replace with your actual image -->
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800" 
+                             alt="Care workers at Continuity Care" 
+                             class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="nursing-care-section">
+    <h2 class="main-titles">Community allied health services we provide in Brisbane</h2>
     <p>
-      Our cloud-based platform connects every stakeholder to improve overall health, well-being, and quality of life.
+      Comfort and convenience during therapy is our main concern. We offer sessions at-home, in-clinic, out-in-public, and over telehealth for our services.
     </p>
 
     <div class="care-features-grid">
@@ -45,9 +163,9 @@
               </path>
             </svg></div>
         </div>
-        <h3>Vital Signs</h3>
+        <h3>Occupational therapy</h3>
         <p class="nursing-feature-text">
-          Real-time vital signs tracking through easy-to-use integrated medical devices.
+          Helping people become independent in daily tasks and improve their quality of life.
         </p>
       </div>
 
@@ -65,9 +183,9 @@
               <path d="m9 16 2 2 4-4"></path>
             </svg></div>
         </div>
-        <h3>Reminders & Task Lists</h3>
+        <h3>Speech pathology</h3>
         <p class="nursing-feature-text">
-          Assist patients by organizing their upcoming tasks and daily routines.
+          Supporting participants in communication and swallowing to live life the way they want to.
         </p>
       </div>
 
@@ -85,9 +203,9 @@
               <path d="m9 16 2 2 4-4"></path>
             </svg></div>
         </div>
-        <h3>Nutritional Inputs</h3>
+        <h3>Physiotherapy</h3>
         <p class="nursing-feature-text">
-          Keep patients on track with health goals and dietary requirements.
+          Enhancing movement and function, for people to get around their home and community on their terms.
         </p>
       </div>
 
@@ -103,9 +221,9 @@
               <circle cx="9" cy="7" r="4"></circle>
             </svg></div>
         </div>
-        <h3>Patient Engagement</h3>
+        <h3>Exercise physiology</h3>
         <p class="nursing-feature-text">
-          Empower patients to actively participate in their own care plans.
+          Exercise-based support for participants to improve their physical and mental capacity.
         </p>
       </div>
 
@@ -120,9 +238,9 @@
               <path d="m8.5 8.5 7 7"></path>
             </svg></div>
         </div>
-        <h3>Medication Reminders</h3>
+        <h3>Positive behaviour support</h3>
         <p class="nursing-feature-text">
-          Avoid adverse events due to prescription conflicts and missed doses.
+          Supporting participants to increase their independence and improve their quality of life.
         </p>
       </div>
 
@@ -141,144 +259,16 @@
               </path>
             </svg></div>
         </div>
-        <h3>Communication Tools</h3>
+        <h3>Allied health assistants</h3>
         <p class="nursing-feature-text">
-          Simple tools to remotely interact with care teams or loved ones.
+          Support from an allied health assistant to help implement your plan.
         </p>
       </div>
     </div>
   </div>
-  <div class="nursing-section">
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-lg-6">
-          <!-- Left Content -->
-          <div class="nursing-content">
-            <span class="nursing-tag">New Aged Care Act Aligned</span>
-            <h2 class="rights-header">Rights-Based Community Nursing</h2>
-            <p class="rights-desc">
-              Australia’s new Aged Care Act places the rights of older people at the centre of the aged care system.
-            </p>
-            <p class="rights-desc">
-              Continuity Connect operationalises this shift by enabling nurses to deliver <strong>continuous, proactive,
-                person-centred care</strong> — supported by real-time monitoring, structured digital check-ins, and
-              family-inclusive communication.
-            </p>
-
-            <!-- Benefits List -->
-            <ul class="rights-benefits">
-              <li class="rights-benefit">
-                <span class="benefit-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                    </path>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg>
-                </span>
-                <span class="benefit-text">Safer care at home through early detection</span>
-              </li>
-
-              <li class="rights-benefit">
-                <span class="benefit-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                    </path>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg>
-                </span>
-                <span class="benefit-text">Choice, control and participation</span>
-              </li>
-
-              <li class="rights-benefit">
-                <span class="benefit-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                    </path>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg>
-                </span>
-                <span class="benefit-text">Reduced risk of harm</span>
-              </li>
-
-              <li class="rights-benefit">
-                <span class="benefit-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                    </path>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg>
-                </span>
-                <span class="benefit-text">Better transparency for families</span>
-              </li>
-
-              <li class="rights-benefit">
-                <span class="benefit-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                    </path>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg>
-                </span>
-                <span class="benefit-text">Evidence-informed decision-making</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <!-- Right Panel -->
-          <div class="impact-container">
-            <h3 class="impact-title">Why this matters in Australia</h3>
-
-            <div class="impact-item">
-              <span class="impact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-activity w-5 h-5" aria-hidden="true"
-                  data-replit-metadata="client/src/pages/home.tsx:252:22" data-component-name="Activity">
-                  <path
-                    d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2">
-                  </path>
-                </svg></span>
-              <div class="impact-heading">Complex Multimorbidity</div>
-              <div class="impact-text">
-                Many receiving aged care live with multiple chronic conditions that increase risk of deterioration and
-                preventable ED presentations.
-              </div>
-            </div>
-
-            <div class="impact-item">
-              <span class="impact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-stethoscope w-5 h-5" aria-hidden="true"
-                  data-replit-metadata="client/src/pages/home.tsx:258:22" data-component-name="Stethoscope">
-                  <path d="M11 2v2"></path>
-                  <path d="M5 2v2"></path>
-                  <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"></path>
-                  <path d="M8 15a6 6 0 0 0 12 0v-3"></path>
-                  <circle cx="20" cy="10" r="2"></circle>
-                </svg></span>
-              <div class="impact-heading">The "Between-Visit Gap"</div>
-              <div class="impact-text">
-                Continuity Connect strengthens primary care by closing the gap between visits where deterioration and
-                non-adherence often begin.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
-
-  </div>
-
-
-
-  <div class="services-area mt-5 mb-5">
+    <div class="services-area mt-5 mb-5">
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-md-12">
@@ -387,6 +377,64 @@
 
       </div>
     </div>
+  </div>
+
+
+     <div class="custom-hero-section mt-5 mb-5">
+   <div class="container">
+   <div class="row">
+   <div class="col-lg-6">
+   <h2 class="main-titles">Begin your journey today</h2>
+   <p>Get a head start on receiving support with our experienced clinicians by submitting our referral form. If you've got questions, our team is ready to assist you – simply use our enquiry form to get in touch.</p>
+    <a href="tel:1800 012 273" class="default-btn active mt-">
+            <div class="d-flex gap-10 align-content-center">
+              <span>Book a Free Consultation</span>
+              <img src="assets/images/right.svg" alt="right-white">
+            </div>
+
+            
+          </a>
+          <div class="mt-3">
+          <img src="{{ asset('assets/images/skills/skill-1.png') }}" class="w-75 rounded"  alt="">
+          
+          </div>
+   </div>
+   <div class="col-lg-6">
+   <div class="contact-us-form bg-img border p-4 p-lg-5 rounded-4">
+                            <h3 class="mt-0">Take A Schedule Appointment</h3>
+                            <p>Our booking process is simple confidential and flexible to fit your schedule</p>
+
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control bg-f2f3f5" placeholder="Full Name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" class="form-control bg-f2f3f5" placeholder="Email">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="number" class="form-control bg-f2f3f5" placeholder="Phone">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control bg-f2f3f5" placeholder="Subject">
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea rows="5" class="form-control bg-f2f3f5" placeholder="Write Your Message"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" class="default-btn">
+                                        <span class="d-flex gap-10 align-items-center justify-content-center">
+                                            <span>send message</span>
+                                            <img src="assets/images/right-white.svg" alt="right-white">
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+   </div>
+   </div>
+   </div>
+
+   
   </div>
 
 @endsection
