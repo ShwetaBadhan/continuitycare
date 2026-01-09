@@ -1084,6 +1084,247 @@
             </div>
         </div>
     </section>
+      <section class="empower-hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+             <h2 class="main-titles text-center">Empower your network with credentialed healthcare professionals</h2>
+                    <p class="mb-5 text-center">VectorCare Trust simplifies credential management and policy enforcement, building a reliable network of qualified vendors while maintaining compliance and operational efficiency across your marketplace.</p>
+                    
+                <div class="col-lg-6">
+                  
+                    <div class="features-list">
+                        <div class="empower-feature-item">
+                            <div class="empower-feature-icon">
+                                <i class="bi bi-person-check"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Seamless invite and onboarding workflows</h5>
+                                <p>Effortlessly invite and onboard vendors, streamlining their entry into your network and ensuring compliance from day one.</p>
+                            </div>
+                        </div>
+
+                        <div class="empower-feature-item">
+                            <div class="empower-feature-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Request and store credentials</h5>
+                                <p>Collect, verify, and securely store all required credentials in one place, with tracking for expiration dates to maintain compliance.</p>
+                            </div>
+                        </div>
+
+                        <div class="empower-feature-item">
+                            <div class="empower-feature-icon">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Build and enforce policies</h5>
+                                <p>Set clear policies for vendors to ensure quality and consistency in service delivery, aligned with your organization's standards.</p>
+                            </div>
+                        </div>
+
+                        <div class="empower-feature-item">
+                            <div class="empower-feature-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Configure zone and bidding rules</h5>
+                                <p>Define custom rules for service areas and bidding, ensuring that vendors participate in the marketplace according to location, service level, and insurance requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="dashboard-preview">
+                        <div class="credential-badge">
+                            <div>
+                                <i class="bi bi-award" style="font-size: 24px;"></i>
+                                <div style="font-size: 10px; margin-top: 5px;">VERIFIED</div>
+                            </div>
+                        </div>
+
+                        <div class="notification-card">
+                            <div class="notification-icon">
+                                <i class="bi bi-bell-fill"></i>
+                            </div>
+                            <div>
+                                <strong style="font-size: 14px;">New credentials added for Vendor 4</strong>
+                                <div style="font-size: 12px; color: #999; margin-top: 2px;">5m ago</div>
+                            </div>
+                        </div>
+
+                        <div class="vendor-card">
+                            <div class="vendor-header">
+                                Credentials to be verified
+                            </div>
+
+                            <div class="vendor-item">
+                                <div>
+                                    <div class="vendor-name"><i class="bi bi-person-circle"></i> Vendor 1</div>
+                                    <div class="vendor-info">RN License • Specialty: Critical Care (EMR) • Liver Injury</div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn-action btn-approve">Approve</button>
+                                    <button class="btn btn-action btn-decline">Decline</button>
+                                </div>
+                            </div>
+
+                            <div class="vendor-item">
+                                <div>
+                                    <div class="vendor-name"><i class="bi bi-person-circle"></i> Vendor 2</div>
+                                    <div class="vendor-info">LPN License • Specialty: (MSN) • Labor Nurse</div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn-action btn-approve">Approve</button>
+                                    <button class="btn btn-action btn-decline">Decline</button>
+                                </div>
+                            </div>
+
+                            <div class="vendor-item">
+                                <div>
+                                    <div class="vendor-name"><i class="bi bi-person-circle"></i> Vendor 3</div>
+                                    <div class="vendor-info">CNA License • Specialty: Critical Care</div>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="btn btn-action btn-approve">Approve</button>
+                                    <button class="btn btn-action btn-decline">Decline</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <div class="diagram-container">
+      <div class="text-center mb-5">
+        <h1 class="main-titles  mb-3">Comprehensive Healthcare Solutions</h1>
+        <p class="mx-auto" style="max-width: 800px;">
+          Our integrated healthcare platform connects multiple essential services through three core pillars: 
+          streamlined scheduling workflows, actionable data-rich insights, and a credentialed professional network. 
+          From telehealth consultations to medical equipment delivery, we provide end-to-end healthcare support 
+          centered around patient needs.
+        </p>
+      </div>
+      <div class="diagram-wrapper">
+        <div class="service-item" id="service-0">
+          <div class="service-icon-box">
+            <i class="fas fa-video service-icon"></i>
+          </div>
+          <span class="service-label">Telehealth</span>
+        </div>
+
+        <div class="service-item" id="service-1">
+          <div class="service-icon-box">
+            <i class="fas fa-plus service-icon"></i>
+          </div>
+          <span class="service-label">Prescription Service</span>
+        </div>
+
+        <div class="service-item" id="service-2">
+          <div class="service-icon-box">
+            <i class="fas fa-headphones service-icon"></i>
+          </div>
+          <span class="service-label">Workforce</span>
+        </div>
+
+        <div class="service-item" id="service-3">
+          <div class="service-icon-box">
+            <i class="fas fa-shopping-basket service-icon"></i>
+          </div>
+          <span class="service-label">Food Delivery</span>
+        </div>
+
+        <div class="service-item" id="service-4">
+          <div class="service-icon-box">
+            <i class="fas fa-box service-icon"></i>
+          </div>
+          <span class="service-label">Organ Transport</span>
+        </div>
+
+        <div class="service-item" id="service-5">
+          <div class="service-icon-box">
+            <i class="fas fa-heartbeat service-icon"></i>
+          </div>
+          <span class="service-label">Durable Medical Equipment</span>
+        </div>
+
+        <div class="service-item" id="service-6">
+          <div class="service-icon-box">
+            <i class="fas fa-home service-icon"></i>
+          </div>
+          <span class="service-label">Home Health</span>
+        </div>
+
+        <div class="service-item" id="service-7">
+          <div class="service-icon-box">
+            <i class="fas fa-ambulance service-icon"></i>
+          </div>
+          <span class="service-label">Scheduling Transportation</span>
+        </div>
+
+        <svg
+          class="svg-container"
+          width="420"
+          height="420"
+          viewBox="0 0 420 420"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2f7f7a" />
+              <stop offset="100%" stop-color="#1f5e5b" />
+            </linearGradient>
+          </defs>
+
+          <circle cx="210" cy="210" r="190" fill="none" stroke="#2f7f7a" stroke-width="14" />
+          
+          <line x1="210" y1="20" x2="210" y2="-60" stroke="#2f7f7a" stroke-width="2" stroke-dasharray="5,5" />
+          <line x1="337.5" y1="82.5" x2="380" y2="40" stroke="#2f7f7a" stroke-width="2" stroke-dasharray="5,5" />
+          <line x1="390" y1="210" x2="470" y2="210" stroke="#2f7f7a" stroke-width="2" stroke-dasharray="5,5" />
+          <line x1="337.5" y1="337.5" x2="380" y2="380" stroke="#2f7f7a" stroke-width="2" stroke-dasharray="5,5" />
+          <line x1="210" y1="400" x2="210" y2="480" stroke="#2f7f7a" stroke-width="2" stroke-dasharray="5,5" />
+          <line x1="82.5" y1="337.5" x2="40" y2="380" stroke="#2f7f7a" stroke-width="2" stroke-dasharray="5,5" />
+          <line x1="30" y1="210" x2="-50" y2="210" stroke="#2f7f7a" stroke-width="2" stroke-dasharray="5,5" />
+          <line x1="82.5" y1="82.5" x2="40" y2="40" stroke="#2f7f7a" stroke-width="2" stroke-dasharray="5,5" />
+
+          <g class="rotating-group" transform="rotate(120 210 210)">
+            <path d="M 210 30 A 180 180 0 0 1 366 300 L 300 260 A 100 100 0 0 0 210 110 Z" fill="url(#tealGradient)" stroke="#fff" stroke-width="6" />
+            <path d="M 366 300 A 180 180 0 0 1 54 300 L 120 260 A 100 100 0 0 0 300 260 Z" fill="url(#tealGradient)" stroke="#fff" stroke-width="6" />
+            <path d="M 54 300 A 180 180 0 0 1 210 30 L 210 110 A 100 100 0 0 0 120 260 Z" fill="url(#tealGradient)" stroke="#fff" stroke-width="6" />
+            
+            <g transform="rotate(0 210 100)">
+              <text x="210" y="350" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">
+                <tspan x="210">Scheduling</tspan>
+                <tspan x="210" dy="20">Workflows</tspan>
+              </text>
+            </g>
+
+            <g transform="rotate(60 385 185)">
+              <text x="315" y="210" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">
+                <tspan x="315">Data Rich</tspan>
+                <tspan x="315" dy="20">Insights</tspan>
+              </text>
+            </g>
+
+            <g transform="rotate(-60 70 215)">
+              <text x="105" y="197" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">
+                <tspan x="140">Credentialed</tspan>
+                <tspan x="140" dy="20">Network</tspan>
+              </text>
+            </g>
+          </g>
+
+          <circle cx="210" cy="210" r="100" fill="#ffffff" />
+        </svg>
+
+        <div class="center-icon-container">
+          <i class="fas fa-users center-icon"></i>
+        </div>
+      </div>
+    </div>
     <div class="survey-trigger" onclick="openSurvey()">
     Feedback
 </div>
@@ -1478,3 +1719,30 @@
         </div>
         <!-- End Contact Us Area -->
 @endsection
+
+@push('scripts')
+<script>
+      const services = [
+        { angle: -90 },
+        { angle: -45 },
+        { angle: 0 },
+        { angle: 45 },
+        { angle: 90 },
+        { angle: 135 },
+        { angle: 180 },
+        { angle: -135 },
+      ];
+
+      services.forEach((service, index) => {
+        const element = document.getElementById(`service-${index}`);
+        const radius = 290;
+        const angleRad = (service.angle * Math.PI) / 180;
+        const x = Math.cos(angleRad) * radius;
+        const y = Math.sin(angleRad) * radius;
+
+        element.style.left = "50%";
+        element.style.top = "50%";
+        element.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+      });
+    </script>
+@endpush
