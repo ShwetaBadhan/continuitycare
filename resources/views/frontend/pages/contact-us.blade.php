@@ -22,7 +22,7 @@
         <!-- End Page Banner Area -->
 
         <!-- Start Contact Us Area -->
-        <div class="contact-us-area ptb-120">
+        <div class="contact-us-area padding-section">
             <div class="container mw-1685">
                 <div class="row g-4 align-items-center" data-cues="slideInUp" data-duration="900">
                     <div class="col-lg-6">
@@ -93,7 +93,7 @@
         </div>
         <!-- End Contact Us Area -->
 
-        <div class="map-area pb-120">
+        <div class="map-area padding-section    ">
             <div class="container mw-1685">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50449.57493873455!2d-122.46184076624591!3d37.7877328771311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fd73b007971%3A0xa19fec8def119326!2sGrowth%20Street%20Partners!5e0!3m2!1sen!2sbd!4v1761036495339!5m2!1sen!2sbd" style="border:0; width: 100%; height: 550px; border-radius: 20px; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>

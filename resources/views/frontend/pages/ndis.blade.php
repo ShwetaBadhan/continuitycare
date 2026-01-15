@@ -23,7 +23,7 @@
     <!-- End Page Banner Area -->
 
     <!-- Start Case Study Area -->
-    <div class="case-study-area pb-120 pt-80 pt-120">
+    <div class="case-study-area  padding-section">
         <div class="container mw-1685">
             <div class="row g-4">
                 <div class="col-xl-12">
@@ -75,43 +75,48 @@
                                 <img src="assets/images/case-study9.jpg" class="rounded-4" alt="case-study">
                             </div>
 
- <div class="col-sm-4">
+                            <div class="col-sm-4">
                                 <img src="assets/images/about/png-1-1.webp" class="rounded-4" alt="case-study">
                             </div>
-                             <div class="col-sm-8">
+                            <div class="col-sm-8">
                                 <h3 class="main-titles">Who We Support</h3>
-                                <p>Disability support services in Brisbane is covered under the National Disability Insurance Scheme, a national plan aimed to support individuals with disabilities. NDIS offers financial support to disabled individuals with access to support and services, and gain new skills and independence in every aspect of their life.</p>
-                                <p>There are certain requirements that an individual needs to fulfill to be eligible for the NDIS disability services:</p>
-                                 <ul class="p-0 my-4 list-unstyled">
-                                <li class="d-flex align-items-start gap-10">
-                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>Be an Australian citizen</span>
-                                </li>
-                                <li class="d-flex align-items-start gap-10">
-                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>Under 65 years old when applying for NDIS</span>
-                                </li>
-                                <li class="d-flex align-items-start gap-10">
-                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>Have a permanent disability</span>
-                                </li>
-                                <li class="d-flex align-items-start gap-10">
-                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>A permanent impairment that affects their daily task performance</span>
-                                </li>
-                                <li class="d-flex align-items-start gap-10">
-                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>Have an impairment that restricts their ability to work, study or socialise</span>
-                                </li>
-                                <li class="d-flex align-items-start gap-10">
-                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>Require NDIS support for the rest of their life</span>
-                                </li>
-                            </ul>
+                                <p>Disability support services in Brisbane is covered under the National Disability
+                                    Insurance Scheme, a national plan aimed to support individuals with disabilities. NDIS
+                                    offers financial support to disabled individuals with access to support and services,
+                                    and gain new skills and independence in every aspect of their life.</p>
+                                <p>There are certain requirements that an individual needs to fulfill to be eligible for
+                                    the NDIS disability services:</p>
+                                <ul class="p-0 my-4 list-unstyled">
+                                    <li class="d-flex align-items-start gap-10">
+                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                        <span>Be an Australian citizen</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-10">
+                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                        <span>Under 65 years old when applying for NDIS</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-10">
+                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                        <span>Have a permanent disability</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-10">
+                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                        <span>A permanent impairment that affects their daily task performance</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-10">
+                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                        <span>Have an impairment that restricts their ability to work, study or
+                                            socialise</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-10">
+                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                        <span>Require NDIS support for the rest of their life</span>
+                                    </li>
+                                </ul>
                             </div>
-                           
 
-                          
+
+
 
 
 
@@ -121,5 +126,6 @@
                 </div>
             </div>
         </div>
-        <!-- End Case Study Area -->
+    </div>
+    <!-- End Case Study Area -->
 @endsection

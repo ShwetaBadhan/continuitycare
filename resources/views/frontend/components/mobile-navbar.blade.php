@@ -18,13 +18,13 @@
     <div class="offcanvas-body">
         <ul class="mobile-menu">
             <li class="mobile-menu-list active without-icon">
-                <a href="javascript:void(0);">
+                <a href="{{ route("home") }}">
                     Home
                 </a>
 
-                
+
             </li>
-<li class="mobile-menu-list">
+            <li class="mobile-menu-list">
                 <a href="javascript:void(0);">
                     Who We Are
                 </a>
@@ -47,7 +47,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li class="mobile-menu-list">
                 <a href="javascript:void(0);">
                     Who We Serve
@@ -123,7 +123,7 @@
                             Support Coordination
                         </a>
                     </li>
-                    
+
                 </ul>
             </li>
 
@@ -161,7 +161,7 @@
                 </ul>
             </li>
 
-           
+
         </ul>
     </div>
 </div>

@@ -23,7 +23,7 @@
     <!-- End Page Banner Area -->
 
     <!-- Start Team Area -->
-    <div class="team-area ptb-120">
+    <div class="team-area padding-section">
         <div class="container mw-1685">
             <div class="row g-4" data-cues="slideInUp" data-duration="900">
                 <div class="trait-pills">

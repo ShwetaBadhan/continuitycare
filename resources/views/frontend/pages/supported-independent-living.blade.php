@@ -1,7 +1,7 @@
 @extends("frontend.layout.master")
 @section("title", "Supported Independent Living")
 @section("content")
-    <div class="services-area ptb-120">
+    <div class="services-area padding-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -24,7 +24,7 @@
 
 
             <!-- Start Case Study Area -->
-            <div class="case-study-area pb-120 pt-80 pt-120">
+            <div class="case-study-area padding-section">
                 <div class="container mw-1685">
 
                     <div class="row g-4">
@@ -85,7 +85,7 @@
             </div>
             <!-- End Case Study Area -->
 
-            <div class="row">
+            <div class="row padding-section">
 
                 <div class="col-md-6">
                     <div class="details-content">

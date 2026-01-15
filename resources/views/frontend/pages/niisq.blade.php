@@ -22,12 +22,12 @@
         <!-- End Page Banner Area -->
 
         <!-- Start Case Study Area -->
-        <div class="case-study-area pb-120 pt-80 pt-120">
+        <div class="case-study-area padding-section">
             <div class="container mw-1685">
                 <div class="row g-4">
                     <div class="col-xl-8">
                         <div class="details-content">
-                            <div class="row g-4">
+                            <div class="row g-4 ">
                                 <div class="col-sm-6">
                                     <img src="assets/images/case-study9.jpg" class="rounded-4" alt="case-study">
                                 </div>
@@ -37,7 +37,7 @@
                             </div>
 
                           
-                            <p>The National Injury Insurance Scheme Queensland (NIISQ) is a no-fault scheme designed to provide lifetime treatment, care, and support for individuals who have sustained serious personal injuries in a motor vehicle accident. At Continuity Care, we understand that a catastrophic injury changes everything—not just for the individual, but for their entire family. We act as your expert partner to navigate this complex scheme, bridging the gap between clinical rehabilitation and returning to a meaningful life. </p>
+                            <p class="mt-20">The National Injury Insurance Scheme Queensland (NIISQ) is a no-fault scheme designed to provide lifetime treatment, care, and support for individuals who have sustained serious personal injuries in a motor vehicle accident. At Continuity Care, we understand that a catastrophic injury changes everything—not just for the individual, but for their entire family. We act as your expert partner to navigate this complex scheme, bridging the gap between clinical rehabilitation and returning to a meaningful life. </p>
 
                             
                             <h3>Our Specialist NIISQ Services</h3>

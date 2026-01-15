@@ -3,7 +3,7 @@
 @section("content")
 
 <!-- Hero Section -->
-    <section class="home-care-section">
+    <section class="home-care-section padding-section">
         <div class="container position-relative">
             <h1 class="text-white">In-Home Supports</h1>
             <p class="text-white">At Continuity Care, we support Queenslanders to live safely and confidently at home.</p>
@@ -16,7 +16,7 @@
     </section>
 
     <!-- Who We Support -->
-    <section class="py-5">
+    <section class="padding-section">
         <div class="container">
             <h2 class="main-titles text-center">Who We Support in Queensland</h2>
             <p class="text-center mb-5 fs-5">We provide in-home support across Queensland for:</p>
@@ -68,7 +68,7 @@
     </section>
 
     <!-- What is In-Home Support -->
-    <section class="py-5 bg-light">
+    <section class="padding-section bg-light">
         <div class="container">
             <h2 class="main-titles text-center">What is In-Home Support?</h2>
             <div class="row align-items-center">
@@ -95,7 +95,7 @@
     </section>
 
     <!-- Services -->
-    <section class="py-5">
+    <section class="padding-section">
         <div class="container">
             <h2 class="main-titles text-center mb-5">Our Comprehensive Services</h2>
             
@@ -224,7 +224,7 @@
     </section>
 
     <!-- The Continuity Care Difference -->
-    <section class="py-5">
+    <section class="padding-section">
         <div class="container-fluid">
             <div class="difference-section p-5">
                 <h2 class="text-white mb-4 text-center">The Continuity Care Difference in Queensland</h2>
@@ -259,7 +259,7 @@
     </section>
 
     <!-- Our Commitment -->
-    <section class="py-5 bg-light">
+    <section class="padding-section bg-light">
         <div class="container">
             <h2 class="main-titles text-center">Our Commitment to You</h2>
             
@@ -305,9 +305,9 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-5 mb-5">
+    <section class="padding-section">
         <div class="container-fluid">
-            <div class="cta-section p-5 text-center">
+            <div class="cta-section p-5 text-center mt-0">
                 <h2 class="mb-4 text-white">Ready to Organise In-Home Support in Queensland?</h2>
                 <p class="text-white fs-5 mb-4">Whether you're an NDIS participant, an older person with My Aged Care funding, or a post-acute client privately funding short-term help after hospital, Continuity Care can work with you to design the right in-home support.</p>
                 

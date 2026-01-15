@@ -22,7 +22,7 @@
         <!-- End Page Banner Area -->
 
         <!-- Start Services Area -->
-        <div class="services-area ptb-120">
+        <div class="services-area padding-section">
             <div class="container mw-1685">
                 <div class="row g-4">
                     <div class="col-xl-4">

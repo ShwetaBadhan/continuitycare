@@ -1,5 +1,5 @@
 <!-- Start Footer Area -->
-<div class="footer-area bg-secondary ptb-120">
+<div class="footer-area bg-secondary padding-section">
     <div class="container mw-1685">
         <div class="row g-4" data-cues="slideInUp" data-duration="900">
             <div class="col-lg-3 col-sm-6">

@@ -2,7 +2,7 @@
 @section("title" ,"Staff Resources")
 @section("content")
         <!-- Start FAQ Area -->
-        <div class="faq-area-four ptb-120">
+        <div class="faq-area-four padding-section">
             <div class="container mw-1685">
 
                 <div class="row g-4">

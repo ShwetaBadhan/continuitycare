@@ -22,7 +22,7 @@
         <!-- End Page Banner Area -->
 
         <!-- Start Careers Area -->
-        <div class="careers-area ptb-120">
+        <div class="careers-area padding-section">
             <div class="container mw-1685">
                 <div class="d-flex flex-wrap careers-single-item position-relative z-1 mb-4">
                     <div class="flex-shrink-0">

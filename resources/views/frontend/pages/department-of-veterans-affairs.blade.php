@@ -22,7 +22,7 @@
         <!-- End Page Banner Area -->
 
         <!-- Start Case Study Area -->
-        <div class="case-study-area pb-120 pt-80 pt-120">
+        <div class="case-study-area padding-section">
             <div class="container mw-1685">
                 <div class="row g-4">
                     <div class="col-xl-8">

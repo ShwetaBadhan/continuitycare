@@ -3,7 +3,7 @@
 @section("content")
 
   <!-- Hero Section -->
-  <section class="home-care-section">
+  <section class="home-care-section padding-section">
     <div class="container position-relative">
       <h1 class="text-white">Social & Community Participation</h1>
       <p class="text-white">Build confidence, learn life skills, and feel meaningfully connected—your way, your pace.</p>
@@ -18,7 +18,7 @@
     </div>
   </section>
   <!-- What is Section -->
-  <section class="section-padding bg-light">
+  <section class="padding-section bg-light">
     <div class="container">
 
 
@@ -47,7 +47,7 @@
   </section>
 
   <!-- Why It Matters -->
-  <section class="why-matters-section">
+  <section class="why-matters-section padding-section">
     <div class="container">
 
       <!-- Heading -->
@@ -156,9 +156,9 @@
     </div>
   </section>
 
-  <section class="approach-section">
+  <section class="approach-section padding-section">
     <div class="container">
-      <div class="row align-items-center g-5">
+      <div class="row align-items-center justify-content-evenly">
 
         <!-- Left Box -->
         <div class="col-lg-6">
@@ -233,7 +233,7 @@
       </div>
     </div>
   </section>
-  <section class="case-section">
+  <section class="case-section padding-section">
     <div class="bg_image-project-two">
       <div class="container text-white text-center">
         <h2 class="text-white">Building Life Skills in Everyday Settings</h2>
@@ -258,7 +258,7 @@
           </div>
         </div>
 
-        <div class="case-item">
+        <div class="case-item case-item-sm">
           <div class="case-left">02. Planning & Decision-Making</div>
           <div class="case-right">
             <img src="{{ asset('assets/images/skills/skill-2.png') }}">
@@ -271,7 +271,7 @@
           </div>
         </div>
 
-        <div class="case-item">
+        <div class="case-item case-item-sm">
           <div class="case-left">03. Independence Skills</div>
           <div class="case-right">
             <img src="{{ asset('assets/images/skills/skill-3.png') }}">
@@ -283,7 +283,7 @@
             </div>
           </div>
         </div>
-        <div class="case-item">
+        <div class="case-item case-item-sm">
           <div class="case-left">04. Improved Learning</div>
           <div class="case-right">
             <img src="{{ asset('assets/images/skills/skill-5.png') }}">
@@ -295,7 +295,7 @@
             </div>
           </div>
         </div>
-        <div class="case-item">
+        <div class="case-item case-item-sm">
           <div class="case-left">05. Everyday Functional Skills</div>
           <div class="case-right">
             <img src="{{ asset('assets/images/skills/skill-6.png') }}">
@@ -311,7 +311,7 @@
     </div>
   </section>
   <!-- Activities Section -->
-  <section class="activities-section py-5">
+  <section class="activities-section padding-section">
     <div class="container">
       <div class="text-center mb-5">
         <h2 class="main-titles">NDIS-Funded Activities We Can Support</h2>
@@ -441,7 +441,7 @@
       </div>
     </div>
   </section>
-  <section class="custom-hero-section">
+  <section class="custom-hero-section padding-section">
     <div class="container">
       <div class="row align-items-center">
 
@@ -530,7 +530,7 @@
       </div>
     </div>
   </section>
-  <div class="container section">
+  <div class="container  padding-section">
     <div class="row g-4 align-items-center">
       <div class="col-lg-6">
         <img src="{{ asset('assets/images/skills/gateway.png') }}"
@@ -602,7 +602,7 @@
     </div>
   </div>
   <!-- How It Works -->
-  <section class="section-padding">
+  <section class="section-care">
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-8 mx-auto text-center">
@@ -668,7 +668,7 @@
     </div>
   </section>
 
-  <div class="container section">
+  <div class="container  padding-section">
     <div class="row g-4">
       <!-- Left Side -->
       <div class="col-lg-6">
@@ -764,7 +764,7 @@
       </div>
     </div>
   </div>
-  <div class="section">
+  <div class=" padding-section">
 
     <div class="container">
 

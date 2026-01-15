@@ -22,7 +22,7 @@
         <!-- End Page Banner Area -->
 
         <!-- Start Blog Area -->
-        <div class="blog-area ptb-120">
+        <div class="blog-area padding-section">
             <div class="container mw-1685">
                 <div class="row g-4 justify-content-center" data-cues="slideInUp" data-duration="900">
                     <div class="col-xl-8">

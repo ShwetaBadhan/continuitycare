@@ -2,7 +2,7 @@
 @section("title", "Allied Health")
 @section("content")
 
- <div class="services-area mt-5">
+  <div class="services-area padding-section">
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-md-6">
@@ -13,9 +13,12 @@
         <div class="col-md-6">
           <div class="details-content">
             <h3 class="main-titles">Our mission is to improve the quality of life of our participants</h3>
-            <p>Continuity Care was born in 2017 from the idea of creating an environment where people living with a disability or health condition, and the clinicians that support them, were put first.</p>
-            <p>Our 5 values are our blueprint and are the guiding star for our direction and decision making. They have made Better Rehab what it is today, and where it will be in the future.</p>
-            <p>Through in-home, in-clinic and telehealth services, our passionate clinicians across Australia help people living with a disability, health condition, or medical condition.</p>
+            <p>Continuity Care was born in 2017 from the idea of creating an environment where people living with a
+              disability or health condition, and the clinicians that support them, were put first.</p>
+            <p>Our 5 values are our blueprint and are the guiding star for our direction and decision making. They have
+              made Better Rehab what it is today, and where it will be in the future.</p>
+            <p>Through in-home, in-clinic and telehealth services, our passionate clinicians across Australia help people
+              living with a disability, health condition, or medical condition.</p>
           </div>
           <a href="tel:1800 012 273" class="default-btn active mt-5">
             <div class="d-flex gap-10 align-content-center">
@@ -30,124 +33,128 @@
 
 
 
-  <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left Content -->
-                <div class="col-lg-8">
-                    <h2 class="main-title">
-                        Empowering communities with quality home care support
-                    </h2>
-                    
-                    <p class="hero-text">
-                        Continuity Care has proudly provided Support at Home services to communities since 2020. Our care coordinators ensure easy access to high-quality home care support.
-                    </p>
-                    
-                    <p class="hero-text">
-                        Whether you need support at home, in the community, or assistance with daily living, our dedicated team delivers care where it suits you best.
-                    </p>
-                    
-                    <p class="hero-text">
-                        With services across multiple regions, we're ready to help you achieve your goals and improve your quality of life.
-                    </p>
+  <section class="hero-section padding-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-8">
+          <h2 class="main-title">
+            Empowering communities with quality home care support
+          </h2>
 
-                    <!-- Contact Information -->
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="icon-wrappers">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                            </div>
-                            <a href="mailto:info@continuitycare.com.au">info@continuitycare.com.au</a>
-                        </div>
+          <p class="hero-text">
+            Continuity Care has proudly provided Support at Home services to communities since 2020. Our care coordinators
+            ensure easy access to high-quality home care support.
+          </p>
 
-                        <div class="contact-item">
-                            <div class="icon-wrappers">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
-                                </svg>
-                            </div>
-                            <a href="tel:1300555666">1300 555 666</a>
-                        </div>
+          <p class="hero-text">
+            Whether you need support at home, in the community, or assistance with daily living, our dedicated team
+            delivers care where it suits you best.
+          </p>
 
-                        <div class="contact-item">
-                            <div class="icon-wrappers">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
-                                </svg>
-                            </div>
-                            <span>Brisbane QLD, Australia</span>
-                        </div>
+          <p class="hero-text">
+            With services across multiple regions, we're ready to help you achieve your goals and improve your quality of
+            life.
+          </p>
 
-                        <div class="contact-item">
-                            <div class="icon-wrappers">
-                                <svg viewBox="0 0 24 24">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12 6 12 12 16 14"/>
-                                </svg>
-                            </div>
-                            <span>8:30 AM TO 5:00 PM</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Image -->
-                <div class="col-lg-4">
-                    <div class="hero-image-container">
-                        <!-- Plus Pattern - Cyan -->
-                        <div class="plus-pattern plus-cyan">
-                            <div class="plus-icon cyan-plus"></div>
-                            <div class="plus-icon cyan-plus"></div>
-                            <div class="plus-icon cyan-plus"></div>
-                            <div class="plus-icon cyan-plus"></div>
-                            <div class="plus-icon cyan-plus"></div>
-                            <div class="plus-icon cyan-plus"></div>
-                            <div class="plus-icon cyan-plus"></div>
-                            <div class="plus-icon cyan-plus"></div>
-                            <div class="plus-icon cyan-plus"></div>
-                            <div class="plus-icon cyan-plus"></div>
-                            <div class="plus-icon cyan-plus"></div>
-                            <div class="plus-icon cyan-plus"></div>
-                        </div>
-
-                        <!-- Plus Pattern - Yellow -->
-                        <div class="plus-pattern plus-yellow">
-                            <div class="plus-icon yellow-plus"></div>
-                            <div class="plus-icon yellow-plus"></div>
-                            <div class="plus-icon yellow-plus"></div>
-                            <div class="plus-icon yellow-plus"></div>
-                            <div class="plus-icon yellow-plus"></div>
-                            <div class="plus-icon yellow-plus"></div>
-                            <div class="plus-icon yellow-plus"></div>
-                            <div class="plus-icon yellow-plus"></div>
-                            <div class="plus-icon yellow-plus"></div>
-                            <div class="plus-icon yellow-plus"></div>
-                            <div class="plus-icon yellow-plus"></div>
-                            <div class="plus-icon yellow-plus"></div>
-                        </div>
-
-                        <!-- Decorative Circle -->
-                        <div class="decorative-circle"></div>
-
-                        <!-- Hero Image - Replace with your actual image -->
-                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800" 
-                             alt="Care workers at Continuity Care" 
-                             class="hero-image">
-                    </div>
-                </div>
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="icon-wrappers">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <a href="mailto:info@continuitycare.com.au">info@continuitycare.com.au</a>
             </div>
+
+            <div class="contact-item">
+              <div class="icon-wrappers">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <a href="tel:1300555666">1300 555 666</a>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-wrappers">
+                <svg viewBox="0 0 24 24">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <span>Brisbane QLD, Australia</span>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-wrappers">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <span>8:30 AM TO 5:00 PM</span>
+            </div>
+          </div>
         </div>
-    </section>
+
+        <!-- Right Image -->
+        <div class="col-lg-4">
+          <div class="hero-image-container">
+            <!-- Plus Pattern - Cyan -->
+            <div class="plus-pattern plus-cyan">
+              <div class="plus-icon cyan-plus"></div>
+              <div class="plus-icon cyan-plus"></div>
+              <div class="plus-icon cyan-plus"></div>
+              <div class="plus-icon cyan-plus"></div>
+              <div class="plus-icon cyan-plus"></div>
+              <div class="plus-icon cyan-plus"></div>
+              <div class="plus-icon cyan-plus"></div>
+              <div class="plus-icon cyan-plus"></div>
+              <div class="plus-icon cyan-plus"></div>
+              <div class="plus-icon cyan-plus"></div>
+              <div class="plus-icon cyan-plus"></div>
+              <div class="plus-icon cyan-plus"></div>
+            </div>
+
+            <!-- Plus Pattern - Yellow -->
+            <div class="plus-pattern plus-yellow">
+              <div class="plus-icon yellow-plus"></div>
+              <div class="plus-icon yellow-plus"></div>
+              <div class="plus-icon yellow-plus"></div>
+              <div class="plus-icon yellow-plus"></div>
+              <div class="plus-icon yellow-plus"></div>
+              <div class="plus-icon yellow-plus"></div>
+              <div class="plus-icon yellow-plus"></div>
+              <div class="plus-icon yellow-plus"></div>
+              <div class="plus-icon yellow-plus"></div>
+              <div class="plus-icon yellow-plus"></div>
+              <div class="plus-icon yellow-plus"></div>
+              <div class="plus-icon yellow-plus"></div>
+            </div>
+
+            <!-- Decorative Circle -->
+            <div class="decorative-circle"></div>
+
+            <!-- Hero Image - Replace with your actual image -->
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800"
+              alt="Care workers at Continuity Care" class="hero-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-    <div class="nursing-care-section">
+  <div class="nursing-care-section padding-section">
     <h2 class="main-titles">Community allied health services we provide in Brisbane</h2>
     <p>
-      Comfort and convenience during therapy is our main concern. We offer sessions at-home, in-clinic, out-in-public, and over telehealth for our services.
+      Comfort and convenience during therapy is our main concern. We offer sessions at-home, in-clinic, out-in-public, and
+      over telehealth for our services.
     </p>
 
     <div class="care-features-grid">
@@ -268,7 +275,7 @@
   </div>
 
 
-    <div class="services-area mt-5 mb-5">
+  <div class="services-area padding-section">
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-md-12">
@@ -380,61 +387,62 @@
   </div>
 
 
-     <div class="custom-hero-section mt-5 mb-5">
-   <div class="container">
-   <div class="row">
-   <div class="col-lg-6">
-   <h2 class="main-titles">Begin your journey today</h2>
-   <p>Get a head start on receiving support with our experienced clinicians by submitting our referral form. If you've got questions, our team is ready to assist you – simply use our enquiry form to get in touch.</p>
-    <a href="tel:1800 012 273" class="default-btn active mt-">
+  <div class="custom-hero-section padding-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="main-titles">Begin your journey today</h2>
+          <p>Get a head start on receiving support with our experienced clinicians by submitting our referral form. If
+            you've got questions, our team is ready to assist you – simply use our enquiry form to get in touch.</p>
+          <a href="tel:1800 012 273" class="default-btn active mt-">
             <div class="d-flex gap-10 align-content-center">
               <span>Book a Free Consultation</span>
               <img src="assets/images/right.svg" alt="right-white">
             </div>
 
-            
+
           </a>
           <div class="mt-3">
-          <img src="{{ asset('assets/images/skills/skill-1.png') }}" class="w-75 rounded"  alt="">
-          
+            <img src="{{ asset('assets/images/skills/skill-1.png') }}" class="w-75 rounded" alt="">
+
           </div>
-   </div>
-   <div class="col-lg-6">
-   <div class="contact-us-form bg-img border p-4 p-lg-5 rounded-4">
-                            <h3 class="mt-0">Take A Schedule Appointment</h3>
-                            <p>Our booking process is simple confidential and flexible to fit your schedule</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-us-form bg-img border p-4 p-lg-5 rounded-4">
+            <h3 class="mt-0">Take A Schedule Appointment</h3>
+            <p>Our booking process is simple confidential and flexible to fit your schedule</p>
 
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control bg-f2f3f5" placeholder="Full Name">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="email" class="form-control bg-f2f3f5" placeholder="Email">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="number" class="form-control bg-f2f3f5" placeholder="Phone">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control bg-f2f3f5" placeholder="Subject">
-                                </div>
-                                <div class="col-lg-12">
-                                    <textarea rows="5" class="form-control bg-f2f3f5" placeholder="Write Your Message"></textarea>
-                                </div>
-                                <div class="col-lg-12">
-                                    <button type="submit" class="default-btn">
-                                        <span class="d-flex gap-10 align-items-center justify-content-center">
-                                            <span>send message</span>
-                                            <img src="assets/images/right-white.svg" alt="right-white">
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-   </div>
-   </div>
-   </div>
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <input type="text" class="form-control bg-f2f3f5" placeholder="Full Name">
+              </div>
+              <div class="col-lg-6">
+                <input type="email" class="form-control bg-f2f3f5" placeholder="Email">
+              </div>
+              <div class="col-lg-6">
+                <input type="number" class="form-control bg-f2f3f5" placeholder="Phone">
+              </div>
+              <div class="col-lg-6">
+                <input type="text" class="form-control bg-f2f3f5" placeholder="Subject">
+              </div>
+              <div class="col-lg-12">
+                <textarea rows="5" class="form-control bg-f2f3f5" placeholder="Write Your Message"></textarea>
+              </div>
+              <div class="col-lg-12">
+                <button type="submit" class="default-btn">
+                  <span class="d-flex gap-10 align-items-center justify-content-center">
+                    <span>send message</span>
+                    <img src="assets/images/right-white.svg" alt="right-white">
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-   
+
   </div>
 
 @endsection

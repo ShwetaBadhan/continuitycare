@@ -2,7 +2,7 @@
 @section("title", "Our Blogs")
 @section("content")
     <!-- Start Page Banner Area -->
-    <div class="page-banner-area bg-img ptb-120 position-relative"
+    <div class="page-banner-area bg-img  position-relative"
         style="background-image: url(assets/images/page-bg15.jpg);">
         <div class="container mw-1685">
             <div class="page-banner-content text-center">
@@ -23,7 +23,7 @@
     <!-- End Page Banner Area -->
 
     <!-- Start Blog Area -->
-    <div class="blog-area ptb-120">
+    <div class="blog-area padding-section">
         <div class="container mw-1685">
             <div class="row g-4 justify-content-center" data-cues="slideInUp" data-duration="900">
                 <div class="col-xl-8">

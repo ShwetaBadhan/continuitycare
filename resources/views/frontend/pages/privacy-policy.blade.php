@@ -22,7 +22,7 @@
         <!-- End Page Banner Area -->
 
         <!-- Start Privacy policy Area -->
-        <div class="ptb-120">
+        <div class="padding-section">
             <div class="container">
                 <div class="main-content-text">
                     <span class="update">Last updated: April 2025</span>

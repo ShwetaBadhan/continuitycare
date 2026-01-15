@@ -1,7 +1,7 @@
 @extends("frontend.layout.master")
 @section("title", "Supported Independent Living")
 @section("content")
-  <div class="services-area mt-5">
+  <div class="services-area padding-section">
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-md-6">
@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <div class="nursing-care-section">
+  <div class="nursing-care-section padding-section">
     <h2 class="main-titles">Comprehensive Care at Home</h2>
     <p>
       Our cloud-based platform connects every stakeholder to improve overall health, well-being, and quality of life.
@@ -278,7 +278,7 @@
 
 
 
-  <div class="services-area mt-5 mb-5">
+  <div class="services-area padding-section">
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-md-12">

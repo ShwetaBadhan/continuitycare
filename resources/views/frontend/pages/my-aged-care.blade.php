@@ -23,7 +23,7 @@
     <!-- End Page Banner Area -->
 
     <!-- Start Case Study Area -->
-    <div class="case-study-area pb-120 pt-80 pt-120">
+    <div class="case-study-area padding-section">
         <div class="container mw-1685">
             <div class="row g-4 d-flex align-items-center">
                 <div class="col-md-4 offset-md-1">
@@ -56,7 +56,7 @@
     </div>
     <!-- End Case Study Area -->
 
-    <section class="custom-hero-section">
+    <section class="custom-hero-section padding-section" >
         <div class="container">
             <div class="row align-items-center">
 
@@ -98,7 +98,7 @@
 
 
     <!-- Start Case Study Area -->
-    <div class="case-study-area pb-120 pt-80 pt-120">
+    <div class="case-study-area padding-section">
         <div class="container mw-1685">
             <div class="row g-4 d-flex align-items-center">
             <div class="col-md-12">
