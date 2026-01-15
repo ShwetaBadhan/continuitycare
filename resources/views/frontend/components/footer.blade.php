@@ -46,10 +46,10 @@
 
                     <ul class="import-link p-0 m-0 list-unstyled">
                         <li>
-                            <a href="{{ route("about-us") }}">Learn About us</a>
+                            <a href="{{ route("about-us") }}">Who We Are</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)">Pricing Plans</a>
+                            <a href="{{ route('connect-portal') }}">Continuity Connect Patient Portal</a>
                         </li>
                         <li>
                             <a href="{{ route("our-leadership") }}">Our Leadership</a>

@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\Auth\LoginController;
+
 
 Route::get('/', function () {
     return view('frontend.pages.index');
@@ -111,6 +110,29 @@ Route::get('/support-coordination', function () {
 })->name('support-coordination');
 
 
+
+Route::get('/self-management', function () {
+    return view('frontend.pages.self-management');
+})->name('self-management');
+
+
+
+
+Route::get('/fully-management', function () {
+    return view('frontend.pages.fully-management');
+})->name('fully-management');
+
+
+
+Route::get('/transition-care', function () {
+    return view('frontend.pages.transition-care');
+})->name('transition-care');
+
+
+Route::get('/connect-portal', function () {
+    return view('frontend.pages.connect-portal');
+})->name('connect-portal');
+
 Route::get('/terms-conditions', function () {
     return view('frontend.pages.terms-conditions');
 })->name('terms-conditions');
@@ -170,9 +192,8 @@ Route::get('/new-aged-care-act', function () {
 
 
 
-// admin panel
-Route::get('/login', [LoginController::class, 'showLogin'])->name('login');
-Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
+
+
 
 
 
@@ -181,43 +202,9 @@ Route::prefix('admin')->group(function () {
     Route::view('/dashboard', 'admin.pages.dashboard');
 });
 
-Route::get('/dashboard', function () {
-    return view('admin.pages.dashboard');
-})->middleware('auth')->name('dashboard');
 
-Route::get('/contact-leads', function () {
-    return view('admin.pages.contact-leads');
-})->name('contact-leads');
+Route::get('/admin-users', function () {
+    return view('admin.pages.admin-users');
+})->name('admin-users');
 
-// Route::get('/admin-users', function () {
-//     return view('admin.pages.admin-users');
-// })->name('admin-users');
-
-
-Route::middleware('auth')->group(function () {
-    Route::get('/admin-users', [UserController::class, 'index'])
-        ->name('admin-users');
-
-    Route::post('/users/store', [UserController::class, 'store'])
-        ->name('users.store');
-
-    Route::get('/users/{user}/edit', [UserController::class, 'edit'])
-        ->name('users.edit');
-
-    // 👇 FIXED: now uses {user} and PUT
-    Route::put('/users/{user}', [UserController::class, 'update'])
-        ->name('users.update');
-
-    Route::delete('/users/{user}', [UserController::class, 'destroy'])
-        ->name('users.delete');
-});
-
-
-Route::get('/admin-roles', function () {
-    return view('admin.pages.admin-roles');
-})->name('admin-roles');
-
-Route::get('/admin-permissions', function () {
-    return view('admin.pages.admin-permissions');
-})->name('admin-permissions');
 

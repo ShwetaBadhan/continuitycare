@@ -71,7 +71,7 @@
         <!-- Continuity Connect -->
         <a href="https://continuityconnect.com.au/" target="_blank" class="resource-tile">
             <div class="tile-logo">
-                <img src="assets/images/logos/continuity-connect-logo.svg" alt="Continuity Connect Logo">
+                <img src="https://continuityconnect.com.au/wp-content/uploads/2025/11/logo.svg" alt="Continuity Connect Logo">
             </div>
             <div class="tile-name">Continuity Connect</div>
         </a>

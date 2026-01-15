@@ -22059,7 +22059,7 @@ body {
 /* List */
 .approach-list li {
     display: flex;
-    align-items: center;
+    align-items: start;
     margin-bottom: 8px;
     font-size: 16px;
 }
@@ -22762,4 +22762,447 @@ body {
             background: var(--bs-base);
             color: white;
             border-color: var(--bs-green);
+        }
+
+        .sms-hero-section {
+            background-color: #f5f5f5;
+            padding: 60px 0;
+        }
+
+        .sms-main-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sms-intro-text {
+            color: #666;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto 50px;
+            line-height: 1.6;
+        }
+
+        .sms-step-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            height: 100%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .sms-step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+        }
+
+        .sms-step-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 25px;
+            font-weight: 600;
+            color: #333;
+                justify-content: center;
+        }
+
+        .sms-check-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--bs-base);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+        }
+
+        .sms-illustration-wrapper {
+            width: 200px;
+            height: 200px;
+          
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            position: relative;
+        }
+
+        .sms-illustration-img {
+            max-width: 140px;
+            height: auto;
+        }
+
+        .sms-step-description {
+            color: #666;
+            line-height: 1.7;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        .sms-cta-wrapper {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .sms-cta-button {
+            background: var(--bs-base);
+            color: white;
+            padding: 15px 50px;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 140, 66, 0.3);
+        }
+
+        .sms-cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 140, 66, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .sms-main-heading {
+                font-size: 2rem;
+            }
+            
+            .sms-step-card {
+                margin-bottom: 20px;
+            }
+        }
+
+        .fc-wrapper-section {
+           
+            padding: 60px 0;
+        }
+
+        .fc-intro-paragraph {
+            color: #333;
+            font-size: 1rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .fc-levels-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .fc-level-row {
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .fc-level-row:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .fc-number-badge {
+            flex: 0 0 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .fc-content-area {
+            flex: 1;
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .fc-support-title {
+            font-weight: 700;
+            color: #222;
+            margin-right: 8px;
+        }
+
+        .fc-support-description {
+            color: #555;
+        }
+
+        /* Individual level colors */
+        .fc-level-1 .fc-number-badge {
+            background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        }
+        .fc-level-1 .fc-content-area {
+            background-color: #e3f2fd;
+        }
+
+        .fc-level-2 .fc-number-badge {
+            background: linear-gradient(135deg, #00acc1 0%, #00838f 100%);
+        }
+        .fc-level-2 .fc-content-area {
+            background-color: #e0f7fa;
+        }
+
+        .fc-level-3 .fc-number-badge {
+            background: linear-gradient(135deg, #43a047 0%, #2e7d32 100%);
+        }
+        .fc-level-3 .fc-content-area {
+            background-color: #e8f5e9;
+        }
+
+        .fc-level-4 .fc-number-badge {
+            background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+        }
+        .fc-level-4 .fc-content-area {
+            background-color: #f1f8e9;
+        }
+
+        .fc-level-5 .fc-number-badge {
+            background: linear-gradient(135deg, #fdd835 0%, #f9a825 100%);
+        }
+        .fc-level-5 .fc-content-area {
+            background-color: #fffde7;
+        }
+
+        .fc-level-6 .fc-number-badge {
+            background: linear-gradient(135deg, #ffb74d 0%, #f57c00 100%);
+        }
+        .fc-level-6 .fc-content-area {
+            background-color: #fff3e0;
+        }
+
+        .fc-level-7 .fc-number-badge {
+            background: linear-gradient(135deg, #ff7043 0%, #e64a19 100%);
+        }
+        .fc-level-7 .fc-content-area {
+            background-color: #fbe9e7;
+        }
+
+        .fc-level-8 .fc-number-badge {
+            background: linear-gradient(135deg, #ec407a 0%, #c2185b 100%);
+        }
+        .fc-level-8 .fc-content-area {
+            background-color: #fce4ec;
+        }
+
+        .fc-footer-info {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            border-left: 4px solid #1e88e5;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .fc-footer-text {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .fc-footer-link {
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .fc-footer-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .fc-number-badge {
+                flex: 0 0 80px;
+                font-size: 1.5rem;
+            }
+
+            .fc-content-area {
+                padding: 15px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .fc-support-title {
+                margin-bottom: 5px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .fc-level-row {
+                flex-direction: column;
+            }
+
+            .fc-number-badge {
+                flex: 0 0 auto;
+                padding: 15px;
+                justify-content: flex-start;
+                padding-left: 25px;
+            }
+        }
+
+
+
+          .connect-hero-section {
+            position: relative;
+            padding: 100px 0;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+            background-image: radial-gradient(circle at 2px 2px, var(--bs-gree-blue) 1px, transparent 0);
+            background-size: 40px 40px;
+            pointer-events: none;
+        }
+
+        .badge-custom {
+            background: var(--bs-base);
+            color: var(--bs-gree-blue);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+
+        .text-blue {
+            color: var(--bs-gree-blue);
+        }
+
+        .text-slate {
+            color: var(--slate-600);
+        }
+
+       
+
+        .btn-primary-custom {
+            background: var(--bs-base);
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(37, 99, 235, 0.4);
+        }
+
+        .card-custom {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+            padding: 50px;
+        }
+
+        .card-blue-gradient {
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+            border-radius: 15px;
+            padding: 40px;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .check-icon {
+            color: var(--bs-gree-blue);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .comparison-card {
+            border-radius: 20px;
+            padding: 50px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .doctor-card {
+            background: #f1f5f9;
+            border: 2px solid #cbd5e1;
+        }
+
+        .patient-card {
+            background: var(--bs-base);
+            color: white;
+            border: 2px solid var(--bs-gree-blue);
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(37, 99, 235, 0.3);
+        }
+
+        .warning-card {
+            background: #fef2f2;
+            border: 2px solid #fecaca;
+            border-radius: 20px;
+            padding: 50px;
+        }
+
+        .warning-item {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .insight-card {
+            background: var(--bs-base);
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(37, 99, 235, 0.3);
+            color: white;
+            text-align: center;
+        }
+
+        .final-card {
+            background: white;
+            border-radius: 20px;
+            border: 2px solid var(--bs-base);
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .divider {
+            width: 100px;
+            height: 4px;
+            background: var(--bs-gree-blue);
+            margin: 30px auto;
+        }
+
+        .icon-large {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .card-custom, .comparison-card, .warning-card, .final-card {
+                padding: 30px;
+            }
+
+            .patient-card {
+                transform: scale(1);
+                margin-top: 20px;
+            }
         }
