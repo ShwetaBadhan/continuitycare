@@ -74,11 +74,11 @@
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree8" aria-expanded="false" aria-controls="collapseThree6">
                                         Statement of Commitment to the Safety and Wellbeing of Vulnerable People
                                     </button>
                                 </h2>
-                                <div id="collapseThree6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div id="collapseThree8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p> <a href="">Continuity Statement of Commitment to the Safety and Wellbeing of Vulnerable People</a></p>
 
@@ -99,11 +99,11 @@
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree7" aria-expanded="false" aria-controls="collapseThree6">
                                         Modern Slavery Statement
                                     </button>
                                 </h2>
-                                <div id="collapseThree6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div id="collapseThree7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p><a href="">Continuity Modern Slavery Statement</a></p>
                                        
