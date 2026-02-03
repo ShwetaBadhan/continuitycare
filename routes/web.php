@@ -1,7 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 
+=======
+use App\Http\Controllers\JobController;
+Route::post('/apply-job', [JobController::class, 'store'])->name('apply.job');
+>>>>>>> 2c997dc (fetch complete | form active)
 
 Route::get('/', function () {
     return view('frontend.pages.index');
@@ -37,7 +42,8 @@ Route::get('/service-details', function () {
 })->name('service-details');
 
 
-Route::get('/blog-details', function () {
+
+Route::get('/blog-details/{slug}', function () {
     return view('frontend.pages.blog-details');
 })->name('blog-details');
 
@@ -48,9 +54,11 @@ Route::get('/careers', function () {
 })->name('careers');
 
 
+
 Route::get('/career-details', function () {
     return view('frontend.pages.career-details');
-})->name('career-details');
+
+
 
 
 
@@ -180,9 +188,11 @@ Route::get('/locations', function () {
 Route::get('/supported-independent-living', function () {
     return view('frontend.pages.supported-independent-living');
 })->name('supported-independent-living');
-Route::get('/accommodation-details', function () {
-    return view('frontend.pages.accommodation-details');
+Route::get('/accommodation-details/{slug}', function ($slug) {
+    return view('frontend.pages.accommodation-details', compact('slug'));
 })->name('accommodation-details');
+
+
 
 
 Route::get('/new-aged-care-act', function () {
@@ -193,18 +203,5 @@ Route::get('/new-aged-care-act', function () {
 
 
 
-
-
-
-
-Route::prefix('admin')->group(function () {
-    Route::view('/', 'admin/auth/welcome');          // ← This serves welcome page at /admin
-    Route::view('/dashboard', 'admin.pages.dashboard');
-});
-
-
-Route::get('/admin-users', function () {
-    return view('admin.pages.admin-users');
-})->name('admin-users');
 
 
