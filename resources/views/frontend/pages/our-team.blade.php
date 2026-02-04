@@ -1,26 +1,7 @@
 @extends("frontend.layout.master")
 @section("title", "Our Team")
 @section("content")
-    <!-- Start Page Banner Area -->
-    {{-- <div class="page-banner-area bg-img ptb-120 position-relative"
-        style="background-image: url(assets/images/page-bg9.jpg);">
-        <div class="container mw-1685">
-            <div class="page-banner-content text-center">
-                <h2 class="mx-auto text-white">Our Team</h2>
-                <ul class="p-0 m-0 list-unstyled d-flex align-items-center justify-content-center">
-                    <li>
-                        <a href="{{ route('home') }}" class="text-decoration-none">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        Team
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div> --}}
-    <!-- End Page Banner Area -->
+
 
     <!-- Start Team Area -->
     <div class="team-area padding-section">
@@ -42,222 +23,55 @@
 
                 <ul class="nav custom-nav-tabs" id="leadershipTabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="leaders-tab" data-bs-toggle="tab" data-bs-target="#leaders"
-                            type="button">
-                            Our Leaders
+                        <button class="nav-link" id="medical" data-bs-toggle="tab" data-bs-target="#medical" type="button">
+                            Advisory Board
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="board-tab" data-bs-toggle="tab" data-bs-target="#board" type="button">
+                        <button class="nav-link active" id="board-tab" data-bs-toggle="tab" data-bs-target="#board"
+                            type="button">
                             Executive Board
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="team-tab" data-bs-toggle="tab" data-bs-target="#team" type="button">
-                            Leadership Team
+                            Management Team
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="staff-tab" data-bs-toggle="tab" data-bs-target="#staff" type="button">
-                            Staff
+                            Other
                         </button>
                     </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link " id="leaders-tab" data-bs-toggle="tab" data-bs-target="#leaders"
+                            type="button">
+                            Our Leaders
+                        </button>
+                    </li>
+
                 </ul>
 
                 <div class="tab-content" id="leadershipTabContent">
 
-                    <!-- Our Leaders Tab -->
-                    <div class="tab-pane fade show active" id="leaders" role="tabpanel">
-                        <div class="row g-4">
-                            <div class="col-xl-3 col-sm-6">
-                                <div class="team-single-item">
-                                    <a href="javascript:void(0)" class="team-img">
-                                        <img src="assets/images/team1.jpg" alt="team">
-                                    </a>
-                                    <div class="team-content">
-                                        <h3>Dianna Breslin</h3>
-                                        <span>Senior care physician</span>
-                                        <ul class="p-0 mb-0 list-unstyled d-flex">
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-facebook-filled"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-instagram"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-x"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-sm-6">
-                                <div class="team-single-item">
-                                    <a href="javascript:void(0)" class="team-img">
-                                        <img src="assets/images/team2.jpg" alt="team">
-                                    </a>
-                                    <div class="team-content">
-                                        <h3>Michele Brigham</h3>
-                                        <span>Clinical lead</span>
-                                        <ul class="p-0 mb-0 list-unstyled d-flex">
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-facebook-filled"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-instagram"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-x"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-sm-6">
-                                <div class="team-single-item">
-                                    <a href="javascript:void(0)" class="team-img">
-                                        <img src="assets/images/team3.jpg" alt="team">
-                                    </a>
-                                    <div class="team-content">
-                                        <h3>Patrick Herron</h3>
-                                        <span>Director of operations</span>
-                                        <ul class="p-0 mb-0 list-unstyled d-flex">
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-facebook-filled"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-instagram"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-x"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-sm-6">
-                                <div class="team-single-item">
-                                    <a href="javascript:void(0)" class="team-img">
-                                        <img src="assets/images/team1.jpg" alt="team">
-                                    </a>
-                                    <div class="team-content">
-                                        <h3>Dianna Breslin</h3>
-                                        <span>Senior care physician</span>
-                                        <ul class="p-0 mb-0 list-unstyled d-flex">
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-facebook-filled"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-instagram"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-x"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="tab-pane fade " id="leaders">
+                        <div class="row g-4" id="our_leaders"></div>
                     </div>
 
-                    <!-- Executive Board Tab -->
-                    <div class="tab-pane fade" id="board" role="tabpanel">
-                        <div class="row g-4">
-                            <div class="col-xl-3 col-sm-6">
-                                <div class="team-single-item">
-                                    <a href="javascript:void(0)" class="team-img">
-                                        <img src="assets/images/team2.jpg" alt="team">
-                                    </a>
-                                    <div class="team-content">
-                                        <h3>Michele Brigham</h3>
-                                        <span>Clinical lead</span>
-                                        <ul class="p-0 mb-0 list-unstyled d-flex">
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-facebook-filled"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-instagram"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-x"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-sm-6">
-                                <div class="team-single-item">
-                                    <a href="javascript:void(0)" class="team-img">
-                                        <img src="assets/images/team3.jpg" alt="team">
-                                    </a>
-                                    <div class="team-content">
-                                        <h3>Patrick Herron</h3>
-                                        <span>Director of operations</span>
-                                        <ul class="p-0 mb-0 list-unstyled d-flex">
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-facebook-filled"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-instagram"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-x"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-sm-6">
-                                <div class="team-single-item">
-                                    <a href="javascript:void(0)" class="team-img">
-                                        <img src="assets/images/team4.jpg" alt="team">
-                                    </a>
-                                    <div class="team-content">
-                                        <h3>Michele Harmon</h3>
-                                        <span>Geriatrician</span>
-                                        <ul class="p-0 mb-0 list-unstyled d-flex">
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-facebook-filled"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-instagram"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-x"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-sm-6">
-                                <div class="team-single-item">
-                                    <a href="javascript:void(0)" class="team-img">
-                                        <img src="assets/images/team5.jpg" alt="team">
-                                    </a>
-                                    <div class="team-content">
-                                        <h3>Christina Reyes</h3>
-                                        <span>Executive Director</span>
-                                        <ul class="p-0 mb-0 list-unstyled d-flex">
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-facebook-filled"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-instagram"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-x"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="tab-pane fade show active" id="board">
+                        <div class="row g-4" id="executive_board"></div>
                     </div>
 
-                    <!-- Leadership Team Tab -->
-                    <div class="tab-pane fade" id="team" role="tabpanel">
-                        <div class="row g-4">
-                           <div class="col-xl-3 col-sm-6">
-                                <div class="team-single-item">
-                                    <a href="javascript:void(0)" class="team-img">
-                                        <img src="assets/images/team5.jpg" alt="team">
-                                    </a>
-                                    <div class="team-content">
-                                        <h3>Christina Reyes</h3>
-                                        <span>Executive Director</span>
-                                        <ul class="p-0 mb-0 list-unstyled d-flex">
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-facebook-filled"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-instagram"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-x"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="tab-pane fade" id="team">
+                        <div class="row g-4" id="leadership_team"></div>
                     </div>
 
-                    <!-- Staff Tab -->
-                    <div class="tab-pane fade" id="staff" role="tabpanel">
-                        <div class="row g-4">
-                            <div class="col-xl-3 col-sm-6">
-                                <div class="team-single-item">
-                                    <a href="javascript:void(0)" class="team-img">
-                                        <img src="assets/images/team5.jpg" alt="team">
-                                    </a>
-                                    <div class="team-content">
-                                        <h3>Christina Reyes</h3>
-                                        <span>Executive Director</span>
-                                        <ul class="p-0 mb-0 list-unstyled d-flex">
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-facebook-filled"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-instagram"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-x"></i></a></li>
-                                            <li><a href="#" target="_blank"><i class="ti ti-brand-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="tab-pane fade" id="staff">
+                        <div class="row g-4" id="staff_data"></div>
+                    </div>
+
+                    <div class="tab-pane fade" id="medical">
+                        <div class="row g-4" id="medical_board"></div>
                     </div>
 
                 </div>
@@ -266,3 +80,74 @@
     </div>
     <!-- End Team Area -->
 @endsection
+@push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            window.FRONTEND_CONFIG = {
+                DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
+            };
+
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/our-team`)
+                .then(res => res.json())
+                .then(data => {
+
+                    renderTeam(data.our_leaders, 'our_leaders');
+                    renderTeam(data.executive_board, 'executive_board');
+                    renderTeam(data.leadership_team, 'leadership_team');
+                    renderTeam(data.staff, 'staff_data');
+                    renderTeam(data.medical, 'medical_board');
+
+                })
+                .catch(err => console.error('API ERROR ', err));
+
+        });
+
+
+        function renderTeam(list, containerId) {
+            const container = document.getElementById(containerId);
+            if (!container || !list || list.length === 0) {
+                container.innerHTML = '<p class="text-center">No data found</p>';
+                return;
+            }
+
+            container.innerHTML = list.map(member => `
+                <div class="col-xl-3 col-sm-6">
+                    <div class="team-single-item">
+                        <a href="javascript:void(0)" class="team-img">
+                            <img src="http://localhost:8080/uploads/${member.image ?? '/assets/images/placeholder.png'}" alt="${member.fullname}">
+                        </a>
+                        <div class="team-content">
+                            <h3>${member.fullname}</h3>
+                            <span>${member.designation}</span>
+
+                            <ul class="p-0 mb-0 list-unstyled d-flex">
+                                ${socialIcon(member.facebook, 'facebook')}
+                                ${socialIcon(member.instagram, 'instagram')}
+                                ${socialIcon(member.twitter, 'x')}
+                                ${socialIcon(member.linkedin, 'linkedin')}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function socialIcon(url, type) {
+            if (!url) return '';
+            const icons = {
+                facebook: 'ti ti-brand-facebook-filled',
+                instagram: 'ti ti-brand-instagram',
+                x: 'ti ti-brand-x',
+                linkedin: 'ti ti-brand-linkedin'
+            };
+            return `
+                <li>
+                    <a href="${url}" target="_blank">
+                        <i class="${icons[type]}"></i>
+                    </a>
+                </li>
+            `;
+        }
+    </script>
+
+@endpush

@@ -1,5 +1,5 @@
 @extends("frontend.layout.master")
-@section("title", "In Home Care Services | Continuity Care")
+@section("title", "Community Participation Services | Continuity Care")
 @section("content")
 
   <!-- Hero Section -->
@@ -24,18 +24,18 @@
 
       <div class="row g-4 d-flex align-items-center">
         <div class="col-lg-5 mx-auto">
-          <img src="{{ asset('assets/images/about/download.png') }}" class="rounded" alt="">
+          <img id="community-about-image" src="{{ asset('assets/images/about/download.png') }}" class="rounded" alt="">
         </div>
         <div class="col-lg-7 mx-auto">
-          <h2 class="main-titles">What Is Social & Community Participation?</h2>
+          <h2 class="main-titles" id="community-about-title">What Is Social & Community Participation?</h2>
 
-          <p>
+          <p id="community-about-description" align="justify">
             Social and community participation refers to the active involvement of individuals within their communities
             and broader society. It can include things like volunteering, attending community events, joining clubs or
             organisations, taking part in classes, and building everyday connections with others.
           </p>
           <p>It’s not only beneficial for communities—it also supports individuals through:</p>
-          <ul class="list-unstyled approach-list">
+          <ul class="list-unstyled approach-list" id="community-about-list">
             <li><span></span> Stronger Social Support</li>
             <li><span></span> Improved Wellbeing and Confidence</li>
             <li><span></span> Greater Inclusion and Belonging</li>
@@ -53,11 +53,11 @@
       <!-- Heading -->
       <div class="row mb-5">
         <div class="col-lg-8 mx-auto text-center">
-          <span class="section-label">WHY IT MATTERS</span>
-          <h2 class="main-titles">
+          <span class="section-label" id="community-benefit-sub-title">WHY IT MATTERS</span>
+          <h2 class="main-titles" id="community-benefit-main-title">
             More than just <span>"something to do"</span>
           </h2>
-          <p class="section-desc">
+          <p class="section-desc" id="community-benefit-side-title" align="justify">
             Social and community participation plays an important role in building inclusive,
             resilient communities—and making a powerful difference in everyday life.
           </p>
@@ -69,18 +69,10 @@
         <div class="col-lg-3 col-md-6">
           <div class="why-card">
             <div class="why-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-users" aria-hidden="true" data-replit-metadata="client/src/pages/home.tsx:229:6"
-                data-component-name="Icon">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-              </svg>
+              <img id="community-benefit-card-img-1" src="" alt="img">
             </div>
-            <h4>Belonging</h4>
-            <p>
+            <h4 id="community-benefit-card-title-1">Belonging</h4>
+            <p id="community-benefit-card-desc-1" align="justify">
               Feeling accepted, included, and part of something bigger than yourself.
             </p>
           </div>
@@ -89,17 +81,10 @@
         <div class="col-lg-3 col-md-6">
           <div class="why-card">
             <div class="why-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-heart" aria-hidden="true" data-replit-metadata="client/src/pages/home.tsx:229:6"
-                data-component-name="Icon">
-                <path
-                  d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
-                </path>
-              </svg>
+              <img id="community-benefit-card-img-2" src="" alt="img">
             </div>
-            <h4>Connection</h4>
-            <p>
+            <h4 id="community-benefit-card-title-2">Connection</h4>
+            <p id="community-benefit-card-desc-2" align="justify">
               Building friendships, peer interaction, and genuine community support networks.
             </p>
           </div>
@@ -108,20 +93,10 @@
         <div class="col-lg-3 col-md-6">
           <div class="why-card">
             <div class="why-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-sparkles" aria-hidden="true" data-replit-metadata="client/src/pages/home.tsx:229:6"
-                data-component-name="Icon">
-                <path
-                  d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
-                </path>
-                <path d="M20 2v4"></path>
-                <path d="M22 4h-4"></path>
-                <circle cx="4" cy="20" r="2"></circle>
-              </svg>
+              <img id="community-benefit-card-img-3" src="" alt="img">
             </div>
-            <h4>Inclusivity</h4>
-            <p>
+            <h4 id="community-benefit-card-title-3">Inclusivity</h4>
+            <p id="community-benefit-card-desc-3" align="justify">
               Increasing access and participation for everyone in meaningful ways.
             </p>
           </div>
@@ -130,7 +105,8 @@
         <div class="col-lg-3 col-md-6">
           <div class="why-card">
             <div class="why-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+              <img id="community-benefit-card-img-4" src="" alt="img">
+              {{-- <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-sun" aria-hidden="true" data-replit-metadata="client/src/pages/home.tsx:229:6"
                 data-component-name="Icon">
@@ -143,10 +119,10 @@
                 <path d="M20 12h2"></path>
                 <path d="m6.34 17.66-1.41 1.41"></path>
                 <path d="m19.07 4.93-1.41 1.41"></path>
-              </svg>
+              </svg> --}}
             </div>
-            <h4>Wellbeing</h4>
-            <p>
+            <h4 id="community-benefit-card-title-4">Wellbeing</h4>
+            <p id="community-benefit-card-desc-4" align="justify">
               Brighter days, better mood, and meaningful routines that support mental health.
             </p>
           </div>
@@ -155,7 +131,7 @@
 
     </div>
   </section>
-
+  {{-- approach section --}}
   <section class="approach-section padding-section">
     <div class="container">
       <div class="row align-items-center justify-content-evenly">
@@ -164,13 +140,13 @@
         <div class="col-lg-6">
           <div class="card-wrapper">
             <div class="content-card">
-              <h2 class="text-white">We love to brighten your day</h2>
-              <p class="text-white">
+              <h2 class="text-white" id="community-approach-title">We love to brighten your day</h2>
+              <p class="text-white" id="community-approach-sub-title">
                 When you work with Continuity Care, we provide a wide
                 range of NDIS-aligned activities that provide <strong>structure,
                   purpose, and joy.</strong>
               </p>
-              <p class="mb-0 text-white">
+              <p class="mb-0 text-white" id="community-approach-description" align="justify">
                 We customise activity programs to suit you, with the right
                 level of support to participate in experiences you actually
                 enjoy. Whether you want to be more social, more
@@ -184,7 +160,7 @@
         <div class="col-lg-6">
 
           <div class="approach-tag">OUR APPROACH</div>
-          <h2 class="main-titles">
+          <h2 class="main-titles" id="community-approach-side-title">
             Empowerment through<br>Capacity Building
           </h2>
 
@@ -207,7 +183,7 @@
 
             <!-- TAB 1 -->
             <div class="tab-pane fade show active" id="tab-one">
-              <ul class="list-unstyled approach-list">
+              <ul class="list-unstyled approach-list" id="community-approach-list">
                 <li><span></span> Independence and daily confidence</li>
                 <li><span></span> Decision-making and planning</li>
                 <li><span></span> Communication and social skills</li>
@@ -218,7 +194,7 @@
 
             <!-- TAB 2 -->
             <div class="tab-pane fade" id="tab-two">
-              <ul class="list-unstyled approach-list">
+              <ul class="list-unstyled approach-list" id="community-approach-list2">
                 <li><span></span> Strengthen everyday life skills in real community settings</li>
                 <li><span></span> Build confidence to try new experiences at your own pace</li>
                 <li><span></span> Develop routines that support your wellbeing and independence</li>
@@ -233,6 +209,7 @@
       </div>
     </div>
   </section>
+  {{-- services section --}}
   <section class="case-section padding-section">
     <div class="bg_image-project-two">
       <div class="container text-white text-center">
@@ -243,71 +220,24 @@
     </div>
 
     <div class="container">
-      <div class="case-accordion">
-        <!-- ITEM -->
-        <div class="case-item active">
-          <div class="case-left">01. Social confidence & communication</div>
-          <div class="case-right">
-            <img src="{{ asset('assets/images/skills/skill-1.png') }}">
-            <div class="case-content">
-              <h2>01.</h2>
-              <h3>Social confidence & communication</h3>
-              <p>starting conversations, joining groups, feeling comfortable in social spaces</p>
+      <div class="case-accordion" id="services-container">
 
+        <!-- TEMPLATE (hidden) -->
+        <div class="case-item case-item-sm d-none" id="service-template">
+          <div class="case-left service-left"></div>
+
+          <div class="case-right">
+            <img class="service-image" src="" alt="Service Image">
+            <div class="case-content">
+              <h2 class="service-number"></h2>
+              <h3 class="service-title"></h3>
+              <div class="service-description"></div>
             </div>
           </div>
         </div>
 
-        <div class="case-item case-item-sm">
-          <div class="case-left">02. Planning & Decision-Making</div>
-          <div class="case-right">
-            <img src="{{ asset('assets/images/skills/skill-2.png') }}">
-            <div class="case-content">
-              <h2>02.</h2>
-              <h3>Planning & Decision-Making</h3>
-              <p>Choosing activities, organising outings, building weekly routines.</p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="case-item case-item-sm">
-          <div class="case-left">03. Independence Skills</div>
-          <div class="case-right">
-            <img src="{{ asset('assets/images/skills/skill-3.png') }}">
-            <div class="case-content">
-              <h2>03.</h2>
-              <h3>Independence Skills</h3>
-              <p>Using community spaces and building confidence with less support over time.</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="case-item case-item-sm">
-          <div class="case-left">04. Improved Learning</div>
-          <div class="case-right">
-            <img src="{{ asset('assets/images/skills/skill-5.png') }}">
-            <div class="case-content">
-              <h2>04.</h2>
-              <h3>Improved Learning</h3>
-              <p>Classes, Hobbies, Workshops, Creative Activities, Skill-based Community Programs.</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="case-item case-item-sm">
-          <div class="case-left">05. Everyday Functional Skills</div>
-          <div class="case-right">
-            <img src="{{ asset('assets/images/skills/skill-6.png') }}">
-            <div class="case-content">
-              <h2>05.</h2>
-              <h3>Everyday Functional Skills</h3>
-              <p>Time management, following steps, building consistency, and practical routines.</p>
-
-            </div>
-          </div>
-        </div>
       </div>
+
     </div>
   </section>
   <!-- Activities Section -->
@@ -315,101 +245,23 @@
     <div class="container">
       <div class="text-center mb-5">
         <h2 class="main-titles">NDIS-Funded Activities We Can Support</h2>
-        <p class="lead">Below are examples of activities we can support (based on your goals, preferences, and support
-          needs):</p>
+        <p class="lead">
+          Below are examples of activities we can support (based on your goals,
+          preferences, and support needs):
+        </p>
       </div>
 
-      <div class="row g-4">
-        <!-- Movement & Wellbeing -->
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="activity-card h-100">
-            <div class="activity-card-header  text-white d-flex align-items-center gap-2">
-              <i class="bi bi-heart-pulse"></i>
-              <h3 class="h5 mb-0 text-white">Movement & Wellbeing</h3>
-            </div>
-            <div class="activity-card-body">
-              <ul class="list-unstyled approach-list">
-                <li><span></span> Swimming & Aquatics</li>
-                <li><span></span> Exercise & Gym</li>
-                <li><span></span> Yoga & Meditation</li>
-                <li><span></span> Sports Activities</li>
-                <li><span></span> Bushwalking & Nature</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="row g-4" id="community-support-container">
 
-        <!-- Creative & Confidence -->
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="activity-card h-100">
-            <div class="activity-card-header  text-white d-flex align-items-center gap-2">
-              <i class="bi bi-palette"></i>
-              <h3 class="h5 mb-0 text-white">Creative & Confidence</h3>
-            </div>
-            <div class="activity-card-body">
-              <ul class="list-unstyled approach-list">
-                <li><span></span> Dancing & Drama</li>
-                <li><span></span> Visual Arts</li>
-                <li><span></span> Arts & Crafts</li>
-                <li><span></span> Music & Sound</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Learning & Life Skills -->
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="activity-card h-100">
-            <div class="activity-card-header  text-white d-flex align-items-center gap-2">
-              <i class="bi bi-book"></i>
-              <h3 class="h5 mb-0 text-white">Learning & Life Skills</h3>
-            </div>
-            <div class="activity-card-body">
-              <ul class="list-unstyled approach-list">
-                <li><span></span> Cooking & Baking</li>
-                <li><span></span> Gardening</li>
-                <li><span></span> Literacy & Numeracy</li>
-                <li><span></span> Computers & Technology</li>
-                <li><span></span> Library & Reading</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Social Outings -->
-        <div class="col-lg-4 col-md-6 col-12">
+        <!-- TEMPLATE -->
+        <div class="col-lg-4 col-md-6 col-12 d-none" id="community-support-template">
           <div class="activity-card h-100">
             <div class="activity-card-header text-white d-flex align-items-center gap-2">
-              <i class="bi bi-balloon-heart"></i>
-              <h3 class="h5 mb-0 text-white">Social Outings</h3>
+              <i class="bi bi-star"></i>
+              <h3 class="h5 mb-0 text-white support-title"></h3>
             </div>
             <div class="activity-card-body">
-              <ul class="list-unstyled approach-list">
-                <li><span></span> Barbecues & Picnics</li>
-                <li><span></span> Bowling</li>
-                <li><span></span> Movies & Theatre</li>
-                <li><span></span> Community Events</li>
-                <li><span></span> Volunteering</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Social Outings -->
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="activity-card h-100">
-            <div class="activity-card-header text-white d-flex align-items-center gap-2">
-              <i class="bi bi-heart"></i>
-              <h3 class="h5 mb-0 text-white">Self-Care and Personal Wellbeing</h3>
-            </div>
-            <div class="activity-card-body">
-              <ul class="list-unstyled approach-list">
-                <li><span></span> Self-care activities</li>
-                <li><span></span> Wellbeing routines</li>
-                <li><span></span> Leisure-based outing</li>
-                <li><span></span> Personal development</li>
-                <li><span></span> Relaxation strategies</li>
-
-              </ul>
+              <ul class="list-unstyled approach-list support-points"></ul>
             </div>
           </div>
         </div>
@@ -438,9 +290,11 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+  {{-- custom activity section --}}
   <section class="custom-hero-section padding-section">
     <div class="container">
       <div class="row align-items-center">
@@ -448,153 +302,89 @@
         <!-- LEFT: Text + Buttons -->
         <div class="col-lg-6 mb-4 mb-lg-0">
 
-          <h2 class="main-titles">Custom Activities & Special Occasions</h2>
-          <p class="mb-4">
+          <h2 class="main-titles" id="community-activity-title">
+            Custom Activities & Special Occasions
+          </h2>
+
+          <p class="mb-4" id="community-activity-description">
             If you have a specific experience in mind, we can tailor supports for things like:
           </p>
 
-          <div class="row g-3">
+          {{-- <div class="row g-3">
             <div class="col-6">
-              <div class="activity-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-ticket text-accent" aria-hidden="true"
-                  data-replit-metadata="client/src/pages/home.tsx:394:18" data-component-name="item.icon">
-                  <path
-                    d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
-                  </path>
-                  <path d="M13 5v2"></path>
-                  <path d="M13 17v2"></path>
-                  <path d="M13 11v2"></path>
-                </svg>
-                Theme Parks & Zoos
-              </div>
+              <div class="activity-button">Theme Parks & Zoos</div>
             </div>
             <div class="col-6">
-              <div class="activity-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-music text-accent" aria-hidden="true"
-                  data-replit-metadata="client/src/pages/home.tsx:394:18" data-component-name="item.icon">
-                  <path d="M9 18V5l12-2v13"></path>
-                  <circle cx="6" cy="18" r="3"></circle>
-                  <circle cx="18" cy="16" r="3"></circle>
-                </svg>
-                Music & Concerts
-              </div>
+              <div class="activity-button">Music & Concerts</div>
             </div>
             <div class="col-6">
-              <div class="activity-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-compass text-accent" aria-hidden="true"
-                  data-replit-metadata="client/src/pages/home.tsx:394:18" data-component-name="item.icon">
-                  <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z">
-                  </path>
-                  <circle cx="12" cy="12" r="10"></circle>
-                </svg>
-                Fishing & Camping
-              </div>
+              <div class="activity-button">Fishing & Camping</div>
             </div>
             <div class="col-6">
-              <div class="activity-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-map-pin text-accent" aria-hidden="true"
-                  data-replit-metadata="client/src/pages/home.tsx:394:18" data-component-name="item.icon">
-                  <path
-                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
-                  </path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-                Holidays & Getaways
-              </div>
+              <div class="activity-button">Holidays & Getaways</div>
             </div>
-          </div>
+          </div> --}}
+
         </div>
+
 
         <!-- RIGHT: Image with Overlay Text -->
         <div class="col-lg-6">
           <div class="overlay-card">
-            <!-- Replace with your actual image path -->
-            <img src="{{ asset('assets/images/skills/custom-skills.png') }}" alt="Custom NDIS Activity">
+            <img id="community-activity-image" src="{{ asset('assets/images/skills/custom-skills.png') }}"
+              alt="Custom NDIS Activity">
+
             <div class="overlay-content">
-              <h3 class="text-white">Your Vision, Supported.</h3>
-              <p class="text-white">
+              <h3 class="text-white" id="community-activity-side-title">
+                Your Vision, Supported.
+              </h3>
+              <p class="text-white" id="community-activity-sub-title">
                 From museums to adventure trips, we make your special requests possible.
               </p>
             </div>
           </div>
         </div>
 
+
       </div>
     </div>
   </section>
+  {{-- planning --}}
   <div class="container  padding-section">
     <div class="row g-4 align-items-center">
       <div class="col-lg-6">
-        <img src="{{ asset('assets/images/skills/gateway.png') }}"
-          alt="Person in wheelchair enjoying beach with palm trees" class="hero-image">
+        <img id="community-planning-image" src="{{ asset('assets/images/skills/gateway.png') }}"
+          alt="Planning your getaway" class="hero-image" />
+
       </div>
       <!-- Text Content Column -->
       <div class="col-lg-6">
         <div class="content-card">
 
-          <h2 class="main-titles">We take the frustration out of planning your getaway</h2>
-          <p>
-            Everyone deserves a break. If you or a family member has a disability, Continuity Care can help coordinate
-            supports for a range of options:
+          <h2 class="main-titles" id="community-planning-title">
+            We take the frustration out of planning your getaway
+          </h2>
+
+          <p id="community-planning-description">
+            Everyone deserves a break. If you or a family member has a disability,
+            Continuity Care can help coordinate supports for a range of options:
           </p>
 
-          <!-- List Items -->
-          <div class="feature-item">
-            <span class="feature-icons"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-coffee" aria-hidden="true" data-replit-metadata="client/src/pages/home.tsx:349:22"
-                data-component-name="item.icon">
-                <path d="M10 2v2"></path>
-                <path d="M14 2v2"></path>
-                <path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"></path>
-                <path d="M6 2v2"></path>
-              </svg></span>
-            <span class="feature-text">Respite</span>
-          </div>
+          <!-- Dynamic Points -->
+          <div id="community-planning-points"></div>
 
-          <div class="feature-item">
-            <span class="feature-icons"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-shield-check" aria-hidden="true"
-                data-replit-metadata="client/src/pages/home.tsx:349:22" data-component-name="item.icon">
-                <path
-                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                </path>
-                <path d="m9 12 2 2 4-4"></path>
-              </svg></span>
-            <span class="feature-text">Short-term Accommodation (STA)</span>
-          </div>
-
-          <div class="feature-item">
-            <span class="feature-icons"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-plane" aria-hidden="true" data-replit-metadata="client/src/pages/home.tsx:349:22"
-                data-component-name="item.icon">
-                <path
-                  d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
-                </path>
-              </svg></span>
-            <span class="feature-text">Holiday or Weekend Getaway</span>
-          </div>
-
-          <p>
-            We guide you through the planning process and coordinate what's needed to support goals and comfort—so the
-            experience feels organised, supported, and enjoyable.
+          <p id="community-planning-sub-title">
+            We guide you through the planning process and coordinate what's needed
+            to support goals and comfort—so the experience feels organised,
+            supported, and enjoyable.
           </p>
 
           <div class="note">
-            <em>Note: funding for travel-related supports can vary depending on your plan and goals. We’ll help you
-              understand what options may apply.</em>
+            <em id="community-planning-note"></em>
           </div>
+
         </div>
+
       </div>
 
       <!-- Image Column -->
@@ -606,8 +396,8 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="main-titles">How Our Support Works</h2>
-          <p class="section-subtitle">Simple, personalised, and built around you</p>
+          <h2 class="main-titles" id="who-work-main-title">How Our Support Works</h2>
+          <p class="section-subtitle" id="who-work-sub-title">Simple, personalised, and built around you</p>
         </div>
       </div>
 
@@ -619,8 +409,8 @@
             <div class="step-circle d-flex align-items-center justify-content-center">
               1
             </div>
-            <h4 class="mt-3 mb-2">We learn what matters to you</h4>
-            <p class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
+            <h4 class="mt-3 mb-2" id="who-work-card-title-1">We learn what matters to you</h4>
+            <p id="who-work-card-desc-1" class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
               Your interests, preferences, goals, and the type of community participation you want.
             </p>
           </div>
@@ -632,8 +422,8 @@
             <div class="step-circle d-flex align-items-center justify-content-center">
               2
             </div>
-            <h4 class="mt-3 mb-2">We match the right support</h4>
-            <p class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
+            <h4 class="mt-3 mb-2" id="who-work-card-title-2">We match the right support</h4>
+            <p id="who-work-card-desc-2" class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
               We consider your needs, communication style, comfort levels, and activities you enjoy.
             </p>
           </div>
@@ -645,8 +435,8 @@
             <div class="step-circle d-flex align-items-center justify-content-center">
               3
             </div>
-            <h4 class="mt-3 mb-2">We build a tailored activity program</h4>
-            <p class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
+            <h4 class="mt-3 mb-2" id="who-work-card-title-3">We build a tailored activity program</h4>
+            <p id="who-work-card-desc-3" class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
               Structure where it helps, flexibility where you need it—designed to support progress.
             </p>
           </div>
@@ -658,8 +448,8 @@
             <div class="step-circle d-flex align-items-center justify-content-center">
               4
             </div>
-            <h4 class="mt-3 mb-2">We support, encourage, and grow confidence over time</h4>
-            <p class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
+            <h4 class="mt-3 mb-2" id="who-work-card-title-4">We support, encourage, and grow confidence over time</h4>
+            <p id="who-work-card-desc-4" class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
               You can build independence at your pace, with consistent support.
             </p>
           </div>
@@ -667,7 +457,7 @@
       </div>
     </div>
   </section>
-
+  {{-- faq --}}
   <div class="container  padding-section">
     <div class="row g-4">
       <!-- Left Side -->
@@ -676,7 +466,7 @@
 
           <h2 class="main-titles">Funding Information and Eligibility</h2>
           <h3>NDIS funding (when Social & Community Participation may be covered)</h3>
-          <p>
+          <p align="justify">
             Explore Community Participation may be funded through your NDIS plan when it aligns with your goals and
             support needs. Funding depends on your plan budgets, plan management type, and whether the support is
             considered appropriate for your situation.
@@ -686,82 +476,23 @@
         </div>
       </div>
 
-      <!-- Right Side - Accordion -->
       <div class="col-lg-6">
-        <div class="accordion faq-wrapper" id="accordionExample" data-cues="slideInUp" data-duration="900">
-          <div class="accordion-item">
+        <div class="accordion faq-wrapper" id="faqAccordion">
+
+          <!-- TEMPLATE -->
+          <div class="accordion-item d-none" id="faq-template">
             <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                NDIS Funding Support Categories
+              <button class="accordion-button collapsed faq-question" type="button" data-bs-toggle="collapse">
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>Explore Community Participation may be funded through your NDIS plan when it aligns with your goals and
-                  support needs. Funding depends on your plan budgets, plan management type, and whether the support is
-                  considered appropriate for your situation.</p>
-                <p>Explore can be linked to the following Support Categories in your plan:</p>
-                <ul class="list-unstyled approach-list">
-                  <li><span></span> Assistance with Daily Life (Core)</li>
-                  <li><span></span> Increased Social and Community Participation (Capacity Building)</li>
-                  <li><span></span> Improved Daily Living Skills (Capacity Building)</li>
-                  <li><span></span> Improved Learning (Capacity Building)</li>
-                </ul>
-                <p>If you’re unsure what your plan includes, we can help you understand how Explore may fit with your
-                  goals and budgets, and work alongside your Support Coordinator or Plan Manager where needed.</p>
-              </div>
+            <div class="accordion-collapse collapse">
+              <div class="accordion-body faq-answer"></div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Eligibility & NDIS Access
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>NDIS eligibility is assessed by the NDIA. In general, to access the NDIS you typically need to:</p>
-                <ul class="list-unstyled approach-list">
-                  <li><span></span> Be under 65 at the time you apply</li>
-                  <li><span></span> Live in Australia and meet residency requirements</li>
-                  <li><span></span> Have a permanent disability that substantially impacts daily life</li>
-
-                </ul>
-                <p>If you’re not eligible for the NDIS, you can still access supports through self-funded or
-                  fee-for-service options.</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Plan management and pricing (important to know)
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>Your plan management type can affect how supports are priced and paid:</p>
-                <ul class="list-unstyled approach-list">
-                  <li><span></span> NDIA-managed or plan-managed: providers follow NDIS pricing arrangements and price
-                    limits</li>
-                  <li><span></span> Self-managed: you generally have more flexibility in provider choice and how supports
-                    are paid</li>
-
-
-                </ul>
-                <p>If you don’t know how your plan is managed, we can talk you through it and explain the easiest way to
-                  get started.</p>
-              </div>
-            </div>
-          </div>
-
-
 
         </div>
       </div>
+
     </div>
   </div>
   <div class=" padding-section">
@@ -872,5 +603,306 @@
         });
       });
     });
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+      window.FRONTEND_CONFIG = {
+        DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
+      };
+
+      fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/community-participation-service`)
+        .then(res => res.json())
+        .then(data => {
+
+          console.log('API DATA ', data);
+
+          const community_about = data.community_about;
+          if (community_about) {
+            document.getElementById('community-about-title').textContent = community_about.main_title ?? '';
+            document.getElementById('community-about-description').textContent = community_about.description_1 ?? '';
+
+            const pointsContainer = document.getElementById('community-about-list');
+
+            if (pointsContainer && Array.isArray(community_about.points)) {
+              pointsContainer.innerHTML = community_about.points
+                .map(point => `
+                                                                    <li><span></span>${point}</li>
+                                                                `)
+                .join('');
+            }
+            const img = document.getElementById('community-about-image');
+            if (img && community_about.image) img.src = community_about.image;
+          }
+          const communityBenefit = data.communityBenefit;
+          if (communityBenefit) {
+            document.getElementById('community-benefit-sub-title').textContent = communityBenefit.sub_title ?? '';
+            document.getElementById('community-benefit-main-title').textContent = communityBenefit.main_title ?? '';
+            document.getElementById('community-benefit-side-title').textContent = communityBenefit.side_title ?? '';
+
+
+            communityBenefit.cards?.forEach((card, index) => {
+              const i = index + 1;
+
+              document.getElementById(`community-benefit-card-title-${i}`).textContent = card.title ?? '';
+              document.getElementById(`community-benefit-card-desc-${i}`).textContent = card.main_title ?? '';
+
+              const img = document.getElementById(`community-benefit-card-img-${i}`);
+              if (img && card.image) img.src = card.image;
+            });
+          }
+
+
+
+          const communityApproachSection = data.communityApproachSection;
+          if (communityApproachSection) {
+            document.getElementById('community-approach-title').textContent = communityApproachSection.main_title ?? '';
+            document.getElementById('community-approach-sub-title').textContent = communityApproachSection.sub_title ?? '';
+            document.getElementById('community-approach-description').textContent = communityApproachSection.description_1 ?? '';
+            document.getElementById('community-approach-side-title').textContent = communityApproachSection.side_title ?? '';
+
+            const pointsContainer = document.getElementById('community-approach-list');
+
+            if (pointsContainer && Array.isArray(communityApproachSection.points)) {
+              pointsContainer.innerHTML = communityApproachSection.points
+                .map(point => `
+                                                                    <li><span></span>${point}</li>
+                                                                `)
+                .join('');
+            }
+            const pointsContainer2 = document.getElementById('community-approach-list2');
+
+            if (pointsContainer2 && Array.isArray(communityApproachSection.points_2)) {
+              pointsContainer2.innerHTML = communityApproachSection.points_2
+                .map(point_2 => `
+                                                                    <li><span></span>${point_2}</li>
+                                                                `)
+                .join('');
+            }
+
+          }
+
+          const communityService = data.communityService;
+
+          const servicesContainer = document.getElementById('services-container');
+          const serviceTemplate = document.getElementById('service-template');
+
+          if (
+            Array.isArray(communityService) &&
+            communityService.length > 0 &&
+            servicesContainer &&
+            serviceTemplate
+          ) {
+            // Remove previously injected items (keep template)
+            servicesContainer
+              .querySelectorAll('.case-item:not(#service-template)')
+              .forEach(el => el.remove());
+
+            communityService.forEach((service, index) => {
+              const clone = serviceTemplate.cloneNode(true);
+
+              clone.classList.remove('d-none');
+              clone.removeAttribute('id');
+
+              // Number formatting (01, 02, 03...)
+              const number = String(index + 1).padStart(2, '0');
+
+              clone.querySelector('.service-left').textContent =
+                `${number}. ${service.title ?? ''}`;
+
+              clone.querySelector('.service-number').textContent = `${number}.`;
+              clone.querySelector('.service-title').textContent = service.title ?? '';
+              clone.querySelector('.service-description').innerHTML =
+                service.description ?? '';
+
+              const imageEl = clone.querySelector('.service-image');
+              imageEl.src = service.image ?? '';
+              imageEl.alt = service.title ?? 'Service Image';
+
+              // First item active
+              if (index === 0) {
+                clone.classList.add('active');
+              }
+
+              servicesContainer.appendChild(clone);
+            });
+          }
+
+
+          const communitySupport = data.communitySupport;
+
+          const container = document.getElementById('community-support-container');
+          const template = document.getElementById('community-support-template');
+
+          if (
+            Array.isArray(communitySupport) &&
+            communitySupport.length > 0 &&
+            container &&
+            template
+          ) {
+            // Remove old cards except template & CTA
+            container
+              .querySelectorAll(
+                '.col-lg-4:not(#community-support-template):not(.cta-activity-card)'
+              )
+              .forEach(el => {
+                if (!el.querySelector('.cta-activity-card')) {
+                  el.remove();
+                }
+              });
+
+            communitySupport.forEach(service => {
+              const clone = template.cloneNode(true);
+
+              clone.classList.remove('d-none');
+              clone.removeAttribute('id');
+
+              // Title
+              clone.querySelector('.support-title').textContent =
+                service.title ?? '';
+
+              // Points
+              const pointsList = clone.querySelector('.support-points');
+              pointsList.innerHTML = '';
+
+              if (Array.isArray(service.points)) {
+                service.points.forEach(point => {
+                  const li = document.createElement('li');
+                  li.innerHTML = `<span></span> ${point}`;
+                  pointsList.appendChild(li);
+                });
+              }
+
+              container.insertBefore(clone, container.lastElementChild);
+            });
+          }
+
+
+
+          const communityActivity = data.communityActivity;
+
+          if (communityActivity) {
+            const title = document.getElementById('community-activity-title');
+            const subTitle = document.getElementById('community-activity-sub-title');
+            const description = document.getElementById('community-activity-description');
+            const sideTitle = document.getElementById('community-activity-side-title');
+            const image = document.getElementById('community-activity-image');
+
+            if (title) title.textContent = communityActivity.main_title ?? '';
+            if (subTitle) subTitle.textContent = communityActivity.sub_title ?? '';
+            if (description) description.textContent = communityActivity.description_1 ?? '';
+            if (sideTitle) sideTitle.textContent = communityActivity.side_title ?? '';
+
+            if (image && communityActivity.image) {
+              image.src = communityActivity.image;
+            }
+          }
+          const communityPlanning = data.communityPlanning;
+
+          if (communityPlanning) {
+            const title = document.getElementById('community-planning-title');
+            const subTitle = document.getElementById('community-planning-sub-title');
+            const description = document.getElementById('community-planning-description');
+            const note = document.getElementById('community-planning-note');
+            const image = document.getElementById('community-planning-image');
+            const pointsContainer = document.getElementById('community-planning-points');
+
+            if (title) title.textContent = communityPlanning.main_title ?? '';
+            if (subTitle) subTitle.textContent = communityPlanning.sub_title ?? '';
+            if (description) description.textContent = communityPlanning.description_1 ?? '';
+            if (note) note.textContent = communityPlanning.note ?? '';
+
+            if (image && communityPlanning.image) {
+              image.src = communityPlanning.image;
+            }
+
+            // Points
+            if (pointsContainer && Array.isArray(communityPlanning.points)) {
+              pointsContainer.innerHTML = '';
+
+              communityPlanning.points.forEach(point => {
+                const item = document.createElement('div');
+                item.className = 'feature-item';
+                item.innerHTML = `
+                      <span class="feature-icons">✔</span>
+                      <span class="feature-text">${point}</span>
+                    `;
+                pointsContainer.appendChild(item);
+              });
+            }
+          }
+
+          const communityWork = data.communityWork;
+          if (communityWork) {
+            document.getElementById('who-work-sub-title').textContent = communityWork.sub_title ?? '';
+            document.getElementById('who-work-main-title').textContent = communityWork.main_title ?? '';
+
+
+            communityWork.cards?.forEach((card, index) => {
+              const i = index + 1;
+
+              document.getElementById(`who-work-card-title-${i}`).textContent = card.title ?? '';
+              document.getElementById(`who-work-card-desc-${i}`).textContent = card.main_title ?? '';
+
+
+            });
+          }
+
+
+          const communityEligiblilityFaq = data.communityEligiblilityFaq;
+
+          const faqContainer = document.getElementById('faqAccordion');
+          const faqTemplate = document.getElementById('faq-template');
+
+          if (
+            Array.isArray(communityEligiblilityFaq) &&
+            communityEligiblilityFaq.length > 0 &&
+            faqContainer &&
+            faqTemplate
+          ) {
+
+            faqContainer
+              .querySelectorAll('.accordion-item:not(#faq-template)')
+              .forEach(el => el.remove());
+
+            communityEligiblilityFaq.forEach((item, index) => {
+              const clone = faqTemplate.cloneNode(true);
+              const collapseId = `faq-collapse-${index}`;
+
+              clone.classList.remove('d-none');
+              clone.removeAttribute('id');
+
+              // Question
+              const questionBtn = clone.querySelector('.faq-question');
+              questionBtn.textContent = item.question ?? '';
+              questionBtn.setAttribute('data-bs-target', `#${collapseId}`);
+              questionBtn.setAttribute('aria-controls', collapseId);
+
+              // Answer
+              const collapse = clone.querySelector('.accordion-collapse');
+              collapse.id = collapseId;
+              collapse.setAttribute('data-bs-parent', '#faqAccordion');
+
+              clone.querySelector('.faq-answer').innerHTML = item.answer ?? '';
+
+              // First item open
+              if (index === 0) {
+                questionBtn.classList.remove('collapsed');
+                questionBtn.setAttribute('aria-expanded', 'true');
+                collapse.classList.add('show');
+              }
+
+              faqContainer.appendChild(clone);
+            });
+          }
+
+
+
+        })
+        .catch(err => console.error('API ERROR ', err));
+
+    });
+
+
+
   </script>
 @endpush

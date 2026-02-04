@@ -15859,6 +15859,9 @@ Page-navigation Area Style
 }
 .work-single-item .icon img {
     transition: all ease 0.5s;
+    width:40px;
+    height:40px;
+    border-radius:50%;
 }
 .work-single-item h3,
 .work-single-item .h3 {
@@ -15872,7 +15875,7 @@ Page-navigation Area Style
     background: var(--bs-base);
 }
 .work-single-item:hover .icon img {
-    filter: brightness(100);
+    /* filter: brightness(100); */
 }
 
 .less-show-btn {
@@ -19890,7 +19893,8 @@ iframe.goog-te-banner-frame {
 html,
 body {
     top: 0 !important;
-    position: static !important;
+    /* position: static !important; */
+    height: 100%;
 }
 
 /* Hide all Google injected UI */
@@ -23253,5 +23257,9 @@ body {
    .padding-section{
     padding:60px 0;
    }
-   
-   
+   .testimonial-image{
+   max-height:200px !important;
+   }
+   .case-study-image img{
+   max-height:150px !important;
+   }

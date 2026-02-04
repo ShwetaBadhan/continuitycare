@@ -45,12 +45,12 @@
         </a>
 
         <!-- ACCPA -->
-        <a href="https://www.accpa.asn.au/" target="_blank" class="resource-tile">
+        {{-- <a href="https://www.accpa.asn.au/" target="_blank" class="resource-tile">
             <div class="tile-logo">
                 <img src="{{asset('assets/images/logo/accpa-logo.svg')}}" alt="ACCPA Logo">
             </div>
             <div class="tile-name">ACCPA</div>
-        </a>
+        </a> --}}
 
         <!-- COTA -->
         <a href="https://www.cota.org.au/" target="_blank" class="resource-tile">
@@ -61,12 +61,12 @@
         </a>
 
         <!-- Feedback and Complaint Form -->
-        <a href="" class="resource-tile">
+        {{-- <a href="" class="resource-tile">
             <div class="tile-logo">
                 <img src="assets/images/logos/feedback-logo.svg" alt="Feedback Logo">
             </div>
             <div class="tile-name">Feedback & Complaint</div>
-        </a>
+        </a> --}}
 
         <!-- Continuity Connect -->
         <a href="https://continuityconnect.com.au/" target="_blank" class="resource-tile">

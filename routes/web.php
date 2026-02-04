@@ -1,12 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
-
-=======
 use App\Http\Controllers\JobController;
 Route::post('/apply-job', [JobController::class, 'store'])->name('apply.job');
->>>>>>> 2c997dc (fetch complete | form active)
 
 Route::get('/', function () {
     return view('frontend.pages.index');
@@ -42,7 +38,6 @@ Route::get('/service-details', function () {
 })->name('service-details');
 
 
-
 Route::get('/blog-details/{slug}', function () {
     return view('frontend.pages.blog-details');
 })->name('blog-details');
@@ -54,11 +49,9 @@ Route::get('/careers', function () {
 })->name('careers');
 
 
-
-Route::get('/career-details', function () {
-    return view('frontend.pages.career-details');
-
-
+Route::get('/career/{slug}', function ($slug) {
+    return view('frontend.pages.career-details', compact('slug'));
+})->name('career-details');
 
 
 
@@ -194,7 +187,6 @@ Route::get('/accommodation-details/{slug}', function ($slug) {
 
 
 
-
 Route::get('/new-aged-care-act', function () {
     return view('frontend.pages.new-aged-care-act');
 })->name('new-aged-care-act');
@@ -203,5 +195,18 @@ Route::get('/new-aged-care-act', function () {
 
 
 
+
+
+
+
+Route::prefix('admin')->group(function () {
+    Route::view('/', 'admin/auth/welcome');          // ← This serves welcome page at /admin
+    Route::view('/dashboard', 'admin.pages.dashboard');
+});
+
+
+Route::get('/admin-users', function () {
+    return view('admin.pages.admin-users');
+})->name('admin-users');
 
 

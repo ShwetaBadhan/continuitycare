@@ -7,18 +7,18 @@
       <div class="row d-flex align-items-center">
         <div class="col-md-6">
           <div class="details-content">
-            <img src="{{ asset('assets/images/breadcrumbs/nurese.png') }}" class="rounded-4" alt="services-details">
+            <img id="alliedAboutImage" src="{{ asset('assets/images/breadcrumbs/nurese.png') }}" class="rounded-4"
+              alt="services-details">
           </div>
         </div>
         <div class="col-md-6">
           <div class="details-content">
-            <h3 class="main-titles">Our mission is to improve the quality of life of our participants</h3>
-            <p>Continuity Care was born in 2017 from the idea of creating an environment where people living with a
+            <h3 id="alliedAboutTitle" class="main-titles">Our mission is to improve the quality of life of our
+              participants</h3>
+            <p id="alliedAboutDescription" align="justify">Continuity Care was born in 2017 from the idea of creating an
+              environment where people living with a
               disability or health condition, and the clinicians that support them, were put first.</p>
-            <p>Our 5 values are our blueprint and are the guiding star for our direction and decision making. They have
-              made Better Rehab what it is today, and where it will be in the future.</p>
-            <p>Through in-home, in-clinic and telehealth services, our passionate clinicians across Australia help people
-              living with a disability, health condition, or medical condition.</p>
+
           </div>
           <a href="tel:1800 012 273" class="default-btn active mt-5">
             <div class="d-flex gap-10 align-content-center">
@@ -38,24 +38,16 @@
       <div class="row align-items-center">
         <!-- Left Content -->
         <div class="col-lg-8">
-          <h2 class="main-title">
+          <h2 class="main-title" id="alliedSupportTitle">
             Empowering communities with quality home care support
           </h2>
 
-          <p class="hero-text">
+          <p class="hero-text" id="alliedSupportDescription">
             Continuity Care has proudly provided Support at Home services to communities since 2020. Our care coordinators
             ensure easy access to high-quality home care support.
           </p>
 
-          <p class="hero-text">
-            Whether you need support at home, in the community, or assistance with daily living, our dedicated team
-            delivers care where it suits you best.
-          </p>
 
-          <p class="hero-text">
-            With services across multiple regions, we're ready to help you achieve your goals and improve your quality of
-            life.
-          </p>
 
           <!-- Contact Information -->
           <div class="contact-info">
@@ -140,7 +132,7 @@
             <div class="decorative-circle"></div>
 
             <!-- Hero Image - Replace with your actual image -->
-            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800"
+            <img id="alliedSupportImage" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800"
               alt="Care workers at Continuity Care" class="hero-image">
           </div>
         </div>
@@ -157,120 +149,8 @@
       over telehealth for our services.
     </p>
 
-    <div class="care-features-grid">
-      <!-- Feature 1 -->
-      <div class="nursing-feature-card">
-        <div class="nursing-feature-header">
-          <div class="nursing-feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="lucide lucide-activity" aria-hidden="true"
-              data-replit-metadata="client/src/pages/home.tsx:48:10" data-component-name="Icon">
-              <path
-                d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2">
-              </path>
-            </svg></div>
-        </div>
-        <h3>Occupational therapy</h3>
-        <p class="nursing-feature-text">
-          Helping people become independent in daily tasks and improve their quality of life.
-        </p>
-      </div>
+    <div class="care-features-grid" id="alliedServiceGrid">
 
-      <!-- Feature 2 -->
-      <div class="nursing-feature-card">
-        <div class="nursing-feature-header">
-          <div class="nursing-feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="lucide lucide-calendar-check" aria-hidden="true"
-              data-replit-metadata="client/src/pages/home.tsx:48:10" data-component-name="Icon">
-              <path d="M8 2v4"></path>
-              <path d="M16 2v4"></path>
-              <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-              <path d="M3 10h18"></path>
-              <path d="m9 16 2 2 4-4"></path>
-            </svg></div>
-        </div>
-        <h3>Speech pathology</h3>
-        <p class="nursing-feature-text">
-          Supporting participants in communication and swallowing to live life the way they want to.
-        </p>
-      </div>
-
-      <!-- Feature 3 -->
-      <div class="nursing-feature-card">
-        <div class="nursing-feature-header">
-          <div class="nursing-feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="lucide lucide-calendar-check" aria-hidden="true"
-              data-replit-metadata="client/src/pages/home.tsx:48:10" data-component-name="Icon">
-              <path d="M8 2v4"></path>
-              <path d="M16 2v4"></path>
-              <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-              <path d="M3 10h18"></path>
-              <path d="m9 16 2 2 4-4"></path>
-            </svg></div>
-        </div>
-        <h3>Physiotherapy</h3>
-        <p class="nursing-feature-text">
-          Enhancing movement and function, for people to get around their home and community on their terms.
-        </p>
-      </div>
-
-      <!-- Feature 4 -->
-      <div class="nursing-feature-card">
-        <div class="nursing-feature-header">
-          <div class="nursing-feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="lucide lucide-user-check" aria-hidden="true"
-              data-replit-metadata="client/src/pages/home.tsx:48:10" data-component-name="Icon">
-              <path d="m16 11 2 2 4-4"></path>
-              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-            </svg></div>
-        </div>
-        <h3>Exercise physiology</h3>
-        <p class="nursing-feature-text">
-          Exercise-based support for participants to improve their physical and mental capacity.
-        </p>
-      </div>
-
-      <!-- Feature 5 -->
-      <div class="nursing-feature-card">
-        <div class="nursing-feature-header">
-          <div class="nursing-feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="lucide lucide-pill" aria-hidden="true"
-              data-replit-metadata="client/src/pages/home.tsx:48:10" data-component-name="Icon">
-              <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"></path>
-              <path d="m8.5 8.5 7 7"></path>
-            </svg></div>
-        </div>
-        <h3>Positive behaviour support</h3>
-        <p class="nursing-feature-text">
-          Supporting participants to increase their independence and improve their quality of life.
-        </p>
-      </div>
-
-      <!-- Feature 6 -->
-      <div class="nursing-feature-card">
-        <div class="nursing-feature-header">
-          <div class="nursing-feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="lucide lucide-message-circle-heart" aria-hidden="true"
-              data-replit-metadata="client/src/pages/home.tsx:48:10" data-component-name="Icon">
-              <path
-                d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719">
-              </path>
-              <path
-                d="M7.828 13.07A3 3 0 0 1 12 8.764a3 3 0 0 1 5.004 2.224 3 3 0 0 1-.832 2.083l-3.447 3.62a1 1 0 0 1-1.45-.001z">
-              </path>
-            </svg></div>
-        </div>
-        <h3>Allied health assistants</h3>
-        <p class="nursing-feature-text">
-          Support from an allied health assistant to help implement your plan.
-        </p>
-      </div>
     </div>
   </div>
 
@@ -282,103 +162,8 @@
 
           <h2 class="main-titles text-center">FAQs</h2>
           <h4 class="text-center">maintain optimal care, enable early intervention, minimise hospital presentations</h4>
-          <div class="accordion faq-wrapper" id="accordionExample" data-cues="slideInUp" data-duration="900">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Reduce hospital admissions and readmissions
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p>Nurses can track and respond to deterioration early using:</p>
-                  <ul class="list-unstyled approach-list">
-                    <li><span></span> Real-Time and Trending Vital Signs</li>
-                    <li><span></span> Symptom and Wellness Check-Ins</li>
-                    <li><span></span> Medication Adherence Signals</li>
-                    <li><span></span> Activity and Nutrition Indicators</li>
-                  </ul>
-                  <p>This supports timely outreach and escalation before a problem becomes an ED visit.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Avoid costly emergency presentations through early warning and triage
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p>Continuity Connect supports a nurse-led model where:</p>
-                  <ul class="list-unstyled approach-list">
-                    <li><span></span> Risk Indicators Are Visible Early</li>
-                    <li><span></span> Alerts and Trends Prompt Nurse Review</li>
-                    <li><span></span> Follow-Up Happens Via Secure Messaging, Phone, or Video Check-Ins</li>
-                    <li><span></span> On-Site Visits Are Reserved For Clinically Necessary Cases</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Deliver continuous care between visits (true continuity of care)
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p>Patients aren’t “offline” between scheduled visits. Nurses can deliver:</p>
-                  <ul class="list-unstyled approach-list">
-                    <li><span></span> Asynchronous Clinical Reviews</li>
-                    <li><span></span> Proactive Education and Coaching</li>
-                    <li><span></span> Structured Questionnaires and Surveys</li>
-                    <li><span></span> Secure Communication with Patients and Families</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
-                  Improve chronic disease management in the primary care setting
-                </button>
-              </h2>
-              <div id="collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p>For older people and people living with disability—often managing diabetes, cardiovascular disease,
-                    COPD/asthma, chronic kidney disease, frailty, wound risk, and polypharmacy—Continuity Connect
-                    supports:</p>
-                  <ul class="list-unstyled approach-list">
-                    <li><span></span> Self-Management Routines with Reminders and Tasks</li>
-                    <li><span></span> Early Identification of Non-Adherence</li>
-                    <li><span></span> Nutrition Prompts To Reduce Malnutrition/Dehydration Risk</li>
-                    <li><span></span> Documentation That Supports Shared Care with Gps and Allied Health</li>
-                  </ul>
-                  <p>And it complements existing primary care coordination—rather than replacing it.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
-                  Alleviate workforce pressure while protecting care quality
-                </button>
-              </h2>
-              <div id="collapseThree5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p>By reducing avoidable visits and prioritising clinically significant reviews, nurses can focus
-                    capacity on the people with the highest need—supporting sustainable service delivery without
-                    compromising safety.</p>
-                </div>
-              </div>
-            </div>
-
+          <div class="accordion faq-wrapper" id="accordionExample">
+            <!-- FAQs injected via API -->
           </div>
         </div>
 
@@ -391,8 +176,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h2 class="main-titles">Begin your journey today</h2>
-          <p>Get a head start on receiving support with our experienced clinicians by submitting our referral form. If
+          <h2 class="main-titles" id="alliedJourneyTitle">Begin your journey today</h2>
+          <p id="alliedJourneyDescription" align="justify">Get a head start on receiving support with our experienced
+            clinicians by submitting our referral form. If
             you've got questions, our team is ready to assist you – simply use our enquiry form to get in touch.</p>
           <a href="tel:1800 012 273" class="default-btn active mt-">
             <div class="d-flex gap-10 align-content-center">
@@ -403,7 +189,8 @@
 
           </a>
           <div class="mt-3">
-            <img src="{{ asset('assets/images/skills/skill-1.png') }}" class="w-75 rounded" alt="">
+            <img id="alliedJourneyImage" src="{{ asset('assets/images/skills/skill-1.png') }}" class="w-75 rounded"
+              alt="img" style="max-height: 250px">
 
           </div>
         </div>
@@ -412,31 +199,37 @@
             <h3 class="mt-0">Take A Schedule Appointment</h3>
             <p>Our booking process is simple confidential and flexible to fit your schedule</p>
 
-            <div class="row g-4">
-              <div class="col-lg-6">
-                <input type="text" class="form-control bg-f2f3f5" placeholder="Full Name">
+            <form id="leadForm">
+              <div class="row g-4">
+                <div class="col-lg-6">
+
+                  <input type="text" name="fullname" class="form-control bg-f2f3f5" placeholder="Full Name">
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" name="email" class="form-control bg-f2f3f5" placeholder="Email">
+                </div>
+                <div class="col-lg-6">
+                  <input type="number" name="phone" class="form-control bg-f2f3f5" placeholder="Phone" maxlength="10"
+                    pattern="[0-9]{10}" inputmode="numeric" placeholder="Enter 10-digit phone number" required
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10);">
+                </div>
+                <div class="col-lg-6">
+                  <input type="text" name="subject" class="form-control bg-f2f3f5" placeholder="Subject">
+                </div>
+                <div class="col-lg-12">
+                  <textarea rows="5" name="message" class="form-control bg-f2f3f5"
+                    placeholder="Write Your Message"></textarea>
+                </div>
+                <div class="col-lg-12">
+                  <button type="submit" class="default-btn">
+                    <span class="d-flex gap-10 align-items-center justify-content-center">
+                      <span>send message</span>
+                      <img src="assets/images/right-white.svg" alt="right-white">
+                    </span>
+                  </button>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <input type="email" class="form-control bg-f2f3f5" placeholder="Email">
-              </div>
-              <div class="col-lg-6">
-                <input type="number" class="form-control bg-f2f3f5" placeholder="Phone">
-              </div>
-              <div class="col-lg-6">
-                <input type="text" class="form-control bg-f2f3f5" placeholder="Subject">
-              </div>
-              <div class="col-lg-12">
-                <textarea rows="5" class="form-control bg-f2f3f5" placeholder="Write Your Message"></textarea>
-              </div>
-              <div class="col-lg-12">
-                <button type="submit" class="default-btn">
-                  <span class="d-flex gap-10 align-items-center justify-content-center">
-                    <span>send message</span>
-                    <img src="assets/images/right-white.svg" alt="right-white">
-                  </span>
-                </button>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -446,3 +239,193 @@
   </div>
 
 @endsection
+@push('scripts')
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      window.FRONTEND_CONFIG = {
+        DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
+      };
+
+      fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/allied-health-service`)
+        .then(res => {
+          if (!res.ok) throw new Error('API failed');
+          return res.json();
+        })
+        .then(data => {
+
+          console.log('ALLIED API DATA', data);
+
+
+          const about = data.allied_about;
+          if (about) {
+            const imgEl = document.getElementById('alliedAboutImage');
+            const titleEl = document.getElementById('alliedAboutTitle');
+            const descEl = document.getElementById('alliedAboutDescription');
+
+            if (imgEl) imgEl.src = about.image;
+            if (titleEl) titleEl.innerText = about.title;
+            if (descEl) descEl.innerText = about.description;
+          }
+
+          const support = data.allied_support;
+          if (support) {
+            const imgE2 = document.getElementById('alliedSupportImage');
+            const titleE2 = document.getElementById('alliedSupportTitle');
+            const descE2 = document.getElementById('alliedSupportDescription');
+
+            if (imgE2) imgE2.src = support.image;
+            if (titleE2) titleE2.innerText = support.title;
+            if (descE2) descE2.innerText = support.description;
+          }
+          const journey = data.allied_journey;
+          if (journey) {
+            const imgE2 = document.getElementById('alliedJourneyImage');
+            const titleE2 = document.getElementById('alliedJourneyTitle');
+            const descE2 = document.getElementById('alliedJourneyDescription');
+
+            if (imgE2) imgE2.src = journey.image;
+            if (titleE2) titleE2.innerText = journey.title;
+            if (descE2) descE2.innerText = journey.description;
+          }
+
+
+          const services = data.allied_services;
+          const grid = document.getElementById('alliedServiceGrid');
+
+          if (grid) {
+            grid.innerHTML = '';
+
+            if (Array.isArray(services) && services.length) {
+              services.forEach(service => {
+                grid.insertAdjacentHTML('beforeend', `
+                      <div class="nursing-feature-card">
+                        <div class="nursing-feature-header">
+                          <div class="nursing-feature-icon">
+                            <img src="${service.image}" alt="${service.title}" width="32">
+                          </div>
+                        </div>
+                        <h3>${service.title}</h3>
+                        <div class="nursing-feature-text">
+                          ${service.description}
+                        </div>
+                      </div>
+                    `);
+              });
+            }
+          }
+
+
+          const faqWrapper = document.getElementById('accordionExample');
+
+          if (faqWrapper) {
+            faqWrapper.innerHTML = '';
+
+            if (Array.isArray(data.faqs) && data.faqs.length) {
+              data.faqs.forEach((faq, index) => {
+                const id = `faq-${index}`;
+
+                faqWrapper.insertAdjacentHTML('beforeend', `
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button ${index ? 'collapsed' : ''}"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#${id}">
+                            ${faq.question}
+                          </button>
+                        </h2>
+                        <div id="${id}"
+                          class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            ${faq.answer}
+                          </div>
+                        </div>
+                      </div>
+                    `);
+              });
+            }
+          }
+
+        })
+        .catch(err => console.error('ALLIED API ERROR:', err));
+    });
+
+    // for form #
+    document.getElementById("leadForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const submitBtn = form.querySelector("button[type='submit']");
+
+      submitBtn.disabled = true;
+
+      Swal.fire({
+        title: 'Verifying...',
+        text: 'Checking security',
+        allowOutsideClick: false,
+        didOpen: () => Swal.showLoading()
+      });
+
+      grecaptcha.ready(function () {
+        grecaptcha.execute("{{ config('services.recaptcha.site_key') }}", {
+          action: 'contact_form'
+        }).then(async function (token) {
+
+          const payload = {
+            fullname: form.fullname.value.trim(),
+            email: form.email.value.trim(),
+            phone: form.phone.value.trim(),
+            subject: form.subject.value.trim(),
+            message: form.message.value.trim(),
+            recaptcha_token: token
+          };
+
+          try {
+            const response = await fetch("/api/leads", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+              },
+              body: JSON.stringify(payload),
+            });
+
+            const data = await response.json();
+            Swal.close();
+
+            if (response.ok) {
+              Swal.fire({
+                icon: 'success',
+                title: 'Message Sent!',
+                text: data.message,
+                confirmButtonColor: '#0d6efd'
+              });
+              form.reset();
+            } else {
+              Swal.fire({
+                icon: 'error',
+                title: 'Failed',
+                text: data.message || 'Validation failed',
+                confirmButtonColor: '#dc3545'
+              });
+            }
+
+          } catch (error) {
+            Swal.close();
+            Swal.fire({
+              icon: 'error',
+              title: 'Server Error',
+              text: 'Please try again later'
+            });
+          } finally {
+            submitBtn.disabled = false;
+          }
+        });
+      });
+    });
+
+  </script>
+
+@endpush

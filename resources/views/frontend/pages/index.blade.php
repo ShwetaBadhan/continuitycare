@@ -150,103 +150,112 @@
     </div>
     <!-- End Banner Area -->
 
+
     <!-- Start Work Area -->
-    <div class="work-area section-top">
+    <div class="work-area section-top" id="how-work-section">
         <div class="container mw-1685">
             <div class="row gy-2" data-cues="slideInUp" data-duration="900">
                 <div class="col-lg-4">
-                    <span class="top-title">HOW WE WORK</span>
+                    <span class="top-title" id="how-sub-title">HOW WE WORK</span>
                 </div>
                 <div class="col-lg-8">
-                    <h2 class="main-title mb-70 ms-auto mw-975">Seamless Care, Step-by-Step.
+                    <h2 class="main-title mb-70 ms-auto mw-975" id="how-main-title">
+                        Seamless Care, Step-by-Step.
                     </h2>
-                    <div class=""></div>
                 </div>
             </div>
+
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="work-content" data-cues="slideInUp" data-duration="900">
-                        <h3>We believe in fostering an environment that promotes independence and respects</h3>
+                        <h3 id="how-side-title">
+                            We believe in fostering an environment that promotes independence and respects
+                        </h3>
 
                         <div class="text-center">
-                            <img src="assets/images/work.png" alt="work">
+                            <img id="how-side-image" src="assets/images/work.png" alt="work">
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-8">
                     <div class="work-content-wrap">
-                        <div class="row g-0" data-cues="slideInUp" data-duration="900">
+                        <div class="row g-0" id="how-cards">
+
                             <div class="col-md-6">
                                 <div class="work-single-item">
                                     <div class="d-flex align-items-center mb-30">
                                         <div class="flex-shrink-0">
                                             <div class="icon d-flex justify-content-center align-items-center">
-                                                <img src="assets/images/icon/work1.png" alt="work">
+                                                <img id="how-card-img-1" src="" alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3>Discovery</h3>
+                                            <h3 id="how-card-title-1"></h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit">We assess your clinical needs and personal goals to build a custom
-                                        care roadmap.</p>
+                                    <p class="text_limit" id="how-card-desc-1"></p>
                                 </div>
                             </div>
+
                             <div class="col-md-6">
                                 <div class="work-single-item">
                                     <div class="d-flex align-items-center mb-30">
                                         <div class="flex-shrink-0">
                                             <div class="icon d-flex justify-content-center align-items-center">
-                                                <img src="assets/images/icon/work2.png" alt="work">
+                                                <img id="how-card-img-2" src="" alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3>Navigation</h3>
+                                            <h3 id="how-card-title-2"></h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit">Our experts guide you through the system, securing the right
-                                        medical and community referrals.</p>
+                                    <p class="text_limit" id="how-card-desc-2"></p>
                                 </div>
                             </div>
+
                             <div class="col-md-6">
                                 <div class="work-single-item">
                                     <div class="d-flex align-items-center mb-30">
                                         <div class="flex-shrink-0">
                                             <div class="icon d-flex justify-content-center align-items-center">
-                                                <img src="assets/images/icon/work3.png" alt="work">
+                                                <img id="how-card-img-3" src="" alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3>Coordination</h3>
+                                            <h3 id="how-card-title-3"></h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit">We align clinical and non-clinical support to ensure all your
-                                        services work together.</p>
+                                    <p class="text_limit" id="how-card-desc-3"></p>
                                 </div>
                             </div>
+
                             <div class="col-md-6">
                                 <div class="work-single-item">
                                     <div class="d-flex align-items-center mb-30">
                                         <div class="flex-shrink-0">
                                             <div class="icon d-flex justify-content-center align-items-center">
-                                                <img src="assets/images/icon/work4.png" alt="work">
+                                                <img id="how-card-img-4" src="" alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3>Empowerment</h3>
+                                            <h3 id="how-card-title-4"></h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit">Through ongoing advocacy, we provide the tools you need to live
-                                        confidently and independently.</p>
+                                    <p class="text_limit" id="how-card-desc-4"></p>
                                 </div>
                             </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Work Area -->
+
+
 
     <!-- Search Page -->
     <div class="search-page section-care">
@@ -291,20 +300,21 @@
             <div class="row g-4 d-flex align-items-center">
                 <div class="col-xl-6" data-cues="slideInUp" data-duration="900">
                     <div class="">
-                        <img src="{{asset('assets/images/about/aged-care.jfif')}}" alt="about">
+                        <img id="about-act-image" class="" src="{{asset('assets/images/about/aged-care.jfif')}}"
+                            alt="about">
                     </div>
                 </div>
 
                 <div class="col-xl-6">
                     <div class="about-content" data-cues="slideInUp" data-duration="900">
-                        <h2 class="main-title mb-20 ms-auto mw-975">The New Aged Care Act is here</h2>
-                        <p align="justify">Big changes have come to aged care, with the new Aged Care Act that is effective
+                        <h2 class="main-title mb-20 ms-auto mw-975" id="about-act-title">The New Aged Care Act is here</h2>
+                        <p align="justify" id="about-act-description">Big changes have come to aged care, with the new Aged
+                            Care Act that is effective
                             from 1 November. This important reform places the rights, dignity, and choices of older people
                             at the heart of care. Alongside the Act, the new Support at Home program will transform the way
                             services are delivered, making it easier for people to access the care they need to live well at
                             home.</p>
-                        <p align="justify">Click below to learn what these changes mean for you, your family, and our
-                            community.</p>
+
                         <a href="{{route("new-aged-care-act")}}" class="default-btn">
                             <div class="d-flex align-items-center gap-10">
                                 <span>Learn More</span>
@@ -522,11 +532,12 @@
         <div class="container mw-1685">
             <div class="row gy-2" data-cues="slideInUp" data-duration="900">
                 <div class="col-lg-4">
-                    <span class="top-title">ABOUT CONTINUITY CARE</span>
+                    <span class="top-title" id="about_sub_title">ABOUT CONTINUITY CARE</span>
                 </div>
                 <div class="col-lg-8">
                     <div class="mb-60">
-                        <h2 class="main-title ms-auto mw-975">Empowering Independence Through Compassionate Care and
+                        <h2 class="main-title ms-auto mw-975" id="about_title">Empowering Independence Through Compassionate
+                            Care and
                             Seamless Navigation
                         </h2>
                     </div>
@@ -536,36 +547,37 @@
             <div class="row g-4">
                 <div class="col-xl-4" data-cues="slideInUp" data-duration="900">
                     <div class="about-us-img">
-                        <img src="assets/images/about.jpg" class="ukiyo" alt="about">
+                        <img id="about_main_image" src="{{ asset('assets/images/about.jpg') }}" class="ukiyo h-100 w-100"
+                            alt="about">
                     </div>
                 </div>
 
                 <div class="col-xl-8">
                     <div class="about-content" data-cues="slideInUp" data-duration="900">
-                        <p align="justify">Continuity Care is a dedicated provider of disability and independent living
+                        <p align="justify" id="about_description">Continuity Care is a dedicated provider of disability and
+                            independent living
                             services, offering comprehensive care coordination and navigation. Everything we do is focused
                             on bridging the gap between clinical requirements and daily life, ensuring people with
                             disabilities can live with dignity and independence.</p>
-                        <p align="justify">With a deep commitment to integrated support at our core, Continuity Care is
-                            dedicated to empowering individuals through expert guidance. We believe everyone deserves a
-                            seamless care experience that celebrates their choices and supports their long-term goals.</p>
+
 
                         <div class="row g-4 align-items-end">
                             <div class="col-lg-8">
                                 <div class="d-sm-flex align-items-center maintaining">
                                     <div class="flex-shrink-0 mb-3 mb-sm-0">
                                         <div class="icon d-flex justify-content-center align-items-center">
-                                            <img src="assets/images/icon/about.png" alt="about">
+                                            <img id="about_icon" src="assets/images/icon/about.png" alt="about">
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <h3>Maintaining Independence</h3>
-                                        <p>With trained caregivers, healthcare professionals, and a range of recreational
+                                        <h3 id="about_side_title">Maintaining Independence</h3>
+                                        <p id="about_overview">With trained caregivers, healthcare professionals, and a
+                                            range of recreational
                                             programs, elderly homes aim</p>
                                     </div>
                                 </div>
 
-                                <ul class="p-0 list-unstyled about-list">
+                                {{-- <ul class="p-0 list-unstyled about-list">
                                     <li class="d-flex align-items-center gap-12">
                                         <img src="assets/images/check.png" alt="check">
                                         <span>Keeping Them Safe and Comfortable</span>
@@ -578,7 +590,7 @@
                                         <img src="assets/images/check.png" alt="check">
                                         <span>Take Care of Medication Reminders</span>
                                     </li>
-                                </ul>
+                                </ul> --}}
 
                                 <div class="about-btn d-flex flex-wrap align-items-center">
                                     <a href="{{ route("about-us") }}" class="default-btn">
@@ -602,10 +614,12 @@
                             <div class="col-lg-4">
                                 <div class="team-member text-center">
                                     <div class="d-flex align-items-center justify-content-center gap-30 mw-230">
-                                        <h2 class="mb-0"><span class="counter">40</span>+</h2>
-                                        <span>expert team member</span>
+                                        <h3 class="mb-0" id="about_side_title2">
+                                            {{-- <span class="counter">40</span>+ --}}
+                                        </h3>
+                                        {{-- <span>expert team member</span> --}}
                                     </div>
-                                    <img src="assets/images/about2.jpg" alt="about">
+                                    <img id="about_side_image" src="assets/images/about2.jpg" alt="about">
                                 </div>
                             </div>
                         </div>
@@ -637,7 +651,7 @@
                             <i class="ti ti-headphones"></i>
                             <span>+1 (444) 507 8494</span>
                         </a>
-                        <a href="{{ route("contact-us") }}" class="default-btn active">
+                        <a href="{{ route(" contact-us") }}" class="default-btn active">
                             <div class="d-flex align-items-center gap-10">
                                 <span>Let’s get started</span>
                                 <img src="assets/images/right.svg" alt="right">
@@ -651,7 +665,8 @@
     <!-- End CONTINUITY CARE Information Area -->
 
     <!-- Start Case Study Area -->
-    <div class="case-study-area bg-img padding-section mb-30" style="background-image: url(assets/images/case-study-bg.png);">
+    <div class="case-study-area bg-img padding-section mb-30"
+        style="background-image: url(assets/images/case-study-bg.png);">
         <div class="container mw-1685">
             <div class="row gy-2 mb-70" data-cues="slideInUp" data-duration="900">
                 <div class="col-lg-4">
@@ -663,83 +678,158 @@
                 </div>
             </div>
             <div data-cues="slideInUp" data-duration="900">
-                <a href="javascript:void(0)"
-                    class="case-study-single-item d-flex flex-wrap gap-20 justify-content-between align-items-center text-decoration-none">
-                    <div class="d-sm-flex align-items-center gap-25">
-                        <div class="flex-shrink-0 mb-2 mb-sm-0">
-                            <span class="count">01</span>
-                        </div>
-                        <div class="flex-grow-1">
-                            <h3>Empowering Independence</h3>
-                        </div>
-                    </div>
-                    <p align="justify">A client struggling to balance complex clinical appointments with daily household
-                        tasks found a solution through Continuity Care. We streamlined their journey by providing expert
-                        care navigation and medical coordination, handling the technical logistics on their behalf. This
-                        integrated support allowed the client to live safely and confidently at home, enjoying life on their
-                        own terms.
-                    </p>
-                    <div class="case-study-img">
-                        <img src="assets/images/case-study1.jpg" class="img" alt="case-study">
-                        <span class="read">
-                            <img src="assets/images/right-white.svg" alt="right-white">
-                        </span>
-                    </div>
-                </a>
-                <a href="javascript:void(0)"
-                    class="case-study-single-item d-flex flex-wrap gap-20 justify-content-between align-items-center text-decoration-none">
-                    <div class="d-sm-flex align-items-center gap-25">
-                        <div class="flex-shrink-0 mb-2 mb-sm-0">
-                            <span class="count">02</span>
-                        </div>
-                        <div class="flex-grow-1">
-                            <h3>Bridging the Care Gap</h3>
-                        </div>
-                    </div>
-                    <div class="case-study-img">
-                        <img src="assets/images/case-study2.jpg" class="img" alt="case-study">
-                        <span class="read">
-                            <img src="assets/images/right-white.svg" alt="right-white">
-                        </span>
-                    </div>
-                    <p align="justify">When an individual required a seamless blend of medical oversight and mental
-                        stimulation, we stepped in to bridge the gap. By integrating clinical requirements with non-clinical
-                        support—including interactive brain games—we created a holistic care plan. The result was a
-                        stress-free environment where both health and emotional needs were met with professional compassion.
-                    </p>
-                </a>
-                <a href="javascript:void(0)"
-                    class="case-study-single-item d-flex flex-wrap gap-20 justify-content-between align-items-center text-decoration-none">
-                    <div class="d-sm-flex align-items-center gap-25">
-                        <div class="flex-shrink-0 mb-2 mb-sm-0">
-                            <span class="count">03</span>
-                        </div>
-                        <div class="flex-grow-1">
-                            <h3>Navigating Daily Success</h3>
-                        </div>
-                    </div>
-                    <p align="justify">A family overwhelmed by the complexity of securing reliable, long-term support for a
-                        loved one turned to our team for guidance. We provided a personalized roadmap that combined secure
-                        home care with life-enriching activities like daily nature walks. Today, the client thrives in a
-                        supportive environment that celebrates their independence while ensuring all clinical needs are met.
+                <div id="case-study-container">
+                    <!-- TEMPLATE -->
+                    <a href="javascript:void(0)" id="case-study-template"
+                        class="case-study-single-item d-none d-flex flex-wrap gap-20 justify-content-between align-items-center text-decoration-none">
 
-                    </p>
-                    <div class="case-study-img">
-                        <img src="assets/images/case-study3.jpg" class="img" alt="case-study">
-                        <span class="read">
-                            <img src="assets/images/right-white.svg" alt="right-white">
-                        </span>
-                    </div>
-                </a>
+                        <div class="d-sm-flex align-items-center gap-25">
+                            <div class="flex-shrink-0 mb-2 mb-sm-0">
+                                <span class="count"><i class="bi bi-check-circle-fill"></i>
+                                </span>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h3 class="case-study-title"></h3>
+                            </div>
+                        </div>
+
+                        <p class="case-study-desc" align="justify"></p>
+
+                        <div class="case-study-image">
+                            <img src="" class="case-study-img" alt="Case Study">
+                        </div>
+                    </a>
+                </div>
+
+
             </div>
         </div>
     </div>
     <!-- End Case Study Area -->
 
-    
+
 
     <!-- Start Why Choose Us Area -->
-    @include('frontend.components.why-choose');
+    <section class="why-choose-section padding-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto text-center section-header">
+                    <h2 class="main-title">Why choose Continuity Care?</h2>
+                    <p>Enjoy more value, choice and freedom to live life on your terms. With some of the lowest fees in the
+                        industry, more of your funding goes directly to the care and support you need. There are no hidden
+                        costs and no surprises. You receive transparent pricing and personalised service tailored to you.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="row g-4 mt-5" id="feature-cards">
+                <!-- Feature 1 -->
+                <div class="col-lg-4 col-md-6 d-none" id="feature-template">
+                    <div class="feature-card card-red">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M9 11l3 3L22 4" />
+                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title"></h3>
+                        <p class="feature-desc"></p>
+                    </div>
+                </div>
+
+
+                <!-- Feature 2 -->
+                {{-- <div class="col-lg-4 col-md-6">
+                    <div class="feature-card card-blue">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M9 11l3 3L22 4" />
+                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+                            </svg>
+                        </div>
+                        <h3>Total choice</h3>
+                        <p>Select the services and carers that work for you without being locked into restrictive
+                            agreements.</p>
+                    </div>
+                </div> --}}
+
+                <!-- Feature 3 -->
+                {{-- <div class="col-lg-4 col-md-6">
+                    <div class="feature-card card-purple">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+                            </svg>
+                        </div>
+                        <h3>No hidden costs</h3>
+                        <p>Transparent pricing with no surprises. You'll always know exactly what you're paying for.</p>
+                    </div>
+                </div> --}}
+
+                <!-- Feature 4 -->
+                {{-- <div class="col-lg-4 col-md-6">
+                    <div class="feature-card card-teal">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                        </div>
+                        <h3>Fast approvals</h3>
+                        <p>Get started quickly with less hassle. Our streamlined process means you receive support when you
+                            need it.</p>
+                    </div>
+                </div> --}}
+
+                <!-- Feature 5 -->
+                {{-- <div class="col-lg-4 col-md-6">
+                    <div class="feature-card card-orange">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <h3>Personalised support</h3>
+                        <p>Care that's tailored to your needs. We ensure a simple and stress-free experience at every step.
+                        </p>
+                    </div>
+                </div> --}}
+
+                <!-- Feature 6 -->
+                {{-- <div class="col-lg-4 col-md-6">
+                    <div class="feature-card card-pink">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                            </svg>
+                        </div>
+                        <h3>Your support, your way</h3>
+                        <p>Choose support workers that match your needs. You remain in control of your care journey.</p>
+                    </div>
+                </div> --}}
+
+                <!-- Feature 7 -->
+                {{-- <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="feature-card card-dark">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                <line x1="9" y1="3" x2="9" y2="21" />
+                            </svg>
+                        </div>
+                        <h3>Continuity Connect Portal</h3>
+                        <p>Manage your care anytime, anywhere online. Dedicated support and easy access to everything you
+                            need.</p>
+                    </div>
+                </div> --}}
+            </div>
+        </div>
+    </section>
     <!-- End Why Choose Us Area -->
     <section class="how-it-works-section section-care">
         <div class="container-fluid">
@@ -867,29 +957,22 @@
             </div>
         </div>
     </section>
+    {{-- about us two --}}
     <section class="hero-section padding-section">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Left Content -->
                 <div class="col-lg-8">
-                    <h2 class="main-title">
+                    <h2 class="main-title" id="about-two-title">
                         Empowering communities with quality home care support
                     </h2>
 
-                    <p class="hero-text">
+                    <p class="hero-text" id="about-two-description">
                         Continuity Care has proudly provided Support at Home services to communities since 2020. Our care
                         coordinators ensure easy access to high-quality home care support.
                     </p>
 
-                    <p class="hero-text">
-                        Whether you need support at home, in the community, or assistance with daily living, our dedicated
-                        team delivers care where it suits you best.
-                    </p>
 
-                    <p class="hero-text">
-                        With services across multiple regions, we're ready to help you achieve your goals and improve your
-                        quality of life.
-                    </p>
 
                     <!-- Contact Information -->
                     <div class="contact-info">
@@ -974,18 +1057,22 @@
                         <div class="decorative-circle"></div>
 
                         <!-- Hero Image - Replace with your actual image -->
-                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800"
+                        <img id="about-two-image" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800"
                             alt="Care workers at Continuity Care" class="hero-image">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    {{-- about us two end --}}
+    {{-- network section --}}
     <section class="empower-hero-section padding-section">
         <div class="container">
             <div class="row align-items-center">
-                <h2 class="main-titles text-center">Empower your network with credentialed healthcare professionals</h2>
-                <p class="mb-5 text-center">VectorCare Trust simplifies credential management and policy enforcement,
+                <h2 class="main-titles text-center" id="network-sub-title">Empower your network with credentialed healthcare
+                    professionals</h2>
+                <p class="mb-5 text-center" id="network-main-title">VectorCare Trust simplifies credential management and
+                    policy enforcement,
                     building a reliable network of qualified vendors while maintaining compliance and operational efficiency
                     across your marketplace.</p>
 
@@ -994,44 +1081,52 @@
                     <div class="features-list">
                         <div class="empower-feature-item">
                             <div class="empower-feature-icon">
-                                <i class="bi bi-person-check"></i>
+                                <i class="bi bi-check-circle-fill"></i>
+
                             </div>
                             <div class="feature-content">
-                                <h5>Seamless invite and onboarding workflows</h5>
-                                <p>Effortlessly invite and onboard vendors, streamlining their entry into your network and
+                                <h5 id="network-card-title-1">Seamless invite and onboarding workflows</h5>
+                                <p id="network-card-desc-1">Effortlessly invite and onboard vendors, streamlining their
+                                    entry into your network and
                                     ensuring compliance from day one.</p>
                             </div>
                         </div>
 
                         <div class="empower-feature-item">
                             <div class="empower-feature-icon">
-                                <i class="bi bi-shield-check"></i>
+                                <i class="bi bi-check-circle-fill"></i>
+
                             </div>
                             <div class="feature-content">
-                                <h5>Request and store credentials</h5>
-                                <p>Collect, verify, and securely store all required credentials in one place, with tracking
+                                <h5 id="network-card-title-2">Request and store credentials</h5>
+                                <p id="network-card-desc-2">Collect, verify, and securely store all required credentials in
+                                    one place, with tracking
                                     for expiration dates to maintain compliance.</p>
                             </div>
                         </div>
 
                         <div class="empower-feature-item">
                             <div class="empower-feature-icon">
-                                <i class="bi bi-file-earmark-text"></i>
+                                <i class="bi bi-check-circle-fill"></i>
+
                             </div>
                             <div class="feature-content">
-                                <h5>Build and enforce policies</h5>
-                                <p>Set clear policies for vendors to ensure quality and consistency in service delivery,
+                                <h5 id="network-card-title-3">Build and enforce policies</h5>
+                                <p id="network-card-desc-3">Set clear policies for vendors to ensure quality and consistency
+                                    in service delivery,
                                     aligned with your organization's standards.</p>
                             </div>
                         </div>
 
                         <div class="empower-feature-item">
                             <div class="empower-feature-icon">
-                                <i class="bi bi-geo-alt"></i>
+                                <i class="bi bi-check-circle-fill"></i>
+
                             </div>
                             <div class="feature-content">
-                                <h5>Configure zone and bidding rules</h5>
-                                <p>Define custom rules for service areas and bidding, ensuring that vendors participate in
+                                <h5 id="network-card-title-4">Configure zone and bidding rules</h5>
+                                <p id="network-card-desc-4">Define custom rules for service areas and bidding, ensuring that
+                                    vendors participate in
                                     the marketplace according to location, service level, and insurance requirements.</p>
                             </div>
                         </div>
@@ -1101,7 +1196,7 @@
             </div>
         </div>
     </section>
-
+    {{-- end --}}
     <div class="diagram-container padding-section">
         <div class="text-center mb-5">
             <h1 class="main-titles  mb-3">Comprehensive Healthcare Solutions</h1>
@@ -1278,7 +1373,7 @@
                     <div class="testimonial-item-wrap position-relative" data-cues="slideInUp" data-duration="900">
                         <div class="swiper testimonial-slide">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide w-100">
+                                <div class="swiper-slide w-100 " id="testimonial_template">
                                     <div class="d-lg-flex align-items-center testimonial-single-item">
                                         <div class="flex-grow-1 mb-4 mb-lg-0">
                                             <div class="d-flex flex-wrap align-items-center star-title">
@@ -1289,64 +1384,33 @@
                                                     <i class="ti ti-star-filled"></i>
                                                     <i class="ti ti-star-filled"></i>
                                                 </div>
-                                                <h3 class="mb-0">Caring is the essence of life</h3>
+                                                <h3 class="mb-0 testimonial-quote">Quote</h3>
                                             </div>
-                                            <p>"Continuity Care took the stress out of my daily routine. Their care
-                                                navigation is seamless, allowing me to focus on my health while they handle
-                                                the complex logistics. I finally feel back in control of my life.
-                                                "</p>
+
+                                            <p class="testimonial-message">Message</p>
 
                                             <div class="d-flex align-items-center info">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/user4.jpg" class="rounded-circle" alt="user">
+                                                    <img class="testimonial-user-photo rounded-circle"
+                                                        src="assets/images/right-white.svg" alt="user"
+                                                        id="testimonial-user-photo">
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <h4>Melinda Fallout</h4>
-                                                    <span>Happy Clients</span>
+                                                    <h4 class="testimonial-name">Name</h4>
+                                                    <span class="testimonial-designation">Designation</span>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="flex-shrink-0 position-relative">
-                                            <img src="assets/images/testimonial1.jpg" alt="testimonial">
+                                            <img class="testimonial-image" src="" alt="testimonial">
                                             <img src="assets/images/quote.png"
                                                 class="rounded-0 position-absolute end-0 bottom-0 p-4" alt="quote">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide w-100">
-                                    <div class="d-lg-flex align-items-center testimonial-single-item">
-                                        <div class="flex-grow-1 mb-4 mb-lg-0">
-                                            <div class="d-flex flex-wrap align-items-center star-title">
-                                                <div class="d-flex gap-6">
-                                                    <i class="ti ti-star-filled"></i>
-                                                    <i class="ti ti-star-filled"></i>
-                                                    <i class="ti ti-star-filled"></i>
-                                                    <i class="ti ti-star-filled"></i>
-                                                    <i class="ti ti-star-filled"></i>
-                                                </div>
-                                                <h3 class="mb-0">Best Services</h3>
-                                            </div>
-                                            <p>"The team helped me find the perfect support workers who actually match my
-                                                lifestyle. I love that there are no restrictive agreements—just personalized
-                                                care that respects my choices and my home."</p>
 
-                                            <div class="d-flex align-items-center info">
-                                                <div class="flex-shrink-0">
-                                                    <img src="assets/images/user3.jpg" class="rounded-circle" alt="user">
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h4>Alen Dew</h4>
-                                                    <span>Happy Clients</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-shrink-0 position-relative">
-                                            <img src="assets/images/testimonial2.jpg" alt="testimonial">
-                                            <img src="assets/images/quote.png"
-                                                class="rounded-0 position-absolute end-0 bottom-0 p-4" alt="quote">
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
 
@@ -1373,95 +1437,10 @@
                 </div>
             </div>
 
-            <div class="row g-4">
-                <div class="col-lg-6" data-cues="slideInUp" data-duration="900">
-                    <a href="{{ route("blog-details") }}" class="blog-single-item text-decoration-none">
-                        <img src="assets/images/blog1.jpg" alt="blog">
-
-                        <div class="blog-content">
-                            <div class="d-flex info">
-                                <div class="d-flex align-items-center gap-10">
-                                    <i class="ti ti-calendar-week text-primary"></i>
-                                    <span class="fs-15">Aug 24, 2025</span>
-                                </div>
-                                <div class="d-flex align-items-center gap-10">
-                                    <i class="ti ti-message text-primary"></i>
-                                    <span class="fs-15">03 Comment</span>
-                                </div>
-                            </div>
-
-                            <h3>Choosing the Right Elderly Home: What Families Should Know</h3>
-                            <p>We believe in nurturing a sense of community, encouraging independence, and ensuring that
-                                they feel safe, valued, and truly at home in a welcoming environment where seniors</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6" data-cues="slideInUp" data-duration="900">
-                    <a href="{{ route("blog-details") }}"
-                        class="blog-single-item text-decoration-none d-sm-flex align-items-center border-bottom">
-                        <div class="flex-shrink-0 mb-3 mb-sm-0">
-                            <img src="assets/images/blog2.jpg" alt="blog">
-                        </div>
-
-                        <div class="flex-grow-1">
-                            <div class="d-flex info">
-                                <div class="d-flex align-items-center gap-10">
-                                    <i class="ti ti-calendar-week text-primary"></i>
-                                    <span class="fs-15">Aug 25, 2025</span>
-                                </div>
-                                <div class="d-flex align-items-center gap-10">
-                                    <i class="ti ti-message text-primary"></i>
-                                    <span class="fs-15">No Comment</span>
-                                </div>
-                            </div>
-
-                            <h3>Understanding Different Levels of Senior Care: Assisted Living</h3>
-                        </div>
-                    </a>
-                    <a href="{{ route("blog-details") }}"
-                        class="blog-single-item text-decoration-none d-sm-flex align-items-center border-bottom">
-                        <div class="flex-shrink-0 mb-3 mb-sm-0">
-                            <img src="assets/images/blog3.jpg" alt="blog">
-                        </div>
-
-                        <div class="flex-grow-1">
-                            <div class="d-flex info">
-                                <div class="d-flex align-items-center gap-10">
-                                    <i class="ti ti-calendar-week text-primary"></i>
-                                    <span class="fs-15">Aug 26, 2025</span>
-                                </div>
-                                <div class="d-flex align-items-center gap-10">
-                                    <i class="ti ti-message text-primary"></i>
-                                    <span class="fs-15">01 Comment</span>
-                                </div>
-                            </div>
-
-                            <h3>Top 5 Health Tips for Seniors Living in Care Homes</h3>
-                        </div>
-                    </a>
-                    <a href="{{ route("blog-details") }}"
-                        class="blog-single-item text-decoration-none d-sm-flex align-items-center border-bottom">
-                        <div class="flex-shrink-0 mb-3 mb-sm-0">
-                            <img src="assets/images/blog4.jpg" alt="blog">
-                        </div>
-
-                        <div class="flex-grow-1">
-                            <div class="d-flex info">
-                                <div class="d-flex align-items-center gap-10">
-                                    <i class="ti ti-calendar-week text-primary"></i>
-                                    <span class="fs-15">Aug 27, 2025</span>
-                                </div>
-                                <div class="d-flex align-items-center gap-10">
-                                    <i class="ti ti-message text-primary"></i>
-                                    <span class="fs-15">No Comment</span>
-                                </div>
-                            </div>
-
-                            <h3>The Role of Family in Senior Care: Staying Connected</h3>
-                        </div>
-                    </a>
-                </div>
+            <div class="row g-4" id="blog-list">
+                <!-- Blogs will be injected here -->
             </div>
+
         </div>
     </div>
     <!-- End Blog Area -->
@@ -1476,7 +1455,7 @@
                         <h2 class="main-title mw-975 mx-auto">Get the Facts. Stay in Control.</h2>
                         <p>Get the facts on how Continuity Care ensures total autonomy. From budget management to selecting
                             your own support workers, we provide the transparency you deserve.</p>
-                        <a href="{{ route("faqs") }}" class="default-btn mt-4 mt-lg-5">
+                        <a href="{{ route(" faqs") }}" class="default-btn mt-4 mt-lg-5">
                             <div class="d-flex gap-10">
                                 <span>Find More Question</span>
                                 <img src="assets/images/right-white.svg" alt="right">
@@ -1577,31 +1556,39 @@
                         <p class="text-body">Our booking process is simple confidential and flexible to fit your schedule
                         </p>
 
-                        <div class="row g-4">
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control" placeholder="Full Name">
+                        <form id="leadForm">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+
+                                    <input type="text" name="fullname" class="form-control bg-f2f3f5"
+                                        placeholder="Full Name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" name="email" class="form-control bg-f2f3f5" placeholder="Email">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="number" name="phone" class="form-control bg-f2f3f5" placeholder="Phone"
+                                        maxlength="10" pattern="[0-9]{10}" inputmode="numeric"
+                                        placeholder="Enter 10-digit phone number" required
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10);">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="subject" class="form-control bg-f2f3f5" placeholder="Subject">
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea rows="5" name="message" class="form-control bg-f2f3f5"
+                                        placeholder="Write Your Message"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" class="default-btn">
+                                        <span class="d-flex gap-10 align-items-center justify-content-center">
+                                            <span>send message</span>
+                                            <img src="assets/images/right-white.svg" alt="right-white">
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="col-lg-6">
-                                <input type="number" class="form-control" placeholder="Phone">
-                            </div>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                            <div class="col-lg-12">
-                                <textarea rows="5" class="form-control" placeholder="Write Your Message"></textarea>
-                            </div>
-                            <div class="col-lg-12">
-                                <button type="submit" class="default-btn active">
-                                    <span class="d-flex gap-10 align-items-center justify-content-center">
-                                        <span>send message</span>
-                                        <img src="assets/images/right.svg" alt="right-white">
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -1679,8 +1666,334 @@
             element.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
         });
 
+        window.FRONTEND_CONFIG = {
+            DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
+        };
 
+        fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/home`)
+            .then(res => res.json())
+            .then(data => {
+
+
+
+
+                const how = data.how_we_work;
+                if (how) {
+                    document.getElementById('how-sub-title').textContent = how.sub_title ?? '';
+                    document.getElementById('how-main-title').textContent = how.main_title ?? '';
+                    document.getElementById('how-side-title').textContent = how.side_title ?? '';
+
+                    const sideImg = document.getElementById('how-side-image');
+                    if (sideImg && how.side_image) sideImg.src = how.side_image;
+
+                    how.cards?.forEach((card, index) => {
+                        const i = index + 1;
+
+                        document.getElementById(`how-card-title-${i}`).textContent = card.title ?? '';
+                        document.getElementById(`how-card-desc-${i}`).textContent = card.description ?? '';
+
+                        const img = document.getElementById(`how-card-img-${i}`);
+                        if (img && card.image) img.src = card.image;
+                    });
+                }
+
+
+                const ABOUT_ACT = data.about_act;
+                if (ABOUT_ACT) {
+                    document.getElementById('about-act-title').textContent = ABOUT_ACT.main_title ?? '';
+                    document.getElementById('about-act-description').textContent = ABOUT_ACT.description_1 ?? '';
+
+                    const img = document.getElementById('about-act-image');
+                    if (img && ABOUT_ACT.image) img.src = ABOUT_ACT.image;
+                }
+
+
+                const ABOUT_US = data.about_us;
+                if (ABOUT_US) {
+                    document.getElementById('about_sub_title').textContent = ABOUT_US.sub_title ?? '';
+                    document.getElementById('about_title').textContent = ABOUT_US.main_title ?? '';
+                    document.getElementById('about_description').textContent = ABOUT_US.description_1 ?? '';
+                    document.getElementById('about_overview').textContent = ABOUT_US.description_2 ?? '';
+                    document.getElementById('about_side_title').textContent = ABOUT_US.feature_1_title ?? '';
+                    document.getElementById('about_side_title2').textContent = ABOUT_US.feature_1_title ?? '';
+
+                    const mainImg = document.getElementById('about_main_image');
+                    const iconImg = document.getElementById('about_icon');
+                    const sideImg = document.getElementById('about_side_image');
+
+                    if (mainImg && ABOUT_US.image) mainImg.src = ABOUT_US.image;
+                    if (iconImg && ABOUT_US.icon_1) iconImg.src = ABOUT_US.icon_1;
+                    if (sideImg && ABOUT_US.image_2) sideImg.src = ABOUT_US.image_2;
+
+                    if (mainImg) mainImg.style.visibility = 'visible';
+                }
+
+
+                const WHY_CHOOSE = data.why_choose_us;
+                const featureContainer = document.getElementById('feature-cards');
+                const featureTemplate = document.getElementById('feature-template');
+
+                if (WHY_CHOOSE && featureContainer && featureTemplate) {
+                    featureContainer
+                        .querySelectorAll('.col-lg-4:not(#feature-template)')
+                        .forEach(el => el.remove());
+
+                    WHY_CHOOSE.forEach(item => {
+                        const clone = featureTemplate.cloneNode(true);
+
+                        clone.classList.remove('d-none');
+                        clone.removeAttribute('id');
+
+                        clone.querySelector('.feature-title').textContent = item.title ?? '';
+                        clone.querySelector('.feature-desc').innerHTML = item.description ?? '';
+
+                        featureContainer.appendChild(clone);
+                    });
+                }
+
+
+                const ABOUT_TWO = data.about_two;
+                if (ABOUT_TWO) {
+                    document.getElementById('about-two-title').textContent = ABOUT_TWO.main_title ?? '';
+                    document.getElementById('about-two-description').textContent = ABOUT_TWO.description ?? '';
+
+                    const img = document.getElementById('about-two-image');
+                    if (img && ABOUT_TWO.image) img.src = ABOUT_TWO.image;
+                }
+
+
+                const NETWORK = data.network;
+                if (NETWORK) {
+                    document.getElementById('network-sub-title').textContent = NETWORK.sub_title ?? '';
+                    document.getElementById('network-main-title').textContent = NETWORK.main_title ?? '';
+
+                    NETWORK.cards?.forEach((card, index) => {
+                        const i = index + 1;
+
+                        document.getElementById(`network-card-title-${i}`).textContent = card.title ?? '';
+                        document.getElementById(`network-card-desc-${i}`).textContent = card.description ?? '';
+
+                        const img = document.getElementById(`network-card-img-${i}`);
+                        if (img && card.image) img.src = card.image;
+                    });
+                }
+
+                const CASE_STUDY = data.case_study;
+
+
+
+                const caseContainer = document.getElementById('case-study-container');
+                const caseTemplate = document.getElementById('case-study-template');
+
+                if (CASE_STUDY && CASE_STUDY.length && caseContainer && caseTemplate) {
+
+                    // remove old case studies except template
+                    caseContainer
+                        .querySelectorAll('.col-lg-4:not(#case-study-template)')
+                        .forEach(el => el.remove());
+
+                    CASE_STUDY.forEach(item => {
+                        const clone = caseTemplate.cloneNode(true);
+
+                        clone.classList.remove('d-none');
+                        clone.removeAttribute('id');
+
+                        clone.querySelector('.case-study-title').textContent =
+                            item.title ?? '';
+
+                        clone.querySelector('.case-study-desc').textContent =
+                            item.description ?? '';
+
+                        const img = clone.querySelector('.case-study-img');
+                        if (img && item.image) img.src = item.image;
+
+                        caseContainer.appendChild(clone);
+                    });
+                } else {
+                    console.warn(' Case study section not rendered');
+                }
+
+                const TESTIMONIALS = data.testimonials;
+                if (TESTIMONIALS && TESTIMONIALS.length) {
+
+                    const swiperEl = document.querySelector('.testimonial-slide');
+                    const wrapper = swiperEl?.querySelector('.swiper-wrapper');
+                    const template = document.getElementById('testimonial_template');
+
+                    if (!swiperEl || !wrapper || !template) return;
+
+                    template.remove(); // remove only once
+
+                    TESTIMONIALS.forEach(item => {
+                        const clone = template.cloneNode(true);
+
+                        clone.classList.remove('d-none');
+                        clone.removeAttribute('id');
+
+                        clone.querySelector('.testimonial-quote').textContent = item.quote ?? '';
+                        clone.querySelector('.testimonial-message').innerHTML = item.message ?? '';
+                        clone.querySelector('.testimonial-name').textContent = item.name ?? '';
+                        clone.querySelector('.testimonial-designation').textContent = item.designation ?? '';
+
+                        const userPhoto = clone.querySelector('.testimonial-user-photo');
+                        const mainImage = clone.querySelector('.testimonial-image');
+
+                        if (userPhoto && item.photo) userPhoto.src = item.photo;
+                        if (mainImage && item.image) mainImage.src = item.image;
+
+                        wrapper.appendChild(clone);
+                    });
+
+                    if (window.testimonialSwiper) {
+                        window.testimonialSwiper.destroy(true, true);
+                    }
+
+                    window.testimonialSwiper = new Swiper('.testimonial-slide', {
+                        slidesPerView: 1,
+                        autoHeight: true,
+                        observer: true,
+                        observeParents: true,
+                        pagination: {
+                            el: '.swiper-pagination-testimonial',
+                            clickable: true,
+                        },
+                    });
+                }
+                // helper to remove HTML tags
+                function stripHtml(html) {
+                    const div = document.createElement('div');
+                    div.innerHTML = html;
+                    return div.textContent || div.innerText || '';
+                }
+                const blogs = data.blogs;
+                const blogContainer = document.getElementById('blog-list');
+
+                if (!blogContainer || !Array.isArray(blogs)) return;
+
+                blogContainer.innerHTML = '';
+
+                blogs.forEach(blog => {
+                    const date = new Date(blog.published_at);
+                    const day = date.getDate();
+                    const month = date.toLocaleString('default', { month: 'short' });
+
+                    blogContainer.insertAdjacentHTML('beforeend', `
+                                          <div class="col-md-6">
+                                            <div class="blog-single-item">
+                                              <a href="/blog-details/${blog.slug}" class="position-relative d-block">
+                                                <img
+                                                  src="http://localhost:8080/storage/${blog.image}"
+                                                  alt="${blog.title}"
+                                                  class="w-100"
+                                                  style="max-height:380px; object-fit:cover;"
+                                                />
+                                                <span class="tag text-center rounded-2 bg-warning fs-14 fw-normal lh-1">
+                                                  <span class="fs-20 fw-800 d-block mb-1">${day}</span>
+                                                  ${month}
+                                                </span>
+                                              </a>
+
+                                              <div class="blog-content mt-4">
+                                                <div class="d-flex info mb-2">
+                                                  <span class="d-flex align-items-center gap-10">
+                                                    <i class="ti ti-user-circle text-primary"></i>
+                                                    <span class="fs-15">By ${blog.author}</span>
+                                                  </span>
+                                                </div>
+
+                                                <a href="/blog-details/${blog.slug}" class="text-decoration-none">
+                                                  <h3>${blog.title}</h3>
+                                                  <p>${stripHtml(blog.description).substring(0, 120)}...</p>
+                                                  <span class="read-more d-flex align-items-center mt-3">
+                                                    <span>Learn More</span>
+                                                    <img src="/assets/images/right.svg" alt="right">
+                                                  </span>
+                                                </a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        `);
+                });
+
+            })
+            .catch(err => console.error('API ERROR ', err));
+
+
+
+
+        // form submission
+
+        document.getElementById("leadForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = form.querySelector("button[type='submit']");
+
+            submitBtn.disabled = true;
+
+            Swal.fire({
+                title: 'Verifying...',
+                text: 'Checking security',
+                allowOutsideClick: false,
+                didOpen: () => Swal.showLoading()
+            });
+
+            grecaptcha.ready(function () {
+                grecaptcha.execute("{{ config('services.recaptcha.site_key') }}", {
+                    action: 'contact_form'
+                }).then(async function (token) {
+
+                    const payload = {
+                        fullname: form.fullname.value.trim(),
+                        email: form.email.value.trim(),
+                        phone: form.phone.value.trim(),
+                        subject: form.subject.value.trim(),
+                        message: form.message.value.trim(),
+                        recaptcha_token: token
+                    };
+
+                    try {
+                        const response = await fetch("/api/leads", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                                "Accept": "application/json",
+                            },
+                            body: JSON.stringify(payload),
+                        });
+
+                        const data = await response.json();
+                        Swal.close();
+
+                        if (response.ok) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Message Sent!',
+                                text: data.message,
+                                confirmButtonColor: '#0d6efd'
+                            });
+                            form.reset();
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Failed',
+                                text: data.message || 'Validation failed',
+                                confirmButtonColor: '#dc3545'
+                            });
+                        }
+
+                    } catch (error) {
+                        Swal.close();
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Server Error',
+                            text: 'Please try again later'
+                        });
+                    } finally {
+                        submitBtn.disabled = false;
+                    }
+                });
+            });
+        });
     </script>
-
-
 @endpush

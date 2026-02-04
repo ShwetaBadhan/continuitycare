@@ -21,6 +21,9 @@ class LeadController extends Controller
             'message' => ['nullable', 'max:5000'],
             'recaptcha_token' => ['required', 'string']
         ]);
+        
+
+        
 
         
         $response = Http::asForm()->post(

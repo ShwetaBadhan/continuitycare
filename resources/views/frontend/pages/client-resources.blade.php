@@ -11,7 +11,7 @@
                     relation to your personal information managed by us, and the way we collect, use and disclose your
                     personal information. In handling your personal information, we will comply with the Privacy Act 1988
                     (Cth) (Privacy Act) and with the thirteen Australian Privacy Principles in the Privacy Act.</p>
-                <div class="col-xl-4 col-md-6">
+                {{-- <div class="col-xl-4 col-md-6">
                     <div class="facilities-single-item">
                         <div class="d-flex align-items-center justify-content-between mb-35 gap-10">
                             <div class="icon">
@@ -65,7 +65,8 @@
                             <a href="">Click Here</a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
+                <div id="policy-list"></div>
 
             </div>
         </div>
@@ -73,3 +74,58 @@
     <!-- End Facilities Area -->
 
 @endsection
+@push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            window.FRONTEND_CONFIG = {
+                DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
+            };
+
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/client-resource`)
+                .then(res => {
+                    if (!res.ok) throw new Error('API response failed');
+                    return res.json();
+                })
+                .then(data => {
+                    console.log('API DATA:', data);
+
+                    const CLIENT_RESOURCES = data.client_resources;
+                    const policyContainer = document.getElementById("policy-list");
+
+                    if (Array.isArray(CLIENT_RESOURCES) && CLIENT_RESOURCES.length > 0) {
+                        policyContainer.innerHTML = "";
+
+                        CLIENT_RESOURCES.forEach((item, index) => {
+
+                            policyContainer.insertAdjacentHTML("beforeend", `
+                            <div class="col-xl-4 col-md-6">
+                                <div class="facilities-single-item">
+                                    <div class="d-flex align-items-center justify-content-between mb-35 gap-10">
+                                        <div class="icon">
+                                            <img src="http://localhost:8080/storage/${item.image}" alt="${item.title}">
+                                        </div>
+                                        <span class="text-secondary">
+                                            ${String(index + 1).padStart(2, '0')}
+                                        </span>
+                                    </div>
+
+                                    <h3>${item.title}</h3>
+                                    <p>${item.description}</p>
+
+                                    <div class="d-flex justify-content-end align-items-center gap-2">
+                                        <p class="mb-0">For Easy Read</p>
+                                        <a href="http://localhost:8080/storage/${item.pdf}" target="_blank">
+                                            Click Here
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        `);
+                        });
+                    }
+                })
+                .catch(err => console.error('API ERROR:', err));
+        });
+    </script>
+@endpush

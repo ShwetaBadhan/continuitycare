@@ -12,23 +12,23 @@
         </div>
 
         <!-- Features Grid -->
-        <div class="row g-4 mt-5">
+        <div class="row g-4 mt-5" id="feature-cards">
             <!-- Feature 1 -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" id="feature-template">
                 <div class="feature-card card-red">
                     <div class="icon-wrapper">
                         <svg viewBox="0 0 24 24">
                             <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
                         </svg>
                     </div>
-                    <h3>More value</h3>
-                    <p>Low fees mean more care hours for you. We ensure maximum value from your funding, putting your
+                    <h3 class="feature-title">More value</h3>
+                    <p id="feature-desc">Low fees mean more care hours for you. We ensure maximum value from your funding, putting your
                         care first.</p>
                 </div>
             </div>
 
             <!-- Feature 2 -->
-            <div class="col-lg-4 col-md-6">
+            {{-- <div class="col-lg-4 col-md-6">
                 <div class="feature-card card-blue">
                     <div class="icon-wrapper">
                         <svg viewBox="0 0 24 24">
@@ -40,10 +40,10 @@
                     <p>Select the services and carers that work for you without being locked into restrictive
                         agreements.</p>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Feature 3 -->
-            <div class="col-lg-4 col-md-6">
+            {{-- <div class="col-lg-4 col-md-6">
                 <div class="feature-card card-purple">
                     <div class="icon-wrapper">
                         <svg viewBox="0 0 24 24">
@@ -54,10 +54,10 @@
                     <h3>No hidden costs</h3>
                     <p>Transparent pricing with no surprises. You'll always know exactly what you're paying for.</p>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Feature 4 -->
-            <div class="col-lg-4 col-md-6">
+            {{-- <div class="col-lg-4 col-md-6">
                 <div class="feature-card card-teal">
                     <div class="icon-wrapper">
                         <svg viewBox="0 0 24 24">
@@ -68,10 +68,10 @@
                     <p>Get started quickly with less hassle. Our streamlined process means you receive support when you
                         need it.</p>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Feature 5 -->
-            <div class="col-lg-4 col-md-6">
+            {{-- <div class="col-lg-4 col-md-6">
                 <div class="feature-card card-orange">
                     <div class="icon-wrapper">
                         <svg viewBox="0 0 24 24">
@@ -83,10 +83,10 @@
                     <p>Care that's tailored to your needs. We ensure a simple and stress-free experience at every step.
                     </p>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Feature 6 -->
-            <div class="col-lg-4 col-md-6">
+            {{-- <div class="col-lg-4 col-md-6">
                 <div class="feature-card card-pink">
                     <div class="icon-wrapper">
                         <svg viewBox="0 0 24 24">
@@ -98,10 +98,10 @@
                     <h3>Your support, your way</h3>
                     <p>Choose support workers that match your needs. You remain in control of your care journey.</p>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Feature 7 -->
-            <div class="col-lg-4 col-md-6 mx-auto">
+            {{-- <div class="col-lg-4 col-md-6 mx-auto">
                 <div class="feature-card card-dark">
                     <div class="icon-wrapper">
                         <svg viewBox="0 0 24 24">
@@ -113,7 +113,7 @@
                     <p>Manage your care anytime, anywhere online. Dedicated support and easy access to everything you
                         need.</p>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>

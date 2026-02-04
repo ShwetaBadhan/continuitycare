@@ -5,7 +5,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="footer-single-widget">
                     <a href="{{ route("home") }}" class="logo d-inline-block">
-                        <img src="assets/images/logo/hozlogo.webp" alt="white-logo">
+                        <img src="{{ asset('assets/images/logo/hozlogo.webp') }}" alt="white-logo">
                     </a>
 
                     <ul class="p-0 m-0 list-unstyled info-list">
@@ -98,7 +98,7 @@
                     <form class="position-relative z-1 mb-3">
                         <input type="email" class="form-control" placeholder="Enter Your Email">
                         <button type="submit" class="submit-btn position-absolute top-50 end-0 translate-middle-y">
-                            <img src="assets/images/icon-send.svg" alt="icon-send">
+                            <img src="{{ asset('assets/images/icon-send.svg') }}" alt="icon-send">
                         </button>
                     </form>
 

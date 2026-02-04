@@ -7,7 +7,7 @@ use App\Models\Lead;
 
 class LeadsApiController extends Controller
 {
-    
+
     public function index()
     {
         return response()->json([
@@ -16,26 +16,26 @@ class LeadsApiController extends Controller
         ]);
     }
 
-   
-    public function store(Request $request)
-    {
-        $validated = $request->validate([
-            'fullname' => 'required|string|max:255',
-            'email'    => 'required|email|max:255',
-            'phone'    => 'nullable|string|max:20',
-            'subject'  => 'nullable|string|max:255',
-            'message'  => 'nullable|string',
-        ]);
 
-        $lead = Lead::create([
-            ...$validated,
-            'ip' => $request->ip(),
-        ]);
+    // public function store(Request $request)
+    // {
+    //     $validated = $request->validate([
+    //         'fullname' => 'required|string|max:255',
+    //         'email' => 'required|email|max:255',
+    //         'phone' => 'nullable|string|max:20',
+    //         'subject' => 'nullable|string|max:255',
+    //         'message' => 'nullable|string',
+    //     ]);
 
-        return response()->json([
-            'success' => true,
-            'message' => 'Lead submitted successfully',
-            'data' => $lead
-        ], 201);
-    }
+    //     $lead = Lead::create([
+    //         ...$validated,
+    //         'ip' => $request->ip(),
+    //     ]);
+
+    //     return response()->json([
+    //         'success' => true,
+    //         'message' => 'Lead submitted successfully',
+    //         'data' => $lead
+    //     ], 201);
+    // }
 }

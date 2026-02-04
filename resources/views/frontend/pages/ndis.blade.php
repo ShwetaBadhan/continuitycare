@@ -30,26 +30,17 @@
                     <div class="details-content">
                         <div class="row g-4 d-flex align-items-center">
                             <div class="col-sm-4">
-                                <img src="assets/images/case-study9.jpg" class="rounded-4" alt="case-study">
+                                <img id="ndis_about_image" src="assets/images/case-study9.jpg" class="rounded-4 w-100"
+                                    alt="case-study">
                             </div>
                             <div class="col-sm-8">
-                                <h3 class="main-titles">Your Partner in NDIS Support and Care</h3>
-                                <p>Continuity Care is proud to empower the disability community to experience absolute
+                                <h3 class="main-titles" id="ndis_about_main_title">Your Partner in NDIS Support and Care
+                                </h3>
+                                <p id="ndis_about_description" align="justify">Continuity Care is proud to empower the
+                                    disability community to experience absolute
                                     freedom and flexibility. Our transformative NDIS services make life easier for our NDIS
                                     participants fostering choice and inclusion.</p>
-                                <p>We are an NDIS registered provider established to provide excellent NDIS services for our
-                                    participants. We design customised disability services that persistently develop with
-                                    the participants’ evolving needs</p>
-                                <p>With over a decade of experience in delivering high-quality disability services, our
-                                    dedicated team brings a diverse range of skills and healthcare expertise to support
-                                    individuals
-                                    in [Sydney](https://kuremara.com.au/ndis-provider-in-sydney/), [Melbourne](https://kuremara.com.au/ndis-melbourne/), [Brisbane](https://kuremara.com.au/ndis-service-providers-brisbane/),
-                                    and surrounding areas. We are committed to providing person-centered care that respects
-                                    the unique needs and goals of every individual we serve.</p>
-                                <p>Our participants function independently with our meticulous attention and unwavering
-                                    support. Kuremara collaborates with participants, their families, and carers to ensure
-                                    all needs and goals are achieved. This positive impact has earned us the recognition as
-                                    the top NDIS registered provider in several regions of Australia.</p>
+
                             </div>
                             <div class="row g-4 justify-content-center">
                                 <div class="col-xl-12 text-center">
@@ -58,61 +49,36 @@
                             </div>
 
                             <div class="col-sm-8">
-                                <h3 class="main-titles">Our NDIS Disability Support Services</h3>
-                                <h3>Disability Support Services Provider In Brisbane</h3>
-                                <p>As an [NDIS disability service
+                                <h3 class="main-titles" id="ndis_service_sub_title">Our NDIS Disability Support Services
+                                </h3>
+                                <h3 id="ndis_service_main_title">Disability Support Services Provider In Brisbane</h3>
+                                <p id="ndis_service_description">As an [NDIS disability service
                                     provider](https://kuremara.com.au/disability-support-services-provider-in-brisbane/), we
                                     provide a variety of NDIS support services that can be customised depending on your
                                     needs and requirements. Our team of talented and professionally driven experts offers
                                     the best-curtailed NDIS support services to meet your daily needs and provide support
                                     ranging from accommodation to plan management and assistance in personal activities.</p>
-                                <p>As the best disability service provider, we prioritise empowering individuals to live
-                                    their lives to the fullest, promoting independence and community integration. We also
-                                    maintain a strong commitment to ongoing training and development for their staff. You
-                                    can find our services below.</p>
+
                             </div>
                             <div class="col-sm-4">
-                                <img src="assets/images/case-study9.jpg" class="rounded-4" alt="case-study">
+                                <img id="ndis_service_image" src="assets/images/case-study9.jpg" class="rounded-4 w-100"
+                                    alt="case-study">
                             </div>
 
                             <div class="col-sm-4">
-                                <img src="assets/images/about/png-1-1.webp" class="rounded-4" alt="case-study">
+                                <img id="ndis_support_image" src="assets/images/about/png-1-1.webp" class="rounded-4 w-100"
+                                    alt="case-study">
                             </div>
                             <div class="col-sm-8">
-                                <h3 class="main-titles">Who We Support</h3>
-                                <p>Disability support services in Brisbane is covered under the National Disability
+                                <h3 class="main-titles" id="ndis_support_main_title">Who We Support</h3>
+                                <p id="ndis_support_description">Disability support services in Brisbane is covered under
+                                    the National Disability
                                     Insurance Scheme, a national plan aimed to support individuals with disabilities. NDIS
                                     offers financial support to disabled individuals with access to support and services,
                                     and gain new skills and independence in every aspect of their life.</p>
-                                <p>There are certain requirements that an individual needs to fulfill to be eligible for
-                                    the NDIS disability services:</p>
-                                <ul class="p-0 my-4 list-unstyled">
-                                    <li class="d-flex align-items-start gap-10">
-                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                        <span>Be an Australian citizen</span>
-                                    </li>
-                                    <li class="d-flex align-items-start gap-10">
-                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                        <span>Under 65 years old when applying for NDIS</span>
-                                    </li>
-                                    <li class="d-flex align-items-start gap-10">
-                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                        <span>Have a permanent disability</span>
-                                    </li>
-                                    <li class="d-flex align-items-start gap-10">
-                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                        <span>A permanent impairment that affects their daily task performance</span>
-                                    </li>
-                                    <li class="d-flex align-items-start gap-10">
-                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                        <span>Have an impairment that restricts their ability to work, study or
-                                            socialise</span>
-                                    </li>
-                                    <li class="d-flex align-items-start gap-10">
-                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                        <span>Require NDIS support for the rest of their life</span>
-                                    </li>
-                                </ul>
+
+                                <ul class="p-0 my-4 list-unstyled" id="ndis_support_points"></ul>
+
                             </div>
 
 
@@ -129,3 +95,66 @@
     </div>
     <!-- End Case Study Area -->
 @endsection
+@push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            window.FRONTEND_CONFIG = {
+                DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
+            };
+
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/ndis`)
+                .then(res => res.json())
+                .then(data => {
+                    console.log('API DATA ', data);
+
+
+
+                    const NDIS_ABOUT = data.ndis_about;
+                    if (NDIS_ABOUT) {
+                        document.getElementById('ndis_about_main_title').textContent = NDIS_ABOUT.main_title ?? '';
+                        document.getElementById('ndis_about_description').innerHTML = NDIS_ABOUT.description ?? '';
+                        const mainImg = document.getElementById('ndis_about_image');
+                        if (mainImg && NDIS_ABOUT.image) mainImg.src = NDIS_ABOUT.image;
+                    }
+
+                    const NDIS_SERVICE = data.ndis_service;
+                    if (NDIS_SERVICE) {
+                        document.getElementById('ndis_service_main_title').textContent = NDIS_SERVICE.main_title ?? '';
+                        document.getElementById('ndis_service_main_title').textContent = NDIS_SERVICE.sub_title ?? '';
+                        document.getElementById('ndis_service_description').innerHTML = NDIS_SERVICE.description ?? '';
+                        const mainImg = document.getElementById('ndis_service_image');
+                        if (mainImg && NDIS_SERVICE.image) mainImg.src = NDIS_SERVICE.image;
+                    }
+                    const NDIS_SUPPORT = data.ndis_support;
+                    if (NDIS_SUPPORT) {
+                        document.getElementById('ndis_support_main_title').textContent = NDIS_SUPPORT.main_title ?? '';
+                        document.getElementById('ndis_support_description').innerHTML = NDIS_SUPPORT.description_1 ?? '';
+                        const pointsContainer = document.getElementById('ndis_support_points');
+
+                        if (pointsContainer && Array.isArray(NDIS_SUPPORT.points)) {
+                            pointsContainer.innerHTML = NDIS_SUPPORT.points
+                                .map(point => `
+                    <li class="d-flex align-items-start gap-10">
+                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                        <span>${point}</span>
+                    </li>
+                `)
+                                .join('');
+                        }
+
+                        const mainImg = document.getElementById('ndis_support_image');
+                        if (mainImg && NDIS_SUPPORT.image) mainImg.src = NDIS_SUPPORT.image;
+                    }
+
+
+
+
+
+                })
+                .catch(err => console.error('API ERROR ', err));
+
+        });
+
+    </script>
+@endpush
