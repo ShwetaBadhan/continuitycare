@@ -295,7 +295,7 @@
                             <div class="col-md-6">
                                 <div class="blog-single-item text-decoration-none">
                                     <a href="/blog-details/${blog.slug}" class="position-relative d-block text-decoration-none">
-                                        <img class="w-100 h-100" src="http://localhost:8080/storage/${blog.image}" alt="${blog.title}" style="max-height:380px">
+                                        <img class="w-100 h-100" src="${window.FRONTEND_CONFIG.DASHBOARD_URL}/storage/${blog.image}" alt="${blog.title}" style="max-height:380px">
                                         <span class="tag text-center rounded-2 bg-warning fs-14 fw-normal lh-1">
                                             <span class="fs-20 fw-800 d-block mb-1">${day}</span>
                                             ${month}

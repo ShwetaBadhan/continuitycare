@@ -258,7 +258,7 @@
 
                     // Image
                     document.getElementById("blog-image").src =
-                        `http://localhost:8080/storage/${blog.image}`;
+                        `${window.FRONTEND_CONFIG.DASHBOARD_URL}/storage/${blog.image}`;
                     document.getElementById("blog-image").alt = blog.title;
 
                     // Meta
