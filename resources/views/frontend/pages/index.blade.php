@@ -1882,7 +1882,7 @@
                                             <div class="blog-single-item">
                                               <a href="/blog-details/${blog.slug}" class="position-relative d-block">
                                                 <img
-                                                  src="http://localhost:8080/storage/${blog.image}"
+                                                  src="${window.FRONTEND_CONFIG.DASHBOARD_URL}/storage/${blog.image}"
                                                   alt="${blog.title}"
                                                   class="w-100"
                                                   style="max-height:380px; object-fit:cover;"
