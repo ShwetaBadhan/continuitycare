@@ -17,25 +17,25 @@ class LeadsApiController extends Controller
     }
 
 
-    // public function store(Request $request)
-    // {
-    //     $validated = $request->validate([
-    //         'fullname' => 'required|string|max:255',
-    //         'email' => 'required|email|max:255',
-    //         'phone' => 'nullable|string|max:20',
-    //         'subject' => 'nullable|string|max:255',
-    //         'message' => 'nullable|string',
-    //     ]);
+    public function store(Request $request)
+    {
+        $validated = $request->validate([
+            'fullname' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'nullable|string|max:20',
+            'subject' => 'nullable|string|max:255',
+            'message' => 'nullable|string',
+        ]);
 
-    //     $lead = Lead::create([
-    //         ...$validated,
-    //         'ip' => $request->ip(),
-    //     ]);
+        $lead = Lead::create([
+            ...$validated,
+            'ip' => $request->ip(),
+        ]);
 
-    //     return response()->json([
-    //         'success' => true,
-    //         'message' => 'Lead submitted successfully',
-    //         'data' => $lead
-    //     ], 201);
-    // }
+        return response()->json([
+            'success' => true,
+            'message' => 'Lead submitted successfully',
+            'data' => $lead
+        ], 201);
+    }
 }

@@ -20,14 +20,14 @@
             </h3>
 
             <p id="communityDescription">
-              Continuity Connect supports the delivery of high-quality care within the comfort of home,
+              Continuity Care supports the delivery of high-quality care within the comfort of home,
               connecting caregivers, patients, and families for better health outcomes.
             </p>
 
             <ul id="communityPoints" class="mt-3"></ul>
           </div>
 
-          <a href="tel:1800012273" class="default-btn active mt-5">
+          <a href="{{ route('contact-us') }}" class="default-btn active mt-5">
             <div class="d-flex gap-10 align-content-center">
               <span>Book a Free Consultation</span>
               <img src="assets/images/right.svg" alt="right-white">
@@ -160,7 +160,8 @@
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
                 </span>
-                <span class="benefit-text">Safer care at home through early detection</span>
+                <span class="benefit-text">Personalized Care Plans
+                </span>
               </li>
 
               <li class="rights-benefit">
@@ -172,7 +173,7 @@
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
                 </span>
-                <span class="benefit-text">Choice, control and participation</span>
+                <span class="benefit-text">Comfort of Familiar Surroundings</span>
               </li>
 
               <li class="rights-benefit">
@@ -184,7 +185,7 @@
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
                 </span>
-                <span class="benefit-text">Reduced risk of harm</span>
+                <span class="benefit-text">Continuous Health Monitoring</span>
               </li>
 
               <li class="rights-benefit">
@@ -196,7 +197,7 @@
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
                 </span>
-                <span class="benefit-text">Better transparency for families</span>
+                <span class="benefit-text">Improved Safety and Fall Prevention</span>
               </li>
 
               <li class="rights-benefit">
@@ -208,7 +209,8 @@
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
                 </span>
-                <span class="benefit-text">Evidence-informed decision-making</span>
+                <span class="benefit-text">Better Quality of Life
+                </span>
               </li>
             </ul>
           </div>
@@ -272,11 +274,11 @@
             if (Array.isArray(about.points)) {
               about.points.forEach(point => {
                 listEl.insertAdjacentHTML('beforeend', `
-                    <li class="d-flex align-items-center gap-10 mb-2">
-                      <i class="ti ti-circle-check-filled text-warning"></i>
-                      <span>${point}</span>
-                    </li>
-                  `);
+                      <li class="d-flex align-items-center gap-10 mb-2">
+                        <i class="ti ti-circle-check-filled text-warning"></i>
+                        <span>${point}</span>
+                      </li>
+                    `);
               });
             }
           }
@@ -289,18 +291,18 @@
           if (Array.isArray(services) && services.length) {
             services.forEach(service => {
               grid.insertAdjacentHTML('beforeend', `
-                  <div class="nursing-feature-card">
-                    <div class="nursing-feature-header">
-                      <div class="nursing-feature-icon">
-                        <img src="${service.image}" alt="${service.title}" width="32">
+                    <div class="nursing-feature-card">
+                      <div class="nursing-feature-header">
+                        <div class="nursing-feature-icon">
+                          <img src="${service.image}" alt="${service.title}" width="32">
+                        </div>
+                      </div>
+                      <h3>${service.title}</h3>
+                      <div class="nursing-feature-text">
+                        ${service.description}
                       </div>
                     </div>
-                    <h3>${service.title}</h3>
-                    <div class="nursing-feature-text">
-                      ${service.description}
-                    </div>
-                  </div>
-                `);
+                  `);
             });
           }
 
@@ -322,16 +324,16 @@
             if (Array.isArray(activity.points)) {
               activity.points.forEach(point => {
                 listEl.insertAdjacentHTML('beforeend', `
-                    <li class="rights-benefit">
-                      <span class="benefit-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                          <path d="m9 12 2 2 4-4"></path>
-                        </svg>
-                      </span>
-                      <span class="benefit-text">${point}</span>
-                    </li>
-                  `);
+                      <li class="rights-benefit">
+                        <span class="benefit-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                            <path d="m9 12 2 2 4-4"></path>
+                          </svg>
+                        </span>
+                        <span class="benefit-text">${point}</span>
+                      </li>
+                    `);
               });
             }
           }
@@ -345,24 +347,24 @@
               const id = `faq-${index}`;
 
               faqWrapper.insertAdjacentHTML('beforeend', `
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button ${index ? 'collapsed' : ''}"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#${id}">
-                        ${faq.question}
-                      </button>
-                    </h2>
-                    <div id="${id}"
-                      class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
-                      data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        ${faq.answer}
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button ${index ? 'collapsed' : ''}"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#${id}">
+                          ${faq.question}
+                        </button>
+                      </h2>
+                      <div id="${id}"
+                        class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          ${faq.answer}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                `);
+                  `);
             });
           }
 

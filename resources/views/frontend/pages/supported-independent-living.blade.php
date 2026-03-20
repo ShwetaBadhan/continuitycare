@@ -12,11 +12,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="details-content">
-                        <h3 id="independent-about-title">Independently living at your happiest.</h3>
+                        <h3 id="independent-about-title">Independently Living at Your Happiest.</h3>
                         <p id="independent-about-description" align="justify">Our mission is to create meaningful impact by
                             delivering
                             innovative, reliable, and sustainable
-                            solutions that empower individuals communities we are committed to integrity, collaboration, and
+                            solutions that empower individuals communities . We are committed to integrity, collaboration, and
                             excellence in everything we do, striving to foster growth, inspire progress</p>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                                     <h6 class="text-white service-overview"></h6>
                                 </div>
                                 <span class="read-btn">
-                                    <img src="assets/images/right.svg">
+                                    <img src="{{ asset('assets/images/right.svg') }}">
                                 </span>
                             </a>
                         </div>

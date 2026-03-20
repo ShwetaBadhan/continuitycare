@@ -29,7 +29,7 @@
                 <div class="col-lg-6">
                     <div class="contact-us-form bg-img border p-4 p-lg-5 rounded-4">
                         <h3 class="mt-0">Take A Schedule Appointment</h3>
-                        <p>Our booking process is simple confidential and flexible to fit your schedule</p>
+                        <p>Our booking process is simple confidential and flexible to fit your scheduled</p>
                         <form id="leadForm">
                             <div class="row g-4">
                                 <div class="col-lg-6">
@@ -68,11 +68,11 @@
                 <div class="col-lg-6">
                     <div class="contact-us-content position-relative">
                         <span class="top-title mb-2 mt-0">CONTACT US</span>
-                        <h2 class="main-title">Please Don't Hesitate To <span class="word-mark">Contact Us</span> for your
-                            healthy life</h2>
-                        <p>Whether provided at home in assisted living facilities or nursing homes senior care aims to
-                            promote independence while offering safety and comfort. Compassionate and personalized care
-                            helps seniors maintain their physical health mental well being and social connections</p>
+                        <h2 class="main-title">Please Don't Hesitate to <span class="word-mark">Contact Us</span> for Your
+                            Healthy Life</h2>
+                        <p>Whether provided at home, in assisted living facilities, or in nursing homes, senior care aims to
+                            promote independence while offering safety and comfort. Compassionate and personalised care
+                            helps seniors maintain their physical health, mental well-being, and social connections.</p>
 
                         <h3>Opening Hours</h3>
 

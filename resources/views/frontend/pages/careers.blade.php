@@ -11,7 +11,7 @@
             <div id="job-list"></div>
 
             <!-- Pagination (static for now) -->
-            <div class="pagination-area mt-md-3 mt-lg-4 pt-lg-3 d-flex align-items-center justify-content-center">
+            {{-- <div class="pagination-area mt-md-3 mt-lg-4 pt-lg-3 d-flex align-items-center justify-content-center">
                 <button class="next page-numbers border-0">
                     <i class="ti ti-chevron-left"></i>
                 </button>
@@ -23,7 +23,7 @@
                 <button class="next page-numbers border-0">
                     <i class="ti ti-chevron-right"></i>
                 </button>
-            </div>
+            </div> --}}
 
         </div>
 

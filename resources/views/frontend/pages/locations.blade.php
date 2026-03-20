@@ -134,10 +134,15 @@
                 <div class="modal-body">
                     <h5 id="facilityName"></h5>
                     <form id="contactForm" onsubmit="submitForm(event)">
+                        <label for="name">Name</label>
                         <input type="text" class="form-control" placeholder="Full Name" required>
+                         <label for="address">Address</label>
                         <input type="email" class="form-control" placeholder="Email Address" required>
+                         <label for="phone">Phone</label>
                         <input type="tel" class="form-control" placeholder="Phone Number" required>
+                         <label for="subject">Subject</label>
                         <input type="text" class="form-control" placeholder="Subject" required>
+                         <label for="message">Message</label>
                         <textarea class="form-control" rows="2" placeholder="Message (Optional)"></textarea>
                         <button type="submit" class="btn-submit-form">
                             <i class="fas fa-paper-plane"></i> Send Message

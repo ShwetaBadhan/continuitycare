@@ -6,7 +6,7 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="banner-area-three bg-img bg1" style="background-image: url(assets/images/banner-bg3.jpg);">
-                    <div class="container mw-1685">
+                    <div class="container mw-1685 main-slider">
                         <div class="banner-content style-three py-0" data-group="images" data-cues="slideInUp"
                             data-duration="900">
                             <span class="top-title style-two text-white">AGED CARE</span>
@@ -48,7 +48,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="banner-area-three bg-img" style="background-image: url(assets/images/banner-bg4.jpg);">
-                    <div class="container mw-1685">
+                    <div class="container mw-1685 main-slider">
                         <div class="banner-content style-three py-0" data-group="images" data-cues="slideInUp"
                             data-duration="900">
                             <span class="top-title style-two text-white">DISABILITY</span>
@@ -96,11 +96,11 @@
             </div>
             <div class="swiper-slide">
                 <div class="banner-area-three bg-img" style="background-image: url(assets/images/banner-bg5.jpg);">
-                    <div class="container mw-1685">
+                    <div class="container mw-1685 main-slider">
                         <div class="banner-content style-three py-0" data-group="images" data-cues="slideInUp"
                             data-duration="900">
                             <span class="top-title style-two text-white">EMPOWERING CARE AT HOME</span>
-                            <h1 class="text-white mb-3">The Best Place to Recover is <br> Right Here</h1>
+                            <h1 class="text-white mb-3">The Best Place to Recover is <br> Right Here !</h1>
                             <p class="text-white">Our Hospital to Home program bridges that gap by providing <br> immediate
                                 clinical oversight and restorative support the moment you arrive home.<br> We handle the
                                 medical logistics and personal care so you can focus entirely on your<br> recovery in a
@@ -123,8 +123,8 @@
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <p class="text-white"><span class="text-warning">19000+</span> satisfied
-                                                customers Worldwide</p>
+                                            <p class="text-white"><span class="text-warning">19000+</span> Satisfied
+                                                Customers Worldwide</p>
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +169,7 @@
                 <div class="col-lg-4">
                     <div class="work-content" data-cues="slideInUp" data-duration="900">
                         <h3 id="how-side-title">
-                            We believe in fostering an environment that promotes independence and respects
+                            We Believe in Fostering an Environment that Promotes Independence and Respect
                         </h3>
 
                         <div class="text-center">
@@ -187,14 +187,17 @@
                                     <div class="d-flex align-items-center mb-30">
                                         <div class="flex-shrink-0">
                                             <div class="icon d-flex justify-content-center align-items-center">
-                                                <img id="how-card-img-1" src="" alt="">
+                                                <img id="how-card-img-1" src="{{ asset('assets/images/icon/work1.png') }}"
+                                                    alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3 id="how-card-title-1"></h3>
+                                            <h3 id="how-card-title-1">Support</h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit" id="how-card-desc-1"></p>
+                                    <p class="text_limit" id="how-card-desc-1">We provide continuous support to ensure
+                                        patients receive consistent care, guidance, and attention throughout their treatment
+                                        journey, helping them recover comfortably and confidently.</p>
                                 </div>
                             </div>
 
@@ -203,14 +206,17 @@
                                     <div class="d-flex align-items-center mb-30">
                                         <div class="flex-shrink-0">
                                             <div class="icon d-flex justify-content-center align-items-center">
-                                                <img id="how-card-img-2" src="" alt="">
+                                                <img id="how-card-img-2" src="{{ asset('assets/images/icon/work2.png') }}"
+                                                    alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3 id="how-card-title-2"></h3>
+                                            <h3 id="how-card-title-2">Monitoring</h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit" id="how-card-desc-2"></p>
+                                    <p class="text_limit" id="how-card-desc-2">Our team closely monitors patient progress to
+                                        maintain consistent care, identify improvements, and adjust treatment when necessary
+                                        for better outcomes.</p>
                                 </div>
                             </div>
 
@@ -219,14 +225,17 @@
                                     <div class="d-flex align-items-center mb-30">
                                         <div class="flex-shrink-0">
                                             <div class="icon d-flex justify-content-center align-items-center">
-                                                <img id="how-card-img-3" src="" alt="">
+                                                <img id="how-card-img-3" src="{{ asset('assets/images/icon/work3.png') }}"
+                                                    alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3 id="how-card-title-3"></h3>
+                                            <h3 id="how-card-title-3">Guidance</h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit" id="how-card-desc-3"></p>
+                                    <p class="text_limit" id="how-card-desc-3">We offer continuous guidance to patients at
+                                        every stage of their care, ensuring they understand their treatment plan and feel
+                                        supported throughout their recovery.</p>
                                 </div>
                             </div>
 
@@ -235,14 +244,17 @@
                                     <div class="d-flex align-items-center mb-30">
                                         <div class="flex-shrink-0">
                                             <div class="icon d-flex justify-content-center align-items-center">
-                                                <img id="how-card-img-4" src="" alt="">
+                                                <img id="how-card-img-4" src="{{ asset('assets/images/icon/work4.png') }}"
+                                                    alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h3 id="how-card-title-4"></h3>
+                                            <h3 id="how-card-title-4">Commitment</h3>
                                         </div>
                                     </div>
-                                    <p class="text_limit" id="how-card-desc-4"></p>
+                                    <p class="text_limit" id="how-card-desc-4">We are committed to providing ongoing care
+                                        and attention, ensuring every patient receives reliable support and a smooth healing
+                                        journey.</p>
                                 </div>
                             </div>
 
@@ -307,7 +319,7 @@
 
                 <div class="col-xl-6">
                     <div class="about-content" data-cues="slideInUp" data-duration="900">
-                        <h2 class="main-title mb-20 ms-auto mw-975" id="about-act-title">The New Aged Care Act is here</h2>
+                        <h2 class="main-title mb-20 ms-auto mw-975" id="about-act-title">The New Aged Care Act is Here</h2>
                         <p align="justify" id="about-act-description">Big changes have come to aged care, with the new Aged
                             Care Act that is effective
                             from 1 November. This important reform places the rights, dignity, and choices of older people
@@ -315,7 +327,7 @@
                             services are delivered, making it easier for people to access the care they need to live well at
                             home.</p>
 
-                        <a href="{{route("new-aged-care-act")}}" class="default-btn">
+                        <a href="{{route("about-us")}}" class="default-btn">
                             <div class="d-flex align-items-center gap-10">
                                 <span>Learn More</span>
                                 <img src="assets/images/right-white.svg" alt="right-white">
@@ -572,8 +584,8 @@
                                     <div class="flex-grow-1">
                                         <h3 id="about_side_title">Maintaining Independence</h3>
                                         <p id="about_overview">With trained caregivers, healthcare professionals, and a
-                                            range of recreational
-                                            programs, elderly homes aim</p>
+                                            range of recreational programs, elderly homes aim to provide a safe,
+                                            comfortable, and engaging environment for seniors.</p>
                                     </div>
                                 </div>
 
@@ -669,12 +681,11 @@
         style="background-image: url(assets/images/case-study-bg.png);">
         <div class="container mw-1685">
             <div class="row gy-2 mb-70" data-cues="slideInUp" data-duration="900">
-                <div class="col-lg-4">
+                <div class="col-lg-2">
                     <span class="top-title">CASE STUDY</span>
                 </div>
-                <div class="col-lg-8">
-                    <h2 class="main-title ms-auto mw-975">Discover Why Families Trust Our Home Care <span
-                            class="word-mark">Services</span></h2>
+                <div class="col-lg-10">
+                    <h2 class="main-title  mw-975">Discover Why Families Trust Our Home Care Services</h2>
                 </div>
             </div>
             <div data-cues="slideInUp" data-duration="900">
@@ -838,7 +849,7 @@
                 <div class="col-12 text-center mb-5">
                     <h2 class="main-titles">How Continuity Care works</h2>
                     <p class="section-description mx-auto">
-                        My Aged Care can be a difficult process to navigate on your own. At Continuity Care, we help guide
+                        My Aged Care can be a difficult process to navigate on your own. At Continuity Care, we  guide
                         you through each step of the journey. Follow the steps below to start self-managing your Support at
                         Home funding as soon as possible.
                     </p>
@@ -862,12 +873,7 @@
                             Our team will help you understand how you can confidently self-manage your Support at Home
                             funding.
                         </p>
-                        <div class="arrow-icon d-none d-lg-block">
-                            <svg viewBox="0 0 24 24">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -889,12 +895,7 @@
                             We will listen to your care and lifestyle needs to design a care plan and budget that suits your
                             individual needs.
                         </p>
-                        <div class="arrow-icon d-none d-lg-block">
-                            <svg viewBox="0 0 24 24">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -915,12 +916,7 @@
                             Organise your care workers and support services inline with your care plan and start scheduling
                             your care services.
                         </p>
-                        <div class="arrow-icon d-none d-lg-block">
-                            <svg viewBox="0 0 24 24">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -947,7 +943,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <button class="cta-button">
-                        Ready to get started?
+                        <a class="text-white" href="{{ route('contact-us') }}">Ready to get started?</a>
                         <svg viewBox="0 0 24 24">
                             <line x1="5" y1="12" x2="19" y2="12" />
                             <polyline points="12 5 19 12 12 19" />
@@ -964,7 +960,7 @@
                 <!-- Left Content -->
                 <div class="col-lg-8">
                     <h2 class="main-title" id="about-two-title">
-                        Empowering communities with quality home care support
+                        Empowering Communities with Quality Home Care Support
                     </h2>
 
                     <p class="hero-text" id="about-two-description">
@@ -1013,7 +1009,7 @@
                                     <polyline points="12 6 12 12 16 14" />
                                 </svg>
                             </div>
-                            <span>8:30 AM TO 5:00 PM</span>
+                            <span>8:30 AM to 5:00 PM</span>
                         </div>
                     </div>
                 </div>
@@ -1069,8 +1065,8 @@
     <section class="empower-hero-section padding-section">
         <div class="container">
             <div class="row align-items-center">
-                <h2 class="main-titles text-center" id="network-sub-title">Empower your network with credentialed healthcare
-                    professionals</h2>
+                <h2 class="main-titles text-center" id="network-sub-title">Empower your Network with Credentialed Healthcare
+                    Professionals</h2>
                 <p class="mb-5 text-center" id="network-main-title">VectorCare Trust simplifies credential management and
                     policy enforcement,
                     building a reliable network of qualified vendors while maintaining compliance and operational efficiency
@@ -1361,10 +1357,10 @@
                             living life on your own terms.
                         </p>
 
-                        <a href="javascript:void(0)" class="default-btn mt-4 mt-xl-5">
+                        <a href="{{ route('contact-us') }}" class="default-btn mt-4 mt-xl-5">
                             <div class="d-flex align-items-center gap-10">
-                                <span>View All Testimonials</span>
-                                <img src="assets/images/right-white.svg" alt="right-white">
+                                <span>Reach us Now</span>
+                                <img src="{{ asset('assets/images/right-white.svg') }}" alt="right-white">
                             </div>
                         </a>
                     </div>
@@ -1392,7 +1388,7 @@
                                             <div class="d-flex align-items-center info">
                                                 <div class="flex-shrink-0">
                                                     <img class="testimonial-user-photo rounded-circle"
-                                                        src="assets/images/right-white.svg" alt="user"
+                                                        src="{{ asset('assets/images/team1.jpg') }}" alt="user"
                                                         id="testimonial-user-photo">
                                                 </div>
                                                 <div class="flex-grow-1">
@@ -1403,8 +1399,8 @@
                                         </div>
 
                                         <div class="flex-shrink-0 position-relative">
-                                            <img class="testimonial-image" src="" alt="testimonial">
-                                            <img src="assets/images/quote.png"
+                                            <img class="testimonial-image" src="{{ asset('assets/images/case-study1.jpg') }}" alt="testimonial">
+                                            <img src="{{ asset('assets/images/quote.png') }}"
                                                 class="rounded-0 position-absolute end-0 bottom-0 p-4" alt="quote">
                                         </div>
                                     </div>
@@ -1596,7 +1592,7 @@
                         <span class="top-title mb-2">CONTACT US</span>
                         <h2 class="main-title">Let’s Start Your Journey to Independent Living.</h2>
                         <p>Reach out today to see how our stress-free process and transparent pricing can get your care
-                            started quickly and without the hassle.
+                            started quickly and without  hassle.
                         </p>
 
                         <h3>Opening Hours</h3>
@@ -1878,41 +1874,41 @@
                     const month = date.toLocaleString('default', { month: 'short' });
 
                     blogContainer.insertAdjacentHTML('beforeend', `
-                                          <div class="col-md-6">
-                                            <div class="blog-single-item">
-                                              <a href="/blog-details/${blog.slug}" class="position-relative d-block">
-                                                <img
-                                                  src="${window.FRONTEND_CONFIG.DASHBOARD_URL}/storage/${blog.image}"
-                                                  alt="${blog.title}"
-                                                  class="w-100"
-                                                  style="max-height:380px; object-fit:cover;"
-                                                />
-                                                <span class="tag text-center rounded-2 bg-warning fs-14 fw-normal lh-1">
-                                                  <span class="fs-20 fw-800 d-block mb-1">${day}</span>
-                                                  ${month}
-                                                </span>
-                                              </a>
+                                                  <div class="col-md-6">
+                                                    <div class="blog-single-item">
+                                                      <a href="/blog-details/${blog.slug}" class="position-relative d-block">
+                                                        <img
+                                                          src="${window.FRONTEND_CONFIG.DASHBOARD_URL}/storage/${blog.image}"
+                                                          alt="${blog.title}"
+                                                          class="w-100"
+                                                          style="max-height:380px; object-fit:cover;"
+                                                        />
+                                                        <span class="tag text-center rounded-2 bg-warning fs-14 fw-normal lh-1">
+                                                          <span class="fs-20 fw-800 d-block mb-1">${day}</span>
+                                                          ${month}
+                                                        </span>
+                                                      </a>
 
-                                              <div class="blog-content mt-4">
-                                                <div class="d-flex info mb-2">
-                                                  <span class="d-flex align-items-center gap-10">
-                                                    <i class="ti ti-user-circle text-primary"></i>
-                                                    <span class="fs-15">By ${blog.author}</span>
-                                                  </span>
-                                                </div>
+                                                      <div class="blog-content mt-4">
+                                                        <div class="d-flex info mb-2">
+                                                          <span class="d-flex align-items-center gap-10">
+                                                            <i class="ti ti-user-circle text-primary"></i>
+                                                            <span class="fs-15">By ${blog.author}</span>
+                                                          </span>
+                                                        </div>
 
-                                                <a href="/blog-details/${blog.slug}" class="text-decoration-none">
-                                                  <h3>${blog.title}</h3>
-                                                  <p>${stripHtml(blog.description).substring(0, 120)}...</p>
-                                                  <span class="read-more d-flex align-items-center mt-3">
-                                                    <span>Learn More</span>
-                                                    <img src="/assets/images/right.svg" alt="right">
-                                                  </span>
-                                                </a>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        `);
+                                                        <a href="/blog-details/${blog.slug}" class="text-decoration-none">
+                                                          <h3>${blog.title}</h3>
+                                                          <p>${stripHtml(blog.description).substring(0, 120)}...</p>
+                                                          <span class="read-more d-flex align-items-center mt-3">
+                                                            <span>Learn More</span>
+                                                            <img src="/assets/images/right.svg" alt="right">
+                                                          </span>
+                                                        </a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                `);
                 });
 
             })

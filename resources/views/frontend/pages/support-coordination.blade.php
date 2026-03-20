@@ -20,7 +20,7 @@
               build long-term independence.</p>
 
           </div>
-          <a href="tel:1800 012 273" class="default-btn active mt-5">
+          <a href="{{ route('contact-us') }}" class="default-btn active mt-5">
             <div class="d-flex gap-10 align-content-center">
               <span>Book a Free Consultation</span>
               <img src="assets/images/right.svg" alt="right-white">
@@ -83,7 +83,7 @@
   <!-- Who We Support -->
   <section class="section-care">
     <div class="container">
-      <h2 class="main-titlestext-center">Our NDIS Support Coordination Services</h2>
+      <h2 class="main-titles text-center">Our NDIS Support Coordination Services</h2>
       <p class="text-center mb-5 fs-5">At Continuity Care, we offer a comprehensive range of NDIS Support Coordination
         services to ensure you receive the right assistance at the right time. Our approach is holistic, compassionate,
         and grounded in empowering you to take control of your plan with clarity and purpose.</p>
@@ -113,7 +113,7 @@
 
           <p id="Support-Description">
             With years of experience serving participants across Brisbane, Kuremara has become a trusted name in Support
-            Coordination. Here's why families, carers, and participants continue to choose us:
+            Coordination. Here's why families, careers, and participants continue to choose us:
           </p>
 
           <ul class="list-unstyled approach-list" id="Support-Points">

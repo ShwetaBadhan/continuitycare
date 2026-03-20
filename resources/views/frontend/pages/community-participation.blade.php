@@ -5,7 +5,7 @@
   <!-- Hero Section -->
   <section class="home-care-section padding-section">
     <div class="container position-relative">
-      <h1 class="text-white">Social & Community Participation</h1>
+      <h1 class="text-white"> Community Participation</h1>
       <p class="text-white">Build confidence, learn life skills, and feel meaningfully connected—your way, your pace.</p>
       <div class="d-flex gap-3 justify-content-center flex-wrap mb-4">
         <a href="#contact" class="btn btn-custom-primary btn-lg">
@@ -27,10 +27,10 @@
           <img id="community-about-image" src="{{ asset('assets/images/about/download.png') }}" class="rounded" alt="">
         </div>
         <div class="col-lg-7 mx-auto">
-          <h2 class="main-titles" id="community-about-title">What Is Social & Community Participation?</h2>
+          <h2 class="main-titles" id="community-about-title">What is Community Participation?</h2>
 
           <p id="community-about-description" align="justify">
-            Social and community participation refers to the active involvement of individuals within their communities
+            community participation refers to the active involvement of individuals within their communities
             and broader society. It can include things like volunteering, attending community events, joining clubs or
             organisations, taking part in classes, and building everyday connections with others.
           </p>
@@ -69,7 +69,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="why-card">
             <div class="why-icon">
-              <img id="community-benefit-card-img-1" src="" alt="img">
+              <img id="community-benefit-card-img-1" src="{{ asset('assets/images/icon/facilitie1.png') }}" alt="img">
             </div>
             <h4 id="community-benefit-card-title-1">Belonging</h4>
             <p id="community-benefit-card-desc-1" align="justify">
@@ -81,7 +81,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="why-card">
             <div class="why-icon">
-              <img id="community-benefit-card-img-2" src="" alt="img">
+              <img id="community-benefit-card-img-2" src="{{ asset('assets/images/icon/facilitie2.png') }}" alt="img">
             </div>
             <h4 id="community-benefit-card-title-2">Connection</h4>
             <p id="community-benefit-card-desc-2" align="justify">
@@ -93,7 +93,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="why-card">
             <div class="why-icon">
-              <img id="community-benefit-card-img-3" src="" alt="img">
+              <img id="community-benefit-card-img-3" src="{{ asset('assets/images/icon/facilitie3.png') }}" alt="img">
             </div>
             <h4 id="community-benefit-card-title-3">Inclusivity</h4>
             <p id="community-benefit-card-desc-3" align="justify">
@@ -105,7 +105,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="why-card">
             <div class="why-icon">
-              <img id="community-benefit-card-img-4" src="" alt="img">
+              <img id="community-benefit-card-img-4" src="{{ asset('assets/images/icon/facilitie4.png') }}" alt="img">
               {{-- <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-sun" aria-hidden="true" data-replit-metadata="client/src/pages/home.tsx:229:6"
@@ -121,7 +121,7 @@
                 <path d="m19.07 4.93-1.41 1.41"></path>
               </svg> --}}
             </div>
-            <h4 id="community-benefit-card-title-4">Wellbeing</h4>
+            <h4 id="community-benefit-card-title-4">Well-Being</h4>
             <p id="community-benefit-card-desc-4" align="justify">
               Brighter days, better mood, and meaningful routines that support mental health.
             </p>
@@ -362,12 +362,12 @@
         <div class="content-card">
 
           <h2 class="main-titles" id="community-planning-title">
-            We take the frustration out of planning your getaway
+            We Take the Frustration Out of Planning Your Getaway
           </h2>
 
           <p id="community-planning-description">
             Everyone deserves a break. If you or a family member has a disability,
-            Continuity Care can help coordinate supports for a range of options:
+            Continuity Care can help coordinate supports for a range of options.
           </p>
 
           <!-- Dynamic Points -->
@@ -409,7 +409,7 @@
             <div class="step-circle d-flex align-items-center justify-content-center">
               1
             </div>
-            <h4 class="mt-3 mb-2" id="who-work-card-title-1">We learn what matters to you</h4>
+            <h4 class="mt-3 mb-2" id="who-work-card-title-1">We Learn What Matters to you</h4>
             <p id="who-work-card-desc-1" class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
               Your interests, preferences, goals, and the type of community participation you want.
             </p>
@@ -422,7 +422,7 @@
             <div class="step-circle d-flex align-items-center justify-content-center">
               2
             </div>
-            <h4 class="mt-3 mb-2" id="who-work-card-title-2">We match the right support</h4>
+            <h4 class="mt-3 mb-2" id="who-work-card-title-2">We Match the Right Support</h4>
             <p id="who-work-card-desc-2" class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
               We consider your needs, communication style, comfort levels, and activities you enjoy.
             </p>
@@ -435,7 +435,7 @@
             <div class="step-circle d-flex align-items-center justify-content-center">
               3
             </div>
-            <h4 class="mt-3 mb-2" id="who-work-card-title-3">We build a tailored activity program</h4>
+            <h4 class="mt-3 mb-2" id="who-work-card-title-3">We Build a Tailored Activity Program</h4>
             <p id="who-work-card-desc-3" class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
               Structure where it helps, flexibility where you need it—designed to support progress.
             </p>
@@ -448,7 +448,7 @@
             <div class="step-circle d-flex align-items-center justify-content-center">
               4
             </div>
-            <h4 class="mt-3 mb-2" id="who-work-card-title-4">We support, encourage, and grow confidence over time</h4>
+            <h4 class="mt-3 mb-2" id="who-work-card-title-4">We Support, Encourage, and Grow Confidence Over Time</h4>
             <p id="who-work-card-desc-4" class="text-muted" style="font-size: 0.9rem; line-height: 1.5;">
               You can build independence at your pace, with consistent support.
             </p>
@@ -465,7 +465,7 @@
         <div class="left-content">
 
           <h2 class="main-titles">Funding Information and Eligibility</h2>
-          <h3>NDIS funding (when Social & Community Participation may be covered)</h3>
+          <h3>NDIS funding (when Community Participation may be covered)</h3>
           <p align="justify">
             Explore Community Participation may be funded through your NDIS plan when it aligns with your goals and
             support needs. Funding depends on your plan budgets, plan management type, and whether the support is
@@ -495,7 +495,7 @@
 
     </div>
   </div>
-  <div class=" padding-section">
+  <div class=" padding-section self-funded-section">
 
     <div class="container">
 
@@ -504,7 +504,7 @@
         We offer flexible self-funded and fee-for-service options for those who want quick access to supports or have
         specific goal-focused needs.
       </p>
-      <div class="row">
+      <div class="row cards">
         <div class="col-lg-6">
           <!-- Left Card: Self-Funded -->
           <div class="card-funded">
@@ -626,8 +626,8 @@
             if (pointsContainer && Array.isArray(community_about.points)) {
               pointsContainer.innerHTML = community_about.points
                 .map(point => `
-                                                                    <li><span></span>${point}</li>
-                                                                `)
+                                                                      <li><span></span>${point}</li>
+                                                                  `)
                 .join('');
             }
             const img = document.getElementById('community-about-image');
@@ -665,8 +665,8 @@
             if (pointsContainer && Array.isArray(communityApproachSection.points)) {
               pointsContainer.innerHTML = communityApproachSection.points
                 .map(point => `
-                                                                    <li><span></span>${point}</li>
-                                                                `)
+                                                                      <li><span></span>${point}</li>
+                                                                  `)
                 .join('');
             }
             const pointsContainer2 = document.getElementById('community-approach-list2');
@@ -674,8 +674,8 @@
             if (pointsContainer2 && Array.isArray(communityApproachSection.points_2)) {
               pointsContainer2.innerHTML = communityApproachSection.points_2
                 .map(point_2 => `
-                                                                    <li><span></span>${point_2}</li>
-                                                                `)
+                                                                      <li><span></span>${point_2}</li>
+                                                                  `)
                 .join('');
             }
 
@@ -823,9 +823,9 @@
                 const item = document.createElement('div');
                 item.className = 'feature-item';
                 item.innerHTML = `
-                      <span class="feature-icons">✔</span>
-                      <span class="feature-text">${point}</span>
-                    `;
+                        <span class="feature-icons">✔</span>
+                        <span class="feature-text">${point}</span>
+                      `;
                 pointsContainer.appendChild(item);
               });
             }

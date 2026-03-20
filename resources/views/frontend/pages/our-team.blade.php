@@ -15,10 +15,10 @@
                 </div>
                 <h2 class="main-titles text-center">Our Leadership</h2>
                 <p class="text-center">
-                    Continuity Care Leadership Team is a diverse group that includes healthcare industry
-                    experts and practitioners, health and social care professionals who understand the complex human
-                    services and its technological needs with modern cloud technologists, and entrepreneurial innovators who
-                    have scaled market-leading organizations.
+                    The Continuity Care Leadership Team brings together a diverse group of professionals, including
+                    healthcare industry experts, practitioners, health and social care specialists who understand the
+                    complexities of human services, along with modern cloud technology experts and entrepreneurial
+                    innovators who have successfully scaled market-leading organizations.
                 </p>
 
                 <ul class="nav custom-nav-tabs" id="leadershipTabs" role="tablist">
@@ -111,25 +111,25 @@
             }
 
             container.innerHTML = list.map(member => `
-                <div class="col-xl-3 col-sm-6">
-                    <div class="team-single-item">
-                        <a href="javascript:void(0)" class="team-img">
-                            <img src="http://localhost:8080/uploads/${member.image ?? '/assets/images/placeholder.png'}" alt="${member.fullname}">
-                        </a>
-                        <div class="team-content">
-                            <h3>${member.fullname}</h3>
-                            <span>${member.designation}</span>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="team-single-item">
+                            <a href="javascript:void(0)" class="team-img">
+                                <img src="http://localhost:8080/uploads/${member.image ?? '/assets/images/placeholder.png'}" alt="${member.fullname}">
+                            </a>
+                            <div class="team-content">
+                                <h3>${member.fullname}</h3>
+                                <span>${member.designation}</span>
 
-                            <ul class="p-0 mb-0 list-unstyled d-flex">
-                                ${socialIcon(member.facebook, 'facebook')}
-                                ${socialIcon(member.instagram, 'instagram')}
-                                ${socialIcon(member.twitter, 'x')}
-                                ${socialIcon(member.linkedin, 'linkedin')}
-                            </ul>
+                                <ul class="p-0 mb-0 list-unstyled d-flex">
+                                    ${socialIcon(member.facebook, 'facebook')}
+                                    ${socialIcon(member.instagram, 'instagram')}
+                                    ${socialIcon(member.twitter, 'x')}
+                                    ${socialIcon(member.linkedin, 'linkedin')}
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            `).join('');
+                `).join('');
         }
 
         function socialIcon(url, type) {
@@ -141,12 +141,12 @@
                 linkedin: 'ti ti-brand-linkedin'
             };
             return `
-                <li>
-                    <a href="${url}" target="_blank">
-                        <i class="${icons[type]}"></i>
-                    </a>
-                </li>
-            `;
+                    <li>
+                        <a href="${url}" target="_blank">
+                            <i class="${icons[type]}"></i>
+                        </a>
+                    </li>
+                `;
         }
     </script>
 

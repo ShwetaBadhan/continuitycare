@@ -11,7 +11,7 @@
                 improve your quality of life—not just complete a checklist of tasks.</p>
             <div class="tagline">
                 <i class="bi bi-shield-check me-2"></i>
-                For NDIS, My Aged Care & Privately Funded Post-Acute Care
+                for NDIS, My Aged Care & Privately Funded Post-Acute Care
             </div>
         </div>
     </section>
@@ -19,7 +19,7 @@
     <!-- Who We Support -->
     <section class="padding-section">
         <div class="container">
-            <h2 class="main-titles text-center" id="who-support-sub-title">Who We Support in Queensland</h2>
+            <h2 class="main-titles text-center" id="who-support-sub-title">Who We Support in Queensland ?</h2>
             <p class="text-center mb-5 fs-5" id="who-support-main-title">We provide in-home support across Queensland for:
             </p>
 
@@ -165,7 +165,7 @@
                     Coordination.</p>
 
                 <p class="text-center mb-5 fs-5">What sets us apart is how we <strong>connect the pieces</strong> of your
-                    support:</p>
+                    support.</p>
 
                 <div class="row g-4">
                     <div class="col-md-4">
@@ -226,26 +226,26 @@
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4">
                         <div class="commitment-card p-4">
-                            <span class="commitment-title">Your rights first:</span>
+                            <span class="commitment-title">Your Rights First:</span>
                             <p class="mb-0">You are a rights-holder, not just a recipient of services.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="commitment-card p-4">
-                            <span class="commitment-title">Dignity always:</span>
+                            <span class="commitment-title">Dignity Always:</span>
                             <p class="mb-0">We protect your privacy, boundaries and identity in every visit.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="commitment-card p-4">
-                            <span class="commitment-title">Quality of life:</span>
-                            <p class="mb-0">We focus on what gives your days meaning—family, culture, routine, community.
+                            <span class="commitment-title">Quality of Life:</span>
+                            <p class="mb-0">We focus on what gives your days meaning—family, culture, •	Routine, community -> routine, and community.
                             </p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="commitment-card p-4">
-                            <span class="commitment-title">Quality and safeguarding:</span>
+                            <span class="commitment-title">Quality and Safeguarding:</span>
                             <p class="mb-0">We work within strong quality frameworks to keep you safe at home.</p>
                         </div>
                     </div>
@@ -278,7 +278,7 @@
                     work with you to design the right in-home support.</p>
 
                 <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
-                    <button class="btn btn-light-custom btn-lg"><span>Request a Call Back</span></button>
+                    <button class="btn btn-outline-light-custom btn-lg">Request a Call Back</button>
                     <button class="btn btn-outline-light-custom btn-lg">Talk to Our Queensland Team</button>
                     <button class="btn btn-outline-light-custom btn-lg">Book a Free In-Home Support Chat</button>
                 </div>

@@ -6,7 +6,7 @@
     <section class="home-care-section">
         <div class="container position-relative">
             <h1 class="text-white">NDIS Plan Management</h1>
-            <p class="text-white">With the right Plan manager by your side, your NDIS Journey gets a whole lot easire. </p>
+            <p class="text-white">With the right plan manager by your side, your NDIS Journey gets a whole lot easier. </p>
             <p class="px-4 text-white">At Continuity Care we seek to put you in control and give you the flexibility you
                 need to get the most out of your plan. You make the decisions we’ll handle the rest.</p>
             <div class="tagline">
@@ -22,7 +22,7 @@
             <div class="row gy-2" data-cues="slideInUp" data-duration="900">
 
                 <div class="col-lg-12">
-                    <h2 class="main-titles mb-5 ms-auto text-center" id="plan-management-main-title">Why Choose NDSP?
+                    <h2 class="main-titles mb-5 ms-auto text-center" id="plan-management-main-title">Why Choose NDIS?
                     </h2>
                     <p class="mb-5 ms-auto text-center" id="plan-management-sub-title"> At NDSP, we're dedicated to
                         providing you with the tools and support
@@ -46,7 +46,7 @@
                                             </div>
                                         </div>
                                         <div class="">
-                                            <h3 id="plan-management-card-title-1">NDIS Experts</h3>
+                                            <h3 id="plan-management-card-title-1">NDIS Experts:</h3>
                                         </div>
                                     </div>
                                     <p class="text_limit" id="plan-management-card-desc-1">Our team is ready to help you
@@ -142,9 +142,10 @@
             <div class="row d-flex align-items-center">
                 <div class="col-md-12">
 
-                    <h2 class="main-titles text-center">Continuity Connect for clinical nurses:</h2>
-                    <h4 class="text-center">maintain optimal care, enable early intervention, minimise hospital
-                        presentations</h4>
+                    <h2 class="main-titles text-center">Continuity Connect for Clinical Nurses</h2>
+                    <h4 class="text-center">Continuity Connect empowers clinical nurses with real-time patient information,
+                        seamless communication tools, and integrated care management systems, enabling them to deliver
+                        efficient, coordinated, and high-quality care for residents.</h4>
                     <div class="accordion faq-wrapper" id="accordionExample">
 
 
@@ -198,20 +199,20 @@
                         if (Array.isArray(data.plan_about) && data.plan_about.length) {
                             data.plan_about.forEach(item => {
                                 planAboutWrapper.insertAdjacentHTML('beforeend', `
-                        <div class="col-xl-4">
-                            <div class="services-single-item style-two border d-block text-decoration-none">
-                                <div class="d-flex align-items-center gap-3 mb-2">
-                                    <div class="icon rounded-circle d-flex align-items-center justify-content-center">
-                                        <img src="${item.image ?? ''}" alt="${item.title}" class="rounded">
+                            <div class="col-xl-4">
+                                <div class="services-single-item style-two border d-block text-decoration-none">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <div class="icon rounded-circle d-flex align-items-center justify-content-center">
+                                            <img src="${item.image ?? ''}" alt="${item.title}" class="rounded">
+                                        </div>
+                                        <h3 class="mb-0">${item.title ?? ''}</h3>
                                     </div>
-                                    <h3 class="mb-0">${item.title ?? ''}</h3>
-                                </div>
-                                <div class="service-desc">
-                                    ${item.description ?? ''}
+                                    <div class="service-desc">
+                                        ${item.description ?? ''}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    `);
+                        `);
                             });
                         }
                     }
@@ -227,24 +228,24 @@
                                 const id = `faq-${index}`;
 
                                 faqWrapper.insertAdjacentHTML('beforeend', `
-                                                <div class="accordion-item">
-                                                  <h2 class="accordion-header">
-                                                    <button class="accordion-button ${index ? 'collapsed' : ''}"
-                                                      type="button"
-                                                      data-bs-toggle="collapse"
-                                                      data-bs-target="#${id}">
-                                                      ${faq.question}
-                                                    </button>
-                                                  </h2>
-                                                  <div id="${id}"
-                                                    class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
-                                                    data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                      ${faq.answer}
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header">
+                                                        <button class="accordion-button ${index ? 'collapsed' : ''}"
+                                                          type="button"
+                                                          data-bs-toggle="collapse"
+                                                          data-bs-target="#${id}">
+                                                          ${faq.question}
+                                                        </button>
+                                                      </h2>
+                                                      <div id="${id}"
+                                                        class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
+                                                        data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                          ${faq.answer}
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                  </div>
-                                                </div>
-                                              `);
+                                                  `);
                             });
                         }
                     }

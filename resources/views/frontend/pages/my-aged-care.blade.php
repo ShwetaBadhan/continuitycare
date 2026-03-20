@@ -34,8 +34,8 @@
                 </div>
                 <div class="col-md-5 offset-md-1">
                     <div class="details-content">
-                        <h3 id="aged_care_about_main_title" class="main-titles">Get quality care with Australia’s best value
-                            home care</h3>
+                        <h3 id="aged_care_about_main_title" class="main-titles">Get Quality Care with Australia’s Best Value
+                            Continuity Care</h3>
                         <p id="aged_care_about_description">Getting the support you need doesn’t have to be complicated.
                             HomeMade offers flexible, quality
                             home support that makes the most of your funding.</p>
@@ -47,7 +47,7 @@
                         </div>
                     </a>
                     <ul class="list-unstyled approach-list mt-5" id="aged_care_about_points">
-                        <li><span></span> <strong>Compliant with Aged Care Quality Standards^</strong></li>
+                        <li><span></span> <strong>Compliant with Aged Care Quality Standards</strong></li>
                         <li><span></span> <strong>Australia-based expert team</strong></li>
 
                     </ul>
@@ -65,10 +65,10 @@
                 <!-- LEFT: Text + Buttons -->
                 <div class="col-lg-6 mb-4 mb-lg-0">
 
-                    <h2 class="main-titles" id="aged_benefit-main-title">Don't settle for high costs and no control</h2>
+                    <h2 class="main-titles" id="aged_benefit-main-title">Don't Settle for High Costs and No Control</h2>
                     <p class="mb-4" id="aged_benefit-description">
                         Choose a provider who helps you get support on your terms without breaking the budget. With
-                        HomeMade, you can build a care routine that fits your lifestyle and needs, with the freedom to
+                        ContinuityCare, you can build a care routine that fits your lifestyle and needs, with the freedom to
                         adjust your schedule as required.
                     </p>
                     <ul class="list-unstyled approach-list mt-5" id="aged_benefit_points">
@@ -105,7 +105,7 @@
         <div class="container mw-1685">
             <div class="row g-4 d-flex align-items-center">
                 <div class="col-md-12">
-                    <h1 class="main-titles text-center" id="aged_service-main-title">Choose the right option for you</h1>
+                    <h1 class="main-titles text-center" id="aged_service-main-title">Choose the Right Option for You</h1>
                     <p class=" text-center" id="aged_service-sub-title">Whether you’re thinking about self-management or
                         want to leave it to the
                         experts, HomeMade offers Australia’s best-value home care.</p>

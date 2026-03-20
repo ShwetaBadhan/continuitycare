@@ -51,9 +51,9 @@
                             <div class="col-sm-8">
                                 <h3 class="main-titles" id="ndis_service_sub_title">Our NDIS Disability Support Services
                                 </h3>
-                                <h3 id="ndis_service_main_title">Disability Support Services Provider In Brisbane</h3>
-                                <p id="ndis_service_description">As an [NDIS disability service
-                                    provider](https://kuremara.com.au/disability-support-services-provider-in-brisbane/), we
+                                <h3 id="ndis_service_main_title">Disability Support Services Provider in Brisbane</h3>
+                                <p id="ndis_service_description">As an NDIS disability service
+                                    provider, we
                                     provide a variety of NDIS support services that can be customised depending on your
                                     needs and requirements. Our team of talented and professionally driven experts offers
                                     the best-curtailed NDIS support services to meet your daily needs and provide support

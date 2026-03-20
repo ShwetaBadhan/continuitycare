@@ -232,7 +232,7 @@
                             </div>
                         </div> --}}
 
-                        <div class="col-lg-12">
+                        {{-- <div class="col-lg-12">
                             <div class="pagination-area mt-md-3 mt-lg-4 pt-lg-3 d-flex align-items-center">
                                 <button class="next page-numbers border-0">
                                     <i class="ti ti-chevron-left"></i>
@@ -246,7 +246,7 @@
                                     <i class="ti ti-chevron-right"></i>
                                 </button>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-xl-4">

@@ -24,8 +24,8 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h6>Email</h6>
-                                <a href="javascript:void(0)"><span 
-                                        >inspire@continuitycare.com.au</span></a>
+                                <a href="mailto:info@continuitycare.com.au"
+                                    target="_blank"><span>info@continuitycare.com.au</span></a>
                             </div>
                         </li>
                         <li class="d-flex">
@@ -49,16 +49,17 @@
                             <a href="{{ route("about-us") }}">Who We Are</a>
                         </li>
                         <li>
-                            <a href="{{ route('connect-portal') }}">Continuity Connect Patient Portal</a>
+                            <a href="{{ route('our-commitment') }}">Our Commitment</a>
                         </li>
                         <li>
                             <a href="{{ route("our-leadership") }}">Our Leadership</a>
                         </li>
-                        <li>
-                            <a href="{{route("our-services")}}"> Our Services</a>
-                        </li>
+
                         <li>
                             <a href="{{ route("our-blogs") }}">News & Blog</a>
+                        </li>
+                        <li>
+                            <a href="{{ route("contact-us") }}">Contact-us</a>
                         </li>
                     </ul>
                 </div>
@@ -69,22 +70,44 @@
 
                     <ul class="import-link p-0 m-0 list-unstyled">
                         <li>
-                            <a href="{{route("service-details")}}">Accommodation (SIL/SDA)</a>
+                            <a  href="{{ route("in-home-care") }}">
+                                In-Home Care
+                            </a>
                         </li>
                         <li>
-                            <a href="{{route("service-details")}}">In Home Care (Attendance care/ HCP)</a>
+                            <a  href="{{ route("community-participation") }}">
+                                Community Participation
+                            </a>
                         </li>
                         <li>
-                            <a href="{{route("service-details")}}">Support Coordination</a>
+                            <a  href="{{ route("supported-independent-living") }}">
+                                Supported Independent Living (SIL)
+                            </a>
                         </li>
                         <li>
-                            <a href="{{route("service-details")}}">Care Coordination(Case Management)</a>
+                            <a  href="{{ route("service-details") }}">
+                                Care Coordination/Navigation
+                            </a>
                         </li>
                         <li>
-                            <a href="{{route("service-details")}}">Plan Management</a>
+                            <a  href="{{ route("community-nursing") }}">
+                                Community Nursing
+                            </a>
                         </li>
                         <li>
-                            <a href="{{route("service-details")}}">Social and Community Participation</a>
+                            <a  href="{{ route("allied-health") }}">
+                                Allied Health
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="{{ route("plan-management") }}">
+                                Plan Management
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="{{ route("support-coordination") }}">
+                                Support Coordination
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -105,7 +128,8 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                         <label class="form-check-label" for="checkDefault">
-                            I understand and agree to the <a href="{{ route("terms-conditions") }}">Terms & Conditions</a>
+                            I understand and agree to the <a href="{{ route("terms-conditions") }}">Terms &
+                                Conditions</a>
                         </label>
                     </div>
                 </div>

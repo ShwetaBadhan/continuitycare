@@ -33,44 +33,58 @@
 
                             <ul class="category-list p-0 m-0 list-unstyled">
                                 <li>
-                                    <a href="{{route("our-services")}}"
+                                    <a href="{{ route("in-home-care") }}"
                                         class="d-flex justify-content-between align-items-center text-decoration-none">
-                                        <span>Transportation Assistance</span>
+                                        <span>In Home Care</span>
+                                        <i class="ti ti-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route("community-participation") }}"
+                                        class="d-flex justify-content-between align-items-center text-decoration-none">
+                                        <span>Community Participation</span>
+                                        <i class="ti ti-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route("supported-independent-living") }}"
+                                        class="d-flex justify-content-between align-items-center text-decoration-none">
+                                        <span>Supported Independent Living (SIL)</span>
                                         <i class="ti ti-arrow-right"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{route("our-services")}}"
                                         class="d-flex justify-content-between align-items-center text-decoration-none">
-                                        <span>Rehabilitation Services</span>
+                                        <span>Care Coordination/Navigation</span>
                                         <i class="ti ti-arrow-right"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{route("our-services")}}"
+                                    <a href="{{ route("community-nursing") }}"
                                         class="d-flex justify-content-between align-items-center text-decoration-none">
-                                        <span>Municipal health services</span>
+                                        <span>Community Nursing</span>
                                         <i class="ti ti-arrow-right"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{route("our-services")}}"
+                                    <a href="{{ route("allied-health") }}"
                                         class="d-flex justify-content-between align-items-center text-decoration-none">
-                                        <span>Home Safety Assessments</span>
+                                        <span>Allied Health</span>
                                         <i class="ti ti-arrow-right"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{route("our-services")}}"
+                                    <a href="{{ route("plan-management") }}"
                                         class="d-flex justify-content-between align-items-center text-decoration-none">
-                                        <span>Personalized Care Plans</span>
+                                        <span>Plan Management</span>
                                         <i class="ti ti-arrow-right"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{route("our-services")}}"
+                                    <a href="{{ route("support-coordination") }}"
                                         class="d-flex justify-content-between align-items-center text-decoration-none">
-                                        <span>Palliative and hospice care</span>
+                                        <span>Support Coordination</span>
                                         <i class="ti ti-arrow-right"></i>
                                     </a>
                                 </li>
@@ -83,15 +97,15 @@
                             <ul class="p-0 m-0 list-unstyled">
                                 <li class="d-flex align-items-center justify-content-between mb-3">
                                     <span>Monday - Thursday:</span>
-                                    <span>09:00am - 08:00pm</span>
+                                    <span>09:00 AM - 08:00 PM</span>
                                 </li>
                                 <li class="d-flex align-items-center justify-content-between mb-3">
                                     <span>Friday - Saturday:</span>
-                                    <span>10:00am - 05:00pm</span>
+                                    <span>10:00 AM - 05:00 PM</span>
                                 </li>
                                 <li class="d-flex align-items-center justify-content-between">
                                     <span>Sunday:</span>
-                                    <span>Closes</span>
+                                    <span>Closed</span>
                                 </li>
                             </ul>
                         </div>
@@ -252,7 +266,7 @@
                 .catch(err => console.error('API ERROR:', err));
         });
         // for form
-         document.getElementById("leadForm").addEventListener("submit", function (e) {
+        document.getElementById("leadForm").addEventListener("submit", function (e) {
             e.preventDefault();
 
             const form = e.target;
@@ -324,6 +338,6 @@
                 });
             });
         });
-   
+
     </script>
 @endpush

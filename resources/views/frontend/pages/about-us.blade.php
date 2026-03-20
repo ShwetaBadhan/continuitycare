@@ -164,13 +164,13 @@
                     <span class="top-title">VISION TO VICTORY</span>
                 </div>
                 <div class="col-lg-8">
-                    <h2 class="main-title ms-auto mw-975" id="about-values-sub-title">Dedicated To Quality Elderly Care With
-                        Compassion And <span class="word-mark">Respect</span> Always</h2>
+                    <h2 class="main-title ms-auto mw-975" id="about-values-sub-title">Dedicated to Quality Elderly Care with
+                        Compassion and <span class="word-mark">Respect</span> </h2>
                     <p id="about-values-main-title">Continuity Care is a not-for-profit organisation and a registered
                         charity with the <a
                             href="https://www.acnc.gov.au/charity/charities/2c2eac96-38af-e811-a963-000d3ad244fd/profile"
                             target="_blank">Australian Charities and Not-for-profit Commission</a>. Our client-centred
-                        approach to service is at the core of everything we do.</p>
+                        approach  is at the core of everything we do.</p>
                 </div>
             </div>
             <div class="row g-4 justify-content-center" data-cues="slideInUp" data-duration="900">
@@ -442,8 +442,7 @@
                     <div class="subscribe-content">
 
                         <h2 class=" text-white">We're here to help!</h2>
-                        <h4 class=" text-white">If you would like more information about our services get in touch with our
-                            Support Center team.</h4>
+                        <h4 class=" text-white">If you would like more information about our services, get in touch with our support centre team.</h4>
                         <a href="{{route("contact-us")}}" class="default-btn mt-5">
                             <div class="d-flex align-items-center gap-10">
                                 <span>Contact Us</span>

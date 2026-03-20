@@ -84,17 +84,17 @@
 
                 <ul class="mobile-menu-items">
                     <li>
-                        <a class="dropdown-item" href="{{ route("service-details") }}">
-                            In Home Care
+                        <a class="dropdown-item" href="{{ route("in-home-care") }}">
+                            In-Home Care
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="{{ route("service-details") }}">
+                        <a class="dropdown-item" href="{{ route("community-participation") }}">
                             Community Participation
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="{{ route("service-details") }}">
+                        <a class="dropdown-item" href="{{ route("supported-independent-living") }}">
                             Supported Independent Living (SIL)
                         </a>
                     </li>
@@ -104,22 +104,22 @@
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="{{ route("service-details") }}">
+                        <a class="dropdown-item" href="{{ route("community-nursing") }}">
                             Community Nursing
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="{{ route("service-details") }}">
+                        <a class="dropdown-item" href="{{ route("allied-health") }}">
                             Allied Health
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="{{ route("service-details") }}">
+                        <a class="dropdown-item" href="{{ route("plan-management") }}">
                             Plan Management
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="{{ route("service-details") }}">
+                        <a class="dropdown-item" href="{{ route("support-coordination") }}">
                             Support Coordination
                         </a>
                     </li>

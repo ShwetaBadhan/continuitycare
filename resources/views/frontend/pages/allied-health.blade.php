@@ -13,14 +13,14 @@
         </div>
         <div class="col-md-6">
           <div class="details-content">
-            <h3 id="alliedAboutTitle" class="main-titles">Our mission is to improve the quality of life of our
-              participants</h3>
-            <p id="alliedAboutDescription" align="justify">Continuity Care was born in 2017 from the idea of creating an
+            <h3 id="alliedAboutTitle" class="main-titles">Our Mission is to Improve the Quality of Life of our
+              Participants</h3>
+            <p id="alliedAboutDescription" align="justify">Continuity Care was founded in 2017 from the idea of creating an
               environment where people living with a
               disability or health condition, and the clinicians that support them, were put first.</p>
 
           </div>
-          <a href="tel:1800 012 273" class="default-btn active mt-5">
+          <a href="{{ route('contact-us') }}" class="default-btn active mt-5">
             <div class="d-flex gap-10 align-content-center">
               <span>Book a Free Consultation</span>
               <img src="assets/images/right.svg" alt="right-white">
@@ -39,7 +39,7 @@
         <!-- Left Content -->
         <div class="col-lg-8">
           <h2 class="main-title" id="alliedSupportTitle">
-            Empowering communities with quality home care support
+            Empowering Communities with Quality Continuity Care Support
           </h2>
 
           <p class="hero-text" id="alliedSupportDescription">
@@ -196,8 +196,8 @@
         </div>
         <div class="col-lg-6">
           <div class="contact-us-form bg-img border p-4 p-lg-5 rounded-4">
-            <h3 class="mt-0">Take A Schedule Appointment</h3>
-            <p>Our booking process is simple confidential and flexible to fit your schedule</p>
+            <h3 class="mt-0">Take a Schedule Appointment</h3>
+            <p>Our booking process is simple confidential and flexible to fit your scheduled</p>
 
             <form id="leadForm">
               <div class="row g-4">

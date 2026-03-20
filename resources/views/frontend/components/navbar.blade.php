@@ -128,7 +128,7 @@
                     <ul class="dropdown-menu">
                         <li>
                             <a class="dropdown-item" href="{{ route("in-home-care") }}">
-                                In Home Care
+                                In-Home Care
                             </a>
                         </li>
                         <li>
