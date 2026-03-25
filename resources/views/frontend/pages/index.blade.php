@@ -407,7 +407,7 @@
 
             <div class="row g-4">
                 <div class="col-xl-4" data-cues="slideInUp" data-duration="900">
-                    <a href="{{ route("service-details") }}"
+                    <a href="{{ route("accommodation-details") }}"
                         class="d-flex align-items-center services-single-item text-decoration-none">
                         <div class="flex-shrink-0">
                             <div class="icon rounded-circle d-flex justify-content-center align-items-center">
@@ -418,7 +418,7 @@
                             <h3>Accommodation (SIL/SDA)</h3>
                         </div>
                     </a>
-                    <a href="{{ route("service-details") }}"
+                    <a href="{{ route("in-home-care") }}"
                         class="d-flex align-items-center services-single-item text-decoration-none">
                         <div class="flex-shrink-0">
                             <div class="icon rounded-circle d-flex justify-content-center align-items-center">
@@ -429,7 +429,7 @@
                             <h3>In Home Care (Attendance care/ HCP)</h3>
                         </div>
                     </a>
-                    <a href="{{ route("service-details") }}"
+                    <a href="{{ route("support-coordination") }}"
                         class="d-flex align-items-center services-single-item text-decoration-none">
                         <div class="flex-shrink-0">
                             <div class="icon rounded-circle d-flex justify-content-center align-items-center">
