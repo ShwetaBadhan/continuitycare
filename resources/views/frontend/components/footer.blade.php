@@ -15,7 +15,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h6>Location</h6>
-                                <p>307/1737 Anzac Avenue, Mango Hill, 4509</p>
+                                <p>New Zealand</p>
                             </div>
                         </li>
                         <li class="d-flex">
