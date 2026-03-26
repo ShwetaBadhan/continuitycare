@@ -407,7 +407,7 @@
 
             <div class="row g-4">
                 <div class="col-xl-4" data-cues="slideInUp" data-duration="900">
-                    <a href="{{ route('accommodation-details', 'test') }}"
+                    <a href="{{ route('community-participation') }}"
                         class="d-flex align-items-center services-single-item text-decoration-none">
                         <div class="flex-shrink-0">
                             <div class="icon rounded-circle d-flex justify-content-center align-items-center">
@@ -415,7 +415,7 @@
                             </div>
                         </div>
                         <div class="flex-grow-1">
-                            <h3>Accommodation (SIL/SDA)</h3>
+                            <h3>Community Participation</h3>
                         </div>
                     </a>
                     <a href="{{ route("in-home-care") }}"
