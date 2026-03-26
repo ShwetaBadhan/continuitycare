@@ -407,7 +407,7 @@
 
             <div class="row g-4">
                 <div class="col-xl-4" data-cues="slideInUp" data-duration="900">
-                    <a href="{{ route("accommodation-details") }}"
+                    <a href="{{ route('accommodation-details', $slug) }}"
                         class="d-flex align-items-center services-single-item text-decoration-none">
                         <div class="flex-shrink-0">
                             <div class="icon rounded-circle d-flex justify-content-center align-items-center">
