@@ -80,7 +80,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/our-commitment`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/our-commitment`)
                 .then(res => res.json())
                 .then(data => {
                     console.log('API DATA ', data);

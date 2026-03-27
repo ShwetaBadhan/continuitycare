@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 Route::any('/api/data/{any}', function ($any) {
 
     // $url = "http://admin.continuitycare.com.au/api/" . $any;
-    $url = "{{ config('app.dashboard_url') }}" . $any;
+    $url = "{{ config('app.BACKEND_URL') }}" . $any;
 
     $response = Http::send(request()->method(), $url, [
         'query' => request()->query(),

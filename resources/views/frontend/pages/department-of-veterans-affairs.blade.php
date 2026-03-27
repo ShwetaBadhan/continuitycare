@@ -202,7 +202,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/dva`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/dva`)
                 .then(res => {
                     if (!res.ok) throw new Error('API response failed');
                     return res.json();
@@ -227,11 +227,11 @@
                     const pointsContainer = document.getElementById('dva_section_points');
                     if (pointsContainer && Array.isArray(dva.points)) {
                         pointsContainer.innerHTML = dva.points.map(point => `
-                                <li class="d-flex align-items-start gap-10">
-                                    <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                                    <span>${point}</span>
-                                </li>
-                            `).join('');
+                                    <li class="d-flex align-items-start gap-10">
+                                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                                        <span>${point}</span>
+                                    </li>
+                                `).join('');
                     }
 
                     // Images

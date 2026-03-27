@@ -15,7 +15,8 @@
           <div class="details-content">
             <h3 id="alliedAboutTitle" class="main-titles">Our Mission is to Improve the Quality of Life of our
               Participants</h3>
-            <p id="alliedAboutDescription" align="justify">Continuity Care was founded in 2017 from the idea of creating an
+            <p id="alliedAboutDescription" align="justify">Continuity Care was founded in 2017 from the idea of creating
+              an
               environment where people living with a
               disability or health condition, and the clinicians that support them, were put first.</p>
 
@@ -247,7 +248,7 @@
         DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
       };
 
-      fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/allied-health-service`)
+      fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/allied-health-service`)
         .then(res => {
           if (!res.ok) throw new Error('API failed');
           return res.json();
@@ -299,18 +300,18 @@
             if (Array.isArray(services) && services.length) {
               services.forEach(service => {
                 grid.insertAdjacentHTML('beforeend', `
-                      <div class="nursing-feature-card">
-                        <div class="nursing-feature-header">
-                          <div class="nursing-feature-icon">
-                            <img src="${service.image}" alt="${service.title}" width="32">
+                        <div class="nursing-feature-card">
+                          <div class="nursing-feature-header">
+                            <div class="nursing-feature-icon">
+                              <img src="${service.image}" alt="${service.title}" width="32">
+                            </div>
+                          </div>
+                          <h3>${service.title}</h3>
+                          <div class="nursing-feature-text">
+                            ${service.description}
                           </div>
                         </div>
-                        <h3>${service.title}</h3>
-                        <div class="nursing-feature-text">
-                          ${service.description}
-                        </div>
-                      </div>
-                    `);
+                      `);
               });
             }
           }
@@ -326,24 +327,24 @@
                 const id = `faq-${index}`;
 
                 faqWrapper.insertAdjacentHTML('beforeend', `
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button ${index ? 'collapsed' : ''}"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#${id}">
-                            ${faq.question}
-                          </button>
-                        </h2>
-                        <div id="${id}"
-                          class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
-                          data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            ${faq.answer}
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button ${index ? 'collapsed' : ''}"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#${id}">
+                              ${faq.question}
+                            </button>
+                          </h2>
+                          <div id="${id}"
+                            class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              ${faq.answer}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    `);
+                      `);
               });
             }
           }

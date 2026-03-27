@@ -26,7 +26,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/faqs`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/faqs`)
                 .then(res => {
                     if (!res.ok) throw new Error('API response failed');
                     return res.json();
@@ -47,28 +47,28 @@
                         const collapseId = `faq-collapse-${index}`;
 
                         faqContainer.insertAdjacentHTML('beforeend', `
-                                    <div class=" col-6 p-2">
-                                        <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button ${index !== 0 ? 'collapsed' : ''}"
-                                                type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#${collapseId}"
-                                                aria-expanded="${index === 0}">
-                                                ${item.question}
-                                            </button>
-                                        </h2>
+                                        <div class=" col-6 p-2">
+                                            <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button ${index !== 0 ? 'collapsed' : ''}"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#${collapseId}"
+                                                    aria-expanded="${index === 0}">
+                                                    ${item.question}
+                                                </button>
+                                            </h2>
 
-                                        <div id="${collapseId}"
-                                            class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
-                                            data-bs-parent="#faqAccordion">
-                                            <div class="accordion-body">
-                                                ${item.answer}
+                                            <div id="${collapseId}"
+                                                class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
+                                                data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body">
+                                                    ${item.answer}
+                                                </div>
+                                            </div>
                                             </div>
                                         </div>
-                                        </div>
-                                    </div>
-                                `);
+                                    `);
                     });
                 })
                 .catch(err => {

@@ -149,7 +149,7 @@
         DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
       };
 
-      fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/support-coordination-service`)
+      fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/support-coordination-service`)
         .then(res => {
           if (!res.ok) throw new Error('API failed');
           return res.json();
@@ -183,11 +183,11 @@
             if (Array.isArray(benefit.points)) {
               benefit.points.forEach(point => {
                 listEl.insertAdjacentHTML('beforeend', `
-                                      <li >
+                                        <li >
 
-                                        <span></span>${point}
-                                      </li>
-                                    `);
+                                          <span></span>${point}
+                                        </li>
+                                      `);
               });
             }
           }
@@ -200,15 +200,15 @@
             if (Array.isArray(data.support_coordination_plan)) {
               data.support_coordination_plan.forEach(plan => {
                 planWrapper.insertAdjacentHTML('beforeend', `
-                      <div class="col-lg-4 col-md-6">
-                        <div class="feature-card">
-                          <div class="icon-wrapper">
-                            <img src="${plan.image ?? ''}" alt="${plan.title}" width="40">
+                        <div class="col-lg-4 col-md-6">
+                          <div class="feature-card">
+                            <div class="icon-wrapper">
+                              <img src="${plan.image ?? ''}" alt="${plan.title}" width="40">
+                            </div>
+                            <p>${plan.description ?? ''}</p>
                           </div>
-                          <p>${plan.description ?? ''}</p>
                         </div>
-                      </div>
-                    `);
+                      `);
               });
             }
           }
@@ -221,25 +221,25 @@
 
             data.support_coordination_service.forEach(service => {
               coordinationWrapper.insertAdjacentHTML('beforeend', `
-          <div class="col-lg-4 col-md-6">
-            <div class="why-card">
+            <div class="col-lg-4 col-md-6">
+              <div class="why-card">
 
-              <div class="why-icon">
-                ${service.image
+                <div class="why-icon">
+                  ${service.image
                   ? `<img src="${service.image}" alt="${service.title}" width="28" height="28">`
                   : `<i class="bi bi-heart"></i>`
                 }
+                </div>
+
+                <h4>${service.title ?? ''}</h4>
+
+                <p>
+                  ${service.description ?? ''}
+                </p>
+
               </div>
-
-              <h4>${service.title ?? ''}</h4>
-
-              <p>
-                ${service.description ?? ''}
-              </p>
-
             </div>
-          </div>
-        `);
+          `);
             });
           }
 
@@ -254,32 +254,32 @@
             let pointsHTML = '';
             if (Array.isArray(service.points)) {
               pointsHTML = `
-                <ul class="support-points">
-                  ${service.points.map(point => `<li>${point}</li>`).join('')}
-                </ul>
-              `;
+                  <ul class="support-points">
+                    ${service.points.map(point => `<li>${point}</li>`).join('')}
+                  </ul>
+                `;
             }
 
             serviceWrapper.innerHTML = `
-              <div class="col-md-4">
-                <div class="support-card">
-                  <img src="${service.image ?? ''}"
-                       alt="${service.title ?? ''}"
-                       class="support-card-img">
+                <div class="col-md-4">
+                  <div class="support-card">
+                    <img src="${service.image ?? ''}"
+                         alt="${service.title ?? ''}"
+                         class="support-card-img">
 
-                  <div class="support-card-body">
-                    <div class="support-card-icon">
-                      <i class="bi bi-heart-pulse-fill"></i>
+                    <div class="support-card-body">
+                      <div class="support-card-icon">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                      </div>
+
+                      <h4>${service.title ?? ''}</h4>
+                      <p>${service.description ?? ''}</p>
+
+                      ${pointsHTML}
                     </div>
-
-                    <h4>${service.title ?? ''}</h4>
-                    <p>${service.description ?? ''}</p>
-
-                    ${pointsHTML}
                   </div>
                 </div>
-              </div>
-            `;
+              `;
           }
 
 
@@ -295,24 +295,24 @@
                 const id = `faq-${index}`;
 
                 faqWrapper.insertAdjacentHTML('beforeend', `
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header">
-                                                <button class="accordion-button ${index ? 'collapsed' : ''}"
-                                                  type="button"
-                                                  data-bs-toggle="collapse"
-                                                  data-bs-target="#${id}">
-                                                  ${faq.question}
-                                                </button>
-                                              </h2>
-                                              <div id="${id}"
-                                                class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
-                                                data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                  ${faq.answer}
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button ${index ? 'collapsed' : ''}"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#${id}">
+                                                    ${faq.question}
+                                                  </button>
+                                                </h2>
+                                                <div id="${id}"
+                                                  class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
+                                                  data-bs-parent="#accordionExample">
+                                                  <div class="accordion-body">
+                                                    ${faq.answer}
+                                                  </div>
                                                 </div>
                                               </div>
-                                            </div>
-                                          `);
+                                            `);
               });
             }
           }

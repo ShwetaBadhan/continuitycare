@@ -164,7 +164,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/plan-management-service`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/plan-management-service`)
                 .then(res => {
                     if (!res.ok) throw new Error('API failed');
                     return res.json();
@@ -199,20 +199,20 @@
                         if (Array.isArray(data.plan_about) && data.plan_about.length) {
                             data.plan_about.forEach(item => {
                                 planAboutWrapper.insertAdjacentHTML('beforeend', `
-                            <div class="col-xl-4">
-                                <div class="services-single-item style-two border d-block text-decoration-none">
-                                    <div class="d-flex align-items-center gap-3 mb-2">
-                                        <div class="icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <img src="${item.image ?? ''}" alt="${item.title}" class="rounded">
+                                <div class="col-xl-4">
+                                    <div class="services-single-item style-two border d-block text-decoration-none">
+                                        <div class="d-flex align-items-center gap-3 mb-2">
+                                            <div class="icon rounded-circle d-flex align-items-center justify-content-center">
+                                                <img src="${item.image ?? ''}" alt="${item.title}" class="rounded">
+                                            </div>
+                                            <h3 class="mb-0">${item.title ?? ''}</h3>
                                         </div>
-                                        <h3 class="mb-0">${item.title ?? ''}</h3>
-                                    </div>
-                                    <div class="service-desc">
-                                        ${item.description ?? ''}
+                                        <div class="service-desc">
+                                            ${item.description ?? ''}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        `);
+                            `);
                             });
                         }
                     }
@@ -228,24 +228,24 @@
                                 const id = `faq-${index}`;
 
                                 faqWrapper.insertAdjacentHTML('beforeend', `
-                                                    <div class="accordion-item">
-                                                      <h2 class="accordion-header">
-                                                        <button class="accordion-button ${index ? 'collapsed' : ''}"
-                                                          type="button"
-                                                          data-bs-toggle="collapse"
-                                                          data-bs-target="#${id}">
-                                                          ${faq.question}
-                                                        </button>
-                                                      </h2>
-                                                      <div id="${id}"
-                                                        class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
-                                                        data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body">
-                                                          ${faq.answer}
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header">
+                                                            <button class="accordion-button ${index ? 'collapsed' : ''}"
+                                                              type="button"
+                                                              data-bs-toggle="collapse"
+                                                              data-bs-target="#${id}">
+                                                              ${faq.question}
+                                                            </button>
+                                                          </h2>
+                                                          <div id="${id}"
+                                                            class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                              ${faq.answer}
+                                                            </div>
+                                                          </div>
                                                         </div>
-                                                      </div>
-                                                    </div>
-                                                  `);
+                                                      `);
                             });
                         }
                     }

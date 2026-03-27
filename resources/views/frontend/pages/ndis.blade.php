@@ -103,7 +103,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/ndis`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/ndis`)
                 .then(res => res.json())
                 .then(data => {
                     console.log('API DATA ', data);
@@ -135,11 +135,11 @@
                         if (pointsContainer && Array.isArray(NDIS_SUPPORT.points)) {
                             pointsContainer.innerHTML = NDIS_SUPPORT.points
                                 .map(point => `
-                    <li class="d-flex align-items-start gap-10">
-                        <i class="ti ti-circle-check-filled text-warning fs-20"></i>
-                        <span>${point}</span>
-                    </li>
-                `)
+                        <li class="d-flex align-items-start gap-10">
+                            <i class="ti ti-circle-check-filled text-warning fs-20"></i>
+                            <span>${point}</span>
+                        </li>
+                    `)
                                 .join('');
                         }
 

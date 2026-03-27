@@ -42,7 +42,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/terms-conditions`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/terms-conditions`)
                 .then(res => res.json())
                 .then(data => {
                     console.log('API DATA ', data);

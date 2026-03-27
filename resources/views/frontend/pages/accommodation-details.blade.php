@@ -150,9 +150,9 @@
             DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
         };
 
-      
+
         const ACCOMMODATION_SLUG = "{{ $slug }}";
-        fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/support-independent-service`)
+        fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/support-independent-service`)
             .then(res => res.json())
             .then(data => {
 
@@ -183,19 +183,19 @@
                     .filter(img => img.service_id.includes(service.id))
                     .forEach(img => {
                         mainGallery.insertAdjacentHTML('beforeend', `
-                      <div class="swiper-slide">
-                        <img src="${img.image}" alt="">
-                      </div>
-                    `);
+                          <div class="swiper-slide">
+                            <img src="${img.image}" alt="">
+                          </div>
+                        `);
 
                         thumbGallery.insertAdjacentHTML('beforeend', `
-                      <div class="swiper-slide">
-                        <img src="${img.image}" alt="">
-                      </div>
-                    `);
+                          <div class="swiper-slide">
+                            <img src="${img.image}" alt="">
+                          </div>
+                        `);
                     });
 
-                
+
                 const thumbSwiper = new Swiper('.product-thumb-swiper', {
                     slidesPerView: 4,
                     spaceBetween: 10,
@@ -213,7 +213,7 @@
                     },
                 });
 
-             
+
                 const faqContainer = document.getElementById('acc-faq');
                 const faqTemplate = document.getElementById('faq-template');
 

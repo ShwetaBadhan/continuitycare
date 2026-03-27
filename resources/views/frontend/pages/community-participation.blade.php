@@ -610,7 +610,7 @@
         DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
       };
 
-      fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/community-participation-service`)
+      fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/community-participation-service`)
         .then(res => res.json())
         .then(data => {
 
@@ -626,8 +626,8 @@
             if (pointsContainer && Array.isArray(community_about.points)) {
               pointsContainer.innerHTML = community_about.points
                 .map(point => `
-                                                                      <li><span></span>${point}</li>
-                                                                  `)
+                                                                        <li><span></span>${point}</li>
+                                                                    `)
                 .join('');
             }
             const img = document.getElementById('community-about-image');
@@ -665,8 +665,8 @@
             if (pointsContainer && Array.isArray(communityApproachSection.points)) {
               pointsContainer.innerHTML = communityApproachSection.points
                 .map(point => `
-                                                                      <li><span></span>${point}</li>
-                                                                  `)
+                                                                        <li><span></span>${point}</li>
+                                                                    `)
                 .join('');
             }
             const pointsContainer2 = document.getElementById('community-approach-list2');
@@ -674,8 +674,8 @@
             if (pointsContainer2 && Array.isArray(communityApproachSection.points_2)) {
               pointsContainer2.innerHTML = communityApproachSection.points_2
                 .map(point_2 => `
-                                                                      <li><span></span>${point_2}</li>
-                                                                  `)
+                                                                        <li><span></span>${point_2}</li>
+                                                                    `)
                 .join('');
             }
 
@@ -823,9 +823,9 @@
                 const item = document.createElement('div');
                 item.className = 'feature-item';
                 item.innerHTML = `
-                        <span class="feature-icons">✔</span>
-                        <span class="feature-text">${point}</span>
-                      `;
+                          <span class="feature-icons">✔</span>
+                          <span class="feature-text">${point}</span>
+                        `;
                 pointsContainer.appendChild(item);
               });
             }

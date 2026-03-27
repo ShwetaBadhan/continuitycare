@@ -198,7 +198,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/care-coordination-service`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/care-coordination-service`)
                 .then(res => {
                     if (!res.ok) throw new Error('API failed');
                     return res.json();

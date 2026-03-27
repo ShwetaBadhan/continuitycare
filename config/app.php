@@ -124,5 +124,6 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
     'dashboard_url' => env('DASHBOARD_URL'),
+    'backend_url' => env('BACKEND_URL'),
 
 ];

@@ -16,7 +16,8 @@
                         <p id="independent-about-description" align="justify">Our mission is to create meaningful impact by
                             delivering
                             innovative, reliable, and sustainable
-                            solutions that empower individuals communities . We are committed to integrity, collaboration, and
+                            solutions that empower individuals communities . We are committed to integrity, collaboration,
+                            and
                             excellence in everything we do, striving to foster growth, inspire progress</p>
                     </div>
                 </div>
@@ -105,7 +106,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/support-independent-service`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/support-independent-service`)
                 .then(res => res.json())
                 .then(data => {
 

@@ -28,7 +28,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/staff-resource`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/staff-resource`)
                 .then(res => {
                     if (!res.ok) throw new Error('API response failed');
                     return res.json();
@@ -52,36 +52,36 @@
                         const collapseId = `collapse-${index}`;
 
                         policyContainer.insertAdjacentHTML("beforeend", `
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="${headingId}">
-                                    <button class="accordion-button ${index !== 0 ? 'collapsed' : ''}" 
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#${collapseId}"
-                                            aria-expanded="${index === 0}"
-                                            aria-controls="${collapseId}">
-                                        ${item.title}
-                                    </button>
-                                </h2>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="${headingId}">
+                                        <button class="accordion-button ${index !== 0 ? 'collapsed' : ''}" 
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#${collapseId}"
+                                                aria-expanded="${index === 0}"
+                                                aria-controls="${collapseId}">
+                                            ${item.title}
+                                        </button>
+                                    </h2>
 
-                                <div id="${collapseId}" 
-                                     class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
-                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        ${item.description}
+                                    <div id="${collapseId}" 
+                                         class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
+                                         data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            ${item.description}
 
-                                        ${item.pdf ? `
-                                            <p>
-                                                <a href="http://localhost:8080/storage/${item.pdf}" 
-                                                   target="_blank">
-                                                    View PDF
-                                                </a>
-                                            </p>
-                                        ` : ''}
+                                            ${item.pdf ? `
+                                                <p>
+                                                    <a href="http://localhost:8080/storage/${item.pdf}" 
+                                                       target="_blank">
+                                                        View PDF
+                                                    </a>
+                                                </p>
+                                            ` : ''}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        `);
+                            `);
                     });
                 })
                 .catch(err => console.error('API ERROR:', err));

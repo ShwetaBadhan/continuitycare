@@ -40,8 +40,8 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-           
-            const response = await fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/jobs`);
+
+            const response = await fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/jobs`);
             if (!response.ok) {
                 throw new Error('Jobs API failed');
             }
@@ -59,47 +59,47 @@
 
             jobs.forEach((job, index) => {
                 container.insertAdjacentHTML('beforeend', `
-                <div class="d-flex flex-wrap careers-single-item position-relative z-1 mb-4">
-                    <div class="flex-shrink-0">
-                        <span class="job">Job ${String(index + 1).padStart(2, '0')}</span>
-                    </div>
+                    <div class="d-flex flex-wrap careers-single-item position-relative z-1 mb-4">
+                        <div class="flex-shrink-0">
+                            <span class="job">Job ${String(index + 1).padStart(2, '0')}</span>
+                        </div>
 
-                    <div class="flex-grow-1">
-                        <div class="d-flex flex-wrap flex-xl-nowrap justify-content-between gap-20">
-                            <div class="careers-content">
+                        <div class="flex-grow-1">
+                            <div class="d-flex flex-wrap flex-xl-nowrap justify-content-between gap-20">
+                                <div class="careers-content">
 
-                                <div class="d-flex flex-wrap gap-25">
-                                    <div class="d-flex align-items-center gap-10">
-                                        <i class="ti ti-clock text-primary"></i>
-                                        <span class="fs-15">${job.type}</span>
+                                    <div class="d-flex flex-wrap gap-25">
+                                        <div class="d-flex align-items-center gap-10">
+                                            <i class="ti ti-clock text-primary"></i>
+                                            <span class="fs-15">${job.type}</span>
+                                        </div>
+
+                                        <div class="d-flex align-items-center gap-10">
+                                            <i class="ti ti-map-pin text-primary"></i>
+                                            <span class="fs-15">${job.location}</span>
+                                        </div>
                                     </div>
 
-                                    <div class="d-flex align-items-center gap-10">
-                                        <i class="ti ti-map-pin text-primary"></i>
-                                        <span class="fs-15">${job.location}</span>
+                                    <h3>${job.title}</h3>
+
+                                    <p>${job.description}</p>
+
+                                    <div class="read-more">
+                                        <span>View Job</span>
+                                        <img src="assets/images/right.svg" alt="right">
                                     </div>
                                 </div>
 
-                                <h3>${job.title}</h3>
-
-                                <p>${job.description}</p>
-
-                                <div class="read-more">
-                                    <span>View Job</span>
-                                    <img src="assets/images/right.svg" alt="right">
+                                <div class="careers-img">
+                                    <img src="assets/images/career1.jpg" alt="career">
                                 </div>
-                            </div>
-
-                            <div class="careers-img">
-                                <img src="assets/images/career1.jpg" alt="career">
                             </div>
                         </div>
-                    </div>
 
-                    <a href="/career/${job.slug}"
-                       class="link position-absolute top-0 end-0 start-0 bottom-0 z-1"></a>
-                </div>
-            `);
+                        <a href="/career/${job.slug}"
+                           class="link position-absolute top-0 end-0 start-0 bottom-0 z-1"></a>
+                    </div>
+                `);
             });
         }
 

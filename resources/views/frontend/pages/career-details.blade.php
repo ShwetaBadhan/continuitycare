@@ -129,7 +129,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/jobs/${slug}`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/jobs/${slug}`)
                 .then(res => {
                     if (!res.ok) throw new Error('Job not found');
                     return res.json();
@@ -179,12 +179,12 @@
                 icon: 'error',
                 title: 'Submission Failed',
                 html: `
-                                    <ul style="text-align:left;">
-                                        @foreach ($errors->all() as $error)
-                                            <li>{{ $error }}</li>
-                                        @endforeach
-                                    </ul>
-                                `,
+                                            <ul style="text-align:left;">
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        `,
                 confirmButtonColor: '#d33'
             });
         </script>

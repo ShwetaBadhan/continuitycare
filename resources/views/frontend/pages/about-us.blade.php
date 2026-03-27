@@ -170,7 +170,7 @@
                         charity with the <a
                             href="https://www.acnc.gov.au/charity/charities/2c2eac96-38af-e811-a963-000d3ad244fd/profile"
                             target="_blank">Australian Charities and Not-for-profit Commission</a>. Our client-centred
-                        approach  is at the core of everything we do.</p>
+                        approach is at the core of everything we do.</p>
                 </div>
             </div>
             <div class="row g-4 justify-content-center" data-cues="slideInUp" data-duration="900">
@@ -442,7 +442,8 @@
                     <div class="subscribe-content">
 
                         <h2 class=" text-white">We're here to help!</h2>
-                        <h4 class=" text-white">If you would like more information about our services, get in touch with our support centre team.</h4>
+                        <h4 class=" text-white">If you would like more information about our services, get in touch with our
+                            support centre team.</h4>
                         <a href="{{route("contact-us")}}" class="default-btn mt-5">
                             <div class="d-flex align-items-center gap-10">
                                 <span>Contact Us</span>
@@ -510,7 +511,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/about-us`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/about-us`)
                 .then(res => res.json())
                 .then(data => {
                     console.log('API DATA ', data);
@@ -590,26 +591,26 @@
                             const collapseId = `faqCollapse${index}`;
 
                             accordion.insertAdjacentHTML("beforeend", `
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading${index}">
-                                <button class="accordion-button ${index === 0 ? '' : 'collapsed'}"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#${collapseId}"
-                                    aria-expanded="${index === 0 ? 'true' : 'false'}">
-                                    ${item.question}
-                                </button>
-                            </h2>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading${index}">
+                                    <button class="accordion-button ${index === 0 ? '' : 'collapsed'}"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#${collapseId}"
+                                        aria-expanded="${index === 0 ? 'true' : 'false'}">
+                                        ${item.question}
+                                    </button>
+                                </h2>
 
-                            <div id="${collapseId}" 
-                                 class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
-                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    ${item.answer}
+                                <div id="${collapseId}" 
+                                     class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        ${item.answer}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    `);
+                        `);
                         });
                     }
 

@@ -82,7 +82,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/client-resource`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/client-resource`)
                 .then(res => {
                     if (!res.ok) throw new Error('API response failed');
                     return res.json();
@@ -99,29 +99,29 @@
                         CLIENT_RESOURCES.forEach((item, index) => {
 
                             policyContainer.insertAdjacentHTML("beforeend", `
-                            <div class="col-xl-4 col-md-6">
-                                <div class="facilities-single-item">
-                                    <div class="d-flex align-items-center justify-content-between mb-35 gap-10">
-                                        <div class="icon">
-                                            <img src="http://localhost:8080/storage/${item.image}" alt="${item.title}">
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="facilities-single-item">
+                                        <div class="d-flex align-items-center justify-content-between mb-35 gap-10">
+                                            <div class="icon">
+                                                <img src="http://localhost:8080/storage/${item.image}" alt="${item.title}">
+                                            </div>
+                                            <span class="text-secondary">
+                                                ${String(index + 1).padStart(2, '0')}
+                                            </span>
                                         </div>
-                                        <span class="text-secondary">
-                                            ${String(index + 1).padStart(2, '0')}
-                                        </span>
-                                    </div>
 
-                                    <h3>${item.title}</h3>
-                                    <p>${item.description}</p>
+                                        <h3>${item.title}</h3>
+                                        <p>${item.description}</p>
 
-                                    <div class="d-flex justify-content-end align-items-center gap-2">
-                                        <p class="mb-0">For Easy Read</p>
-                                        <a href="http://localhost:8080/storage/${item.pdf}" target="_blank">
-                                            Click Here
-                                        </a>
+                                        <div class="d-flex justify-content-end align-items-center gap-2">
+                                            <p class="mb-0">For Easy Read</p>
+                                            <a href="http://localhost:8080/storage/${item.pdf}" target="_blank">
+                                                Click Here
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        `);
+                            `);
                         });
                     }
                 })

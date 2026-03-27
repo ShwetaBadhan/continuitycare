@@ -153,7 +153,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/aged-care`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/aged-care`)
                 .then(res => res.json())
                 .then(data => {
                     console.log('API DATA ', data);

@@ -40,7 +40,8 @@
                         </div>
 
 
-                        <p id="niisq_about_content" class="mt-20" style="margin-top:20px;">The National Injury Insurance Scheme Queensland (NIISQ) is
+                        <p id="niisq_about_content" class="mt-20" style="margin-top:20px;">The National Injury Insurance
+                            Scheme Queensland (NIISQ) is
                             a no-fault scheme designed to provide lifetime treatment, care, and support for individuals who
                             have sustained serious personal injuries in a motor vehicle accident. At Continuity Care, we
                             understand that a catastrophic injury changes everything—not just for the individual, but for
@@ -204,7 +205,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/niisq`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/niisq`)
                 .then(res => res.json())
                 .then(data => {
                     console.log('API DATA ', data);

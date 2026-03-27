@@ -849,7 +849,7 @@
                 <div class="col-12 text-center mb-5">
                     <h2 class="main-titles">How Continuity Care works</h2>
                     <p class="section-description mx-auto">
-                        My Aged Care can be a difficult process to navigate on your own. At Continuity Care, we  guide
+                        My Aged Care can be a difficult process to navigate on your own. At Continuity Care, we guide
                         you through each step of the journey. Follow the steps below to start self-managing your Support at
                         Home funding as soon as possible.
                     </p>
@@ -873,7 +873,7 @@
                             Our team will help you understand how you can confidently self-manage your Support at Home
                             funding.
                         </p>
-                        
+
                     </div>
                 </div>
 
@@ -895,7 +895,7 @@
                             We will listen to your care and lifestyle needs to design a care plan and budget that suits your
                             individual needs.
                         </p>
-                        
+
                     </div>
                 </div>
 
@@ -916,7 +916,7 @@
                             Organise your care workers and support services inline with your care plan and start scheduling
                             your care services.
                         </p>
-                       
+
                     </div>
                 </div>
 
@@ -1399,7 +1399,8 @@
                                         </div>
 
                                         <div class="flex-shrink-0 position-relative">
-                                            <img class="testimonial-image" src="{{ asset('assets/images/case-study1.jpg') }}" alt="testimonial">
+                                            <img class="testimonial-image"
+                                                src="{{ asset('assets/images/case-study1.jpg') }}" alt="testimonial">
                                             <img src="{{ asset('assets/images/quote.png') }}"
                                                 class="rounded-0 position-absolute end-0 bottom-0 p-4" alt="quote">
                                         </div>
@@ -1592,7 +1593,7 @@
                         <span class="top-title mb-2">CONTACT US</span>
                         <h2 class="main-title">Let’s Start Your Journey to Independent Living.</h2>
                         <p>Reach out today to see how our stress-free process and transparent pricing can get your care
-                            started quickly and without  hassle.
+                            started quickly and without hassle.
                         </p>
 
                         <h3>Opening Hours</h3>
@@ -1666,7 +1667,7 @@
             DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
         };
 
-        fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/home`)
+        fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/home`)
             .then(res => res.json())
             .then(data => {
 
@@ -1874,41 +1875,41 @@
                     const month = date.toLocaleString('default', { month: 'short' });
 
                     blogContainer.insertAdjacentHTML('beforeend', `
-                                                  <div class="col-md-6">
-                                                    <div class="blog-single-item">
-                                                      <a href="/blog-details/${blog.slug}" class="position-relative d-block">
-                                                        <img
-                                                          src="${window.FRONTEND_CONFIG.DASHBOARD_URL}/storage/${blog.image}"
-                                                          alt="${blog.title}"
-                                                          class="w-100"
-                                                          style="max-height:380px; object-fit:cover;"
-                                                        />
-                                                        <span class="tag text-center rounded-2 bg-warning fs-14 fw-normal lh-1">
-                                                          <span class="fs-20 fw-800 d-block mb-1">${day}</span>
-                                                          ${month}
-                                                        </span>
-                                                      </a>
+                                                      <div class="col-md-6">
+                                                        <div class="blog-single-item">
+                                                          <a href="/blog-details/${blog.slug}" class="position-relative d-block">
+                                                            <img
+                                                              src="${window.FRONTEND_CONFIG.DASHBOARD_URL}/storage/${blog.image}"
+                                                              alt="${blog.title}"
+                                                              class="w-100"
+                                                              style="max-height:380px; object-fit:cover;"
+                                                            />
+                                                            <span class="tag text-center rounded-2 bg-warning fs-14 fw-normal lh-1">
+                                                              <span class="fs-20 fw-800 d-block mb-1">${day}</span>
+                                                              ${month}
+                                                            </span>
+                                                          </a>
 
-                                                      <div class="blog-content mt-4">
-                                                        <div class="d-flex info mb-2">
-                                                          <span class="d-flex align-items-center gap-10">
-                                                            <i class="ti ti-user-circle text-primary"></i>
-                                                            <span class="fs-15">By ${blog.author}</span>
-                                                          </span>
+                                                          <div class="blog-content mt-4">
+                                                            <div class="d-flex info mb-2">
+                                                              <span class="d-flex align-items-center gap-10">
+                                                                <i class="ti ti-user-circle text-primary"></i>
+                                                                <span class="fs-15">By ${blog.author}</span>
+                                                              </span>
+                                                            </div>
+
+                                                            <a href="/blog-details/${blog.slug}" class="text-decoration-none">
+                                                              <h3>${blog.title}</h3>
+                                                              <p>${stripHtml(blog.description).substring(0, 120)}...</p>
+                                                              <span class="read-more d-flex align-items-center mt-3">
+                                                                <span>Learn More</span>
+                                                                <img src="/assets/images/right.svg" alt="right">
+                                                              </span>
+                                                            </a>
+                                                          </div>
                                                         </div>
-
-                                                        <a href="/blog-details/${blog.slug}" class="text-decoration-none">
-                                                          <h3>${blog.title}</h3>
-                                                          <p>${stripHtml(blog.description).substring(0, 120)}...</p>
-                                                          <span class="read-more d-flex align-items-center mt-3">
-                                                            <span>Learn More</span>
-                                                            <img src="/assets/images/right.svg" alt="right">
-                                                          </span>
-                                                        </a>
                                                       </div>
-                                                    </div>
-                                                  </div>
-                                                `);
+                                                    `);
                 });
 
             })

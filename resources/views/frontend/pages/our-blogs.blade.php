@@ -271,7 +271,7 @@
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/blogs`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/blogs`)
                 .then(res => {
                     if (!res.ok) throw new Error('API response failed');
                     return res.json();
@@ -292,36 +292,36 @@
 
 
                             blogContainer.insertAdjacentHTML("beforeend", `
-                            <div class="col-md-6">
-                                <div class="blog-single-item text-decoration-none">
-                                    <a href="/blog-details/${blog.slug}" class="position-relative d-block text-decoration-none">
-                                        <img class="w-100 h-100" src="${window.FRONTEND_CONFIG.DASHBOARD_URL}/storage/${blog.image}" alt="${blog.title}" style="max-height:380px">
-                                        <span class="tag text-center rounded-2 bg-warning fs-14 fw-normal lh-1">
-                                            <span class="fs-20 fw-800 d-block mb-1">${day}</span>
-                                            ${month}
-                                        </span>
-                                    </a>
-
-                                    <div class="blog-content mt-4 pt-xl-3">
-                                        <div class="d-flex info">
-                                            <span class="d-flex align-items-center gap-10">
-                                                <i class="ti ti-user-circle text-primary"></i>
-                                                <span class="fs-15">By ${blog.author}</span>
-                                            </span>
-                                        </div>
-
-                                        <a href="/blog-details/${blog.slug}" class="text-decoration-none d-block">
-                                            <h3>${blog.title}</h3>
-                                            <p>${stripHtml(blog.description).substring(0, 120)}...</p>
-                                            <span class="read-more d-flex align-items-center mt-3 pt-1">
-                                                <span>Learn More</span>
-                                                <img src="/assets/images/right.svg" alt="right">
+                                <div class="col-md-6">
+                                    <div class="blog-single-item text-decoration-none">
+                                        <a href="/blog-details/${blog.slug}" class="position-relative d-block text-decoration-none">
+                                            <img class="w-100 h-100" src="${window.FRONTEND_CONFIG.DASHBOARD_URL}/storage/${blog.image}" alt="${blog.title}" style="max-height:380px">
+                                            <span class="tag text-center rounded-2 bg-warning fs-14 fw-normal lh-1">
+                                                <span class="fs-20 fw-800 d-block mb-1">${day}</span>
+                                                ${month}
                                             </span>
                                         </a>
+
+                                        <div class="blog-content mt-4 pt-xl-3">
+                                            <div class="d-flex info">
+                                                <span class="d-flex align-items-center gap-10">
+                                                    <i class="ti ti-user-circle text-primary"></i>
+                                                    <span class="fs-15">By ${blog.author}</span>
+                                                </span>
+                                            </div>
+
+                                            <a href="/blog-details/${blog.slug}" class="text-decoration-none d-block">
+                                                <h3>${blog.title}</h3>
+                                                <p>${stripHtml(blog.description).substring(0, 120)}...</p>
+                                                <span class="read-more d-flex align-items-center mt-3 pt-1">
+                                                    <span>Learn More</span>
+                                                    <img src="/assets/images/right.svg" alt="right">
+                                                </span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        `);
+                            `);
                         });
                     }
                     const popularPostContainer = document.getElementById("popular-post-list");
@@ -338,21 +338,21 @@
                             });
 
                             popularPostContainer.insertAdjacentHTML("beforeend", `
-                    <a href="/blog/${blog.slug}" class="d-sm-flex align-items-center item">
-                        <div class="flex-shrink-0 mb-3 mb-sm-0">
-                            <img 
-                                src="http://localhost:8080/storage/${blog.image}" 
-                                class="object-fit-cover" 
-                                alt="${blog.title}"
-                                style="width: 80px; height: 80px;"
-                            >
-                        </div>
-                        <div class="flex-grow-1">
-                            <span>${formattedDate}</span>
-                            <h4>${blog.title}</h4>
-                        </div>
-                    </a>
-                `);
+                        <a href="/blog/${blog.slug}" class="d-sm-flex align-items-center item">
+                            <div class="flex-shrink-0 mb-3 mb-sm-0">
+                                <img 
+                                    src="http://localhost:8080/storage/${blog.image}" 
+                                    class="object-fit-cover" 
+                                    alt="${blog.title}"
+                                    style="width: 80px; height: 80px;"
+                                >
+                            </div>
+                            <div class="flex-grow-1">
+                                <span>${formattedDate}</span>
+                                <h4>${blog.title}</h4>
+                            </div>
+                        </a>
+                    `);
                         });
                     }
 
@@ -365,14 +365,14 @@
 
                         CATEGORIES.forEach(category => {
                             categoryList.insertAdjacentHTML("beforeend", `
-                                <li>
-                                    <a href="/blogs?category=${category.slug}"
-                                       class="d-flex justify-content-between align-items-center text-decoration-none">
-                                        <span>${category.name}</span>
-                                        <i class="ti ti-arrow-right"></i>
-                                    </a>
-                                </li>
-                            `);
+                                    <li>
+                                        <a href="/blogs?category=${category.slug}"
+                                           class="d-flex justify-content-between align-items-center text-decoration-none">
+                                            <span>${category.name}</span>
+                                            <i class="ti ti-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                `);
                         });
                     }
 
