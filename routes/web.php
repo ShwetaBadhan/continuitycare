@@ -6,8 +6,7 @@ use Illuminate\Support\Facades\Http;
 
 Route::any('/api/data/{any}', function ($any) {
 
-    // $url = "http://admin.continuitycare.com.au/api/" . $any;
-    $url = "{{ config('app.BACKEND_URL') }}" . $any;
+    $url = config('app.backend_url') . "/api/". $any;
 
     $response = Http::send(request()->method(), $url, [
         'query' => request()->query(),
@@ -15,6 +14,19 @@ Route::any('/api/data/{any}', function ($any) {
     ]);
 
     return response($response->body(), $response->status());
+
+})->where('any', '.*');
+
+Route::get('/api/image/{any}', function ($any) {
+
+    $url = config('app.backend_url') . "/storage/" .  $any;
+    
+ 
+
+    $response = Http::get($url);
+
+    return response($response->body(), $response->status())
+        ->header('Content-Type', $response->header('Content-Type'));
 
 })->where('any', '.*');
 

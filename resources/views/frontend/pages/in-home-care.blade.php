@@ -239,7 +239,8 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="commitment-card p-4">
                             <span class="commitment-title">Quality of Life:</span>
-                            <p class="mb-0">We focus on what gives your days meaning—family, culture, •	Routine, community -> routine, and community.
+                            <p class="mb-0">We focus on what gives your days meaning—family, culture, • Routine, community
+                                -> routine, and community.
                             </p>
                         </div>
                     </div>
@@ -290,12 +291,37 @@
 @push('scripts')
     <script>
 
+        // function formatUrl(url) {
+
+
+        //     // const dashboardUrl = window.FRONTEND_CONFIG.DASHBOARD_URL_IMAGE;
+        //     const dashboardUrl = "http://127.0.0.1:8000/api/image";
+
+        //     if (!url) return '';
+
+        //     // If URL already full, return it
+        //     if (url.startsWith('http')) {
+        //         const parsed = new URL(url);
+        //         const finalUrl = dashboardUrl + parsed.pathname;
+        //         console.log(finalUrl);
+        //         return finalUrl;
+        //     }
+
+
+
+
+        //     // If only storage path
+        //     // return dashboardUrl + '/storage/' + url;
+
+        // }
+       
+
         document.addEventListener('DOMContentLoaded', () => {
             window.FRONTEND_CONFIG = {
                 DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
             };
 
-            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/api/home-service`)
+            fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/home-service`)
                 .then(res => res.json())
                 .then(data => {
 
@@ -315,7 +341,7 @@
                             document.getElementById(`who-support-card-desc-${i}`).textContent = card.description ?? '';
 
                             const img = document.getElementById(`who-support-card-img-${i}`);
-                            if (img && card.image) img.src = card.image;
+                            if (img && card.image) img.src = formatUrl(card.image);
                         });
                     }
 
@@ -323,7 +349,7 @@
                     const home_about = data.home_about;
                     if (home_about) {
                         document.getElementById('home-about-title').textContent = home_about.main_title ?? '';
-                      document.getElementById('home-about-description').innerHTML = home_about.description_1 ?? '';
+                        document.getElementById('home-about-description').innerHTML = home_about.description_1 ?? '';
 
                         const img = document.getElementById('home-about-image');
                         if (img && home_about.image) img.src = home_about.image;
