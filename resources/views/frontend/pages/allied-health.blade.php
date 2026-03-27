@@ -264,8 +264,8 @@
             const descEl = document.getElementById('alliedAboutDescription');
 
             if (imgEl) imgEl.src = about.image;
-            if (titleEl) titleEl.innerText = about.title;
-            if (descEl) descEl.innerText = about.description;
+            if (titleEl) titleEl.innerHTML = about.title;
+            if (descEl) descEl.innerHTML = about.description;
           }
 
           const support = data.allied_support;
@@ -275,8 +275,8 @@
             const descE2 = document.getElementById('alliedSupportDescription');
 
             if (imgE2) imgE2.src = support.image;
-            if (titleE2) titleE2.innerText = support.title;
-            if (descE2) descE2.innerText = support.description;
+            if (titleE2) titleE2.innerHTML = support.title;
+            if (descE2) descE2.innerHTML = support.description;
           }
           const journey = data.allied_journey;
           if (journey) {
@@ -285,8 +285,8 @@
             const descE2 = document.getElementById('alliedJourneyDescription');
 
             if (imgE2) imgE2.src = journey.image;
-            if (titleE2) titleE2.innerText = journey.title;
-            if (descE2) descE2.innerText = journey.description;
+            if (titleE2) titleE2.innerHTML = journey.title;
+            if (descE2) descE2.innerHTML = journey.description;
           }
 
 

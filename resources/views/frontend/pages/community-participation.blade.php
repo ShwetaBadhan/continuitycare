@@ -657,7 +657,7 @@
           if (communityApproachSection) {
             document.getElementById('community-approach-title').textContent = communityApproachSection.main_title ?? '';
             document.getElementById('community-approach-sub-title').textContent = communityApproachSection.sub_title ?? '';
-            document.getElementById('community-approach-description').textContent = communityApproachSection.description_1 ?? '';
+            document.getElementById('community-approach-description').innerHTML = communityApproachSection.description_1 ?? '';
             document.getElementById('community-approach-side-title').textContent = communityApproachSection.side_title ?? '';
 
             const pointsContainer = document.getElementById('community-approach-list');
@@ -808,7 +808,7 @@
 
             if (title) title.textContent = communityPlanning.main_title ?? '';
             if (subTitle) subTitle.textContent = communityPlanning.sub_title ?? '';
-            if (description) description.textContent = communityPlanning.description_1 ?? '';
+            if (description) description.innerHTML = communityPlanning.description_1 ?? '';
             if (note) note.textContent = communityPlanning.note ?? '';
 
             if (image && communityPlanning.image) {

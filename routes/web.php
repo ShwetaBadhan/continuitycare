@@ -2,6 +2,23 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JobController;
+use Illuminate\Support\Facades\Http;
+
+Route::any('/api/data/{any}', function ($any) {
+
+    // $url = "http://admin.continuitycare.com.au/api/" . $any;
+    $url = "{{ config('app.dashboard_url') }}" . $any;
+
+    $response = Http::send(request()->method(), $url, [
+        'query' => request()->query(),
+        'body' => request()->getContent()
+    ]);
+
+    return response($response->body(), $response->status());
+
+})->where('any', '.*');
+
+
 Route::post('/apply-job', [JobController::class, 'store'])->name('apply.job');
 
 Route::get('/', function () {

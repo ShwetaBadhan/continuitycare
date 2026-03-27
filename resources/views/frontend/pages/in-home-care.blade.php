@@ -323,7 +323,7 @@
                     const home_about = data.home_about;
                     if (home_about) {
                         document.getElementById('home-about-title').textContent = home_about.main_title ?? '';
-                        document.getElementById('home-about-description').textContent = home_about.description_1 ?? '';
+                      document.getElementById('home-about-description').innerHTML = home_about.description_1 ?? '';
 
                         const img = document.getElementById('home-about-image');
                         if (img && home_about.image) img.src = home_about.image;

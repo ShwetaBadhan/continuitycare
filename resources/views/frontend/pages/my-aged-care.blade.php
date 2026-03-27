@@ -194,7 +194,7 @@
                         document.getElementById('aged_benefit-side-title').textContent =
                             aged_benefit.side_title ?? '';
 
-                        document.getElementById('aged_benefit-description').textContent =
+                        document.getElementById('aged_benefit-description').innerHTML =
                             aged_benefit.description_1 ?? '';
 
                         const pointsContainer = document.getElementById('aged_benefit_points');
@@ -221,7 +221,7 @@
                             const i = index + 1;
 
                             document.getElementById(`aged_service-card-title-${i}`).textContent = card.title ?? '';
-                            document.getElementById(`aged_service-card-desc-${i}`).textContent = card.description ?? '';
+                            document.getElementById(`aged_service-card-desc-${i}`).innerHTML = card.description ?? '';
 
 
                         });

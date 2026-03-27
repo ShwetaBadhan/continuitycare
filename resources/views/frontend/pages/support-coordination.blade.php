@@ -161,7 +161,7 @@
           const support_about = data.support_coordination_about;
           if (support_about) {
             document.getElementById('support-about-main-title').textContent = support_about.title ?? '';
-            document.getElementById('support-about-description').textContent = support_about.description ?? '';
+            document.getElementById('support-about-description') = support_about.description ?? '';
             const imgE2 = document.getElementById('support-about-card-image');
             if (imgE2) imgE2.src = support_about.image;
 

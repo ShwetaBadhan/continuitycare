@@ -117,7 +117,7 @@
                         document.getElementById('independent-about-title').textContent =
                             independentAbout.title ?? '';
 
-                        document.getElementById('independent-about-description').textContent =
+                        document.getElementById('independent-about-description').innerHTML =
                             independentAbout.description ?? '';
 
                         const img = document.getElementById('independent-about-image');
@@ -162,7 +162,7 @@
                         document.getElementById('support-apply-title').textContent =
                             supportApply.title ?? '';
 
-                        document.getElementById('support-apply-description').textContent =
+                        document.getElementById('support-apply-description').innerHTML =
                             supportApply.description ?? '';
 
                         const img = document.getElementById('support-apply-image');
