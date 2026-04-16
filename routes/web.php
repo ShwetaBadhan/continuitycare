@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Http;
 
 Route::any('/api/data/{any}', function ($any) {
 
-    $url = config('app.backend_url') . "/api/". $any;
+    $url = config('app.backend_url') . "/api/" . $any;
 
     $response = Http::send(request()->method(), $url, [
         'query' => request()->query(),
@@ -19,9 +19,9 @@ Route::any('/api/data/{any}', function ($any) {
 
 Route::get('/api/image/{any}', function ($any) {
 
-    $url = config('app.backend_url') . "/storage/" .  $any;
-    
- 
+    $url = config('app.backend_url') . "/storage/" . $any;
+
+
 
     $response = Http::get($url);
 
@@ -33,9 +33,9 @@ Route::get('/api/image/{any}', function ($any) {
 
 Route::post('/apply-job', [JobController::class, 'store'])->name('apply.job');
 
-Route::get('/', function () {
-    return view('frontend.pages.index');
-})->name('home');
+// Route::get('/', function () {
+//     return view('frontend.pages.index');
+// })->name('home');
 
 
 Route::get('/about-us', function () {
@@ -224,18 +224,8 @@ Route::get('/new-aged-care-act', function () {
 
 
 
-
-
-
-
-Route::prefix('admin')->group(function () {
-    Route::view('/', 'admin/auth/welcome');          // ← This serves welcome page at /admin
-    Route::view('/dashboard', 'admin.pages.dashboard');
-});
-
-
-Route::get('/admin-users', function () {
-    return view('admin.pages.admin-users');
-})->name('admin-users');
+// fetch routes
+use App\Http\Controllers\HomeController;
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 

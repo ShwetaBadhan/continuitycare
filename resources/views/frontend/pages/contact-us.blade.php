@@ -87,9 +87,7 @@
                                 <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
                                     <i class="ti ti-brand-instagram"></i>
                                 </a>
-                                <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
-                                    <i class="ti ti-brand-x"></i>
-                                </a>
+                               
                                 <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
                                     <i class="ti ti-brand-linkedin"></i>
                                 </a>

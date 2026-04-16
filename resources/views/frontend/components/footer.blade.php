@@ -15,7 +15,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h6>Location</h6>
-                                <p>New Zealand</p>
+                                <p>Australia</p>
                             </div>
                         </li>
                         <li class="d-flex">

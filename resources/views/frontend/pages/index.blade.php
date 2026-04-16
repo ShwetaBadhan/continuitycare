@@ -312,20 +312,21 @@
             <div class="row g-4 d-flex align-items-center">
                 <div class="col-xl-6" data-cues="slideInUp" data-duration="900">
                     <div class="">
-                        <img id="about-act-image" class="" src="{{asset('assets/images/about/aged-care.jfif')}}"
-                            alt="about">
+                        <img src="{{ $data['about_act']['image'] ?? '' }}" alt="about">
                     </div>
                 </div>
 
                 <div class="col-xl-6">
                     <div class="about-content" data-cues="slideInUp" data-duration="900">
-                        <h2 class="main-title mb-20 ms-auto mw-975" id="about-act-title">The New Aged Care Act is Here</h2>
-                        <p align="justify" id="about-act-description">Big changes have come to aged care, with the new Aged
-                            Care Act that is effective
-                            from 1 November. This important reform places the rights, dignity, and choices of older people
-                            at the heart of care. Alongside the Act, the new Support at Home program will transform the way
-                            services are delivered, making it easier for people to access the care they need to live well at
-                            home.</p>
+                        <h2 class="main-title mb-20 ms-auto mw-975">
+                            {{ $data['about_act']['main_title'] ?? 'About Act Aged Care' }}
+                        </h2>
+                        <p align="justify" id="about-act-description">{{ $data['about_act']['description_1'] ?? 'Big changes have come to aged care, with the new Aged
+                                            Care Act that is effective
+                                            from 1 November. This important reform places the rights, dignity, and choices of older people
+                                            at the heart of care. Alongside the Act, the new Support at Home program will transform the way
+                                            services are delivered, making it easier for people to access the care they need to live well at
+                                            home.' }}</p>
 
                         <a href="{{route("about-us")}}" class="default-btn">
                             <div class="d-flex align-items-center gap-10">
@@ -1628,253 +1629,253 @@
     <!-- End Contact Us Area -->
 @endsection
 
-@push('scripts')
-    <script>
-        const services = [
-            { angle: -90 },
-            { angle: -45 },
-            { angle: 0 },
-            { angle: 45 },
-            { angle: 90 },
-            { angle: 135 },
-            { angle: 180 },
-            { angle: -135 },
-        ];
+{{-- @push('scripts')
+<script>
+    const services = [
+        { angle: -90 },
+        { angle: -45 },
+        { angle: 0 },
+        { angle: 45 },
+        { angle: 90 },
+        { angle: 135 },
+        { angle: 180 },
+        { angle: -135 },
+    ];
 
-        const isMobile = window.innerWidth <= 768; //  only mobile
+    const isMobile = window.innerWidth <= 768; //  only mobile
 
-        services.forEach((service, index) => {
-            const element = document.getElementById(`service-${index}`);
+    services.forEach((service, index) => {
+        const element = document.getElementById(`service-${index}`);
 
-            const radius = 290; //  laptop/desktop SAME
-            const angleRad = (service.angle * Math.PI) / 180;
+        const radius = 290; //  laptop/desktop SAME
+        const angleRad = (service.angle * Math.PI) / 180;
 
-            let x = Math.cos(angleRad) * radius;
-            let y = Math.sin(angleRad) * radius;
+        let x = Math.cos(angleRad) * radius;
+        let y = Math.sin(angleRad) * radius;
 
-            //  ONLY MOBILE change
-            if (isMobile) {
-                x = x * 0.6;
-                y = y * 0.6;
+        //  ONLY MOBILE change
+        if (isMobile) {
+            x = x * 0.6;
+            y = y * 0.6;
+        }
+
+        element.style.left = "50%";
+        element.style.top = "50%";
+        element.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+    });
+
+    window.FRONTEND_CONFIG = {
+        DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
+    };
+
+    fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/home`)
+        .then(res => res.json())
+        .then(data => {
+
+
+
+
+            const how = data.how_we_work;
+            if (how) {
+                document.getElementById('how-sub-title').textContent = how.sub_title ?? '';
+                document.getElementById('how-main-title').textContent = how.main_title ?? '';
+                document.getElementById('how-side-title').textContent = how.side_title ?? '';
+
+                const sideImg = document.getElementById('how-side-image');
+                if (sideImg && how.side_image) sideImg.src = how.side_image;
+
+                how.cards?.forEach((card, index) => {
+                    const i = index + 1;
+
+                    document.getElementById(`how-card-title-${i}`).textContent = card.title ?? '';
+                    document.getElementById(`how-card-desc-${i}`).textContent = card.description ?? '';
+
+                    const img = document.getElementById(`how-card-img-${i}`);
+                    if (img && card.image) img.src = card.image;
+                });
             }
 
-            element.style.left = "50%";
-            element.style.top = "50%";
-            element.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
-        });
 
-        window.FRONTEND_CONFIG = {
-            DASHBOARD_URL: "{{ config('app.dashboard_url') }}"
-        };
+            const ABOUT_ACT = data.about_act;
+            if (ABOUT_ACT) {
+                document.getElementById('about-act-title').textContent = ABOUT_ACT.main_title ?? '';
+                document.getElementById('about-act-description').textContent = ABOUT_ACT.description_1 ?? '';
 
-        fetch(`${window.FRONTEND_CONFIG.DASHBOARD_URL}/home`)
-            .then(res => res.json())
-            .then(data => {
+                const img = document.getElementById('about-act-image');
+                if (img && ABOUT_ACT.image) img.src = ABOUT_ACT.image;
+            }
 
 
+            const ABOUT_US = data.about_us;
+            if (ABOUT_US) {
+                document.getElementById('about_sub_title').textContent = ABOUT_US.sub_title ?? '';
+                document.getElementById('about_title').textContent = ABOUT_US.main_title ?? '';
+                document.getElementById('about_description').textContent = ABOUT_US.description_1 ?? '';
+                document.getElementById('about_overview').textContent = ABOUT_US.description_2 ?? '';
+                document.getElementById('about_side_title').textContent = ABOUT_US.feature_1_title ?? '';
+                document.getElementById('about_side_title2').textContent = ABOUT_US.feature_1_title ?? '';
+
+                const mainImg = document.getElementById('about_main_image');
+                const iconImg = document.getElementById('about_icon');
+                const sideImg = document.getElementById('about_side_image');
+
+                if (mainImg && ABOUT_US.image) mainImg.src = ABOUT_US.image;
+                if (iconImg && ABOUT_US.icon_1) iconImg.src = ABOUT_US.icon_1;
+                if (sideImg && ABOUT_US.image_2) sideImg.src = ABOUT_US.image_2;
+
+                if (mainImg) mainImg.style.visibility = 'visible';
+            }
 
 
-                const how = data.how_we_work;
-                if (how) {
-                    document.getElementById('how-sub-title').textContent = how.sub_title ?? '';
-                    document.getElementById('how-main-title').textContent = how.main_title ?? '';
-                    document.getElementById('how-side-title').textContent = how.side_title ?? '';
+            const WHY_CHOOSE = data.why_choose_us;
+            const featureContainer = document.getElementById('feature-cards');
+            const featureTemplate = document.getElementById('feature-template');
 
-                    const sideImg = document.getElementById('how-side-image');
-                    if (sideImg && how.side_image) sideImg.src = how.side_image;
+            if (WHY_CHOOSE && featureContainer && featureTemplate) {
+                featureContainer
+                    .querySelectorAll('.col-lg-4:not(#feature-template)')
+                    .forEach(el => el.remove());
 
-                    how.cards?.forEach((card, index) => {
-                        const i = index + 1;
+                WHY_CHOOSE.forEach(item => {
+                    const clone = featureTemplate.cloneNode(true);
 
-                        document.getElementById(`how-card-title-${i}`).textContent = card.title ?? '';
-                        document.getElementById(`how-card-desc-${i}`).textContent = card.description ?? '';
+                    clone.classList.remove('d-none');
+                    clone.removeAttribute('id');
 
-                        const img = document.getElementById(`how-card-img-${i}`);
-                        if (img && card.image) img.src = card.image;
-                    });
+                    clone.querySelector('.feature-title').textContent = item.title ?? '';
+                    clone.querySelector('.feature-desc').innerHTML = item.description ?? '';
+
+                    featureContainer.appendChild(clone);
+                });
+            }
+
+
+            const ABOUT_TWO = data.about_two;
+            if (ABOUT_TWO) {
+                document.getElementById('about-two-title').textContent = ABOUT_TWO.main_title ?? '';
+                document.getElementById('about-two-description').textContent = ABOUT_TWO.description ?? '';
+
+                const img = document.getElementById('about-two-image');
+                if (img && ABOUT_TWO.image) img.src = ABOUT_TWO.image;
+            }
+
+
+            const NETWORK = data.network;
+            if (NETWORK) {
+                document.getElementById('network-sub-title').textContent = NETWORK.sub_title ?? '';
+                document.getElementById('network-main-title').textContent = NETWORK.main_title ?? '';
+
+                NETWORK.cards?.forEach((card, index) => {
+                    const i = index + 1;
+
+                    document.getElementById(`network-card-title-${i}`).textContent = card.title ?? '';
+                    document.getElementById(`network-card-desc-${i}`).textContent = card.description ?? '';
+
+                    const img = document.getElementById(`network-card-img-${i}`);
+                    if (img && card.image) img.src = card.image;
+                });
+            }
+
+            const CASE_STUDY = data.case_study;
+
+
+
+            const caseContainer = document.getElementById('case-study-container');
+            const caseTemplate = document.getElementById('case-study-template');
+
+            if (CASE_STUDY && CASE_STUDY.length && caseContainer && caseTemplate) {
+
+                // remove old case studies except template
+                caseContainer
+                    .querySelectorAll('.col-lg-4:not(#case-study-template)')
+                    .forEach(el => el.remove());
+
+                CASE_STUDY.forEach(item => {
+                    const clone = caseTemplate.cloneNode(true);
+
+                    clone.classList.remove('d-none');
+                    clone.removeAttribute('id');
+
+                    clone.querySelector('.case-study-title').textContent =
+                        item.title ?? '';
+
+                    clone.querySelector('.case-study-desc').textContent =
+                        item.description ?? '';
+
+                    const img = clone.querySelector('.case-study-img');
+                    if (img && item.image) img.src = item.image;
+
+                    caseContainer.appendChild(clone);
+                });
+            } else {
+                console.warn(' Case study section not rendered');
+            }
+
+            const TESTIMONIALS = data.testimonials;
+            if (TESTIMONIALS && TESTIMONIALS.length) {
+
+                const swiperEl = document.querySelector('.testimonial-slide');
+                const wrapper = swiperEl?.querySelector('.swiper-wrapper');
+                const template = document.getElementById('testimonial_template');
+
+                if (!swiperEl || !wrapper || !template) return;
+
+                template.remove(); // remove only once
+
+                TESTIMONIALS.forEach(item => {
+                    const clone = template.cloneNode(true);
+
+                    clone.classList.remove('d-none');
+                    clone.removeAttribute('id');
+
+                    clone.querySelector('.testimonial-quote').textContent = item.quote ?? '';
+                    clone.querySelector('.testimonial-message').innerHTML = item.message ?? '';
+                    clone.querySelector('.testimonial-name').textContent = item.name ?? '';
+                    clone.querySelector('.testimonial-designation').textContent = item.designation ?? '';
+
+                    const userPhoto = clone.querySelector('.testimonial-user-photo');
+                    const mainImage = clone.querySelector('.testimonial-image');
+
+                    if (userPhoto && item.photo) userPhoto.src = item.photo;
+                    if (mainImage && item.image) mainImage.src = item.image;
+
+                    wrapper.appendChild(clone);
+                });
+
+                if (window.testimonialSwiper) {
+                    window.testimonialSwiper.destroy(true, true);
                 }
 
+                window.testimonialSwiper = new Swiper('.testimonial-slide', {
+                    slidesPerView: 1,
+                    autoHeight: true,
+                    observer: true,
+                    observeParents: true,
+                    pagination: {
+                        el: '.swiper-pagination-testimonial',
+                        clickable: true,
+                    },
+                });
+            }
+            // helper to remove HTML tags
+            function stripHtml(html) {
+                const div = document.createElement('div');
+                div.innerHTML = html;
+                return div.textContent || div.innerText || '';
+            }
+            const blogs = data.blogs;
+            const blogContainer = document.getElementById('blog-list');
 
-                const ABOUT_ACT = data.about_act;
-                if (ABOUT_ACT) {
-                    document.getElementById('about-act-title').textContent = ABOUT_ACT.main_title ?? '';
-                    document.getElementById('about-act-description').textContent = ABOUT_ACT.description_1 ?? '';
+            if (!blogContainer || !Array.isArray(blogs)) return;
 
-                    const img = document.getElementById('about-act-image');
-                    if (img && ABOUT_ACT.image) img.src = ABOUT_ACT.image;
-                }
+            blogContainer.innerHTML = '';
 
+            blogs.forEach(blog => {
+                const date = new Date(blog.published_at);
+                const day = date.getDate();
+                const month = date.toLocaleString('default', { month: 'short' });
 
-                const ABOUT_US = data.about_us;
-                if (ABOUT_US) {
-                    document.getElementById('about_sub_title').textContent = ABOUT_US.sub_title ?? '';
-                    document.getElementById('about_title').textContent = ABOUT_US.main_title ?? '';
-                    document.getElementById('about_description').textContent = ABOUT_US.description_1 ?? '';
-                    document.getElementById('about_overview').textContent = ABOUT_US.description_2 ?? '';
-                    document.getElementById('about_side_title').textContent = ABOUT_US.feature_1_title ?? '';
-                    document.getElementById('about_side_title2').textContent = ABOUT_US.feature_1_title ?? '';
-
-                    const mainImg = document.getElementById('about_main_image');
-                    const iconImg = document.getElementById('about_icon');
-                    const sideImg = document.getElementById('about_side_image');
-
-                    if (mainImg && ABOUT_US.image) mainImg.src = ABOUT_US.image;
-                    if (iconImg && ABOUT_US.icon_1) iconImg.src = ABOUT_US.icon_1;
-                    if (sideImg && ABOUT_US.image_2) sideImg.src = ABOUT_US.image_2;
-
-                    if (mainImg) mainImg.style.visibility = 'visible';
-                }
-
-
-                const WHY_CHOOSE = data.why_choose_us;
-                const featureContainer = document.getElementById('feature-cards');
-                const featureTemplate = document.getElementById('feature-template');
-
-                if (WHY_CHOOSE && featureContainer && featureTemplate) {
-                    featureContainer
-                        .querySelectorAll('.col-lg-4:not(#feature-template)')
-                        .forEach(el => el.remove());
-
-                    WHY_CHOOSE.forEach(item => {
-                        const clone = featureTemplate.cloneNode(true);
-
-                        clone.classList.remove('d-none');
-                        clone.removeAttribute('id');
-
-                        clone.querySelector('.feature-title').textContent = item.title ?? '';
-                        clone.querySelector('.feature-desc').innerHTML = item.description ?? '';
-
-                        featureContainer.appendChild(clone);
-                    });
-                }
-
-
-                const ABOUT_TWO = data.about_two;
-                if (ABOUT_TWO) {
-                    document.getElementById('about-two-title').textContent = ABOUT_TWO.main_title ?? '';
-                    document.getElementById('about-two-description').textContent = ABOUT_TWO.description ?? '';
-
-                    const img = document.getElementById('about-two-image');
-                    if (img && ABOUT_TWO.image) img.src = ABOUT_TWO.image;
-                }
-
-
-                const NETWORK = data.network;
-                if (NETWORK) {
-                    document.getElementById('network-sub-title').textContent = NETWORK.sub_title ?? '';
-                    document.getElementById('network-main-title').textContent = NETWORK.main_title ?? '';
-
-                    NETWORK.cards?.forEach((card, index) => {
-                        const i = index + 1;
-
-                        document.getElementById(`network-card-title-${i}`).textContent = card.title ?? '';
-                        document.getElementById(`network-card-desc-${i}`).textContent = card.description ?? '';
-
-                        const img = document.getElementById(`network-card-img-${i}`);
-                        if (img && card.image) img.src = card.image;
-                    });
-                }
-
-                const CASE_STUDY = data.case_study;
-
-
-
-                const caseContainer = document.getElementById('case-study-container');
-                const caseTemplate = document.getElementById('case-study-template');
-
-                if (CASE_STUDY && CASE_STUDY.length && caseContainer && caseTemplate) {
-
-                    // remove old case studies except template
-                    caseContainer
-                        .querySelectorAll('.col-lg-4:not(#case-study-template)')
-                        .forEach(el => el.remove());
-
-                    CASE_STUDY.forEach(item => {
-                        const clone = caseTemplate.cloneNode(true);
-
-                        clone.classList.remove('d-none');
-                        clone.removeAttribute('id');
-
-                        clone.querySelector('.case-study-title').textContent =
-                            item.title ?? '';
-
-                        clone.querySelector('.case-study-desc').textContent =
-                            item.description ?? '';
-
-                        const img = clone.querySelector('.case-study-img');
-                        if (img && item.image) img.src = item.image;
-
-                        caseContainer.appendChild(clone);
-                    });
-                } else {
-                    console.warn(' Case study section not rendered');
-                }
-
-                const TESTIMONIALS = data.testimonials;
-                if (TESTIMONIALS && TESTIMONIALS.length) {
-
-                    const swiperEl = document.querySelector('.testimonial-slide');
-                    const wrapper = swiperEl?.querySelector('.swiper-wrapper');
-                    const template = document.getElementById('testimonial_template');
-
-                    if (!swiperEl || !wrapper || !template) return;
-
-                    template.remove(); // remove only once
-
-                    TESTIMONIALS.forEach(item => {
-                        const clone = template.cloneNode(true);
-
-                        clone.classList.remove('d-none');
-                        clone.removeAttribute('id');
-
-                        clone.querySelector('.testimonial-quote').textContent = item.quote ?? '';
-                        clone.querySelector('.testimonial-message').innerHTML = item.message ?? '';
-                        clone.querySelector('.testimonial-name').textContent = item.name ?? '';
-                        clone.querySelector('.testimonial-designation').textContent = item.designation ?? '';
-
-                        const userPhoto = clone.querySelector('.testimonial-user-photo');
-                        const mainImage = clone.querySelector('.testimonial-image');
-
-                        if (userPhoto && item.photo) userPhoto.src = item.photo;
-                        if (mainImage && item.image) mainImage.src = item.image;
-
-                        wrapper.appendChild(clone);
-                    });
-
-                    if (window.testimonialSwiper) {
-                        window.testimonialSwiper.destroy(true, true);
-                    }
-
-                    window.testimonialSwiper = new Swiper('.testimonial-slide', {
-                        slidesPerView: 1,
-                        autoHeight: true,
-                        observer: true,
-                        observeParents: true,
-                        pagination: {
-                            el: '.swiper-pagination-testimonial',
-                            clickable: true,
-                        },
-                    });
-                }
-                // helper to remove HTML tags
-                function stripHtml(html) {
-                    const div = document.createElement('div');
-                    div.innerHTML = html;
-                    return div.textContent || div.innerText || '';
-                }
-                const blogs = data.blogs;
-                const blogContainer = document.getElementById('blog-list');
-
-                if (!blogContainer || !Array.isArray(blogs)) return;
-
-                blogContainer.innerHTML = '';
-
-                blogs.forEach(blog => {
-                    const date = new Date(blog.published_at);
-                    const day = date.getDate();
-                    const month = date.toLocaleString('default', { month: 'short' });
-
-                    blogContainer.insertAdjacentHTML('beforeend', `
+                blogContainer.insertAdjacentHTML('beforeend', `
                                                       <div class="col-md-6">
                                                         <div class="blog-single-item">
                                                           <a href="/blog-details/${blog.slug}" class="position-relative d-block">
@@ -1910,87 +1911,87 @@
                                                         </div>
                                                       </div>
                                                     `);
-                });
-
-            })
-            .catch(err => console.error('API ERROR ', err));
-
-
-
-
-        // form submission
-
-        document.getElementById("leadForm").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const form = e.target;
-            const submitBtn = form.querySelector("button[type='submit']");
-
-            submitBtn.disabled = true;
-
-            Swal.fire({
-                title: 'Verifying...',
-                text: 'Checking security',
-                allowOutsideClick: false,
-                didOpen: () => Swal.showLoading()
             });
 
-            grecaptcha.ready(function () {
-                grecaptcha.execute("{{ config('services.recaptcha.site_key') }}", {
-                    action: 'contact_form'
-                }).then(async function (token) {
+        })
+        .catch(err => console.error('API ERROR ', err));
 
-                    const payload = {
-                        fullname: form.fullname.value.trim(),
-                        email: form.email.value.trim(),
-                        phone: form.phone.value.trim(),
-                        subject: form.subject.value.trim(),
-                        message: form.message.value.trim(),
-                        recaptcha_token: token
-                    };
 
-                    try {
-                        const response = await fetch("/api/leads", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json",
-                                "Accept": "application/json",
-                            },
-                            body: JSON.stringify(payload),
+
+
+    // form submission
+
+    document.getElementById("leadForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const submitBtn = form.querySelector("button[type='submit']");
+
+        submitBtn.disabled = true;
+
+        Swal.fire({
+            title: 'Verifying...',
+            text: 'Checking security',
+            allowOutsideClick: false,
+            didOpen: () => Swal.showLoading()
+        });
+
+        grecaptcha.ready(function () {
+            grecaptcha.execute("{{ config('services.recaptcha.site_key') }}", {
+                action: 'contact_form'
+            }).then(async function (token) {
+
+                const payload = {
+                    fullname: form.fullname.value.trim(),
+                    email: form.email.value.trim(),
+                    phone: form.phone.value.trim(),
+                    subject: form.subject.value.trim(),
+                    message: form.message.value.trim(),
+                    recaptcha_token: token
+                };
+
+                try {
+                    const response = await fetch("/api/leads", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Accept": "application/json",
+                        },
+                        body: JSON.stringify(payload),
+                    });
+
+                    const data = await response.json();
+                    Swal.close();
+
+                    if (response.ok) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Message Sent!',
+                            text: data.message,
+                            confirmButtonColor: '#0d6efd'
                         });
-
-                        const data = await response.json();
-                        Swal.close();
-
-                        if (response.ok) {
-                            Swal.fire({
-                                icon: 'success',
-                                title: 'Message Sent!',
-                                text: data.message,
-                                confirmButtonColor: '#0d6efd'
-                            });
-                            form.reset();
-                        } else {
-                            Swal.fire({
-                                icon: 'error',
-                                title: 'Failed',
-                                text: data.message || 'Validation failed',
-                                confirmButtonColor: '#dc3545'
-                            });
-                        }
-
-                    } catch (error) {
-                        Swal.close();
+                        form.reset();
+                    } else {
                         Swal.fire({
                             icon: 'error',
-                            title: 'Server Error',
-                            text: 'Please try again later'
+                            title: 'Failed',
+                            text: data.message || 'Validation failed',
+                            confirmButtonColor: '#dc3545'
                         });
-                    } finally {
-                        submitBtn.disabled = false;
                     }
-                });
+
+                } catch (error) {
+                    Swal.close();
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Server Error',
+                        text: 'Please try again later'
+                    });
+                } finally {
+                    submitBtn.disabled = false;
+                }
             });
         });
-    </script>
-@endpush
+    });
+</script>
+@endpush --}}

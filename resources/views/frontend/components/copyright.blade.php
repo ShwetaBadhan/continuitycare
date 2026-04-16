@@ -10,11 +10,7 @@
                         <i class="ti ti-brand-facebook-filled"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.x.com/" target="_blank">
-                        <i class="ti ti-brand-x"></i>
-                    </a>
-                </li>
+              
                 <li>
                     <a href="https://www.instagram.com/" target="_blank">
                         <i class="ti ti-brand-instagram"></i>
