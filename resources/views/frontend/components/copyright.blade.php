@@ -12,7 +12,7 @@
                 </li>
               
                 <li>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/continuity_care/" target="_blank">
                         <i class="ti ti-brand-instagram"></i>
                     </a>
                 </li>

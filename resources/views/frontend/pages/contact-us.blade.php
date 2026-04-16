@@ -84,11 +84,11 @@
                                 <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
                                     <i class="ti ti-brand-facebook-filled"></i>
                                 </a>
-                                <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
+                                <a href="https://www.instagram.com/continuity_care/" target="_blank" class="text-decoration-none">
                                     <i class="ti ti-brand-instagram"></i>
                                 </a>
                                
-                                <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
+                                <a href="https://www.linkedin.com/company/74339399/admin/dashboard/" target="_blank" class="text-decoration-none">
                                     <i class="ti ti-brand-linkedin"></i>
                                 </a>
                             </li>
