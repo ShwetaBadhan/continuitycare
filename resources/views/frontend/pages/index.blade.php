@@ -1597,27 +1597,6 @@
                             started quickly and without hassle.
                         </p>
 
-                        <h3>Opening Hours</h3>
-
-                        <ul class="p-0 m-0 list-unstyled">
-                            <li>Monday - Friday, 8 AM - 6 PM</li>
-                            <li>Saturday - Sunday, 10 AM - 9 PM</li>
-                            <li class="d-flex align-items-center gap-10 social-link">
-                                <span>Social Media:</span>
-                                <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
-                                    <i class="ti ti-brand-facebook-filled"></i>
-                                </a>
-                                <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
-                                    <i class="ti ti-brand-instagram"></i>
-                                </a>
-                                <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
-                                    <i class="ti ti-brand-x"></i>
-                                </a>
-                                <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
-                                    <i class="ti ti-brand-linkedin"></i>
-                                </a>
-                            </li>
-                        </ul>
 
                         <img src="assets/images/star3.png" class="position-absolute bottom-0 end-0 d-none d-lg-inline-block"
                             alt="star3">

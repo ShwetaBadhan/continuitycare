@@ -84,13 +84,15 @@
                                 <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
                                     <i class="ti ti-brand-facebook-filled"></i>
                                 </a>
-                                <a href="https://www.instagram.com/continuity_care/" target="_blank" class="text-decoration-none">
+                                <a href="https://www.instagram.com/continuity_care/" target="_blank"
+                                    class="text-decoration-none">
                                     <i class="ti ti-brand-instagram"></i>
                                 </a>
-                               
-                                <a href="https://www.linkedin.com/company/74339399/admin/dashboard/" target="_blank" class="text-decoration-none">
+
+                                <!-- <a href="https://www.linkedin.com/company/74339399/admin/dashboard/" target="_blank"
+                                    class="text-decoration-none">
                                     <i class="ti ti-brand-linkedin"></i>
-                                </a>
+                                </a> -->
                             </li>
                         </ul>
 
@@ -105,9 +107,9 @@
 
     <div class="map-area padding-section    ">
         <div class="container mw-1685">
-            <iframe src="https://www.google.com/maps?q=New%20Zealand&output=embed"
-                style="border:0; width:100%; height:550px; border-radius:20px; display:block;" allowfullscreen=""
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            <iframe
+                src="https://www.google.com/maps?q=Continuity+Care,+307/1737+Anzac+Ave,+Mango+Hill+QLD+4509,+Australia&output=embed"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
     </div>

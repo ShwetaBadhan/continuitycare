@@ -15,7 +15,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <h6>Location</h6>
-                                <p>Australia</p>
+                                <p>Brisbane , Australia</p>
                             </div>
                         </li>
                         <li class="d-flex">
@@ -70,42 +70,42 @@
 
                     <ul class="import-link p-0 m-0 list-unstyled">
                         <li>
-                            <a  href="{{ route("in-home-care") }}">
+                            <a href="{{ route("in-home-care") }}">
                                 In-Home Care
                             </a>
                         </li>
                         <li>
-                            <a  href="{{ route("community-participation") }}">
+                            <a href="{{ route("community-participation") }}">
                                 Community Participation
                             </a>
                         </li>
                         <li>
-                            <a  href="{{ route("supported-independent-living") }}">
+                            <a href="{{ route("supported-independent-living") }}">
                                 Supported Independent Living (SIL)
                             </a>
                         </li>
                         <li>
-                            <a  href="{{ route("service-details") }}">
+                            <a href="{{ route("service-details") }}">
                                 Care Coordination/Navigation
                             </a>
                         </li>
                         <li>
-                            <a  href="{{ route("community-nursing") }}">
+                            <a href="{{ route("community-nursing") }}">
                                 Community Nursing
                             </a>
                         </li>
                         <li>
-                            <a  href="{{ route("allied-health") }}">
+                            <a href="{{ route("allied-health") }}">
                                 Allied Health
                             </a>
                         </li>
                         <li>
-                            <a  href="{{ route("plan-management") }}">
+                            <a href="{{ route("plan-management") }}">
                                 Plan Management
                             </a>
                         </li>
                         <li>
-                            <a  href="{{ route("support-coordination") }}">
+                            <a href="{{ route("support-coordination") }}">
                                 Support Coordination
                             </a>
                         </li>
@@ -114,24 +114,12 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="footer-single-widget newsletter-form">
-                    <h3>Subscribe Newsletter</h3>
+                    <h3>Find us Here</h3>
 
-                    <p>Stay connected with the latest news, helpful tips, and heartwarming stories from our blog</p>
-
-                    <form class="position-relative z-1 mb-3">
-                        <input type="email" class="form-control" placeholder="Enter Your Email">
-                        <button type="submit" class="submit-btn position-absolute top-50 end-0 translate-middle-y">
-                            <img src="{{ asset('assets/images/icon-send.svg') }}" alt="icon-send">
-                        </button>
-                    </form>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                        <label class="form-check-label" for="checkDefault">
-                            I understand and agree to the <a href="{{ route("terms-conditions") }}">Terms &
-                                Conditions</a>
-                        </label>
-                    </div>
+                    <iframe
+                        src="https://www.google.com/maps?q=Continuity+Care,+307/1737+Anzac+Ave,+Mango+Hill+QLD+4509,+Australia&output=embed"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
                 </div>
             </div>
         </div>
